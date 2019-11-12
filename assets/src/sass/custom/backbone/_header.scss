@@ -1,0 +1,16 @@
+.header{
+  background-color: black;
+  padding-top: 40px;
+  min-height: 500px;
+
+  &-web{
+    padding-left: 0;
+    padding-right: 0;
+    border-top: 2px solid $global-clr-red;
+  }
+
+  &-navigation{
+    display: flex;
+    justify-content: center;
+  }
+}

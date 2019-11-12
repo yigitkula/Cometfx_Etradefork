@@ -1,0 +1,158 @@
+
+.dfn{
+
+  &-nav{
+    background-color: transparent;
+  }
+  &-menu{
+    color: $global-clr-white;
+    font-size: 17px;
+    line-height: 1.18;
+    letter-spacing: -0.51px;
+
+    @include ReSassWidthResponsive(992){
+      background-color: $global-sitebg-darkblue01;
+      display: block !important;
+      overflow-x: hidden;
+    }
+
+    &-megadropdown{
+      background-color: $global-grdint-darkblue02;
+      border-top-color: $global-clr-soft-blue;
+      border-bottom-color: $global-clr-soft-blue;
+    }
+
+    &-dropdownmenu{
+      background-color: $global-sitebg-darkblue01;
+
+      &:before{
+        background-color: $global-clr-soft-blue;
+      }
+
+      &.show{
+        left: 20px !important;
+
+        @include ReSassWidthResponsive(1400){
+          left: 10px !important;
+        }
+        @include ReSassWidthResponsive(992){
+          left: 0 !important;
+        }
+      }
+
+      &.dropdown-menu.show[aria-labelledby="DropdownMenu"]{
+        height: 170px !important;
+      }
+
+      ul.dropdownsubmenu{
+        background-color: transparentize($global-clr-dark-blue, 0.50);
+
+        li.submainmenu{
+          a{
+            color: $global-clr-soft-gray;
+            @include transition(color, 0.3s, ease-in-out);
+
+            &::before{
+              background-color: $global-clr-soft-gray;
+            }
+            &::after{
+              background-color: $global-clr-soft-blue;
+            }
+
+            &:hover{
+              color: $global-clr-white;
+            }
+          }
+        }
+      }
+    }
+
+    &-list{
+      min-height: 36px;
+
+      @include ReSassWidthResponsive(992){
+        min-height: auto;
+      }
+
+      > li{
+        height: 45px !important;
+
+        > a{
+          color: $global-clr-text-light-gray;
+          padding: 13px 0;
+          margin: auto 20px;
+        }
+      }
+    }
+  }
+
+  &-mobilemenu{
+
+    &-mask{
+      //background-color: transparentize($global-clr-dark-blue, 0.5);
+      background-color: rgba(0,0,0,0.6);
+    }
+
+    &-header{
+
+      @include ReSassWidthResponsive(992){
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+
+        &::before{
+          background-color: transparentize($global-clr-soft-gray, 0.7);
+        }
+
+        .header-navigation-logo{
+          margin: 0;
+
+          &-symbol {
+            width: 30px;
+            height: 30px;
+            margin-right: 4px;
+          }
+          &-icrypex {
+            font-size: 25px;
+          }
+          &-cryptoexchange {
+            font-size: 11px;
+          }
+        }
+      }
+    }
+
+    &-btn{
+      @include ReSassWidthResponsive(992){
+
+        .btntext{
+          small{
+            font-size: 14px;
+            line-height: 14px;
+          }
+        }
+        .btnicon{
+          span,
+          span::before,
+          span::after{
+            background-color: $global-clr-white;
+          }
+        }
+
+      }
+    }
+  }
+}
+
+.header{
+  &.navscroll{
+
+    .dfn-mobilemenu-header{
+      @include ReSassWidthResponsive(992){
+        &::before{
+          @include scaleX(0);
+        }
+      }
+    }
+  }
+}
