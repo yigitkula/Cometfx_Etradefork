@@ -1,0 +1,9 @@
+.idea/
+node_modules/
+
+assets/dist/css/bootstrap.css.map
+assets/dist/css/custom-app.css.map
+assets/dist/css/plugin-app.css.map
+assets/dist/js/custom-app.js.map
+assets/dist/js/plugin-app.js.map
+

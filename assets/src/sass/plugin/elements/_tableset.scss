@@ -1,0 +1,263 @@
+$globalSvgIconImgPath : "../../img/global/svg";
+
+.site{
+
+  &table{
+    color: $global-clr-dark-blue;
+    margin: 0;
+
+    td, th{
+      border-color: transparentize($global-clr-soft-gray, 0.7);
+      vertical-align: middle;
+      font-size: 15px;
+      font-weight: normal;
+      line-height: 1;
+      padding: 0 5px;
+
+      &:first-child{
+        padding-left: 0;
+      }
+      &:last-child{
+        padding-right: 0;
+      }
+    }
+
+    thead th{
+      font-size: 17px;
+      border-top-width: 0;
+      border-bottom-width: 1px;
+      padding-top: 3px;
+      padding-bottom: 3px;
+
+      @include ReSassWidthResponsive(768){
+        font-size: 15px;
+      }
+    }
+
+    tbody td{
+      padding-top: 5px;
+      padding-bottom: 5px;
+      line-height: 1;
+    }
+
+    i.arrow{
+      display: block;
+      width: 0;
+      height: 0;
+      position: absolute;
+      left: 5px;
+      top: calc(50% - 2px);
+      &up{
+        border-left: 4px solid transparent;
+        border-right: 4px solid transparent;
+        border-bottom: 4px solid $global-clr-green;
+      }
+      &down{
+        border-left: 4px solid transparent;
+        border-right: 4px solid transparent;
+        border-top: 4px solid $global-clr-red;
+      }
+    }
+
+    &responsive{
+      @include ReSassWidthResponsive(768){
+        display:block;
+        text-align:left !important;
+
+        thead, tbody, thead tr, tbody tr, thead th, tbody td{
+          display:flex;
+          flex-wrap: wrap;
+          text-align:left !important;
+          font-size: 17px !important;
+        }
+
+        thead tr{
+          position:absolute;
+          top:-9999px;
+          left:-9999px;
+        }
+
+        thead tr, tbody tr{
+          //background:#FFFFFF;
+          border:1px solid transparentize($global-clr-soft-gray, 0.7);
+          border-bottom:0;
+          margin:10px 0;
+        }
+
+        tbody{
+          margin-left: -5px;
+          margin-right: -5px;
+
+          tr{
+            width: calc(50% - 10px);
+            margin: 5px;
+
+            td{
+              width: 100%;
+              padding:8px 0 !important;
+              border:none;
+              border-bottom:1px solid transparentize($global-clr-soft-gray, 0.7) !important;
+              position:relative;
+              padding-left:48% !important;
+              white-space:inherit !important;
+              font-weight: 500;
+
+              &::before{
+                content: attr(data-title);
+                position:absolute;
+                left:0;
+                top:0;
+                padding:8px 10px;
+                width:40%;
+                min-width:100px;
+                height:100%;
+                white-space:nowrap;
+                overflow: hidden;
+                font-weight: normal;
+              }
+
+              &.resp-td-p-0{
+                padding-left: 0 !important;
+                padding-right: 0 !important;
+
+                &::before{
+                  display: none;
+                }
+              }
+
+              &.resp-td-p-10{
+                padding-left: 10px !important;
+                padding-right: 10px !important;
+
+                &::before{
+                  display: none;
+                }
+              }
+            }
+          }
+        }
+      }
+      @include ReSassWidthResponsive(576){
+        tbody{
+          tr{
+            width: 100%;
+            margin: 5px;
+          }
+        }
+      }
+      @include ReSassWidthResponsive(480){
+        thead, tbody, thead tr, tbody tr, thead th, tbody td{
+          font-size: 15px !important;
+        }
+      }
+
+      &dataprice{
+        @include ReSassWidthResponsive(768){
+          tbody tr{
+            td:first-child{
+              background-color: transparentize($global-clr-soft-blue, 0.85) !important;
+              font-weight: 500;
+            }
+          }
+        }
+      }
+    }
+
+    &responsivebottom{
+      @include ReSassWidthResponsive(768){
+        tbody tr{
+          td{
+            padding: 10px !important;
+            border-bottom: none !important;
+
+            &::before{
+              position: inherit;
+              width: 100%;
+              height: inherit;
+              padding: 0;
+              margin-bottom: 5px;
+            }
+          }
+        }
+        thead tr, tbody tr{
+          border-bottom:1px solid transparentize($global-clr-soft-gray, 0.7);
+        }
+      }
+    }
+
+    &weburllink{
+
+      @include ReSassMinWidthResponsive(992){
+        tbody{
+          tr{
+            cursor: pointer;
+            @include transition(background, 0.1s, ease-in-out);
+
+            &:hover{
+              background-color: $global-clr-soft-blue;
+
+              td{
+                color: $global-clr-white !important;
+                border-color: $global-clr-soft-blue;
+
+                i.arrowup{
+                  border-bottom-color: $global-clr-white !important;
+                }
+                i.arrowdown{
+                  border-top-color: $global-clr-white !important;
+                }
+              }
+            }
+
+            &.selectcell{
+              background-color: $global-clr-soft-blue;
+
+              td{
+                color: $global-clr-white !important;
+                border-color: $global-clr-soft-blue;
+
+                i.arrowup{
+                  border-bottom-color: $global-clr-white !important;
+                }
+                i.arrowdown{
+                  border-top-color: $global-clr-white !important;
+                }
+              }
+            }
+          }
+        }
+      }
+
+    }
+  }
+}
+
+.tableicon{
+  display: inline-block;
+  margin-left: 2px;
+  position: relative;
+  bottom: -2px;
+  display: none !important;
+
+  @include ReSassWidthResponsive(768){
+    display: none;
+  }
+
+  i{
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: block;
+    cursor: pointer;
+    width: 8px;
+    height: 4px;
+    margin: 1px 0;
+    padding: 3px 0;
+  }
+  &-arrowup{
+    background-image: url(#{$globalSvgIconImgPath}/Arrow_Up.svg);
+  }
+  &-arrowdown{
+    background-image: url(#{$globalSvgIconImgPath}/Arrow_Down.svg);
+  }
+}

@@ -1,0 +1,223 @@
+.modal-open{
+  padding: 0 !important;
+  overflow: inherit !important;
+}
+
+.modal-backdrop{
+  background-color: $global-grdint-darkblue01;
+
+  &.show{
+    opacity: 0.8;
+  }
+}
+
+.site{
+
+  &modal{
+
+    .modal{
+      padding: 0 !important;
+
+      &.show{
+        display: flex !important;
+        height: 100%;
+        align-items: center;
+      }
+
+      &-dialog{
+        display: flex;
+        align-items: center;
+        height: 100%;
+        margin: auto;
+      }
+
+      &-content{
+        padding: 10px;
+        border: none;
+        @include border-radius(0);
+
+        @include ReSassWidthResponsive(400){
+          padding: 5px;
+        }
+      }
+
+      &-header{
+        color: $global-clr-white;
+        @include gradient($global-grdint-darkblue01, $global-grdint-darkblue02);
+        @include border-radius(0);
+        padding: 5px 10px;
+
+        .close{
+          position: relative;
+          text-indent: -9999px;
+          opacity: 1;
+
+          &::before,
+          &::after{
+            content: "";
+            position: absolute;
+            background-color: $global-clr-white;
+            width: 18px;
+            height: 2px;
+            left: 0;
+            top: calc(50% - -2px);
+
+            @include ReSassWidthResponsive(480){
+              top: calc(50% - 0);
+            }
+          }
+
+          &::before{
+            @include rotate(45);
+          }
+          &::after{
+            @include rotate(135);
+          }
+        }
+      }
+
+      &-footer{
+        border: none;
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 0;
+        padding-top: 10px;
+      }
+
+      &-title{
+        font-size: 20px;
+        font-weight: normal;
+
+        @include ReSassWidthResponsive(480){
+          font-size: 17px;
+        }
+      }
+
+      &-body{
+        border: 1px solid transparentize($global-clr-soft-gray, 0.70);
+        margin-top: -2px;
+        padding: 0;
+      }
+
+      &-form{
+        padding: 15px;
+        padding-bottom: 0;
+
+        @include ReSassWidthResponsive(480){
+          padding: 10px;
+        }
+        @include ReSassWidthResponsive(400){
+          padding: 5px;
+        }
+
+        .boxcolumn-boxtitle{
+          margin-bottom: 15px;
+
+          @include ReSassWidthResponsive(480){
+            margin-bottom: 10px;
+
+            .boxcolumn-boxtitle-title{
+              font-size: 17px;
+            }
+          }
+        }
+      }
+
+      &-graybg{
+        background-color: $global-clr-light-gray;
+        padding: 15px;
+        margin: 15px 3px 3px;
+
+        @include ReSassWidthResponsive(480){
+          padding: 5px;
+          margin-top: 5px;
+        }
+      }
+
+      &-table{
+        margin-top: -5px;
+        border-bottom: 1px solid transparentize($global-clr-soft-gray, 0.7);
+      }
+    }
+
+    &alerts{
+      div[class*="bg-"]{
+        h1,h2,h3,h4,h5,h6,p,i{
+          color: white;
+        }
+      }
+    }
+
+    &filled{
+      .modal-footer,
+      .modal-header{
+        border:none !important;
+      }
+
+      .modal-header,
+      .modal-body{
+        border:none !important;
+        *{color: white;}
+      }
+    }
+
+    .imagemodal{
+
+      .close{
+        width: 22px;
+        height: 22px;
+        position: absolute;
+        top: -18px;
+        right: 7px;
+        text-indent: -9999px;
+        opacity: 1;
+
+        &::before,
+        &::after{
+          content: "";
+          position: absolute;
+          background-color: $global-clr-white;
+          width: 22px;
+          height: 2px;
+          left: 0;
+          top: calc(50% - 1px);
+          @include transition(all, 0.1s, ease-in-out);
+        }
+
+        &::before{
+          @include rotate(45);
+        }
+        &::after{
+          @include rotate(135);
+        }
+
+        &:hover{
+          &::before,
+          &::after{
+            background-color: $global-clr-red;
+          }
+        }
+      }
+
+      .modal.fade .modal-dialog{
+        transform: none;
+      }
+
+      .modal-dialog-centered {
+        min-height: 100vh;
+      }
+      .modal-dialog{
+        max-width: 96%;
+        margin: 0 auto;
+      }
+      .modal-content{
+        background-color: transparent;
+      }
+      .modal-body{
+        text-align: center;
+        border: none;
+      }
+    }
+
+  }
+}

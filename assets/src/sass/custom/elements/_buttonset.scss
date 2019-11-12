@@ -1,0 +1,8 @@
+.btn{
+  &-nonradius{
+    &-trbl{
+      @include border-radius-top-right(0 !important);
+      @include border-bottom-left-radius(0 !important);
+    }
+  }
+}

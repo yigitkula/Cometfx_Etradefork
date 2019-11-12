@@ -1,0 +1,28 @@
+// Global Variables
+@import "../../plugin/option/variables";
+
+// Global Mixib
+@import "../../plugin/option/mixin";
+
+[class^="fa-"], [class*=" fa-"] {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: 14px;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon{
+  &-svg{
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    overflow: hidden;
+    display: inline-block;
+  }
+}
+
+.site{
+  &icons{}
+}

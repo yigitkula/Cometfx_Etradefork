@@ -1,0 +1,123 @@
+
+/* Jquery Scroll to Top Button */
+.bottomtotopbutton {
+  display: none;
+
+  @include ReSassWidthResponsive(992){
+    display: none;
+    background-color: $global-sitebg-darkblue01;
+    @include gradient($global-sitebg-darkblue02, $global-sitebg-darkblue01);
+    width: 36px;
+    height: 36px;
+    position: fixed;
+    left: calc(50% - 16px);
+    bottom: 57px;
+    z-index: 1;
+    border: 1px solid transparentize($global-clr-soft-gray, 0.7);
+    @include border-radius(50%);
+
+    &:hover{
+    }
+
+    &::before,
+    &::after{
+      content: "";
+      position: absolute;
+    }
+
+    &::before{
+      background-color: $global-clr-soft-gray;
+      width: calc(100% - 18px);
+      height: 2px;
+      top: 12px;
+      left: calc(50% - 8px);
+    }
+
+    &::after{
+      width: calc(100% - 24px);
+      height: calc(100% - 24px);
+      top: 17px;
+      left: calc(50% - 5px);
+      border-top: 2px solid $global-clr-soft-gray;
+      border-right: 2px solid $global-clr-soft-gray;
+      @include rotate(-45);
+
+      animation-name: Scroll2TopButton;
+      animation-duration: 0.5s;
+      animation-fill-mode: both;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+    }
+
+    @-webkit-keyframes Scroll2TopButton {
+      form {
+        top: 16px;
+      }
+      to {
+        top: 19px;
+      }
+    }
+    @keyframes Scroll2TopButton {
+      form {
+        top: 16px;
+      }
+      to {
+        top: 19px;
+      }
+    }
+  }
+
+  @include ReSassWidthResponsive(576){
+    bottom: 50px;
+  }
+  @include ReSassWidthResponsive(480){
+    bottom: 30px;
+  }
+  @include ReSassWidthResponsive(400){
+    width: 30px;
+    height: 30px;
+    bottom: 15px;
+
+    &::before{
+      width: calc(100% - 16px);
+      top: 10px;
+      left: calc(50% - 6px);
+    }
+    &::after{
+      width: calc(100% - 20px);
+      height: calc(100% - 20px);
+      top: 14px;
+      left: calc(50% - 4px);
+    }
+
+    @-webkit-keyframes Scroll2TopButton {
+      form {
+        top: 14px;
+      }
+      to {
+        top: 17px;
+      }
+    }
+    @keyframes Scroll2TopButton {
+      form {
+        top: 14px;
+      }
+      to {
+        top: 17px;
+      }
+    }
+  }
+}
+
+body.tradepage{
+
+  .bottomtotopbutton{
+    @include ReSassWidthResponsive(992){
+      bottom: 68px !important;
+    }
+    @include ReSassWidthResponsive(400){
+      bottom: 56px !important;
+    }
+  }
+
+}
