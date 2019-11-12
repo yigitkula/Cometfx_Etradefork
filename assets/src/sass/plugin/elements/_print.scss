@@ -1,0 +1,44 @@
+
+// Global Print
+@media print{
+
+  .sitetableresponsive{
+    width: 100% !important;
+    display: table !important;
+
+    thead, tbody{
+      width: 100% !important;
+      display: table-row-group !important;
+      margin:0 !important;
+    }
+
+    thead tr, tbody tr{
+      width: 100% !important;
+      display: table-row !important;
+      border: 0 !important;
+      margin:0 !important;
+      position: inherit !important;
+    }
+
+    thead tr th, tbody tr td{
+      width: auto !important;
+      display: table-cell !important;
+      border-bottom:1px solid transparentize($global-clr-soft-gray, 0.7) !important;
+      position: inherit !important;
+      font-weight: normal !important;
+
+      &::before{
+        display: none !important;
+      }
+    }
+
+    thead tr th{
+      font-weight: 500 !important;
+    }
+
+    tbody tr td{
+      padding:8px 5px !important;
+    }
+
+  }
+}

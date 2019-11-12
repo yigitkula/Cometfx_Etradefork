@@ -1,0 +1,67 @@
+.site{
+
+  &bg{
+
+    &white{
+      background-color: $global-clr-white !important;
+    }
+    &orange{
+      background-color: $global-clr-orange !important;
+    }
+    &blue{
+      background-color: $global-clr-soft-blue !important;
+    }
+    &blue{
+      background-color: $global-clr-soft-blue !important;
+      &dark{
+        background-color: $global-clr-dark-blue !important;
+      }
+      &btn{
+        background-color: $global-clr-dark-blue !important;
+      }
+    }
+    &red{
+      background-color: $global-clr-red !important;
+    }
+    &green{
+      background-color: $global-clr-green !important;
+    }
+    &gray{
+      background-color: $global-clr-soft-gray !important;
+      &light{
+        background-color: $global-clr-light-gray !important;
+      }
+    }
+  }
+
+  &color{
+
+    &white{
+      color: $global-clr-white !important;
+    }
+    &orange{
+      color: $global-clr-orange !important;
+    }
+    &blue{
+      color: $global-clr-soft-blue !important;
+      &dark{
+        color: $global-clr-dark-blue !important;
+      }
+      &btn{
+        color: $global-clr-dark-blue !important;
+      }
+    }
+    &red{
+      color: $global-clr-red !important;
+    }
+    &green{
+      color: $global-clr-green !important;
+    }
+    &gray{
+      color: $global-clr-soft-gray !important;
+      &light{
+        color: transparentize($global-clr-soft-gray, 0.7) !important;
+      }
+    }
+  }
+}

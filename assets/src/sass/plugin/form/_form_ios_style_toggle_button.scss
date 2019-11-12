@@ -1,0 +1,56 @@
+.iosstyletogglebutton{
+
+  [type="checkbox"]:not(:checked),
+  [type="checkbox"]:checked {
+    position: absolute;
+    left: -9999px;
+  }
+
+  [type="checkbox"]:not(:checked) + label,
+  [type="checkbox"]:checked + label {
+    position: relative;
+    padding-left: 40px;
+    padding-top: 20px;
+    margin: 0;
+    cursor: pointer;
+    z-index: 0;
+  }
+
+  [type="checkbox"]:not(:checked) + label::before,
+  [type="checkbox"]:checked + label::before,
+  [type="checkbox"]:not(:checked) + label::after,
+  [type="checkbox"]:checked + label::after {
+    content: '';
+    position: absolute;
+    height: 12px;
+    transition: all .5s ease;
+  }
+
+  [type="checkbox"]:not(:checked) + label::before,
+  [type="checkbox"]:checked + label::before {
+    left: 0;
+    top: 0;
+    width: 40px;
+    height: 20px;
+    border: 2px solid $global-clr-red;
+    background: $global-clr-red;
+    border-radius: 1.1em;
+    z-index: -1;
+  }
+  [type="checkbox"]:not(:checked) + label::after,
+  [type="checkbox"]:checked + label::after {
+    left: 4px;
+    top: 4px;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 12px;
+  }
+  [type="checkbox"]:checked + label::after {
+    left: 24px;
+  }
+  [type="checkbox"]:checked + label::before {
+    background-color: $global-clr-green;
+    border-color: $global-clr-green;
+  }
+
+}

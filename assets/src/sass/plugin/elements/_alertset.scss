@@ -1,0 +1,283 @@
+.alert{
+  padding: 15px 20px;
+  margin-bottom: 15px;
+  line-height: 1.2;
+  $alertclassname: &;
+
+  @include ReSassWidthResponsive(400){
+    margin-bottom: 10px;
+  }
+
+  &:last-child{
+    //margin-bottom: 0;
+  }
+
+  &-primary{
+    color: $global-clr-dark-blue !important;
+    background-color: transparentize($global-clr-dark-blue, 0.95) !important;
+    border-color: transparentize($global-clr-dark-blue, 0.50) !important;
+    &#{$alertclassname}-dismissible{
+      .close{
+        &::before,
+        &::after{
+          background-color: transparentize($global-clr-dark-blue, 0.20) !important;
+        }
+      }
+    }
+  }
+  &-secondary{
+    color: $global-clr-soft-gray !important;
+    background-color: transparentize($global-clr-soft-gray, 0.95) !important;
+    border-color: transparentize($global-clr-soft-gray, 0.50) !important;
+    &#{$alertclassname}-dismissible{
+      .close{
+        &::before,
+        &::after{
+          background-color: transparentize($global-clr-soft-gray, 0.20) !important;
+        }
+      }
+    }
+  }
+  &-success{
+    color: $global-clr-green !important;
+    background-color: transparentize($global-clr-green, 0.95) !important;
+    border-color: transparentize($global-clr-green, 0.50) !important;
+    &#{$alertclassname}-dismissible{
+      .close{
+        &::before,
+        &::after{
+          background-color: transparentize($global-clr-green, 0.20) !important;
+        }
+      }
+    }
+  }
+  &-danger{
+    color: $global-clr-red !important;
+    background-color: transparentize($global-clr-red, 0.95) !important;
+    border-color: transparentize($global-clr-red, 0.50) !important;
+    &#{$alertclassname}-dismissible{
+      .close{
+        &::before,
+        &::after{
+          background-color: transparentize($global-clr-red, 0.20) !important;
+        }
+      }
+    }
+  }
+  &-info{
+    color: $global-clr-soft-blue !important;
+    background-color: transparentize($global-clr-soft-blue, 0.95) !important;
+    border-color: transparentize($global-clr-soft-blue, 0.50) !important;
+    &#{$alertclassname}-dismissible{
+      .close{
+        &::before,
+        &::after{
+          background-color: transparentize($global-clr-soft-blue, 0.20) !important;
+        }
+      }
+    }
+  }
+  &-warning{
+    color: $global-clr-orange !important;
+    background-color: transparentize($global-clr-orange, 0.95) !important;
+    border-color: transparentize($global-clr-orange, 0.30) !important;
+    &#{$alertclassname}-dismissible{
+      .close{
+        &::before,
+        &::after{
+          background-color: transparentize($global-clr-orange, 0.20) !important;
+        }
+      }
+    }
+  }
+  &-light{
+    color: $global-clr-soft-gray !important;
+    background-color: transparentize($global-clr-white, 0.95) !important;
+    border-color: transparentize($global-clr-soft-gray, 0.50) !important;
+    &#{$alertclassname}-dismissible{
+      .close{
+        &::before,
+        &::after{
+          background-color: transparentize($global-clr-soft-gray, 0.20) !important;
+        }
+      }
+    }
+  }
+  &-dark{
+    color: $global-clr-soft-gray !important;
+    background-color: transparentize($global-clr-soft-gray, 0.95) !important;
+    border-color: transparentize($global-clr-soft-gray, 0.50) !important;
+    &#{$alertclassname}-dismissible{
+      .close{
+        &::before,
+        &::after{
+          background-color: transparentize($global-clr-soft-gray, 0.20) !important;
+        }
+      }
+    }
+  }
+
+  p{
+    font-size: 17px;
+
+    @include ReSassWidthResponsive(400){
+      font-size: 15px;
+    }
+  }
+
+  &-heading{
+    margin-bottom: 10px;
+  }
+
+  &-link{
+    color: inherit !important;
+    font-weight: 500;
+    text-decoration: underline;
+    @include transition(opacity, 0.3s, ease-in-out);
+
+    &:hover{
+      opacity: 0.8;
+    }
+  }
+
+  &-dismissible{
+    padding-right: 50px;
+
+    .close{
+      width: 16px;
+      height: 16px;
+      position: absolute;
+      top: calc(50% - 8px);
+      right: 15px;
+      padding: 0;
+      text-indent: -9999px;
+      opacity: 1;
+      @include transition(transform, 0.3s, ease-in-out);
+
+      &::before,
+      &::after{
+        content: "";
+        position: absolute;
+        background-color: transparentize($global-clr-red, 0.20);
+        width: 16px;
+        height: 2px;
+        left: 0;
+        top: calc(50% - 1px);
+      }
+      &::before{
+        @include rotate(45);
+      }
+      &::after{
+        @include rotate(135);
+      }
+
+      &:hover{
+        @include rotate(90);
+      }
+    }
+  }
+
+  &-flex{
+    display: flex;
+    align-items: center;
+  }
+
+  &-big{
+    &#{$alertclassname}-dismissible{
+      .close{
+        top: 15px;
+      }
+    }
+    &-desc{
+      width: 100%;
+    }
+  }
+
+  &-sweet{
+    background-color: $global-clr-white !important;
+    padding: 5px !important;
+
+    #{$alertclassname}-heading{
+      text-transform: uppercase;
+    }
+
+    #{$alertclassname}-big-desc{
+      p{
+        color: $global-clr-dark-blue;
+      }
+    }
+
+    &-small{
+
+      #{$alertclassname}-flex{
+        height: 80px;
+      }
+
+      #{$alertclassname}-icon{
+        width: 90px;
+        height: 90px;
+        padding: 0;
+        @include scale(0.5);
+      }
+
+      #{$alertclassname}-heading{
+        font-size: 17px;
+        margin: 0;
+        margin-right: 3px;
+      }
+
+      #{$alertclassname}-icon,
+      #{$alertclassname}-big-desc{
+        margin-left: -5px;
+      }
+
+      #{$alertclassname}-big-desc{
+        margin-top: -5px;
+      }
+
+      &#{$alertclassname}-dismissible{
+        padding-right: 30px !important;
+      }
+    }
+  }
+
+  &-header{
+    color: $global-clr-white;
+    background-color: $global-clr-dark-blue;
+
+    &.alert{
+      margin: 0;
+      padding: 0 !important;
+      border: 0;
+      @include border-radius(0);
+    }
+
+    &-success{
+      background-color: $global-clr-green;
+    }
+
+    #{$alertclassname}-flex{
+      height: auto;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    #{$alertclassname}-icon,
+    #{$alertclassname}-big-desc{
+      margin: auto 0;
+      position: relative;
+    }
+
+    #{$alertclassname}-icon{
+      top: -10px;
+    }
+
+    #{$alertclassname}-big-desc{
+      top: -20px;
+    }
+
+    &#{$alertclassname}-dismissible{
+      padding-right: 0 !important;
+    }
+  }
+}

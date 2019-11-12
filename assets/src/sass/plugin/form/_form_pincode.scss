@@ -1,0 +1,104 @@
+/* Form UI Pin Code */
+.formpincode{
+
+  &.form-group{
+    position: relative;
+  }
+
+  label{
+    display: block;
+  }
+
+  .pincode{
+
+    &-input{
+
+      &-container{
+        display: flex !important;
+        justify-content: space-between;
+
+        input.mid,
+        input.last{
+          border-left-width: 1px !important;
+          margin-left: -1px !important;
+        }
+        input.last{
+          margin-right: 0 !important;
+        }
+      }
+
+      &-text{
+        background-color: $global-clr-light-gray !important;
+        width: calc(100% / 6 - 8px) !important;
+        float: inherit !important;
+        clear: both;
+        text-align: center;
+        margin: 0 10px;
+        @include transition(background, 0.2s, ease-in-out);
+
+        &:first-child{
+          margin-left: 0;
+        }
+
+        &:last-child{
+          margin-right: 0;
+        }
+
+
+        &:focus{
+          background-color: $global-clr-white !important;
+          border-color:transparentize($global-clr-soft-gray, 0.40) !important;
+        }
+
+        &:focus + .pincode-input-text{
+          border-left-color: transparentize($global-clr-soft-gray, 0.40) !important;
+        }
+      }
+
+      &-error{
+        color: $global-clr-red !important;
+        position: absolute !important;
+        font-size: 17px !important;
+        line-height: 1 !important;
+        top: 0;
+        right: 0 !important;
+      }
+
+      &-callback{
+        display: block;
+        text-align: center;
+        font-size: 17px;
+        margin-top: 10px;
+        letter-spacing: 10px;
+      }
+
+      // Mobile
+      &-container{
+        &.touch{
+          .touchwrapper{
+            height: 40px !important;
+
+            &.touch6{
+              width: 100%! important;
+            }
+
+            .touchtable td{
+              border-color: transparent !important;
+            }
+
+            .pincode-input-text{
+              width: 100% !important;
+              background: transparent !important;
+              padding-left: 30px !important;
+              letter-spacing: 10px !important;
+              margin: 0 !important;
+              text-align: center !important;
+              box-shadow: none !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/* Form UI Pin Code */

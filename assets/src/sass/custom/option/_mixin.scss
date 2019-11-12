@@ -1,0 +1,30 @@
+// Global Responsive Sass
+@import "../../plugin/option/resass_responsive";
+
+// Global Mixin
+@import "../../plugin/option/mixin";
+
+
+@mixin border-radius-top-left($topleft) {
+  border-top-left-radius: $topleft;
+  -webkit-border-top-left-radius: $topleft;
+  -moz-border-radius-topleft: $topleft;
+}
+
+@mixin border-radius-top-right($topright) {
+  border-top-right-radius: $topright;
+  -webkit-border-top-right-radius: $topright;
+  -moz-border-radius-topright: $topright;
+}
+
+@mixin border-bottom-right-radius($bottomright) {
+  border-bottom-right-radius: $bottomright;
+  -webkit-border-bottom-right-radius: $bottomright;
+  -moz-border-radius-bottomright: $bottomright;
+}
+
+@mixin border-bottom-left-radius($bottomleft) {
+  border-bottom-left-radius: $bottomleft;
+  -webkit-border-bottom-left-radius: $bottomleft;
+  -moz-border-radius-bottomleft: $bottomleft;
+}

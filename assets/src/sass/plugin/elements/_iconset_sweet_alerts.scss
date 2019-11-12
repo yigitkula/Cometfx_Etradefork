@@ -1,0 +1,358 @@
+.alert-icon{
+  background-color: $global-clr-white;
+  width: 140px;
+  height: 140px;
+  padding: 26px;
+
+  &-success {
+    background-color: $global-clr-white;
+    width: 80px;
+    height: 80px;
+    padding: 0;
+    border: 4px solid $global-clr-green;
+    position: relative;
+    box-sizing: content-box;
+    @include border-radius(50%);
+
+    &:after, &:before {
+      content: '';
+      background: $global-clr-white;
+      width: 60px;
+      height: 120px;
+      position: absolute;
+      transform: rotate(45deg);
+    }
+    &:before {
+      width: 26px;
+      height: 80px;
+      top: -17px;
+      left: 5px;
+      transform-origin: 60px 60px;
+      transform: rotate(-45deg);
+      @include border-radii(40px,0,0,40px);
+    }
+    &:after {
+      left: 30px;
+      top: -11px;
+      animation: rotatePlaceholder 4.25s ease-in;
+      transform-origin: 0 60px;
+      transform: rotate(-45deg);
+      @include border-radii(0,120px,120px,0);
+    }
+    &-placeholder {
+      width: 80px;
+      height: 80px;
+      border: 4px solid transparentize($global-clr-green, 0.75);
+      position: absolute;
+      left: -4px;
+      top: -4px;
+      z-index: 2;
+      box-sizing: content-box;
+      @include border-radius(50%);
+    }
+    &-fix {
+      background-color: $global-clr-white;
+      width: 5px;
+      height: 90px;
+      position: absolute;
+      left: 28px;
+      top: 8px;
+      z-index: 1;
+      transform: rotate(-45deg);
+    }
+    &-tip, &-long {
+      background-color: $global-clr-green;
+      height: 5px;
+      position: absolute;
+      z-index: 2;
+      @include border-radius(2px);
+    }
+    &-tip {
+      width: 25px;
+      left: 14px;
+      top: 46px;
+      animation: animateSuccessTip .75s;
+      transform: rotate(45deg);
+    }
+    &-long {
+      width: 47px;
+      right: 8px;
+      top: 38px;
+      animation: animateSuccessLong .75s;
+      transform: rotate(-45deg);
+    }
+    @keyframes animateSuccessTip {
+      0%, 54% {
+        width: 0;
+        left: 1px;
+        top: 19px;
+      }
+      70% {
+        width: 50px;
+        left: -8px;
+        top: 37px;
+      }
+      84% {
+        width: 17px;
+        left: 21px;
+        top: 48px;
+      }
+      100% {
+        width: 25px;
+        left: 14px;
+        top: 45px;
+      }
+    }
+    @keyframes animateSuccessLong {
+      0%, 65% {
+        width: 0;
+        right: 46px;
+        top: 54px;
+      }
+      84% {
+        width: 55px;
+        right: 0;
+        top: 35px;
+      }
+      100% {
+        width: 47px;
+        right: 8px;
+        top: 38px;
+      }
+    }
+    @keyframes rotatePlaceholder {
+      0%, 5% {
+        transform: rotate(-45deg);
+      }
+      100%, 12% {
+        transform: rotate(-405deg);
+      }
+    }
+  }
+
+  &-warning {
+    background-color: $global-clr-white;
+    width: 80px;
+    height: 80px;
+    padding: 0;
+    border: 4px solid lighten($global-clr-orange, 15%);
+    position: relative;
+    box-sizing: content-box;
+    animation: scaleWarning 0.75s infinite alternate;
+    @include border-radius(50%);
+
+    &:after, &:before {
+      background: $global-clr-white;
+      content: '';
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      @include border-radius(50%);
+    }
+    &:before {
+      display: inline-block;
+      opacity: 0;
+      animation: pulseWarning 2s linear infinite;
+    }
+    &:after {
+      display: block;
+      z-index: 1;
+    }
+    &-body {
+      background-color: lighten($global-clr-orange, 15%);
+      width: 5px;
+      height: 47px;
+      margin-left: -2px;
+      position: absolute;
+      left: 50%;
+      top: 10px;
+      z-index: 2;
+      animation: pulseWarningIns 0.75s infinite alternate;
+      @include border-radius(2px);
+    }
+    &-dot {
+      background-color: lighten($global-clr-orange, 15%);
+      width: 7px;
+      height: 7px;
+      margin-left: -3px;
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      z-index: 2;
+      animation: pulseWarningIns 0.75s infinite alternate;
+      @include border-radius(50%);
+    }
+    @keyframes scaleWarning {
+      0% {
+        transform: scale(1);
+      }
+      30% {
+        transform: scale(1.02);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+    @keyframes pulseWarning {
+      0% {
+        background-color: $global-clr-white;
+        opacity: 0.5;
+        transform: scale(1);
+      }
+      30% {
+        background-color: $global-clr-white;
+        opacity: 0.5;
+        transform: scale(1);
+      }
+      100% {
+        background-color: lighten($global-clr-orange, 15%);
+        opacity: 0;
+        transform: scale(2);
+      }
+    }
+    @keyframes pulseWarningIns {
+      0% {
+        background-color: lighten($global-clr-orange, 20%);
+      }
+      100% {
+        background-color: lighten($global-clr-orange, 15%);
+      }
+    }
+  }
+
+  &-error {
+    background-color: $global-clr-white;
+    width: 80px;
+    height: 80px;
+    padding: 0;
+    border: 4px solid $global-clr-red;
+    position: relative;
+    box-sizing: content-box;
+    animation: animateErrorIcon .5s;
+    @include border-radius(50%);
+
+    &:after, &:before {
+      background: $global-clr-white;
+      content: '';
+      width: 60px;
+      height: 120px;
+      position: absolute;
+      transform: rotate(45deg);
+    }
+    &:before {
+      width: 26px;
+      height: 80px;
+      top: -17px;
+      left: 5px;
+      transform-origin: 60px 60px;
+      transform: rotate(-45deg);
+      @include border-radii(40px,0,0,40px);
+    }
+    &:after {
+      left: 30px;
+      top: -11px;
+      animation: rotatePlaceholder 4.25s ease-in;
+      transform-origin: 0 60px;
+      transform: rotate(-45deg);
+      @include border-radii(0,120px,120px,0);
+    }
+    &-x {
+      display: block;
+      position: relative;
+      z-index: 2;
+    }
+    &-placeholder {
+      width: 80px;
+      height: 80px;
+      border: 4px solid transparentize($global-clr-red, 0.75);
+      position: absolute;
+      left: -4px;
+      top: -4px;
+      z-index: 2;
+      box-sizing: content-box;
+      @include border-radius(50%);
+    }
+    &-fix {
+      background-color: $global-clr-white;
+      width: 5px;
+      height: 90px;
+      position: absolute;
+      left: 28px;
+      top: 8px;
+      z-index: 1;
+      transform: rotate(-45deg);
+    }
+    &-left, &-right {
+      background-color: $global-clr-red;
+      width: 47px;
+      height: 5px;
+      display: block;
+      position: absolute;
+      top: 37px;
+      z-index: 2;
+      @include border-radius(2px);
+    }
+    &-left {
+      left: 17px;
+      animation: animateXLeft .75s;
+      transform: rotate(45deg);
+    }
+    &-right {
+      right: 16px;
+      animation: animateXRight .75s;
+      transform: rotate(-45deg);
+    }
+    @keyframes rotatePlaceholder {
+      0%, 5% {
+        transform: rotate(-45deg);
+      }
+      100%,12% {
+        transform: rotate(-405deg);
+      }
+    }
+    @keyframes animateErrorIcon {
+      0% {
+        opacity: 0;
+        transform: rotateX(100deg);
+      }
+      100% {
+        opacity: 1;
+        transform: rotateX(0deg);
+      }
+    }
+    @keyframes animateXLeft {
+      0%, 65% {
+        left: 82px;
+        top: 95px;
+        width: 0;
+      }
+      84% {
+        width: 47px;
+        left: 14px;
+        top: 33px;
+      }
+      100% {
+        width: 47px;
+        left: 17px;
+        top: 37px;
+      }
+    }
+    @keyframes animateXRight {
+      0%, 65% {
+        width: 0;
+        right: 82px;
+        top: 95px;
+      }
+      84% {
+        width: 47px;
+        right: 14px;
+        top: 33px;
+      }
+      100% {
+        width: 47px;
+        right: 16px;
+        top: 37px;
+      }
+    }
+  }
+}
