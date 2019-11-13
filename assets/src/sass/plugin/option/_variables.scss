@@ -5,6 +5,7 @@ $global-font-size: 18px;
 
 /* Color Settings */
 $global-clr-white: #FFFFFF;
+$global-clr-black: #000000;
 $global-clr-green: #19a55d;
 $global-clr-red: #be0000;
 $global-clr-orange: #ff9900;
@@ -17,6 +18,7 @@ $global-clr-dark-black: #232323;
 
 /* Text Color Settings */
 $global-clr-text-light-gray: #737373;
+$global-clr-text-dark-gray: #17181a;
 /* Color Settings */
 
 /* Site Background Color */
@@ -27,9 +29,13 @@ $global-sitebg-darkblack02: #003158;
 /* Site Gradient Background Color */
 $global-grdint-darkblue01: #001934;
 $global-grdint-darkblue02: #003661;
+
+$global-grdint-red01: #e50000;
+$global-grdint-red02: #890000;
 /* Site Gradient Background Color */
 
 /* Site Image Path */
 $global-img-path: "../../img/";
 $global-img-path-header: "../../img/header/";
+$global-img-path-icons: "../../img/icons/";
 /* Site Image Path */
