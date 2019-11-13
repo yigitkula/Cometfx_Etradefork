@@ -6,6 +6,12 @@
   @include border-radius(6px);
   @include transition-multiple(background 0.3s ease-in-out, border 0.3s ease-in-out, opacity 0.3s ease-in-out);
 
+  &-lg{
+    font-size: 20px;
+    height: 50px;
+    line-height: 1.6;
+  }
+
   &.disabled,
   &:disabled{
     opacity: 1;
@@ -84,116 +90,6 @@
     &:hover{
       background-color: lighten($global-clr-orange, 10%) !important;
       border-color: lighten($global-clr-orange, 10%) !important;
-    }
-  }
-
-  &.btnunderlinescale{
-    position: relative;
-    overflow: hidden;
-
-    &::after {
-      content: '';
-      position: absolute;
-      background-color: $global-clr-white;
-      width: 100%;
-      height: 4px;
-      display: block;
-      bottom: 0;
-      left: 0;
-      @include scaleX(0);
-      @include transition(transform, 0.3s, ease-in-out);
-    }
-
-    &:hover{
-      &::after {
-        @include scaleX(1);
-      }
-    }
-
-    &.softblue{
-      &::after {
-        background-color: $global-clr-soft-blue;
-      }
-    }
-    &.green{
-      &::after {
-        background-color: $global-clr-green;
-      }
-    }
-  }
-}
-
-.btnwidth110{width: 110px !important;}
-.btnwidth160{
-  width: 160px !important;
-  @include ReSassWidthResponsive(480){
-    width: 100% !important;
-  }
-}
-.btnwidth200{width: 200px !important;}
-.btnwidth100100{width: 100% !important;}
-
-.site{
-
-  &-button{
-
-    &-formbottom{
-      margin-top: 20px;
-
-      &-btn{
-        position: relative;
-        width: 100%;
-
-        &::before{
-          content: "";
-          background-color: $global-clr-soft-gray;
-          position: absolute;
-          width: 100%;
-          height: 1px;
-          top: 50%;
-          left: 0;
-        }
-        &.secondary{
-          &::before{background-color: $global-clr-soft-gray;}
-        }
-        &.success{
-          &::before{background-color: $global-clr-green;}
-        }
-        &.info{
-          &::before{background-color: $global-clr-soft-blue;}
-        }
-
-        .btn{
-          color: $global-clr-white !important;
-          background-color: $global-clr-soft-gray;
-          width: 300px;
-          margin: 0 auto;
-          padding-top: 3px !important;
-          padding-bottom: 3px !important;
-          display: block;
-          border:none;
-          font-size: 20px;
-          font-weight: normal;
-          position: relative;
-          z-index: 1;
-
-          @include ReSassWidthResponsive(480){
-            font-size: 17px !important;
-            height: 36px !important;
-            padding-top: 5px!important;
-            padding-bottom: 5px!important;
-          }
-
-          @include ReSassWidthResponsive(400){
-            width: calc(100% + 2px);
-            left: -1px;
-          }
-        }
-
-        .tooltip-wrapper{display: block;}
-        .tooltip-wrapper.disabled{cursor: not-allowed;}
-        .tooltip-wrapper .btn[disabled]{pointer-events: none;}
-      }
     }
   }
 }

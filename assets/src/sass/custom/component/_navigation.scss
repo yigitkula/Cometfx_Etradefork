@@ -23,11 +23,7 @@
     }
 
     &-dropdownmenu{
-      background-color: $global-sitebg-darkblack01;
-
-      &:before{
-        background-color: $global-clr-soft-blue;
-      }
+      background-color: transparentize($global-sitebg-darkblack01 ,0.2);
 
       &.show{
         left: 20px !important;
@@ -40,28 +36,35 @@
         }
       }
 
-      &.dropdown-menu.show[aria-labelledby="DropdownMenu"]{
-        height: 170px !important;
+      &.dropdown-menu.show[aria-labelledby="InstituionalDropdownMenu"]{
+        height: 150px !important;
+      }
+      &.dropdown-menu.show[aria-labelledby="PlatformsDropdownMenu"]{
+        height: 76px !important;
       }
 
       ul.dropdownsubmenu{
-        background-color: transparentize($global-clr-dark-blue, 0.50);
+        background-color: transparentize($global-clr-white ,0.15);
 
         li.submainmenu{
-          a{
-            color: $global-clr-soft-gray;
-            @include transition(color, 0.3s, ease-in-out);
+          @include transition(background, 0.15s, ease-in-out);
 
-            &::before{
-              background-color: $global-clr-soft-gray;
-            }
-            &::after{
-              background-color: $global-clr-soft-blue;
-            }
+          &:hover{
+            background-color: $global-clr-red;
+          }
+
+          a{
+            color: $global-clr-text-dark-gray;
+            font-weight: normal;
+            border-bottom: 1px solid transparentize($global-clr-black, 0.8);
 
             &:hover{
               color: $global-clr-white;
             }
+          }
+
+          &:last-child{
+            a{border-bottom: none;}
           }
         }
       }
@@ -75,12 +78,27 @@
       }
 
       &-item{
-        height: 45px !important;
+        height: 47px !important;
 
         > a{
           color: transparentize($global-clr-white, 0.5);
           padding: 11px 0;
           margin: auto 20px;
+
+          &::after{
+            background-color: $global-clr-red;
+          }
+        }
+
+        &:hover > a,
+        &.active > a{
+          color: $global-clr-white;
+        }
+
+        &.show > a[data-toggle^="dropdown"]{
+          &::before{
+            border-bottom-color: $global-clr-red;
+          }
         }
       }
 

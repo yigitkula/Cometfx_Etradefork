@@ -1,8 +1,20 @@
 .btn{
-  &-nonradius{
-    &-trbl{
-      @include border-radius-top-right(0 !important);
-      @include border-bottom-left-radius(0 !important);
+  @include border-radius(25px);
+
+  &-lg{
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  &-gradient{
+
+    &-red{
+      border: none;
+      @include gradient($global-grdint-red01, $global-grdint-red02);
     }
   }
 }
+
+.btnwidth110{width: 110px !important;}
+.btnwidth200{width: 200px !important;}
+.btnwidth100100{width: 100% !important;}
