@@ -1,0 +1,13 @@
+
+.home{
+  &-technology{
+    background-color: $global-clr-white;
+    background-image: url(#{$global-img-path-section}/section_light_background_homepage_technology.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    min-height: 1000px;
+    position: relative;
+    top: -330px;
+    z-index: 0;
+  }
+}

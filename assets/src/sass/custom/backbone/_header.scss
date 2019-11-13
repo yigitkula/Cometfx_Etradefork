@@ -1,34 +1,52 @@
 .header{
   color: $global-clr-white;
-  background-color: $global-sitebg-darkblack01;
-  background-image: url(#{$global-img-path-header}/header_dark_background_big_homepage.png);
-  background-repeat: no-repeat;
-  background-position: bottom center;
-  padding-top: 40px;
-  min-height: 920px;
+  background-color: transparent;
   position: relative;
+  z-index: 1;
+  overflow: hidden;
 
-  &::before{
-    //content: "";
+  &::before,
+  &::after{
+    content: "";
     background-color: $global-sitebg-darkblack01;
     width: 100%;
-    height: calc(100% - 350px);
+    height: 100%;
     position: absolute;
-    left: 0;
     top: 0;
     z-index: -1;
   }
+  &::before{
+    left: calc(-50% - 190px);
+  }
+  &::after{
+    right: calc(-50% - 190px);
+  }
 
   &-web{
-    padding-left: 0;
-    padding-right: 0;
-    border-top: 2px solid $global-clr-red;
+    background-color: transparent;
+    background-image: url(#{$global-img-path-header}/header_dark_background_big_homepage.png);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    padding: 40px 0 0;
+    min-height: 920px;
+
+    &::before{
+      content: "";
+      background-color: $global-sitebg-darkblack01;
+      width: 100%;
+      height: calc(100% - 330px);
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
   }
 
   &-navigation{
     display: flex;
     justify-content: center;
     height: 52px;
+    border-top: 2px solid $global-clr-red;
   }
 
   &-headhome{
