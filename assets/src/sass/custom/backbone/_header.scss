@@ -1,7 +1,23 @@
 .header{
+  color: $global-clr-white;
   background-color: $global-sitebg-darkblack01;
+  background-image: url(#{$global-img-path-header}/header_dark_background_big_homepage.png);
+  background-repeat: no-repeat;
+  background-position: bottom center;
   padding-top: 40px;
-  min-height: 500px;
+  min-height: 920px;
+  position: relative;
+
+  &::before{
+    //content: "";
+    background-color: $global-sitebg-darkblack01;
+    width: 100%;
+    height: calc(100% - 350px);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+  }
 
   &-web{
     padding-left: 0;
@@ -12,5 +28,27 @@
   &-navigation{
     display: flex;
     justify-content: center;
+  }
+
+  &-slogan{
+    padding-top: 110px;
+
+    &-title,
+    &-desc{
+      font-weight: 300;
+
+      strong{
+        font-weight: 700;
+      }
+    }
+
+    &-title{
+      font-size: 45px;
+      letter-spacing: -1.35px;
+    }
+    &-desc{
+      font-size: 30px;
+      letter-spacing: -0.9px;
+    }
   }
 }
