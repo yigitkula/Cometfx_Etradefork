@@ -92,7 +92,7 @@
 
         &.show > a[data-toggle^="dropdown"]{
           &::after {
-            width: 198px;
+            width: 200px;
           }
           &::before {
             content: "";
@@ -131,7 +131,7 @@
 
     &-dropdownmenu{
       background-color: #FFFFFF;
-      margin: -1px 0 0 -1px;
+      margin: 0;
       padding: 0;
       display: block !important;
       opacity:0;
@@ -140,6 +140,7 @@
       height: 0;
       overflow: hidden;
       position: absolute;
+      border: none !important;
       @include transition(height, 0.3s, ease-out);
       @include border-radius(0);
       transform: translate3d(0px, 0px, 0px) !important;

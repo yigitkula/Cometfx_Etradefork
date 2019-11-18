@@ -79,11 +79,13 @@
 
       &-item{
         height: 47px !important;
+        @include transition-multiple(height 0.3s ease-in-out);
 
         > a{
           color: transparentize($global-clr-white, 0.5);
           padding: 11px 0;
           margin: auto 20px;
+          @include transition-multiple(padding 0.3s ease-in-out);
 
           &::after{
             background-color: $global-clr-red;
@@ -131,12 +133,17 @@
             position: absolute;
             top: 0;
             z-index: 0;
+            @include transition-multiple(height 0.2s ease-in-out);
           }
           &::before{
             left: 0;
           }
           &::after{
             right: 0;
+          }
+
+          > img{
+            @include transition-multiple(transform 0.3s ease-in-out);
           }
         }
       }
