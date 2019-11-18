@@ -1,3 +1,32 @@
+/* Header Nav Fixed */
+jQuery(function($) {
+    if($(window).width() > 991){
+
+        $(window).on("load resize scroll",function(e){
+
+            //var bodyWidth = window.innerWidth;
+            //var bodyHeight = window.innerHeight;
+            var scroll = $(window).scrollTop();
+            var headerHeight = $("header.header");
+
+            if (scroll > headerHeight.height()) {
+                //headerHeight.css("top", 0);
+                headerHeight.addClass("navscroll");
+            } else {
+                //headerHeight.css("top", "-" + headerHeight.height() + "px");
+                headerHeight.removeClass("navscroll");
+            }
+
+        }).on("load resize",function(e){
+
+            var headerHeight = $("header.header");
+            $(".headtitle-background").css("padding-top", headerHeight.height() + "px");
+            $(".headtitle").css("min-height", headerHeight.height() + "px");
+
+        });
+    }
+});
+/* Header Nav Fixed */
 
 /* Navbar Menu */
 $(function() {
