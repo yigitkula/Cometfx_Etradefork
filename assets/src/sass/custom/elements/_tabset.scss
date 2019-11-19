@@ -33,7 +33,7 @@
       border: 1px solid $global-border-light-gray;
       border-top: none;
       min-height: 200px;
-      @include border-radii(0,0,10px,10px);
+      @include border-radii(0,0,14px,14px);
 
       &-bottombtn{
         text-align: center;
