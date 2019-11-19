@@ -7,7 +7,7 @@
   $headerclassname: &;
 
   &.navscroll{
-    background-color: transparentize($global-sitebg-darkblack01, 0.10);
+    background-color: transparentize($global-sitebg-darkblack01, 0.02);
 
     #{$headerclassname}-web{margin-top: 10px;}
     #{$headerclassname}-navigation{}
@@ -58,7 +58,7 @@
     color: $global-clr-white;
     background-repeat: no-repeat;
     background-position: bottom center;
-    padding-top: 50px;
+    padding-top: 92px;
     overflow: hidden;
     position: relative;
     z-index: 2;
@@ -115,10 +115,10 @@
           margin: 8px;
 
           &:hover{
-            .icons-forex{background-position: 0 -45px;}
-            .icons-indicies{background-position: -50px -45px;}
-            .icons-commodities{background-position: -100px -45px;}
-            .icons-crypto{background-position: -150px -45px;}
+            .icons-forex{background-position: 0 0;}
+            .icons-indicies{background-position: -50px 0;}
+            .icons-commodities{background-position: -100px 0;}
+            .icons-crypto{background-position: -150px 0;}
           }
         }
 

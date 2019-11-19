@@ -13,8 +13,9 @@ html {
 }
 
 body {
-  font-size: $global-font-size;
+  color: $global-clr-text-dark-gray;
   background-color: $global-clr-white;
+  font-size: $global-font-size;
   margin: 0;
   padding: 0;
   width: 100%;
@@ -118,7 +119,7 @@ p{
 }
 
 strong, b{
-  font-weight: 500;
+  font-weight: 700;
 }
 
 small {
