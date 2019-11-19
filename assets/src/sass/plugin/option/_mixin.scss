@@ -132,6 +132,15 @@
   @include transform(skew(#{$x}deg, #{$y}deg));
 }
 
+@mixin transform-multiple($transforms-multi) {
+  transform: $transforms-multi;
+  -o-transform: $transforms-multi;
+  -ms-transform: $transforms-multi;
+  -moz-transform: $transforms-multi;
+  -webkit-transform: $transforms-multi;
+  -khtml-transform: $transforms-multi;
+}
+
 @mixin transform-origin ($origin) {
   transform-origin: $origin;
   -o-transform-origin: $origin;

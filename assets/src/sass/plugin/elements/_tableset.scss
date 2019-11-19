@@ -1,7 +1,4 @@
-$globalSvgIconImgPath : "../../img/global/svg";
-
 .site{
-
   &table{
     color: $global-clr-dark-blue;
     margin: 0;
@@ -22,44 +19,32 @@ $globalSvgIconImgPath : "../../img/global/svg";
       }
     }
 
-    thead th{
-      font-size: 17px;
-      border-top-width: 0;
-      border-bottom-width: 1px;
-      padding-top: 3px;
-      padding-bottom: 3px;
-
-      @include ReSassWidthResponsive(768){
-        font-size: 15px;
+    thead{
+      th{
+        font-size: 17px;
+        border-top-width: 0;
+        border-bottom-width: 1px;
+        padding-top: 3px;
+        padding-bottom: 3px;
       }
     }
 
-    tbody td{
-      padding-top: 5px;
-      padding-bottom: 5px;
-      line-height: 1;
-    }
-
-    i.arrow{
-      display: block;
-      width: 0;
-      height: 0;
-      position: absolute;
-      left: 5px;
-      top: calc(50% - 2px);
-      &up{
-        border-left: 4px solid transparent;
-        border-right: 4px solid transparent;
-        border-bottom: 4px solid $global-clr-green;
-      }
-      &down{
-        border-left: 4px solid transparent;
-        border-right: 4px solid transparent;
-        border-top: 4px solid $global-clr-red;
+    tbody{
+      td{
+        padding-top: 5px;
+        padding-bottom: 5px;
+        line-height: 1;
       }
     }
+  }
+}
 
+
+// Responsive
+.site{
+  &table{
     &responsive{
+
       @include ReSassWidthResponsive(768){
         display:block;
         text-align:left !important;
@@ -78,7 +63,6 @@ $globalSvgIconImgPath : "../../img/global/svg";
         }
 
         thead tr, tbody tr{
-          //background:#FFFFFF;
           border:1px solid transparentize($global-clr-soft-gray, 0.7);
           border-bottom:0;
           margin:10px 0;
@@ -115,24 +99,6 @@ $globalSvgIconImgPath : "../../img/global/svg";
                 overflow: hidden;
                 font-weight: normal;
               }
-
-              &.resp-td-p-0{
-                padding-left: 0 !important;
-                padding-right: 0 !important;
-
-                &::before{
-                  display: none;
-                }
-              }
-
-              &.resp-td-p-10{
-                padding-left: 10px !important;
-                padding-right: 10px !important;
-
-                &::before{
-                  display: none;
-                }
-              }
             }
           }
         }
@@ -150,114 +116,6 @@ $globalSvgIconImgPath : "../../img/global/svg";
           font-size: 15px !important;
         }
       }
-
-      &dataprice{
-        @include ReSassWidthResponsive(768){
-          tbody tr{
-            td:first-child{
-              background-color: transparentize($global-clr-soft-blue, 0.85) !important;
-              font-weight: 500;
-            }
-          }
-        }
-      }
     }
-
-    &responsivebottom{
-      @include ReSassWidthResponsive(768){
-        tbody tr{
-          td{
-            padding: 10px !important;
-            border-bottom: none !important;
-
-            &::before{
-              position: inherit;
-              width: 100%;
-              height: inherit;
-              padding: 0;
-              margin-bottom: 5px;
-            }
-          }
-        }
-        thead tr, tbody tr{
-          border-bottom:1px solid transparentize($global-clr-soft-gray, 0.7);
-        }
-      }
-    }
-
-    &weburllink{
-
-      @include ReSassMinWidthResponsive(992){
-        tbody{
-          tr{
-            cursor: pointer;
-            @include transition(background, 0.1s, ease-in-out);
-
-            &:hover{
-              background-color: $global-clr-soft-blue;
-
-              td{
-                color: $global-clr-white !important;
-                border-color: $global-clr-soft-blue;
-
-                i.arrowup{
-                  border-bottom-color: $global-clr-white !important;
-                }
-                i.arrowdown{
-                  border-top-color: $global-clr-white !important;
-                }
-              }
-            }
-
-            &.selectcell{
-              background-color: $global-clr-soft-blue;
-
-              td{
-                color: $global-clr-white !important;
-                border-color: $global-clr-soft-blue;
-
-                i.arrowup{
-                  border-bottom-color: $global-clr-white !important;
-                }
-                i.arrowdown{
-                  border-top-color: $global-clr-white !important;
-                }
-              }
-            }
-          }
-        }
-      }
-
-    }
-  }
-}
-
-.tableicon{
-  display: inline-block;
-  margin-left: 2px;
-  position: relative;
-  bottom: -2px;
-  display: none !important;
-
-  @include ReSassWidthResponsive(768){
-    display: none;
-  }
-
-  i{
-    background-color: transparent;
-    background-repeat: no-repeat;
-    background-position: center center;
-    display: block;
-    cursor: pointer;
-    width: 8px;
-    height: 4px;
-    margin: 1px 0;
-    padding: 3px 0;
-  }
-  &-arrowup{
-    background-image: url(#{$globalSvgIconImgPath}/Arrow_Up.svg);
-  }
-  &-arrowdown{
-    background-image: url(#{$globalSvgIconImgPath}/Arrow_Down.svg);
   }
 }
