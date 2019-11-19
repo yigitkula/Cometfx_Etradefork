@@ -71,7 +71,8 @@ gulp.task('sass-plugin', () => {
 
 gulp.task('script-plugin', () => {
     return gulp.src([
-        folder_src_main + 'script/plugin/**/app.js'
+        folder_src_main + 'script/plugin/**/app.js',
+        folder_src_main + 'script/plugin/**/aos-app.js'
     ])
         .pipe(plumber())
         .pipe(webpack({

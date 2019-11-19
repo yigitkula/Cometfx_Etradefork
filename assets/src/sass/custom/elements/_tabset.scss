@@ -1,0 +1,50 @@
+.sitetabs{
+
+  .nav{
+    &-center{
+      justify-content: center;
+    }
+    &-btn{
+      .nav{
+        &-link{
+          color: $global-clr-text-dark-gray;
+          font-size: 20px;
+          font-weight: normal;
+          line-height: 1.2;
+          letter-spacing: -0.6px;
+          padding-left: 2rem;
+          padding-right: 2rem;
+          @include border-radius(40px);
+
+          &.active{
+            border: none;
+            color: $global-clr-white;
+            @include gradient($global-grdint-red01, $global-grdint-red02);
+          }
+        }
+      }
+    }
+  }
+
+  .content{
+    &-borderline{
+      margin-top: 40px;
+      padding-bottom: 60px;
+      border: 1px solid $global-border-light-gray;
+      border-top: none;
+      min-height: 200px;
+      @include border-radii(0,0,10px,10px);
+
+      &-bottombtn{
+        text-align: center;
+        max-width: 220px;
+        position: relative;
+        top: -25px;
+        margin: 0 auto;
+
+        .btn{display: block; width: 220px;}
+      }
+    }
+  }
+
+}
