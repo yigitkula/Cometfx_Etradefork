@@ -4,8 +4,7 @@
   $sitetitleclassname: &;
 
   h1,h2,h3,h4,h5,h6,p{position: relative;}
-  h1,h2,h3,h4,h5,h6{color: $global-clr-text-dark-gray;}
-  p{color: $global-clr-text-light-gray;}
+  p{}
   > strong{font-weight: 700;}
   > span{font-weight: normal;}
 
@@ -82,6 +81,16 @@
         left: 0;
       }
     }
+  }
+
+  &-black{
+    h1,h2,h3,h4,h5,h6{color: $global-clr-text-dark-gray;}
+
+  }
+
+  &-white{
+    h1,h2,h3,h4,h5,h6{color: $global-clr-white;}
+    p{color: $global-clr-text-light-gray;}
   }
 
 }

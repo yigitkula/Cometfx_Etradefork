@@ -51,11 +51,6 @@
       }
     }
 
-    .sitetitle{
-      h1,h2,h3,h4,h5,h6{color: $global-clr-white;}
-      p{}
-    }
-
     &-btn{
       display: flex;
       justify-content: center;
@@ -70,5 +65,44 @@
     background-repeat: no-repeat;
     background-position: bottom center;
     min-height: 1100px;
+    padding-top: 350px;
+
+    .ourpartners{
+
+      &-box{
+
+        &-item{
+          background-color: transparentize($global-clr-white, 0.95);
+          text-align: center;
+          -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+        }
+
+        &-icons{
+          margin-bottom: 25px;
+
+          *[class*="icons"]{
+            display: block;
+            margin: 0 auto;
+          }
+        }
+
+        &-desc{
+          color: $global-clr-text-dark-gray;
+          font-size: 18px;
+          font-weight: normal;
+          line-height: 1.11;
+          letter-spacing: -0.54px;
+          margin-top: 5px;
+        }
+
+        &-btn{
+          display: flex;
+          justify-content: center;
+          padding: 40px 0 0;
+          position: relative;
+        }
+      }
+    }
   }
 }
