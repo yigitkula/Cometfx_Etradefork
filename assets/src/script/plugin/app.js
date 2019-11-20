@@ -1,3 +1,18 @@
+/* Head Blur Tab Page Title */
+$(function(){
+    var $pageHeadTagTitle       = $('title');
+    var $pageHeadTagTitleText   = $pageHeadTagTitle.text();
+
+    $(window).focus(function(){
+        $pageHeadTagTitle.text($pageHeadTagTitleText)
+    });
+
+    $(window).blur(function(){
+        $pageHeadTagTitle.text('E-TRADE')
+    });
+});
+/* Head Blur Tab Page Title */
+
 /* Header Nav Fixed */
 jQuery(function($) {
     if($(window).width() > 991){
@@ -78,6 +93,17 @@ jQuery(function($) {
     }
 });
 /* Navbar Menu Active Class */
+
+/* Site Table Horizantal TH Span */
+jQuery(function($) {
+    if($(window).width() > 991){
+        $(window).on("load resize",function(e){
+            var tableHeight = $("table.sitetable.horizantal");
+            $("table.sitetable.horizantal > thead > tr > th > span.thbox").css("width", tableHeight.height() + "px").css("top", (tableHeight.height() - 20) + "px");
+        });
+    }
+});
+/* Site Table Horizantal TH Span */
 
 /* Loading Info */
 console.log("Plugin App Javascript Loading Successful");
