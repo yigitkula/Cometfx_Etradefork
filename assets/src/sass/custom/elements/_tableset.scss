@@ -123,9 +123,26 @@
           line-height: 1.44;
           letter-spacing: -0.54px;
           text-align: center;
-          padding-left: 20px;
-          padding-right: 12px;
+          padding-left: 30px;
+          padding-right: 22px;
           vertical-align: top;
+
+          &.chartarea{
+            text-align: left;
+            padding-left: 40px;
+            padding-right: 22px;
+
+            img{width: 100%;}
+          }
+
+          small.tdsubtext{
+            display: block;
+            font-size: 11px;
+            font-weight: normal;
+            line-height: 1;
+            letter-spacing: -0.33px;
+            text-align: left;
+          }
         }
       }
     }
