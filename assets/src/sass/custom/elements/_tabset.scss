@@ -6,6 +6,11 @@
     }
     &-btn{
       .nav{
+
+        &-item{
+          margin: 0 5px;
+        }
+
         &-link{
           color: $global-clr-text-dark-gray;
           font-size: 20px;
@@ -14,10 +19,15 @@
           letter-spacing: -0.6px;
           padding-left: 2rem;
           padding-right: 2rem;
+          border: none;
           @include border-radius(40px);
+          @include transition-multiple(background-color 0.1s ease-in-out);
+
+          &:hover{
+            background-color: lighten($global-border-light-gray, 20%);
+          }
 
           &.active{
-            border: none;
             color: $global-clr-white;
             @include gradient($global-grdint-red01, $global-grdint-red02);
           }

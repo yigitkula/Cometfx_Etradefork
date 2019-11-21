@@ -20,7 +20,7 @@
         position: relative;
         @include border-radius(0);
 
-        @include ReSassWidthResponsive(400){
+        @include ReSassMaxWidthResponsive(400){
           max-width: 240px;
         }
 
@@ -55,7 +55,7 @@
         border: none;
         @include border-radius(0);
 
-        @include ReSassWidthResponsive(400){
+        @include ReSassMaxWidthResponsive(400){
           max-width: 240px;
         }
 
@@ -100,7 +100,7 @@
       position: relative;
       justify-content: center!important;
 
-      @include ReSassWidthResponsive(768){
+      @include ReSassMaxWidthResponsive(768){
         border-bottom: none;
         flex-direction: column;
         display: none;
@@ -116,7 +116,7 @@
         height: 2px;
         bottom: 0;
 
-        @include ReSassWidthResponsive(768){
+        @include ReSassMaxWidthResponsive(768){
           display: none;
         }
       }
@@ -132,7 +132,7 @@
           background-color: $global-clr-soft-gray;
 
           &:last-child a{
-            @include ReSassWidthResponsive(768){
+            @include ReSassMaxWidthResponsive(768){
               border-bottom: none;
             }
           }
@@ -152,7 +152,7 @@
           @include border-radius(0);
           @include transition(color, 0.2s, linear);
 
-          @include ReSassWidthResponsive(992){
+          @include ReSassMaxWidthResponsive(992){
             min-width: 120px;
           }
 
@@ -173,7 +173,7 @@
             background-color: transparent;
             @include transition(height, 0.2s, linear);
 
-            @include ReSassWidthResponsive(768){
+            @include ReSassMaxWidthResponsive(768){
               width: calc(100% - 0);
             }
           }
@@ -185,7 +185,7 @@
             background-color: transparent;
             border-color: $global-clr-white;
 
-            @include ReSassWidthResponsive(768){
+            @include ReSassMaxWidthResponsive(768){
               background-color: $global-clr-soft-blue;
               border-bottom-color: transparentize($global-clr-white , 0.7);
               border-bottom-style: solid;
@@ -196,7 +196,7 @@
               background-color: $global-clr-soft-blue;
               z-index: 1;
 
-              @include ReSassWidthResponsive(768){
+              @include ReSassMaxWidthResponsive(768){
                 display: none;
               }
             }
@@ -224,18 +224,18 @@
     &-wrapper{
       position: relative;
 
-      @include ReSassWidthResponsive(768){
+      @include ReSassMaxWidthResponsive(768){
         margin: 2px 0;
       }
 
       &-01{
-        @include ReSassWidthResponsive(768){
+        @include ReSassMaxWidthResponsive(768){
           border-bottom: 4px solid $global-clr-soft-blue;
         }
       }
 
       &-02{
-        @include ReSassWidthResponsive(768){
+        @include ReSassMaxWidthResponsive(768){
           border-top: 4px solid $global-clr-dark-blue;
 
           &-bottomborder{
@@ -263,7 +263,7 @@
           margin-top: -40px;
           padding-bottom: 10px;
 
-          @include ReSassWidthResponsive(768){
+          @include ReSassMaxWidthResponsive(768){
             flex-direction: column;
             justify-content: inherit;
             margin: 0;
@@ -277,7 +277,7 @@
             display: flex;
             align-items: center;
 
-            @include ReSassWidthResponsive(768){
+            @include ReSassMaxWidthResponsive(768){
               order: 2;
               display: block;
             }
@@ -287,7 +287,7 @@
               align-items: center;
               padding: 0;
 
-              @include ReSassWidthResponsive(768){
+              @include ReSassMaxWidthResponsive(768){
                 background-color: $global-clr-dark-blue !important;
               }
 
@@ -295,7 +295,7 @@
                 display: inline-block;
                 margin-right: 5px;
 
-                @include ReSassWidthResponsive(768){
+                @include ReSassMaxWidthResponsive(768){
                   display: none;
                 }
               }
@@ -313,7 +313,7 @@
               border: none;
               @include border-radius(0);
 
-              @include ReSassWidthResponsive(768){
+              @include ReSassMaxWidthResponsive(768){
                 top: 0 !important;
               }
 
@@ -334,7 +334,7 @@
             display: flex;
             align-items: center;
 
-            @include ReSassWidthResponsive(768){
+            @include ReSassMaxWidthResponsive(768){
               order: 1;
               justify-content: center;
               margin-bottom: 5px;
@@ -439,10 +439,10 @@
         &-item{
           padding: 0 17px;
 
-          @include ReSassWidthResponsive(480){
+          @include ReSassMaxWidthResponsive(480){
             padding: 0 15px;
           }
-          @include ReSassWidthResponsive(400){
+          @include ReSassMaxWidthResponsive(400){
             padding: 0 5px;
           }
         }
@@ -476,7 +476,7 @@
 }
 
 /* Responsive Bootstrap Tabs Start */
-@include ReSassWidthResponsive(768){
+@include ReSassMaxWidthResponsive(768){
   .nav-tabs-responsive{
 
     @-webkit-keyframes slidePrevArrowAnimation {
@@ -538,18 +538,18 @@
       &-item{
         display: none;
         width: calc(100% /4);
-        @include ReSassWidthResponsive(400){
+        @include ReSassMaxWidthResponsive(400){
           width: calc(100% /3.333);
         }
 
         &.active {
           width: calc(100% /2);
-          @include ReSassWidthResponsive(400){
+          @include ReSassMaxWidthResponsive(400){
             width: calc(100% /2.5);
           }
           &:first-child {
             margin-left: calc(100% /4);
-            @include ReSassWidthResponsive(400){
+            @include ReSassMaxWidthResponsive(400){
               margin-left: calc(100% /3.334);
             }
           }

@@ -1,0 +1,51 @@
+
+.section-item{
+
+  .technology{
+    &-box{
+
+      &-item{
+        text-align: center;
+
+        &:hover{
+          i[class*="icons"]{
+            background-position-y: 0;
+          }
+        }
+      }
+
+      &-icons{
+        margin-bottom: 25px;
+
+        *[class*="icons"]{
+          display: block;
+          margin: 0 auto;
+        }
+      }
+
+      &-title{
+        color: $global-clr-red;
+        font-size: 30px;
+        font-weight: 300;
+        line-height: 1.07;
+        letter-spacing: -0.9px;
+      }
+
+      &-desc{
+        font-size: 18px;
+        font-weight: normal;
+        line-height: 1.11;
+        letter-spacing: -0.54px;
+        margin-top: 5px;
+      }
+
+      &-btn{
+        display: flex;
+        justify-content: center;
+        padding: 40px 0 0;
+        position: relative;
+      }
+    }
+  }
+
+}

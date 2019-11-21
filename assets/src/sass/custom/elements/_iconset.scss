@@ -77,6 +77,33 @@
         }
       }
     }
+
+    &.sprite-ourpartners-180{
+      background-image: url(#{$global-img-path-icons}/icons_spite_ourpartners_180.svg);
+      background-position: 0 -45px;
+      width: 180px;
+      height: 45px;
+      @include transition(background, 0.15s, ease-in-out);
+
+      &.icons-logo01{
+        background-position: 0 -45px;
+        &:hover{
+          background-position: 0 0;
+        }
+      }
+      &.icons-logo02{
+        background-position: -180px -45px;
+        &:hover{
+          background-position: -180px 0;
+        }
+      }
+      &.icons-logo03{
+        background-position: -360px -45px;
+        &:hover{
+          background-position: -360px 0;
+        }
+      }
+    }
   }
 
 }

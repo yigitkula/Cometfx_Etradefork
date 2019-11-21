@@ -45,7 +45,7 @@
   &table{
     &responsive{
 
-      @include ReSassWidthResponsive(768){
+      @include ReSassMaxWidthResponsive(768){
         display:block;
         text-align:left !important;
 
@@ -103,7 +103,7 @@
           }
         }
       }
-      @include ReSassWidthResponsive(576){
+      @include ReSassMaxWidthResponsive(576){
         tbody{
           tr{
             width: 100%;
@@ -111,7 +111,7 @@
           }
         }
       }
-      @include ReSassWidthResponsive(480){
+      @include ReSassMaxWidthResponsive(480){
         thead, tbody, thead tr, tbody tr, thead th, tbody td{
           font-size: 15px !important;
         }

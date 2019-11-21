@@ -19,7 +19,7 @@
     padding: 7px 10px 10px !important;
     @include border-radius(0 !important);
 
-    @include ReSassWidthResponsive(576){
+    @include ReSassMaxWidthResponsive(576){
       left: 3px!important;
       right: 3px!important;
     }
@@ -31,7 +31,7 @@
       margin: 5px 0 0!important;
       background-clip: inherit !important;
 
-      @include ReSassWidthResponsive(576){
+      @include ReSassMaxWidthResponsive(576){
         max-width: none !important;
         margin: 3px 0 0!important;
       }
@@ -45,7 +45,7 @@
         border-bottom-width: 12px !important;
         top: -12px !important;
 
-        @include ReSassWidthResponsive(576){
+        @include ReSassMaxWidthResponsive(576){
           border-left-width: 7px !important;
           border-right-width: 7px !important;
           border-bottom-width: 7px !important;
@@ -59,7 +59,7 @@
         border-bottom-width: 11px !important;
         top: -11px !important;
 
-        @include ReSassWidthResponsive(576){
+        @include ReSassMaxWidthResponsive(576){
           border-left-width: 6px !important;
           border-right-width: 6px !important;
           border-bottom-width: 6px !important;
@@ -67,7 +67,7 @@
         }
       }
 
-      @include ReSassWidthResponsive(576){
+      @include ReSassMaxWidthResponsive(576){
         &::before{
           left: calc(50% - 12px) !important;
           right: auto !important;
