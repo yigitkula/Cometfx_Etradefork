@@ -65,6 +65,7 @@
     background-position: bottom center;
     padding-top: 320px;
     padding-bottom: 100px;
+    margin-top: -2px;
 
     @include ReSassMinHeightResponsive(1920){
       background-position: top center;
@@ -80,10 +81,22 @@
           padding: 3px;
           border: 2px solid #303134;
           @include border-radius(10px);
+          @include transition-multiple(border 0.15s ease-in-out);
 
           &:hover{
+            border-color: transparentize($global-clr-white, 0.80);
+
+
             i[class*="icons"]{
               background-position-y: 0;
+            }
+
+            > div{
+              background-color: transparentize($global-clr-white, 0.93);
+            }
+
+            a{
+              color: transparentize($global-clr-white, 0.4);
             }
           }
         }
@@ -94,6 +107,7 @@
           padding: 45px 25px 40px;
           @include border-radius(8px);
           @include backdrop-filter-multiple(blur(45px));
+          @include transition-multiple(background 0.15s ease-in-out);
         }
 
         &-icons{
@@ -121,6 +135,7 @@
 
           a{
             color: $global-clr-text-light-gray;
+            @include transition-multiple(color 0.15s ease-in-out);
           }
 
         }
