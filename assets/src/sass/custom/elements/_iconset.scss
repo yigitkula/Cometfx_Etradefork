@@ -104,6 +104,33 @@
         }
       }
     }
+
+    &.sprite-footer-contact-60{
+      background-image: url(#{$global-img-path-icons}/icons_spite_footer_contact_60.svg);
+      background-position: 0 -60px;
+      width: 60px;
+      height: 60px;
+      @include transition(background, 0.15s, ease-in-out);
+
+      &.icons-mail{
+        background-position: 0 -60px;
+        &:hover{
+          background-position: 0 0;
+        }
+      }
+      &.icons-phone{
+        background-position: -60px -60px;
+        &:hover{
+          background-position: -60px 0;
+        }
+      }
+      &.icons-map{
+        background-position: -120px -60px;
+        &:hover{
+          background-position: -120px 0;
+        }
+      }
+    }
   }
 
 }

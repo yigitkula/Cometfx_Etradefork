@@ -1,6 +1,6 @@
 /* Header Web Menu */
 .dfn{
-  $navheadclassname: &;
+  $dfnnavclassname: &;
 
   &-megamenu{
     position: relative;
@@ -20,11 +20,9 @@
     color:#FFFFFF;
     font-size:14px;
     padding:0;
-    $navmenuclassname: &;
 
     &-list{
       display:flex;
-      //justify-content: space-between;
       min-height:44px;
       margin: 0;
 
@@ -38,42 +36,7 @@
       li{position: relative;}
 
       &-item{
-        > a{
-          color:#FFFFFF;
-          display: block;
-          padding:10px 15px;
-          position:relative;
-          height: 100%;
-          white-space: nowrap;
-          @include transition(color, 0.3s, ease-in-out);
 
-          &::after {
-            content: '';
-            position: absolute;
-            background-color: #FFFFFF;
-            width: 0;
-            height: 2px;
-            display: block;
-            bottom: 0;
-            left: 0;
-            @include transition(width, 250ms, ease-in-out);
-
-            @include ReSassMaxWidthResponsive(992){
-              height: 1px;
-            }
-          }
-
-          @include ReSassMaxWidthResponsive(992){
-            margin: 0;
-            padding: 10px 0;
-
-            &::after{
-              bottom: -1px;
-            }
-          }
-        }
-
-        &:hover,
         &.active{
           > a{
             &::after {
@@ -90,25 +53,52 @@
           }
         }
 
+        > a{
+          color:#FFFFFF;
+          display: block;
+          padding:10px 15px;
+          position:relative;
+          height: 100%;
+          white-space: nowrap;
+          @include transition(color, 0.3s, ease-in-out);
+
+          &::after {
+            content: '';
+            position: absolute;
+            background-color: #FFFFFF;
+            width: 0;
+            height: 2px;
+            display: block;
+            left: 0;
+            @include transition(width, 250ms, ease-in-out);
+
+            @include ReSassMaxWidthResponsive(992){
+              height: 1px;
+            }
+          }
+
+          @include ReSassMaxWidthResponsive(992){
+            margin: 0;
+            padding: 10px 0;
+          }
+        }
+
         &.show > a[data-toggle^="dropdown"]{
           &::after {
-            width: 200px;
+            width: 200px !important;
           }
           &::before {
             content: "";
             position: absolute;
             width: 0;
             height: 0;
-            border-left: 8px solid transparent;
-            border-right: 8px solid transparent;
-            border-bottom: 8px solid #FFFFFF;
             left: 10px;
-            bottom: 0;
+            z-index: 1;
           }
         }
 
         &.navdropdown{
-          #{$navmenuclassname}-megadropdown{
+          #{$dfnnavclassname}-menu-megadropdown{
             //display: block !important;
           }
         }
@@ -141,10 +131,10 @@
       overflow: hidden;
       position: absolute;
       border: none !important;
+      transform: translate3d(0px, 0px, 0px) !important;
+      z-index: 0;
       @include transition(height, 0.3s, ease-out);
       @include border-radius(0);
-      transform: translate3d(0px, 0px, 0px) !important;
-      top: 47px !important;
 
       &.show{
         display: block !important;
@@ -185,6 +175,83 @@
           display: block;
           position: relative;
         }
+      }
+    }
+  }
+
+  &-headnav{
+    #{$dfnnavclassname}-menu{
+
+      &-list{
+        &-item{
+
+          > a{
+            &::after {
+              bottom: 0;
+            }
+
+            @include ReSassMaxWidthResponsive(992){
+              &::after{
+                bottom: -1px;
+              }
+            }
+          }
+
+          &:hover{
+            > a{
+              &::after {
+                width: 100%;
+              }
+            }
+          }
+
+          &.show > a[data-toggle^="dropdown"]{
+            &::before {
+              border-left: 8px solid transparent;
+              border-right: 8px solid transparent;
+              border-bottom: 8px solid #FFFFFF;
+              bottom: 0;
+            }
+          }
+        }
+      }
+
+      &-dropdownmenu{
+        top: 47px !important;
+      }
+    }
+  }
+
+  &-footnav{
+    #{$dfnnavclassname}-menu{
+      &-list{
+        &-item{
+          > a{
+            &::after {
+              top: 0;
+            }
+
+            @include ReSassMaxWidthResponsive(992){
+              &::after{
+                top: -1px;
+              }
+            }
+          }
+
+          &.show > a[data-toggle^="dropdown"]{
+            &::before {
+              border-left: 8px solid transparent;
+              border-right: 8px solid transparent;
+              border-bottom: 8px solid #FFFFFF;
+              top: -6px;
+            }
+          }
+        }
+      }
+
+      &-dropdownmenu{
+        top: auto !important;
+        bottom: 47px !important;
       }
     }
   }
@@ -352,15 +419,15 @@
       position: fixed;
       @include translateX(260px);
 
-      #{$navheadclassname}-menu{
+      #{$dfnnavclassname}-menu{
         @include translateX(-260px);
         @include transition(transform, 0.3s, ease-in-out);
       }
-      #{$navheadclassname}-mobilemenu-mask{
+      #{$dfnnavclassname}-mobilemenu-mask{
         display:block !important;
       }
 
-      #{$navheadclassname}-mobilemenu-btn{
+      #{$dfnnavclassname}-mobilemenu-btn{
 
         .btntext{
           opacity: 0;
@@ -390,7 +457,7 @@
     }
 
     &-megamenu{
-      #{$navheadclassname}-canvaskapat{
+      #{$dfnnavclassname}-canvaskapat{
         display:block;
       }
     }

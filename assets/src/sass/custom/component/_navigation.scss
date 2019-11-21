@@ -1,9 +1,11 @@
 
 .dfn{
+  $dfnnavclassname: &;
 
   &-nav{
     background-color: transparent;
   }
+
   &-menu{
     color: $global-clr-white;
     font-size: 17px;
@@ -37,10 +39,10 @@
       }
 
       &.dropdown-menu.show[aria-labelledby="InstituionalDropdownMenu"]{
-        height: 150px !important;
+        height: 148px !important;
       }
       &.dropdown-menu.show[aria-labelledby="PlatformsDropdownMenu"]{
-        height: 76px !important;
+        height: 74px !important;
       }
 
       ul.dropdownsubmenu{
@@ -71,16 +73,7 @@
     }
 
     &-list{
-      min-height: 36px;
-
-      @include ReSassMaxWidthResponsive(992){
-        min-height: auto;
-      }
-
       &-item{
-        height: 47px !important;
-        @include transition-multiple(height 0.3s ease-in-out);
-
         > a{
           color: transparentize($global-clr-white, 0.5);
           padding: 11px 0;
@@ -96,64 +89,129 @@
         &.active > a{
           color: $global-clr-white;
         }
+      }
+    }
 
-        &.show > a[data-toggle^="dropdown"]{
-          &::before{
-            border-bottom-color: $global-clr-red;
+  }
+
+  &-headnav{
+    #{$dfnnavclassname}-menu{
+
+      &-list{
+        min-height: 36px;
+
+        @include ReSassMaxWidthResponsive(992){
+          min-height: auto;
+        }
+
+        &-item{
+          height: 47px !important;
+          @include transition-multiple(height 0.3s ease-in-out);
+
+          &.show > a[data-toggle^="dropdown"]{
+            &::before{
+              border-bottom-color: $global-clr-red ;
+            }
           }
         }
-      }
 
-      &-logo{
-        top: -2px;
+        &-logo{
+          top: -2px;
 
-        &::before{
-          content: "";
-          background-color: $global-sitebg-darkblack01;
-          width: 100%;
-          height: 2px;
-          position: absolute;
-          left: 0;
-          top: 0;
-          z-index: 0;
-        }
-
-        > a{
-          padding-left: 15px;
-          padding-right: 15px;
-          position: relative;
-          z-index: 1;
-
-          &::before,
-          &::after{
+          &::before{
             content: "";
-            background-color: $global-clr-red;
-            width: 2px;
-            height: 35px;
+            background-color: $global-sitebg-darkblack01;
+            width: 100%;
+            height: 2px;
             position: absolute;
+            left: 0;
             top: 0;
             z-index: 0;
-            @include transition-multiple(height 0.2s ease-in-out);
-          }
-          &::before{
-            left: 0;
-          }
-          &::after{
-            right: 0;
           }
 
-          > img{
-            @include transition-multiple(transform 0.3s ease-in-out);
+          > a{
+            padding-left: 15px;
+            padding-right: 15px;
+            position: relative;
+            z-index: 1;
+
+            &::before,
+            &::after{
+              content: "";
+              background-color: $global-clr-red;
+              width: 2px;
+              height: 35px;
+              position: absolute;
+              top: 0;
+              z-index: 0;
+              @include transition-multiple(height 0.2s ease-in-out);
+            }
+            &::before{
+              left: 0;
+            }
+            &::after{
+              right: 0;
+            }
+
+            > img{
+              @include transition-multiple(transform 0.3s ease-in-out);
+            }
           }
         }
       }
     }
   }
 
+  &-footnav{
+    #{$dfnnavclassname}-menu{
+      &-list{
+        padding-bottom: 15px;
+        position: relative;
+
+        &::before{
+          content: "";
+          background-color: lighten($global-sitebg-darkblack01, 10%);
+          width: calc(100% - 40px);
+          height: 1px;
+          position: absolute;
+          left: 20px;
+          bottom: 0;
+        }
+
+        &-item{
+
+          &:first-child{
+            &::before{
+              display: none !important;
+            }
+          }
+
+          &::before{
+            content: "";
+            background-color: $global-clr-red;
+            width: 4px;
+            height: 4px;
+            position: absolute;
+            left: 0;
+            top: calc(50% - 3px);
+            @include translateX(-50%);
+            border-radius: 50%;
+          }
+
+          &.show > a[data-toggle^="dropdown"]{
+            &::before{
+              border-bottom-color: $global-clr-red ;
+            }
+          }
+        }
+      }
+    }
+  }
+
+
   &-mobilemenu{
 
     &-mask{
-      //background-color: transparentize($global-clr-dark-blue, 0.5);
       background-color: rgba(0,0,0,0.6);
     }
 
@@ -166,22 +224,6 @@
 
         &::before{
           background-color: transparentize($global-clr-soft-gray, 0.7);
-        }
-
-        .header-navigation-logo{
-          margin: 0;
-
-          &-symbol {
-            width: 30px;
-            height: 30px;
-            margin-right: 4px;
-          }
-          &-icrypex {
-            font-size: 25px;
-          }
-          &-cryptoexchange {
-            font-size: 11px;
-          }
         }
       }
     }
