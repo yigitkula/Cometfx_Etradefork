@@ -6,6 +6,12 @@
 
       &-item{
         text-align: center;
+
+        &:hover{
+          i[class*="icons"]{
+            background-position-y: 0;
+          }
+        }
       }
 
       &-icons{

@@ -28,7 +28,7 @@
       min-height:44px;
       margin: 0;
 
-      @include ReSassWidthResponsive(992){
+      @include ReSassMaxWidthResponsive(992){
         width: 100%;
         flex-direction: column;
         padding: 0 10px;
@@ -58,12 +58,12 @@
             left: 0;
             @include transition(width, 250ms, ease-in-out);
 
-            @include ReSassWidthResponsive(992){
+            @include ReSassMaxWidthResponsive(992){
               height: 1px;
             }
           }
 
-          @include ReSassWidthResponsive(992){
+          @include ReSassMaxWidthResponsive(992){
             margin: 0;
             padding: 10px 0;
 
@@ -84,7 +84,7 @@
 
         > a[aria-expanded^="false"]{
           &::after {
-            @include ReSassWidthResponsive(992){
+            @include ReSassMaxWidthResponsive(992){
               @include scaleX(0);
             }
           }

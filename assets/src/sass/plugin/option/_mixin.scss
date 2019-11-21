@@ -141,6 +141,15 @@
   -khtml-transform: $transforms-multi;
 }
 
+@mixin backdrop-filter-multiple($backdrop-filter-multi) {
+  backdrop-filter: $backdrop-filter-multi;
+  -o-backdrop-filter: $backdrop-filter-multi;
+  -ms-backdrop-filter: $backdrop-filter-multi;
+  -moz-backdrop-filter: $backdrop-filter-multi;
+  -webkit-backdrop-filter: $backdrop-filter-multi;
+  -khtml-backdrop-filter: $backdrop-filter-multi;
+}
+
 @mixin transform-origin ($origin) {
   transform-origin: $origin;
   -o-transform-origin: $origin;

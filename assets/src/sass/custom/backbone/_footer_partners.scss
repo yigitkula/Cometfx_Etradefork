@@ -2,7 +2,6 @@
 .foot{
   &-platforms{
     background-color: $global-sitebg-darkblack01;
-    min-height: 500px;
 
     &-imgbox{
       margin-bottom: 20px;
@@ -64,22 +63,41 @@
     background-image: url(#{$global-img-path-section}/section_dark_footer_top_partner_background.jpg);
     background-repeat: no-repeat;
     background-position: bottom center;
-    min-height: 1100px;
-    padding-top: 350px;
+    padding-top: 320px;
+    padding-bottom: 100px;
+
+    @include ReSassMinHeightResponsive(1920){
+      background-position: top center;
+      background-size: cover;
+    }
 
     .ourpartners{
 
       &-box{
+        margin-top: 25px;
 
         &-item{
+          padding: 3px;
+          border: 2px solid #303134;
+          @include border-radius(10px);
+
+          &:hover{
+            i[class*="icons"]{
+              background-position-y: 0;
+            }
+          }
+        }
+
+        &-blur{
           background-color: transparentize($global-clr-white, 0.95);
           text-align: center;
-          -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+          padding: 45px 25px 40px;
+          @include border-radius(8px);
+          @include backdrop-filter-multiple(blur(45px));
         }
 
         &-icons{
-          margin-bottom: 25px;
+          margin-bottom: 35px;
 
           *[class*="icons"]{
             display: block;
@@ -88,21 +106,32 @@
         }
 
         &-desc{
-          color: $global-clr-text-dark-gray;
+          color: $global-clr-text-light-gray;
           font-size: 18px;
           font-weight: normal;
           line-height: 1.11;
           letter-spacing: -0.54px;
           margin-top: 5px;
-        }
 
-        &-btn{
-          display: flex;
-          justify-content: center;
-          padding: 40px 0 0;
-          position: relative;
+          > p{
+            margin-bottom: 17px;
+
+            &:last-child{margin-bottom: 0;}
+          }
+
+          a{
+            color: $global-clr-text-light-gray;
+          }
+
         }
       }
+    }
+
+    &-btn{
+      display: flex;
+      justify-content: center;
+      padding: 50px 0 0;
+      position: relative;
     }
   }
 }

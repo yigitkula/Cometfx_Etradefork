@@ -7,7 +7,7 @@
     line-height: 1;
     margin-bottom: 6px;
 
-    @include ReSassWidthResponsive(480){
+    @include ReSassMaxWidthResponsive(480){
       font-size: 15px;
     }
 
@@ -42,7 +42,7 @@
   .form-group{
     margin-bottom: 10px;
 
-    @include ReSassWidthResponsive(768){
+    @include ReSassMaxWidthResponsive(768){
       line-height: 1;
     }
 
@@ -53,7 +53,7 @@
       max-width: 50%;
       padding-right: 8px;
 
-      @include ReSassWidthResponsive(480){
+      @include ReSassMaxWidthResponsive(480){
         width: 100%;
         max-width: 100%;
       }
@@ -260,7 +260,7 @@
             border-top-color: transparent !important;
             border-right-color: transparent !important;
 
-            @include ReSassWidthResponsive(992){
+            @include ReSassMaxWidthResponsive(992){
               border-left-color: transparent !important;
             }
           }
@@ -278,14 +278,14 @@
         .input-group-text{
           font-size: 20px;
 
-          @include ReSassWidthResponsive(576){
+          @include ReSassMaxWidthResponsive(576){
             font-size: 17px;
           }
         }
         div.form-control{
           padding: 4px 10px;
 
-          @include ReSassWidthResponsive(576){
+          @include ReSassMaxWidthResponsive(576){
             padding: 7px 10px;
           }
         }
@@ -342,7 +342,7 @@
       font-size: 15px;
       margin-top: 1px;
 
-      @include ReSassWidthResponsive(992){
+      @include ReSassMaxWidthResponsive(992){
         margin-top: 3px;
       }
 
@@ -360,7 +360,7 @@
       margin-top: 1px;
       @include transition(color, 0.3s, ease-in-out);
 
-      @include ReSassWidthResponsive(992){
+      @include ReSassMaxWidthResponsive(992){
         font-size: 15px;
         margin-top: 3px;
         white-space: nowrap;
@@ -665,7 +665,7 @@
     align-items: center;
     align-self: flex-start;
 
-    @include ReSassWidthResponsive(992){
+    @include ReSassMaxWidthResponsive(992){
       display: block;
     }
 
@@ -675,7 +675,7 @@
       margin-left: 0;
       margin-right: 3px;
 
-      @include ReSassWidthResponsive(992){
+      @include ReSassMaxWidthResponsive(992){
         display: inline-block;
         position: relative;
         top: 3px;
@@ -702,11 +702,11 @@
       z-index: 0;
       @include transition(all, 0.3s, ease-in-out);
 
-      @include ReSassWidthResponsive(992){
+      @include ReSassMaxWidthResponsive(992){
         top: 2px;
       }
 
-      @include ReSassWidthResponsive(480){
+      @include ReSassMaxWidthResponsive(480){
         font-size: 15px;
       }
 
@@ -977,13 +977,13 @@
   .maxwidth100100{width: 100%;}
   .labelwidth100100{width: 100%;}
 
-  @include ReSassWidthResponsive(1200){
+  @include ReSassMaxWidthResponsive(1200){
     .mobile1200width100100{width: 100% !important; max-width: 100% !important; flex: 0 0 100%;}
   }
-  @include ReSassWidthResponsive(768){
+  @include ReSassMaxWidthResponsive(768){
     .mobile768width100100{width: 100% !important; max-width: 100% !important; flex-basis: 0 !important; flex-grow: 1 !important;}
   }
-  @include ReSassWidthResponsive(480){
+  @include ReSassMaxWidthResponsive(480){
     .mobile480width100100{width: 100% !important; max-width: 100% !important; flex-basis: 0 !important; flex-grow: 1 !important;}
   }
 }

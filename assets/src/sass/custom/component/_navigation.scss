@@ -10,7 +10,7 @@
     font-weight: 300;
     letter-spacing: -0.51px;
 
-    @include ReSassWidthResponsive(992){
+    @include ReSassMaxWidthResponsive(992){
       background-color: $global-sitebg-darkblack01;
       display: block !important;
       overflow-x: hidden;
@@ -28,10 +28,10 @@
       &.show{
         left: 20px !important;
 
-        @include ReSassWidthResponsive(1400){
+        @include ReSassMaxWidthResponsive(1400){
           left: 10px !important;
         }
-        @include ReSassWidthResponsive(992){
+        @include ReSassMaxWidthResponsive(992){
           left: 0 !important;
         }
       }
@@ -73,7 +73,7 @@
     &-list{
       min-height: 36px;
 
-      @include ReSassWidthResponsive(992){
+      @include ReSassMaxWidthResponsive(992){
         min-height: auto;
       }
 
@@ -159,7 +159,7 @@
 
     &-header{
 
-      @include ReSassWidthResponsive(992){
+      @include ReSassMaxWidthResponsive(992){
         display: flex !important;
         justify-content: center;
         align-items: center;
@@ -187,7 +187,7 @@
     }
 
     &-btn{
-      @include ReSassWidthResponsive(992){
+      @include ReSassMaxWidthResponsive(992){
 
         .btntext{
           small{
@@ -212,7 +212,7 @@
   &.navscroll{
 
     .dfn-mobilemenu-header{
-      @include ReSassWidthResponsive(992){
+      @include ReSassMaxWidthResponsive(992){
         &::before{
           @include scaleX(0);
         }

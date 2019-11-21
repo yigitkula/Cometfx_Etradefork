@@ -35,7 +35,7 @@
 }
 
 .headtitle{
-  background-color: $global-sitebg-darkblack01;
+  background-color: #141414;
   width: 100%;
   height: 100%;
   position: relative;
@@ -43,7 +43,7 @@
   &::before,
   &::after{
     content: "";
-    background-color: $global-sitebg-darkblack01;
+    background-color: #141414;
     position: absolute;
     width: calc(50% - 300px);
     height: 100%;
@@ -115,10 +115,9 @@
           margin: 8px;
 
           &:hover{
-            .icons-forex{background-position: 0 0;}
-            .icons-indicies{background-position: -50px 0;}
-            .icons-commodities{background-position: -100px 0;}
-            .icons-crypto{background-position: -150px 0;}
+            i[class*="icons"]{
+              background-position-y: 0;
+            }
           }
         }
 
