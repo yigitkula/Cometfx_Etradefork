@@ -29,9 +29,13 @@
     z-index: 2;
     @include transition(padding, 0.3s, ease-in-out);
 
-    &-home {
+    &-home{
       background-image: url(#{$global-img-path-header}/header_dark_background_big_homepage.png);
       min-height: 900px;
+    }
+    &-login{
+      background-image: url(#{$global-img-path-header}/header_dark_background_big_loginpage.png);
+      min-height: 430px;
     }
   }
 
@@ -111,4 +115,37 @@
       }
     }
   }
+
+  &-content{
+    height: 90px;
+    margin-top: 40px;
+
+    &-slogan{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      text-align: center;
+
+      &-title,
+      &-desc{
+        font-weight: 300;
+        line-height: 1.15;
+
+        > strong{font-weight: 700;}
+        > span{font-weight: normal;}
+      }
+
+      &-title{
+        font-size: 45px;
+        letter-spacing: -1.35px;
+      }
+      &-desc{
+        font-size: 30px;
+        letter-spacing: -0.9px;
+      }
+    }
+  }
+
 }
