@@ -142,4 +142,10 @@
 		}
 	}
 
+	@if $point==1400 {
+		@media ( max-height: 1400px ) {
+			@content;
+		}
+	}
+
 }

@@ -93,6 +93,10 @@
           i[class*="icons"]{
             background-position-y: 0;
           }
+
+          p,a{
+            color: $global-clr-white;
+          }
         }
 
         i[class*="icons"]{
@@ -100,8 +104,9 @@
           margin: 0 auto 10px;
         }
 
-        a{
+        p,a{
           color: $global-clr-text-light-gray;
+          @include transition-multiple(color 0.15s ease-in-out);
         }
       }
     }
@@ -110,9 +115,11 @@
   &-copyright{
     color: $global-clr-text-light-gray;
     background-color: #1e1e1e;
-    display: flex;
-    justify-content: center;
     padding: 40px 0;
+    font-size: 17px;
+    line-height: 1.18;
+    letter-spacing: -0.43px;
+    text-align: center;
   }
 
 }

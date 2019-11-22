@@ -1,0 +1,114 @@
+
+.headtitle{
+  background-color: #141414;
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+  &::before,
+  &::after{
+    content: "";
+    background-color: #141414;
+    position: absolute;
+    width: calc(50% - 300px);
+    height: 100%;
+    top: 0;
+    z-index: 1;
+  }
+
+  &::before{left: 0;}
+  &::after{right: 0;}
+
+  &-background{
+    color: $global-clr-white;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    padding-top: 92px;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+    @include transition(padding, 0.3s, ease-in-out);
+
+    &-home {
+      background-image: url(#{$global-img-path-header}/header_dark_background_big_homepage.png);
+      min-height: 900px;
+    }
+  }
+
+  &-home{
+    padding-top: 100px;
+    padding-bottom: 330px;
+
+    &-slogan{
+      text-align: center;
+
+      &-title,
+      &-desc{
+        font-weight: 300;
+        line-height: 1.15;
+
+        strong{
+          font-weight: 700;
+        }
+      }
+
+      &-title{
+        font-size: 45px;
+        letter-spacing: -1.35px;
+      }
+      &-desc{
+        font-size: 30px;
+        letter-spacing: -0.9px;
+      }
+    }
+
+    &-instruments{
+      padding: 30px 0 0;
+
+      &-list{
+        display: flex;
+        justify-content: center;
+
+        li{
+          background-color: transparentize($global-clr-black, 0.4);
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 110px;
+          height: 110px;
+          margin: 8px;
+          @include transition(background, 0.15s ease-in-out);
+
+          &:hover{
+            background-color: transparentize($global-clr-black, 0.2);
+
+            i[class*="icons"]{
+              background-position-y: 0;
+            }
+          }
+        }
+
+        *[class*="icons"]{
+          display: block;
+          margin: 0 auto;
+        }
+
+        span{
+          display: block;
+          font-size: 16px;
+          line-height: 1.19;
+          letter-spacing: -0.48px;
+          margin-top: 8px;
+          text-align: center;
+        }
+      }
+
+      &-btn{
+        display: flex;
+        justify-content: center;
+        padding-top: 30px;
+      }
+    }
+  }
+}
