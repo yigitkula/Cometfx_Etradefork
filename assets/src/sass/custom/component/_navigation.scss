@@ -53,12 +53,30 @@
 
           &:hover{
             background-color: $global-clr-red;
+
+            a{
+              &::before{
+                background-color: $global-clr-text-dark-gray;
+              }
+              &::after{
+                border-top-color: $global-clr-red;
+                border-right-color: $global-clr-red;
+              }
+            }
           }
 
           a{
             color: $global-clr-text-dark-gray;
             font-weight: normal;
             border-bottom: 1px solid transparentize($global-clr-black, 0.8);
+
+            &::before{
+              background-color: $global-clr-red;
+            }
+            &::after{
+              border-top-color: $global-clr-white;
+              border-right-color: $global-clr-white;
+            }
 
             &:hover{
               color: $global-clr-white;
@@ -78,7 +96,6 @@
           color: transparentize($global-clr-white, 0.5);
           padding: 11px 0;
           margin: auto 20px;
-          @include transition-multiple(padding 0.3s ease-in-out);
 
           &::after{
             background-color: $global-clr-red;

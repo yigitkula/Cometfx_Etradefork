@@ -77,6 +77,16 @@
       &-box{
         margin-top: 25px;
 
+        .owl{
+          &-stage{
+            &-outer{
+              @include ReSassMinHeightResponsive(1400){
+                overflow: visible !important;
+              }
+            }
+          }
+        }
+
         &-item{
           padding: 3px;
           border: 2px solid #303134;
@@ -86,18 +96,11 @@
           &:hover{
             border-color: transparentize($global-clr-white, 0.80);
 
+            i[class*="icons"]{background-position-y: 0;}
 
-            i[class*="icons"]{
-              background-position-y: 0;
-            }
+            > div{background-color: transparentize($global-clr-white, 0.93);}
 
-            > div{
-              background-color: transparentize($global-clr-white, 0.93);
-            }
-
-            a{
-              color: transparentize($global-clr-white, 0.4);
-            }
+            a{color: transparentize($global-clr-white, 0.4);}
           }
         }
 
