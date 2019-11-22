@@ -4,6 +4,16 @@
   .technology{
     &-box{
 
+      .owl{
+        &-stage{
+          &-outer{
+            @include ReSassMinHeightResponsive(1400){
+              overflow: visible !important;
+            }
+          }
+        }
+      }
+
       &-item{
         text-align: center;
 
