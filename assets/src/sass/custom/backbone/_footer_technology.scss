@@ -1,0 +1,31 @@
+
+.foot{
+
+  &-technology{
+    background-color: $global-sitebg-darkblack01;
+    background-image: url(#{$global-img-path-section}/section_dark_footer_top_technology_background.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    padding-top: 90px;
+    padding-bottom: 100px;
+
+    @include ReSassMinHeightResponsive(1920){
+      background-size: cover;
+      background-position-y: 50px;
+    }
+
+    ul[class*="box"]{
+      margin-bottom: 70vh;
+
+      h3[class*="box-title"]{color: $global-clr-white;}
+      p[class*="box-desc"]{color: $global-clr-text-light-gray;}
+    }
+
+    &-btn{
+      display: flex;
+      justify-content: center;
+      padding: 30px 0 0;
+      position: relative;
+    }
+  }
+}

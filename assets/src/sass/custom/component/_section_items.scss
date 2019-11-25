@@ -1,6 +1,35 @@
 
 .section-item{
 
+  &.foot{
+    &-item{
+      padding: 90px 0;
+      position: relative;
+
+      &::before{
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-left: 30px solid transparent;
+        border-right: 30px solid transparent;
+        border-top: 30px solid $global-clr-white;
+        top: 0;
+        left: 50%;
+        @include translateX(-50%);
+      }
+
+      &-bggray{
+        background-color: $global-clr-light-gray;
+
+        &::before{
+          border-top-color: $global-clr-white;
+        }
+      }
+
+    }
+  }
+
   .technology{
     &-box{
 
@@ -46,7 +75,7 @@
         font-weight: normal;
         line-height: 1.11;
         letter-spacing: -0.54px;
-        margin-top: 5px;
+        margin-top: 10px;
       }
 
       &-btn{
@@ -58,6 +87,72 @@
     }
   }
 
+  .instruments{
+    &-box{
 
+      .owl{
+        &-stage{
+          &-outer{
+            @include ReSassMinHeightResponsive(1400){
+              overflow: visible !important;
+            }
+          }
+        }
+      }
+
+      &-item{
+        text-align: center;
+
+        &:hover{
+          div[class*="icons"]{
+            background-color: $global-clr-red;
+          }
+          i[class*="icons"]{
+            background-position-y: 0;
+          }
+        }
+
+        &-btn{
+          display: flex;
+          justify-content: center;
+          padding: 30px 0 0;
+          position: relative;
+        }
+      }
+
+      &-icons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: darken($global-clr-light-gray, 6.5%);
+        width: 90px;
+        height: 90px;
+        margin: 0 auto 25px;
+        @include border-radius(3px);
+        @include transition-multiple(background 0.15s ease-in-out);
+
+        *[class*="icons"]{
+          display: block;
+          margin: 0 auto;
+        }
+      }
+
+      &-title{
+        color: $global-clr-red;
+        font-size: 30px;
+        font-weight: 300;
+        line-height: 1.07;
+        letter-spacing: -0.9px;
+      }
+
+      &-desc{
+        font-size: 18px;
+        font-weight: normal;
+        line-height: 1.11;
+        letter-spacing: -0.54px;
+        margin-top: 5px;
+      }
+    }
+  }
 
 }

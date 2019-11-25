@@ -37,6 +37,10 @@
       background-image: url(#{$global-img-path-header}/header_dark_background_big_loginpage.png);
       min-height: 430px;
     }
+    &-ins-forex{
+      background-image: url(#{$global-img-path-header}/header_dark_background_big_ins_forex.png);
+      min-height: 430px;
+    }
   }
 
   &-home{
