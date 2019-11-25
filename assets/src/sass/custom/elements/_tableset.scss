@@ -80,6 +80,7 @@
             height: 18px;
             top: 105px;
             left: 0;
+            @include transition-multiple(width 0.15s ease-in-out, top 0.15s ease-in-out);
             @include transform-multiple(rotate(-90deg) translateX(3px));
             @include transform-origin(8px);
 
