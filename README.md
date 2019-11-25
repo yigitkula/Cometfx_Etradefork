@@ -6,6 +6,8 @@
  - [03_Etr_Sign_Up_Thank](https://orcunkilicaslan.github.io/E_Trade_Frontend/web_public/03_Etr_Sign_Up_Thank.html)
  - [04_Etr_Ins_Forex](https://orcunkilicaslan.github.io/E_Trade_Frontend/web_public/04_Etr_Ins_Forex.html)
  - [05_Etr_Ins_Indicies](https://orcunkilicaslan.github.io/E_Trade_Frontend/web_public/05_Etr_Ins_Indicies.html)
+ - [06_Etr_Ins_Commodities](https://orcunkilicaslan.github.io/E_Trade_Frontend/web_public/06_Etr_Ins_Commodities.html)
+ - [07_Etr_Ins_Cryptos](https://orcunkilicaslan.github.io/E_Trade_Frontend/web_public/07_Etr_Ins_Cryptos.html)
   
    
 
