@@ -148,4 +148,33 @@
     }
   }
 
+  &-icons{
+    width: 200px;
+    height: 150px;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    @include translateX(-50%);
+
+    &::before{
+      content: "";
+      background-color: $global-clr-white;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+    }
+
+    i[class*="icons"]{
+      display: block;
+      margin: 0 auto;
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      @include translateX(-50%);
+    }
+
+  }
+
 }
