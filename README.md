@@ -3,6 +3,7 @@
 #### Web Public Area Frontend List
  - [01_Etr_Home_Page](https://orcunkilicaslan.github.io/E_Trade_Frontend/web_public/01_Etr_Home_Page.html)
  - [02_Etr_Sign_Up](https://orcunkilicaslan.github.io/E_Trade_Frontend/web_public/02_Etr_Sign_Up.html)
+ - [03_Etr_Sign_Up_Thank](https://orcunkilicaslan.github.io/E_Trade_Frontend/web_public/03_Etr_Sign_Up_Thank.html)
   
    
 
