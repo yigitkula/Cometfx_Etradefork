@@ -97,7 +97,7 @@ jQuery(function($) {
 /* Site Table Horizantal TH Span */
 jQuery(function($) {
     if($(window).width() > 991){
-        $(window).on("load resize",function(e){
+        $(window).on("load resize scroll",function(e){
             var tableHeight = $("table.sitetable.horizantal");
             $("table.sitetable.horizantal > thead > tr > th > span.thbox").css("width", tableHeight.height() + "px").css("top", (tableHeight.height() - 20) + "px");
         });
