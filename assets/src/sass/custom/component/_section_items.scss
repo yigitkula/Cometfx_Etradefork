@@ -1,6 +1,35 @@
 
 .section-item{
 
+  &.foot{
+    &-item{
+      padding: 90px 0;
+      position: relative;
+
+      &::before{
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-left: 30px solid transparent;
+        border-right: 30px solid transparent;
+        border-top: 30px solid $global-clr-white;
+        top: 0;
+        left: 50%;
+        @include translateX(-50%);
+      }
+
+      &-bggray{
+        background-color: $global-clr-light-gray;
+
+        &::before{
+          border-top-color: $global-clr-white;
+        }
+      }
+
+    }
+  }
+
   .technology{
     &-box{
 
