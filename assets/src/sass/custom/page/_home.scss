@@ -39,6 +39,15 @@
     .instruments{
       &-tab{
         padding: 30px 0 0;
+
+        div[class*="horizantaltable"]{
+          table[class*="horizantal"]{
+            tbody tr td{
+              padding-top: 5px;
+              padding-bottom: 5px;
+            }
+          }
+        }
       }
     }
 

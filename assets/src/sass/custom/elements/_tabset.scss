@@ -36,25 +36,4 @@
     }
   }
 
-  .content{
-    &-horizantaltable{
-      margin-top: 40px;
-      padding-bottom: 50px;
-      border: 1px solid $global-border-light-gray;
-      border-top: none;
-      min-height: 200px;
-      @include border-radii(0,0,14px,14px);
-
-      &-bottombtn{
-        text-align: center;
-        max-width: 220px;
-        position: relative;
-        top: -25px;
-        margin: 0 auto;
-
-        .btn{display: block; width: 220px;}
-      }
-    }
-  }
-
 }

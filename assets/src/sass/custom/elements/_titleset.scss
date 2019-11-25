@@ -4,9 +4,12 @@
   $sitetitleclassname: &;
 
   h1,h2,h3,h4,h5,h6,p{position: relative;}
-  p{}
   > strong{font-weight: 700;}
   > span{font-weight: normal;}
+  p{
+    margin-bottom: 15px;
+    &:last-child{margin-bottom: 0;}
+  }
 
   &-xl{
     h1,h2,h3,h4,h5,h6{font-size: 45px; font-weight: 300; line-height: 1; letter-spacing: -1.35px;}
@@ -61,6 +64,8 @@
 
   &-width900{max-width: 900px;}
   &-width1100{max-width: 1100px;}
+
+  &-mb40{margin-bottom: 40px;}
 
   &-center{
     text-align: center;

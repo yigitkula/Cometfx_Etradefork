@@ -76,6 +76,24 @@
           background-position: -400px 0;
         }
       }
+      &.icons-norequotes{
+        background-position: -600px -100px;
+        &:hover{
+          background-position: -600px 0;
+        }
+      }
+      &.icons-speed2{
+        background-position: -800px -100px;
+        &:hover{
+          background-position: -800px 0;
+        }
+      }
+      &.icons-deep{
+        background-position: -1000px -100px;
+        &:hover{
+          background-position: -1000px 0;
+        }
+      }
     }
 
     &.sprite-ourpartners-180{
