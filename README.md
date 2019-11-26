@@ -13,6 +13,7 @@
  - [10_Etr_Plt_MetaTrader_5](https://orcunkilicaslan.github.io/E_Trade_Frontend/web_public/10_Etr_Plt_MetaTrader_5.html)
  - [11_Etr_Plt_Phase_Pro](https://orcunkilicaslan.github.io/E_Trade_Frontend/web_public/11_Etr_Plt_Phase_Pro.html)
  - [12_Etr_Plt_Thank](https://orcunkilicaslan.github.io/E_Trade_Frontend/web_public/12_Etr_Plt_Thank.html)
+ - [13_Etr_Aggregation](https://orcunkilicaslan.github.io/E_Trade_Frontend/web_public/13_Etr_Aggregation.html)
   
    
 

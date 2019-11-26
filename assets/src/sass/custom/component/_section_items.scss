@@ -1,6 +1,13 @@
 
 .section-item{
 
+  &-btn{
+    display: flex;
+    justify-content: center;
+    padding: 40px 0 0;
+    position: relative;
+  }
+
   &.foot{
     &-item{
       padding: 90px 0;

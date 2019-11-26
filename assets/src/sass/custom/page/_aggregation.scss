@@ -1,0 +1,26 @@
+
+.aggregation{
+
+  &-section{
+    padding: 100px 0;
+  }
+
+  &-head{
+
+    &-aggregation{
+      position: relative;
+
+      &-img{
+        width: calc(100% + 30px);
+        margin: 60px 0;
+        text-align: center;
+        position: relative;
+        left: -15px;
+      }
+
+      &-text{}
+    }
+
+  }
+
+}
