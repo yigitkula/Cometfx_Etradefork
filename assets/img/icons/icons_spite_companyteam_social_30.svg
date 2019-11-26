@@ -1,0 +1,20 @@
+<svg id="icons_spite_companyteam_social_30" xmlns="http://www.w3.org/2000/svg" width="30" height="60" viewBox="0 0 30 60">
+  <g id="icons_spite_companyteam_social_30-2" data-name="icons_spite_companyteam_social_30">
+    <g id="linkedin" transform="translate(0 30)">
+      <rect id="Rectangle_6" data-name="Rectangle 6" width="30" height="30" fill="#cfcfcf" opacity="0"/>
+      <g id="Linkedin_Icon">
+        <path id="Bg" d="M27.779-.06H2.214A2.189,2.189,0,0,0,0,2.1V27.775a2.191,2.191,0,0,0,2.214,2.164H27.779A2.2,2.2,0,0,0,30,27.775V2.1A2.194,2.194,0,0,0,27.779-.06Z" transform="translate(0 0.06)" fill="#737373"/>
+        <path id="in" d="M-20841.977-1929.628v-6.963c0-1.659-.031-3.8-2.314-3.8-2.314,0-2.67,1.811-2.67,3.675v7.083h-4.445v-14.318h4.268v1.958h.063a4.668,4.668,0,0,1,4.209-2.314c4.5,0,5.334,2.968,5.334,6.821v7.852Zm-16.668,0v-14.318h4.449v14.318Zm-.357-18.851a2.584,2.584,0,0,1,2.582-2.581,2.582,2.582,0,0,1,2.58,2.581,2.578,2.578,0,0,1-2.58,2.576A2.579,2.579,0,0,1-20859-1948.479Z" transform="translate(20863.094 1955.19)" fill="#fff" stroke="rgba(0,0,0,0)" stroke-width="1"/>
+      </g>
+    </g>
+  </g>
+  <g id="icons_spite_companyteam_social_30_hover" transform="translate(0 -30)">
+    <g id="linkedin-2" data-name="linkedin" transform="translate(0 30)">
+      <rect id="Rectangle_6-2" data-name="Rectangle 6" width="30" height="30" fill="#cfcfcf" opacity="0"/>
+      <g id="Linkedin_Icon-2" data-name="Linkedin_Icon">
+        <path id="Bg-2" data-name="Bg" d="M27.779-.06H2.214A2.189,2.189,0,0,0,0,2.1V27.775a2.191,2.191,0,0,0,2.214,2.164H27.779A2.2,2.2,0,0,0,30,27.775V2.1A2.194,2.194,0,0,0,27.779-.06Z" transform="translate(0 0.06)" fill="#0e76a8"/>
+        <path id="in-2" data-name="in" d="M-20841.977-1929.628v-6.963c0-1.659-.031-3.8-2.314-3.8-2.314,0-2.67,1.811-2.67,3.675v7.083h-4.445v-14.318h4.268v1.958h.063a4.668,4.668,0,0,1,4.209-2.314c4.5,0,5.334,2.968,5.334,6.821v7.852Zm-16.668,0v-14.318h4.449v14.318Zm-.357-18.851a2.584,2.584,0,0,1,2.582-2.581,2.582,2.582,0,0,1,2.58,2.581,2.578,2.578,0,0,1-2.58,2.576A2.579,2.579,0,0,1-20859-1948.479Z" transform="translate(20863.094 1955.19)" fill="#fff" stroke="rgba(0,0,0,0)" stroke-width="1"/>
+      </g>
+    </g>
+  </g>
+</svg>

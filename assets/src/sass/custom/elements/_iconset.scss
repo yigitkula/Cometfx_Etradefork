@@ -221,6 +221,21 @@
       }
     }
 
+    &.sprite-companyteam-social30{
+      background-image: url(#{$global-img-path-icons}/icons_spite_companyteam_social_30.svg);
+      background-position: 0 -30px;
+      width: 30px;
+      height: 30px;
+      @include transition(background, 0.15s, ease-in-out);
+
+      &.icons-linkedin{
+        background-position: 0 -30px;
+        &:hover{
+          background-position: 0 0;
+        }
+      }
+    }
+
   }
 
 }
