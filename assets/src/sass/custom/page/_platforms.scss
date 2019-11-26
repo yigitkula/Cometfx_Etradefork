@@ -24,6 +24,19 @@
       }
     }
 
+    &-etp{
+      position: relative;
+
+      &-img{
+        width: calc(100% + 90px);
+        margin: 60px 0;
+        position: relative;
+        left: -45px;
+      }
+
+      &-text{}
+    }
+
   }
 
 }
