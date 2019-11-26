@@ -8,6 +8,7 @@
  - [05_Etr_Ins_Indicies](https://orcunkilicaslan.github.io/E_Trade_Frontend/web_public/05_Etr_Ins_Indicies.html)
  - [06_Etr_Ins_Commodities](https://orcunkilicaslan.github.io/E_Trade_Frontend/web_public/06_Etr_Ins_Commodities.html)
  - [07_Etr_Ins_Cryptos](https://orcunkilicaslan.github.io/E_Trade_Frontend/web_public/07_Etr_Ins_Cryptos.html)
+ - [08_Etr_Ins_See_Full](https://orcunkilicaslan.github.io/E_Trade_Frontend/web_public/08_Etr_Ins_See_Full.html)
   
    
 

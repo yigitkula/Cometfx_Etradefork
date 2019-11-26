@@ -17,13 +17,18 @@
     p{font-size: 18px; font-weight: normal; line-height: 1.11; letter-spacing: -0.45px;}
   }
 
+  &-lg{
+    h1,h2,h3,h4,h5,h6{font-size: 36px; font-weight: 300;}
+    h1+p,h2+p,h3+p,h4+p,h5+p,h6+p{margin-top: 15px;}
+  }
+
   &-md{
-    h1,h2,h3,h4,h5,h6{font-size: 36px; font-weight: 500;}
+    h1,h2,h3,h4,h5,h6{font-size: 30px; font-weight: 300; line-height: 1; letter-spacing: -0.9px;}
     h1+p,h2+p,h3+p,h4+p,h5+p,h6+p{margin-top: 15px;}
   }
 
   &-sm{
-    h1,h2,h3,h4,h5,h6{font-size: 20px; font-weight: 500;}
+    h1,h2,h3,h4,h5,h6{font-size: 20px; font-weight: 300;}
     h1+p,h2+p,h3+p,h4+p,h5+p,h6+p{margin-top: 15px;}
   }
 
