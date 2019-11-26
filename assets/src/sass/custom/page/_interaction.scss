@@ -12,7 +12,11 @@
     }
 
     &-desc{
+      color: $global-clr-text-dark-gray;
       margin-top: 20px;
+      font-size: 18px;
+      line-height: 1.11;
+      letter-spacing: -0.54px;
       text-align: center;
 
       p{
