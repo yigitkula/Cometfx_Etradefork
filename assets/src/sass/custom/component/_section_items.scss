@@ -101,6 +101,56 @@
     }
   }
 
+  .ourcompany{
+    &-box{
+
+      .owl{
+        &-stage{
+          &-outer{
+            @include ReSassMinHeightResponsive(1400){
+              overflow: visible !important;
+            }
+          }
+        }
+      }
+
+      &-item{
+        text-align: center;
+
+        &:hover{
+          i[class*="icons"]{
+            background-position-y: 0;
+          }
+        }
+      }
+
+      &-icons{
+        margin-bottom: 25px;
+
+        *[class*="icons"]{
+          display: block;
+          margin: 0 auto;
+        }
+      }
+
+      &-title{
+        color: $global-clr-red;
+        font-size: 30px;
+        font-weight: 300;
+        line-height: 1.07;
+        letter-spacing: -0.9px;
+      }
+
+      &-desc{
+        font-size: 18px;
+        font-weight: normal;
+        line-height: 1.11;
+        letter-spacing: -0.54px;
+        margin-top: 10px;
+      }
+    }
+  }
+
   .instruments{
     &-box{
 

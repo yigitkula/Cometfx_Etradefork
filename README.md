@@ -14,6 +14,7 @@
  - [11_Etr_Plt_Phase_Pro](https://orcunkilicaslan.github.io/E_Trade_Frontend/web_public/11_Etr_Plt_Phase_Pro.html)
  - [12_Etr_Plt_Thank](https://orcunkilicaslan.github.io/E_Trade_Frontend/web_public/12_Etr_Plt_Thank.html)
  - [13_Etr_Aggregation](https://orcunkilicaslan.github.io/E_Trade_Frontend/web_public/13_Etr_Aggregation.html)
+ - [14_Etr_Risk_Management](https://orcunkilicaslan.github.io/E_Trade_Frontend/web_public/14_Etr_Risk_Management.html)
   
    
 
