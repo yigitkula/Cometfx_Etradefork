@@ -25,6 +25,13 @@
         &::before{
           border-top-color: $global-clr-white;
         }
+
+        .interaction-section-btn{
+          &::after{
+            background-color: $global-clr-light-gray !important;
+          }
+        }
+
       }
 
     }
