@@ -98,6 +98,11 @@
 			@content;
 		}
 	}
+	@if $point==1920 {
+		@media ( min-width: 1920px ) {
+			@content;
+		}
+	}
 
 }
 
@@ -119,13 +124,8 @@
 			@content;
 		}
 	}
-	@if $point==1100 {
-		@media ( max-height: 1099px ) {
-			@content;
-		}
-	}
-	@if $point==1400 {
-		@media ( max-height: 1399px ) {
+	@if $point==1000 {
+		@media ( max-height: 999px ) {
 			@content;
 		}
 	}
@@ -135,15 +135,8 @@
 // Min Height Responsive
 @mixin ReSassMinHeightResponsive( $point ) {
 
-
-	@if $point==1920 {
-		@media ( max-height: 1920px ) {
-			@content;
-		}
-	}
-
-	@if $point==1400 {
-		@media ( max-height: 1400px ) {
+	@if $point==1000 {
+		@media ( min-height: 999px ) {
 			@content;
 		}
 	}
