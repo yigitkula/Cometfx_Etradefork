@@ -1,0 +1,29 @@
+
+.platforms{
+
+  &-section{
+    padding: 100px 0;
+  }
+
+  &-head{
+
+    &-mt5{
+      position: relative;
+      margin-bottom: 40px;
+
+      &-img{
+        width: calc(100% + 10px);
+        position: relative;
+        left: -5px;
+      }
+      &-text{
+        width: 50%;
+        position: absolute;
+        top: 0;
+        padding: 10px 40px 10px 0;
+      }
+    }
+
+  }
+
+}
