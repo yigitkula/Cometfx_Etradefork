@@ -11,6 +11,7 @@
  - [08_Etr_Ins_See_Full](https://orcunkilicaslan.github.io/E_Trade_Frontend/web_public/08_Etr_Ins_See_Full.html)
  - [09_Etr_Ins_See_Thank](https://orcunkilicaslan.github.io/E_Trade_Frontend/web_public/09_Etr_Ins_See_Thank.html)
  - [10_Etr_Plt_MetaTrader_5](https://orcunkilicaslan.github.io/E_Trade_Frontend/web_public/10_Etr_Plt_MetaTrader_5.html)
+ - [11_Etr_Plt_Phase_Pro](https://orcunkilicaslan.github.io/E_Trade_Frontend/web_public/11_Etr_Plt_Phase_Pro.html)
   
    
 
