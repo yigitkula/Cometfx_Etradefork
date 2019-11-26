@@ -7,6 +7,7 @@
   > strong{font-weight: 700;}
   > span{font-weight: normal;}
   p{
+    color: $global-clr-text-dark-gray;
     margin-bottom: 15px;
     &:last-child{margin-bottom: 0;}
   }
@@ -17,14 +18,13 @@
     p{font-size: 18px; font-weight: normal; line-height: 1.11; letter-spacing: -0.45px;}
   }
 
-  &-lg{
-    h1,h2,h3,h4,h5,h6{font-size: 36px; font-weight: 300;}
-    h1+p,h2+p,h3+p,h4+p,h5+p,h6+p{margin-top: 15px;}
-  }
-
   &-md{
     h1,h2,h3,h4,h5,h6{font-size: 30px; font-weight: 300; line-height: 1; letter-spacing: -0.9px;}
     h1+p,h2+p,h3+p,h4+p,h5+p,h6+p{margin-top: 15px;}
+    p{font-size: 18px; font-weight: normal; line-height: 1.11; letter-spacing: -0.54px;}
+
+    #{$sitetitleclassname}-subtitle{font-size: 25px; font-weight: 500; letter-spacing: -0.75px;}
+    p ~ #{$sitetitleclassname}-subtitle{margin-top: 25px;}
   }
 
   &-sm{
@@ -93,6 +93,16 @@
     }
   }
 
+  &-right{
+    text-align: right;
+
+    h1,h2,h3,h4,h5,h6{
+      &::before{
+        left: 0;
+      }
+    }
+  }
+
   &-black{
     h1,h2,h3,h4,h5,h6{color: $global-clr-text-dark-gray;}
 
@@ -101,6 +111,16 @@
   &-white{
     h1,h2,h3,h4,h5,h6{color: $global-clr-white;}
     p{color: $global-clr-text-light-gray;}
+  }
+
+  &-group{
+    #{$sitetitleclassname}{
+      margin-bottom: 40px;
+
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
   }
 
 }
