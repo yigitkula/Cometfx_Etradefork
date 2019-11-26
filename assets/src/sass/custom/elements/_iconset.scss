@@ -96,6 +96,33 @@
       }
     }
 
+    &.sprite-ourcompany-200{
+      background-image: url(#{$global-img-path-icons}/icons_spite_ourcompany_200.svg);
+      background-position: 0 -100px;
+      width: 200px;
+      height: 100px;
+      @include transition(background, 0.15s, ease-in-out);
+
+      &.icons-trusted{
+        background-position: 0 -100px;
+        &:hover{
+          background-position: 0 0;
+        }
+      }
+      &.icons-professional{
+        background-position: -200px -100px;
+        &:hover{
+          background-position: -200px 0;
+        }
+      }
+      &.icons-innovative{
+        background-position: -400px -100px;
+        &:hover{
+          background-position: -400px 0;
+        }
+      }
+    }
+
     &.sprite-ourpartners-180{
       background-image: url(#{$global-img-path-icons}/icons_spite_ourpartners_180.svg);
       background-position: 0 -45px;
