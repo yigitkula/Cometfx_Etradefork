@@ -67,7 +67,7 @@
     padding-bottom: 100px;
     margin-top: -2px;
 
-    @include ReSassMinHeightResponsive(1920){
+    @include ReSassMinWidthResponsive(1920){
       background-position: top center;
       background-size: cover;
     }
