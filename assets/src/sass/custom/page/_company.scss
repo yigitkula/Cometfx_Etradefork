@@ -8,6 +8,8 @@
   ul[class*="box"]{
     margin: 50px auto;
     max-width: 1000px;
+
+    &.mb-0{margin-bottom: 0;}
   }
 
   &-team{
