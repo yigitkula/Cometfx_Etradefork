@@ -50,7 +50,7 @@
       .owl{
         &-stage{
           &-outer{
-            @include ReSassMinHeightResponsive(1400){
+            @include ReSassMinWidthResponsive(1400){
               overflow: visible !important;
             }
           }
@@ -107,7 +107,7 @@
       .owl{
         &-stage{
           &-outer{
-            @include ReSassMinHeightResponsive(1400){
+            @include ReSassMinWidthResponsive(1400){
               overflow: visible !important;
             }
           }
@@ -157,7 +157,7 @@
       .owl{
         &-stage{
           &-outer{
-            @include ReSassMinHeightResponsive(1400){
+            @include ReSassMinWidthResponsive(1400){
               overflow: visible !important;
             }
           }

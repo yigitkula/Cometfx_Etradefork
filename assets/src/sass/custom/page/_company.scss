@@ -89,6 +89,18 @@
 
   &-listbox{
 
+    .companylistbox{
+      .owl{
+        &-stage{
+          &-outer{
+            @include ReSassMinWidthResponsive(1400){
+              overflow: visible !important;
+            }
+          }
+        }
+      }
+    }
+
   }
 
 }
