@@ -263,6 +263,24 @@
       }
     }
 
+    &.sprite-form-iconset-24{
+      background-image: url(#{$global-img-path-icons}/icons_spite_form_iconset_24.svg);
+      background-position: 0 0;
+      width: 24px;
+      height: 24px;
+      @include transition(background, 0.15s, ease-in-out);
+
+      &.icons-edit{
+        background-position: 0 0;
+      }
+      &.icons-check{
+        background-position: -24px 0;
+      }
+      &.icons-error{
+        background-position: -48px 0;
+      }
+    }
+
   }
 
 }
