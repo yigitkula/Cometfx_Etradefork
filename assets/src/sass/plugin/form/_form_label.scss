@@ -95,6 +95,34 @@
         color: $global-clr-green;
         z-index: 0 !important;
       }
+
+      &.textarea{
+        height: 350px !important;
+        border-top: 1px solid $global-border-light-gray;
+        border-left: 1px solid $global-border-light-gray;
+        border-right: 1px solid $global-border-light-gray;
+        padding: 15px 30px 15px 15px !important;
+
+        &:focus ~ label,
+        &:valid ~ label{
+          top: -15px;
+        }
+      }
+    }
+
+    &.textarea{
+      label{
+        top: 15px;
+        left: 15px;
+      }
+
+      &.input-group{
+        .input-group-append{
+          height: auto;
+          top: 10px;
+          right: 10px;
+        }
+      }
     }
   }
 
