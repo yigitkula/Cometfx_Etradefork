@@ -38,10 +38,15 @@
             background-color: $global-clr-light-gray !important;
           }
         }
-
       }
-
     }
+  }
+
+  &-formarea{
+    max-width: 900px;
+    margin: 10px auto 0;
+    position: relative;
+    z-index: 1;
   }
 
   .technology{
