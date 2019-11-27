@@ -86,6 +86,35 @@ $('#ourcompanyboxowl').owlCarousel({
 });
 /* Our Company Box */
 
+/* Company List Box */
+$('#companylistboxowl').owlCarousel({
+    loop:false,
+    nav:false,
+    dots:false,
+    autoplay:true,
+    autoplayTimeout:3000,
+    autoplayHoverPause:true,
+    //items:3,
+    margin:30,
+    autoWidth:false,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        480:{
+            items:1
+        },
+        992:{
+            items:2
+        },
+        1200:{
+            items:3
+        }
+    }
+});
+/* Company List Box */
+
 /* Foot Our Partners Box */
 $('#footourpartnersowl').owlCarousel({
     loop:false,
