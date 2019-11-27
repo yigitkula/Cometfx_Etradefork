@@ -17,6 +17,7 @@
  - [14_Etr_Risk_Management](https://orcunkilicaslan.github.io/E_Trade_Frontend/web_public/14_Etr_Risk_Management.html)
  - [15_Etr_Our_Company](https://orcunkilicaslan.github.io/E_Trade_Frontend/web_public/15_Etr_Our_Company.html)
  - [16_Etr_Contact_Us](https://orcunkilicaslan.github.io/E_Trade_Frontend/web_public/16_Etr_Contact_Us.html)
+ - [17_Etr_Contact_Us_Thank](https://orcunkilicaslan.github.io/E_Trade_Frontend/web_public/17_Etr_Contact_Us_Thank.html)
   
    
 
