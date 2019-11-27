@@ -17,6 +17,6 @@
   }
 }
 
-.btnwidth110{width: 110px !important;}
-.btnwidth200{width: 200px !important;}
-.btnwidth100100{width: 100% !important;}
+.btnwidth110{min-width: 110px !important;}
+.btnwidth220{min-width: 220px !important;}
+.btnwidth100100{min-width: 100% !important;}
