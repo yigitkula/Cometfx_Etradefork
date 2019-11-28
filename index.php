@@ -10,32 +10,32 @@
             <div class="headtitle-home-instruments">
                 <ul class="headtitle-home-instruments-list">
                     <li data-aos="fade-right" data-aos-duration="1750">
-                        <a href="instruments-forex.html" title="FOREX" rel="bookmark">
+                        <a href="instruments-forex" title="FOREX" rel="bookmark">
                             <i class="icons-sprite sprite-red-instruments-45 icons-forex"></i>
                             <span>FOREX</span>
                         </a>
                     </li>
                     <li data-aos="fade-up" data-aos-duration="1750">
-                        <a href="instruments-indicies.html" title="INDICES" rel="bookmark">
+                        <a href="instruments-indicies" title="INDICES" rel="bookmark">
                             <i class="icons-sprite sprite-red-instruments-45 icons-indicies"></i>
                             <span>INDICES</span>
                         </a>
                     </li>
                     <li data-aos="fade-down" data-aos-duration="1750">
-                        <a href="instruments-commodities.html" title="COMMODITIES" rel="bookmark">
+                        <a href="instruments-commodities" title="COMMODITIES" rel="bookmark">
                             <i class="icons-sprite sprite-red-instruments-45 icons-commodities"></i>
                             <span>COMMODITIES</span>
                         </a>
                     </li>
                     <li data-aos="fade-left" data-aos-duration="1750">
-                        <a href="instruments-cryptos.html" title="CRYPTOS" rel="bookmark">
+                        <a href="instruments-cryptos" title="CRYPTOS" rel="bookmark">
                             <i class="icons-sprite sprite-red-instruments-45 icons-crypto"></i>
                             <span>CRYPTOS</span>
                         </a>
                     </li>
                 </ul>
                 <div class="headtitle-home-instruments-btn" data-aos="zoom-in-up" data-aos-duration="2800">
-                    <a class="btn btn-lg btn-danger btn-gradient-red" href="become-a-partner.html" title="REQUEST A QUOTE" rel="bookmark">REQUEST A QUOTE</a>
+                    <a class="btn btn-lg btn-danger btn-gradient-red" href="become-a-partner" title="REQUEST A QUOTE" rel="bookmark">REQUEST A QUOTE</a>
                 </div>
             </div>
         </div>
@@ -72,7 +72,7 @@
             </li>
         </ul>
         <div class="technology-box-btn" data-aos="fade-up" data-aos-duration="500">
-            <a class="btn btn-lg btn-danger btn-gradient-red" href="become-a-partner.html" title="REQUEST A QUOTE" rel="bookmark">REQUEST A QUOTE</a>
+            <a class="btn btn-lg btn-danger btn-gradient-red" href="become-a-partner" title="REQUEST A QUOTE" rel="bookmark">REQUEST A QUOTE</a>
         </div>
         <!-- Technology Box -->
 
@@ -235,7 +235,7 @@
                 <div role="tabpanel" id="TABCRYPTOS" class="tab-pane fade show">CRYPTOS</div>
             </div>
             <div class="content-horizantaltable-bottombtn" data-aos="fade-down" data-aos-duration="500">
-                <a href="instruments-seefull.html" class="btn btn-lg btn-gradient-red" title="SEE ALL" rel="bookmark">SEE ALL</a>
+                <a href="instruments-seefull" class="btn btn-lg btn-gradient-red" title="SEE ALL" rel="bookmark">SEE ALL</a>
             </div>
             <!-- Tabs Content -->
 
@@ -265,7 +265,7 @@
 
     <!-- Button -->
     <div class="foot-platforms-btn" data-aos="zoom-in-up" data-aos-duration="1000">
-        <a class="btn btn-lg btn-danger btn-gradient-red" href="platforms-phase-pro.html">EXPLORE PHASE PRO</a>
+        <a class="btn btn-lg btn-danger btn-gradient-red" href="platforms-phase-pro">EXPLORE PHASE PRO</a>
     </div>
     <!-- Button -->
 
@@ -319,7 +319,7 @@
 
         <!-- Button -->
         <div class="foot-partners-btn" data-aos="zoom-in-up" data-aos-duration="1000">
-            <a class="btn btn-lg btn-danger btn-gradient-red" href="become-a-partner.html" title="BECOME A PARTNER" rel="bookmark">BECOME A PARTNER</a>
+            <a class="btn btn-lg btn-danger btn-gradient-red" href="become-a-partner" title="BECOME A PARTNER" rel="bookmark">BECOME A PARTNER</a>
         </div>
         <!-- Button -->
 

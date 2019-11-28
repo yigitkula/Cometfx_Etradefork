@@ -60,7 +60,7 @@
             </li>
             <li class="contactus-box-item" data-aos="fade-left" data-aos-duration="700">
                 <div class="contactus-box-icons"><i class="icons-sprite sprite-red-contactus-50 icons-map"></i></div>
-                <a href="contact-us.html" title="CONTACT US" target="_blank" rel="bookmark">
+                <a href="contact-us" title="CONTACT US" target="_blank" rel="bookmark">
                     <p class="contactus-box-title">FIND US</p>
                     <p class="contactus-box-desc">İstanbul, Turkiye</p>
                 </a>

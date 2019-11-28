@@ -18,7 +18,7 @@
     <!-- Mobile Header -->
     <div class="dfn-mobilemenu-mask"></div>
     <div class="dfn-mobilemenu-header">
-        <a class="header-navigation-logo" href="index.html" title="E-TRADE" rel="bookmark"><img src="/assets/img/svg/header_logo_etrade_light.svg" alt="E-TRADE"></a>
+        <a class="header-navigation-logo" href="index" title="E-TRADE" rel="bookmark"><img src="/assets/img/svg/header_logo_etrade_light.svg" alt="E-TRADE"></a>
         <a id="dfn-navtggle" class="dfn-mobilemenu-btn">
             <div class="btnicon"><span></span></div>
             <div class="btntext"><small>MENÜ</small></div>

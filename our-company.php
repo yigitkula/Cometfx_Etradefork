@@ -211,7 +211,7 @@
 
         <!-- Button -->
         <div class="section-item-btn" data-aos="zoom-in-up" data-aos-duration="1000">
-            <a class="btn btn-lg btn-danger btn-gradient-red" href="become-a-partner.html" title="BECOME A PARTNER" rel="bookmark">BECOME A PARTNER</a>
+            <a class="btn btn-lg btn-danger btn-gradient-red" href="become-a-partner" title="BECOME A PARTNER" rel="bookmark">BECOME A PARTNER</a>
         </div>
         <!-- Button -->
 

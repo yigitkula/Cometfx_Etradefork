@@ -34,7 +34,7 @@
                 </a>
             </li>
             <li class="footer-contact-list-item">
-                <a href="contact-us.html" target="_blank" rel="bookmark">
+                <a href="contact-us" target="_blank" rel="bookmark">
                     <i class="icons-sprite sprite-footer-contact-60 icons-map"></i>
                     <p>FIND US</p>
                     <p>İstanbul, Turkiye</p>
