@@ -22,17 +22,42 @@
       flex-direction: column;
 
       .input-group-append{
+        background-color: $global-clr-white;
+        height: calc(100% - 2px);
         border: none;
         position: absolute;
         right: 0;
-        height: 100%;
+        z-index: 3;
       }
 
       .input-group-text{
         background-color: transparent;
-        padding: 2px 0 2px 10px;
+        padding: 2px 0 2px 2px;
       }
 
+      i.icons-check,
+      i.icons-error{
+        display: none;
+      }
+
+      .error,
+      .check{
+        i.icons-edit{
+          display: none;
+        }
+      }
+
+      .error{
+        i.icons-error{
+          display: block !important;
+        }
+      }
+
+      .check{
+        i.icons-check{
+          display: block !important;
+        }
+      }
     }
 
     label{
@@ -45,6 +70,7 @@
     }
 
     .form-control{
+      color: $global-clr-text-dark-gray;
       background-color: transparent;
       border-top-width: 0;
       border-right-width: 0;
@@ -62,7 +88,8 @@
       }
 
       &:focus ~ label,
-      &:valid ~ label{
+      &:valid ~ label,
+      &:invalid ~ label{
         top: -10px;
         left: 0;
         font-size:12px;
@@ -86,14 +113,23 @@
 
       &:focus ~ .inputerrormessage,
       &:valid ~ .inputerrormessage{
-        top: -20px;
+        top: -10px;
         right: 0;
         font-size: 12px;
+        font-weight: normal;
+        line-height: 1.11;
+        letter-spacing: -0.54px;
+        display: block !important;
       }
 
       &:valid ~ label{
         color: $global-clr-green;
         z-index: 0 !important;
+      }
+
+      &:focus ~ i[class*="icons-"],
+      &:valid ~ i[class*="icons-"]{
+        display: none !important;
       }
 
       &.textarea{
@@ -110,7 +146,26 @@
       }
     }
 
+    .disabledautofillinput{
+      &.disabled,
+      &:disabled,
+      &[readonly] {
+        color: $global-clr-text-dark-gray !important;
+        background-color: transparent !important;
+        border-bottom-color: $global-clr-red !important;
+      }
+    }
+
     &.textarea{
+
+      .form-control{
+        &:focus ~ .inputerrormessage,
+        &:valid ~ .inputerrormessage,
+        &:invalid ~ label{
+          top: -15px;
+        }
+      }
+
       label{
         top: 15px;
         left: 15px;
@@ -147,41 +202,13 @@
   .inputerrormessage{
     position: absolute;
     top: 9px;
-    right: 10px;
-    color: #b82c0d;
+    right: 0;
+    color: $global-clr-red;
     font-size: 14px;
     z-index: -1;
     @include transition(all, 0.3s, ease-in-out);
-  }
-
-  .inputcheckicon{
     display: none;
-    width: 15px;
-    height: 15px;
-    position: absolute;
-    top: 13px;
-    right: 10px;
-    @include transition(all, 0.3s, ease-in-out);
-
-    &:before{
-      content: "";
-      position: absolute;
-      width: 15px;
-      height: 15px;
-    }
-    &-check{
-      &:before{
-        content: "";
-        position: absolute;
-        width: 14px;
-        height: 7px;
-        top: 2px;
-        left: 1px;
-        border-bottom: 2px solid $global-clr-green;
-        border-left: 2px solid $global-clr-green;
-        @include rotate(-50);
-      }
-    }
   }
+
 }
 /* Form UI New */

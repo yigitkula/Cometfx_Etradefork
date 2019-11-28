@@ -2,8 +2,8 @@
 
 #### Web Public Area Frontend List
  - [01_Etr_Home_Page](https://orcunkilicaslan.github.io/E_Trade_Frontend/index.html)
- - [02_Etr_Sign_Up](https://orcunkilicaslan.github.io/E_Trade_Frontend/sign-up.html)
- - [03_Etr_Sign_Up_Thank](https://orcunkilicaslan.github.io/E_Trade_Frontend/sign-up-thank.html)
+ - [02_Etr_Sign_Up](https://orcunkilicaslan.github.io/E_Trade_Frontend/become-a-partner.html)
+ - [03_Etr_Sign_Up_Thank](https://orcunkilicaslan.github.io/E_Trade_Frontend/become-a-partner-thank.html)
  - [04_Etr_Ins_Forex](https://orcunkilicaslan.github.io/E_Trade_Frontend/instruments-forex.html)
  - [05_Etr_Ins_Indicies](https://orcunkilicaslan.github.io/E_Trade_Frontend/instruments-indicies.html)
  - [06_Etr_Ins_Commodities](https://orcunkilicaslan.github.io/E_Trade_Frontend/instruments-commodities.html)
