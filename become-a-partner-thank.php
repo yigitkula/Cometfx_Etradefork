@@ -37,7 +37,7 @@
 
         <!-- Interaction Btn -->
         <div class="interaction-section-btn">
-            <a class="btn btn-lg btn-danger btn-gradient-red" href="contact-us.html" rel="bookmark" title="CONTACT US" data-aos="fade-up" data-aos-duration="1500">CONTACT US</a>
+            <a class="btn btn-lg btn-danger btn-gradient-red" href="contact-us" rel="bookmark" title="CONTACT US" data-aos="fade-up" data-aos-duration="1500">CONTACT US</a>
         </div>
         <!-- Interaction Btn -->
 

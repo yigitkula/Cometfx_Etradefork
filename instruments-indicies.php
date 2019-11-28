@@ -114,7 +114,7 @@
                 </div>
             </div>
             <div class="content-horizantaltable-bottombtn" data-aos="fade-down" data-aos-duration="500">
-                <a href="instruments-seefull.html" class="btn btn-lg btn-gradient-red" title="SEE FULL LIST" rel="bookmark">SEE FULL LIST</a>
+                <a href="instruments-seefull" class="btn btn-lg btn-gradient-red" title="SEE FULL LIST" rel="bookmark">SEE FULL LIST</a>
             </div>
             <!-- Table -->
 
@@ -142,7 +142,7 @@
                 <h3 class="instruments-box-title">FOREX</h3>
                 <p class="instruments-box-desc">Lorem ipsum dolor sit amet, consectetur sed adipiscing elit. Integer in maximus lectus. <br />Donec sed scelerisque dolor.</p>
                 <div class="instruments-box-item-btn">
-                    <a class="btn btn-lg btn-danger btn-gradient-red" href="instruments-forex.html" title="MORE INFORMATION" rel="bookmark">MORE INFORMATION</a>
+                    <a class="btn btn-lg btn-danger btn-gradient-red" href="instruments-forex" title="MORE INFORMATION" rel="bookmark">MORE INFORMATION</a>
                 </div>
             </li>
             <li class="instruments-box-item">
@@ -150,7 +150,7 @@
                 <h3 class="instruments-box-title">COMMODITIES</h3>
                 <p class="instruments-box-desc">Lorem ipsum dolor sit amet, consectetur sed adipiscing elit. Integer in maximus lectus. <br />Donec sed scelerisque dolor.</p>
                 <div class="instruments-box-item-btn">
-                    <a class="btn btn-lg btn-danger btn-gradient-red" href="instruments-commodities.html" title="MORE INFORMATION" rel="bookmark">MORE INFORMATION</a>
+                    <a class="btn btn-lg btn-danger btn-gradient-red" href="instruments-commodities" title="MORE INFORMATION" rel="bookmark">MORE INFORMATION</a>
                 </div>
             </li>
             <li class="instruments-box-item" data-aos="fade-left" data-aos-duration="700">
@@ -158,7 +158,7 @@
                 <h3 class="instruments-box-title">CRYPTOS</h3>
                 <p class="instruments-box-desc">Lorem ipsum dolor sit amet, consectetur sed adipiscing elit. Integer in maximus lectus. <br />Donec sed scelerisque dolor.</p>
                 <div class="instruments-box-item-btn">
-                    <a class="btn btn-lg btn-danger btn-gradient-red" href="instruments-cryptos.html" title="MORE INFORMATION" rel="bookmark">MORE INFORMATION</a>
+                    <a class="btn btn-lg btn-danger btn-gradient-red" href="instruments-cryptos" title="MORE INFORMATION" rel="bookmark">MORE INFORMATION</a>
                 </div>
             </li>
         </ul>
@@ -207,7 +207,7 @@
 
         <!-- Button -->
         <div class="foot-technology-btn" data-aos="zoom-in-up" data-aos-duration="1000">
-            <a class="btn btn-lg btn-danger btn-gradient-red" href="become-a-partner.html" title="BECOME A PARTNER" rel="bookmark">BECOME A PARTNER</a>
+            <a class="btn btn-lg btn-danger btn-gradient-red" href="become-a-partner" title="BECOME A PARTNER" rel="bookmark">BECOME A PARTNER</a>
         </div>
         <!-- Button -->
 
@@ -215,4 +215,4 @@
 </section>
 <!-- E-Trade Technologies End -->
 
-<?php include('./include/header.php'); ?>
+<?php include('./include/footer.php'); ?>
