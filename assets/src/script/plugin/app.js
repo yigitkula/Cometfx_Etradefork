@@ -105,6 +105,53 @@ jQuery(function($) {
 });
 /* Site Table Horizantal TH Span */
 
+/* Input Mask */
+$(document).ready(function(){
+    $('.inputgsmphonemask').inputmask({
+        mask: '0599 999 99 99',
+        placeholder: '',
+        showMaskOnFocus: true,
+        showMaskOnHover: false
+    });
+    $('.inputphonemask').inputmask({
+        mask: '0999 999 99 99',
+        placeholder: '',
+        showMaskOnFocus: true,
+        showMaskOnHover: false
+    });
+    $('.inputibanmask').inputmask({
+        mask: 'TR99 9999 9999 9999 9999 9999 99',
+        placeholder: '',
+        showMaskOnFocus: true,
+        showMaskOnHover: false
+    });
+    $('.inputidentitymask').inputmask({
+        mask: '99999999999',
+        placeholder: '',
+        showMaskOnFocus: true,
+        showMaskOnHover: false
+    });
+    $('.inputdatemask').inputmask({
+        mask: '99/99/9999',
+        placeholder: 'MM/DD/YYYY',
+        showMaskOnFocus: true,
+        showMaskOnHover: false
+    });
+    $('.inputdatedottedmask').inputmask({
+        mask: '99.99.9999',
+        placeholder: 'MM.DD.YYYY',
+        showMaskOnFocus: true,
+        showMaskOnHover: false
+    });
+    $('.inputonlytextmask').inputmask({
+        mask: 'AAA',
+        placeholder: '',
+        showMaskOnFocus: true,
+        showMaskOnHover: false
+    });
+});
+/* Input Mask */
+
 /* Loading Info */
-console.log("Plugin App Javascript Loading Successful");
+// console.log("Plugin App Javascript Loading Successful");
 /* Loading Info */

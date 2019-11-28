@@ -203,5 +203,5 @@ $('#foottechnologysowl').owlCarousel({
 /* Foot Technology Box */
 
 /* Loading Info */
-console.log("Custom App Javascript Loading Successful");
+// console.log("Custom App Javascript Loading Successful");
 /* Loading Info */

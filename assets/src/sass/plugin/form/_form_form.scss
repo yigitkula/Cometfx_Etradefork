@@ -173,6 +173,7 @@
   }
 
   .custom-control-label.checkederror{
+    color: $global-clr-red !important;
     &::before,
     &::after{
       border-color: $global-clr-red;
@@ -248,6 +249,39 @@
     }
   }
 
+  .recaptcha-area{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+
+    .recaptcha-check{
+      position:relative;
+      width:20px;
+      height:20px;
+      overflow: hidden;
+      margin-right: 6px;
+      border: 1px solid $global-border-light-gray;
+      @include border-radius(3px);
+
+      .g-recaptcha{
+        position:absolute;
+        top: -27px;
+        left: -43px;
+        @include scale(0.8);
+      }
+    }
+    label{
+      &::before,
+      &::after{display: none !important;}
+    }
+  }
+
   @include placeholder{
     color: transparentize($global-clr-soft-gray, 0.50);
     opacity: 1;
@@ -264,7 +298,9 @@
       right: 0;
       color: $global-clr-red;
       font-size: 18px;
-      line-height: 1;
+      font-weight: normal;
+      line-height: 1.11;
+      letter-spacing: -0.54px;
       text-transform: uppercase;
       z-index: 0;
       @include transition(all, 0.3s, ease-in-out);

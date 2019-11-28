@@ -226,56 +226,74 @@
 
         <!-- Form Start -->
         <div class="section-item-formarea formuinew formuilabel">
-            <form autocomplete="off" novalidate>
+            <form action="" autocomplete="off" onsubmit="return submitPartnerValidForm()" novalidate>
                 <div class="form-row">
                     <div class="form-group col">
                         <div class="labelanimation input-group">
-                            <input type="text" class="form-control" required />
-                            <i class="inputcheckicon"></i>
-                            <span class="inputerrormessage"></span>
+                            <input type="text" class="form-control disabledautofillinput" pattern=".{0}|.{2,}" name="name" id="inputNameId" readonly="readonly" onfocus="javascript:this.removeAttribute('readonly')" required oninput="partnerform.verifyContent('inputNameProcess','inputNameId','msgNameId','iconNameId')" onfocusout="partnerform.verifyContentErrorDelete('inputNameProcess','inputNameId','msgNameId','iconNameId')" >
+                            <span class="inputerrormessage" id="msgNameId"></span>
                             <span class="inputbottombar"></span>
                             <label>NAME & SURNAME</label>
-                            <div class="input-group-append">
-                                <span class="input-group-text"><i class="icons-sprite sprite-form-iconset-24 icons-edit"></i></span>
+                            <div id="iconNameId" class="input-group-append">
+                                <span class="input-group-text">
+                                    <i class="icons-sprite sprite-form-iconset-24 icons-edit"></i>
+                                    <i class="icons-sprite sprite-form-iconset-24 icons-check"></i>
+                                    <i class="icons-sprite sprite-form-iconset-24 icons-error"></i>
+                                </span>
                             </div>
                         </div>
                     </div>
                     <div class="form-group col">
                         <div class="labelanimation input-group">
-                            <input type="text" class="form-control" required />
-                            <i class="inputcheckicon"></i>
-                            <span class="inputerrormessage"></span>
+                            <input type="email" class="form-control disabledautofillinput" pattern="([A-Za-z0-9][._]?)+[A-Za-z0-9]@[A-Za-z0-9]+(\.?[A-Za-z0-9]){2}\.([A-Za-z0-9])+(\.[A-Za-z0-9]{2})?" name="email" id="inputEmailId" readonly="readonly" onfocus="javascript:this.removeAttribute('readonly')" required oninput="partnerform.verifyContent('inputEmailProcess','inputEmailId','msgEmailId','iconEmailId')" onfocusout="partnerform.verifyContentErrorDelete('inputEmailProcess','inputEmailId','msgEmailId','iconEmailId')" >
+                            <span class="inputerrormessage" id="msgEmailId"></span>
                             <span class="inputbottombar"></span>
                             <label>E-MAIL</label>
-                            <div class="input-group-append">
-                                <span class="input-group-text"><i class="icons-sprite sprite-form-iconset-24 icons-edit"></i></span>
+                            <div id="iconEmailId" class="input-group-append">
+                                <span class="input-group-text">
+                                    <i class="icons-sprite sprite-form-iconset-24 icons-edit"></i>
+                                    <i class="icons-sprite sprite-form-iconset-24 icons-check"></i>
+                                    <i class="icons-sprite sprite-form-iconset-24 icons-error"></i>
+                                </span>
                             </div>
                         </div>
                     </div>
                     <div class="form-group col">
                         <div class="labelanimation input-group">
-                            <input type="text" class="form-control" required />
-                            <i class="inputcheckicon"></i>
-                            <span class="inputerrormessage"></span>
+                            <input type="text" class="form-control inputphonemask disabledautofillinput" pattern=".{0}|.{14}" name="phone" id="inputPhoneId" readonly="readonly" onfocus="javascript:this.removeAttribute('readonly')" required oninput="partnerform.verifyContent('inputPhoneProcess','inputPhoneId','msgPhoneId','iconPhoneId')" onfocusout="partnerform.verifyContentErrorDelete('inputPhoneProcess','inputPhoneId','msgPhoneId','iconPhoneId')" >
+                            <span class="inputerrormessage" id="msgPhoneId"></span>
                             <span class="inputbottombar"></span>
                             <label>PHONE NUMBER</label>
-                            <div class="input-group-append">
-                                <span class="input-group-text"><i class="icons-sprite sprite-form-iconset-24 icons-edit"></i></span>
+                            <div id="iconPhoneId" class="input-group-append">
+                                <span class="input-group-text">
+                                    <i class="icons-sprite sprite-form-iconset-24 icons-edit"></i>
+                                    <i class="icons-sprite sprite-form-iconset-24 icons-check"></i>
+                                    <i class="icons-sprite sprite-form-iconset-24 icons-error"></i>
+                                </span>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="form-row form-row-center">
-                    <div class="form-group col-auto">
+                    <div class="form-group col-auto d-none">
                         <div class="custom-control custom-checkbox">
                             <input type="checkbox" class="custom-control-input" id="recaptcha">
                             <label class="custom-control-label" for="recaptcha">I'm not a robot</label>
                         </div>
                     </div>
                     <div class="form-group col-auto">
+                        <div class="recaptcha-area d-flex">
+                            <div class="recaptcha-check">
+                                <div class="g-recaptcha" data-theme="dark" data-sitekey="6LewOKAUAAAAAMDO2yohWeyDcjFAHfcuEqK2mIp4"></div>
+                            </div>
+                            <label class="custom-control-label">Ben rabot değilim</label>
+                        </div>
+                    </div>
+                    <div class="form-group col-auto">
                         <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="formterms">
-                            <label class="custom-control-label" for="formterms">Lorem <a class="urllink" href="#" title="ipsum dolor" rel="bookmark" target="_blank">ipsum dolor</a> sit amet consectetur</label>
+                            <input type="checkbox" class="custom-control-input" type="checkbox" name="termsofuse" value="" id="termsOfUseCheck">
+                            <label id="labeltermsOfUseCheck" class="custom-control-label" for="termsOfUseCheck">Lorem <a class="urllink" href="#" title="ipsum dolor" rel="bookmark" target="_blank">ipsum dolor</a> sit amet consectetur</label>
+                            <span class="inputerrormessage" id="msgtermsOfUseCheckId"></span>
                         </div>
                     </div>
                 </div>
@@ -287,6 +305,82 @@
             </form>
         </div>
         <!-- Form End -->
+
+        <!-- Form Validation -->
+        <script type="text/javascript">
+
+            function verifyFirstName() {
+                if(document.getElementById('inputNameId').value.length < 2){
+                    document.getElementById('iconNameId').classList.add("error");
+                    document.getElementById('iconNameId').classList.remove("check");
+                    document.getElementById('msgNameId').innerText = "EN AZ 2 KARAKTER";
+                    return false;
+                } else {
+                    document.getElementById('inputNameId').classList.add("check");
+                    document.getElementById('iconNameId').classList.remove("error");
+                    document.getElementById('msgNameId').innerText = "";
+                    return true;
+                }
+                return true;
+            }
+
+            function verifyValidEmail() {
+                var emailPattern	= /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+                if(!document.getElementById('inputEmailId').value.match(emailPattern)){
+                    document.getElementById('iconEmailId').classList.add("error");
+                    document.getElementById('iconEmailId').classList.remove("check");
+                    document.getElementById('msgEmailId').innerText = "HATALI E-POSTA";
+                    return false;
+                } else {
+                    document.getElementById('iconEmailId').classList.add("check");
+                    document.getElementById('iconEmailId').classList.remove("error");
+                    document.getElementById('msgEmailId').innerText = "";
+                    return true;
+                }
+                return true;
+            }
+
+            function verifyValidPhone() {
+                if(document.getElementById('inputPhoneId').value.replace(/\s/g, "").length < 11){
+                    document.getElementById('iconPhoneId').classList.add("error");
+                    document.getElementById('iconPhoneId').classList.remove("check");
+                    document.getElementById('msgPhoneId').innerText = "HATALI TELEFON";
+                    return false;
+                } else {
+                    document.getElementById('iconPhoneId').classList.add("check");
+                    document.getElementById('iconPhoneId').classList.remove("error");
+                    document.getElementById('msgPhoneId').innerText = "";
+                    return true;
+                }
+                return true;
+            }
+
+            function verifyValidTermsOfUse() {
+                var termsOfUseCheck	= document.getElementById('termsOfUseCheck').checked;
+
+                if(!termsOfUseCheck){
+                    document.getElementById('labeltermsOfUseCheck').classList.add("checkederror");
+                    document.getElementById('labeltermsOfUseCheck').classList.remove("checkedcheck");
+                    return false;
+                } else {
+                    document.getElementById('labeltermsOfUseCheck').classList.add("checkedcheck");
+                    document.getElementById('labeltermsOfUseCheck').classList.remove("checkederror");
+                    return true;
+                }
+                return true;
+            }
+
+            function submitPartnerValidForm() {
+                if (!verifyFirstName() || !verifyValidEmail() ||  !verifyValidPhone() || !verifyValidTermsOfUse()){
+                    console.log("HATA");
+                    return false;
+                } else {
+                    console.log("DOGRU");
+                }
+            }
+        </script>
+        <!-- Form Validation -->
 
     </div>
 </section>
@@ -382,6 +476,7 @@
 <script id="script-jquery" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script id="script-popper" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script id="script-bootstrap" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script id="script-recaptcha" src="https://www.google.com/recaptcha/api.js" async=""></script>
 <script id="script-owl-carousel" src="assets/vendor/owl.carousel/dist/owl.carousel.min.js"></script>
 <script id="script-inputmask" src="assets/vendor/inputmask/dist/min/jquery.inputmask.bundle.min.js"></script>
 <script id="script-aos" src="assets/vendor/aos/dist/aos.js"></script>
