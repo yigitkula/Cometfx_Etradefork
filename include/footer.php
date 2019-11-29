@@ -62,7 +62,7 @@
 <script id="script-inputmask" src="/assets/vendor/inputmask/dist/min/jquery.inputmask.bundle.min.js"></script>
 <script id="script-aos" src="/assets/vendor/aos/dist/aos.js"></script>
 <script id="script-plugin-app" src="/assets/dist/js/plugin-app.js"></script>
-<script id="script-mainpage-app" src="/assets/dist/js/custom-app.js"></script>
+<script id="script-mainpage-app" src="/assets/dist/js/custom-app.js?v=<?php echo time(); ?>"></script>
 <!-- JavaScript End -->
 
 </body>
