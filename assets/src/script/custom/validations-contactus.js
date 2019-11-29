@@ -2,14 +2,14 @@
 const translateObject = {
 
     'tr': {
-        'NameAlert':'EN AZ 2 KARAKTER',
+        'NameAlert':'EN AZ 5 KARAKTER',
         'PhoneAlert':'HATALI TELEFON',
         'EmailAlert':'HATALI E-POSTA',
         'MessageAlert':'EN AZ 10 KARAKTER',
         'MessageCharacterOutAlert':'2000 KARAKTER SINIRI AŞILDI'
     },
     'en':{
-        'NameAlert':'EN AZ 2 KARAKTER',
+        'NameAlert':'EN AZ 5 KARAKTER',
         'PhoneAlert':'HATALI TELEFON',
         'EmailAlert':'HATALI E-POSTA',
         'MessageAlert':'EN AZ 10 KARAKTER',
@@ -67,7 +67,7 @@ class ContactForm {
         switch (inputProcessName) {
 
             case "inputNameProcess":
-                if(val.length < 2){
+                if(val.length < 5){
                     this.setContactFormErrorMessages(messageSpanSelector, Translation.translate('tr','NameAlert'));
                     this.setContactFormErrorIcon(messageIconSelector,"error", "check");
                     this.setContactFormErrorInput(inputIdSelector);

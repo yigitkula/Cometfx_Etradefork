@@ -27,11 +27,11 @@
 
         <!-- Form Start -->
         <div class="contact-formarea formuinew formuilabel">
-            <form action="" autocomplete="off" onsubmit="return submitContactValidForm()" novalidate>
+            <form id="contact-form" action="" autocomplete="off" onsubmit="return formValidator.verifyContactForm()" novalidate>
                 <div class="form-row">
                     <div class="form-group col">
                         <div class="labelanimation input-group">
-                            <input type="text" class="form-control disabledautofillinput" pattern=".{0}|.{2,}" name="name" id="inputNameId" readonly="readonly" onfocus="javascript:this.removeAttribute('readonly')" required oninput="contactform.verifyContent('inputNameProcess','inputNameId','msgNameId','iconNameId')" onfocusout="contactform.verifyContentErrorDelete('inputNameProcess','inputNameId','msgNameId','iconNameId')" >
+                            <input type="text" class="form-control disabledautofillinput" pattern=".{0}|.{5,}" name="name" id="inputNameId" readonly="readonly" onfocus="javascript:this.removeAttribute('readonly')" required oninput="contactform.verifyContent('inputNameProcess','inputNameId','msgNameId','iconNameId')" onfocusout="contactform.verifyContentErrorDelete('inputNameProcess','inputNameId','msgNameId','iconNameId')" >
                             <span class="inputerrormessage" id="msgNameId"></span>
                             <span class="inputbottombar"></span>
                             <label>NAME & SURNAME</label>
@@ -124,102 +124,6 @@
             </form>
         </div>
         <!-- Form End -->
-
-        <!-- Form Validation -->
-        <script type="text/javascript">
-
-            function verifyFirstName() {
-                if(document.getElementById('inputNameId').value.length < 2){
-                    document.getElementById('iconNameId').classList.add("error");
-                    document.getElementById('iconNameId').classList.remove("check");
-                    document.getElementById('msgNameId').innerText = "EN AZ 2 KARAKTER";
-                    return false;
-                } else {
-                    document.getElementById('inputNameId').classList.add("check");
-                    document.getElementById('iconNameId').classList.remove("error");
-                    document.getElementById('msgNameId').innerText = "";
-                    return true;
-                }
-                return true;
-            }
-
-            function verifyValidEmail() {
-                var emailPattern	= /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-
-                if(!document.getElementById('inputEmailId').value.match(emailPattern)){
-                    document.getElementById('iconEmailId').classList.add("error");
-                    document.getElementById('iconEmailId').classList.remove("check");
-                    document.getElementById('msgEmailId').innerText = "HATALI E-POSTA";
-                    return false;
-                } else {
-                    document.getElementById('iconEmailId').classList.add("check");
-                    document.getElementById('iconEmailId').classList.remove("error");
-                    document.getElementById('msgEmailId').innerText = "";
-                    return true;
-                }
-                return true;
-            }
-
-            function verifyValidPhone() {
-                if(document.getElementById('inputPhoneId').value.replace(/\s/g, "").length < 11){
-                    document.getElementById('iconPhoneId').classList.add("error");
-                    document.getElementById('iconPhoneId').classList.remove("check");
-                    document.getElementById('msgPhoneId').innerText = "HATALI TELEFON";
-                    return false;
-                } else {
-                    document.getElementById('iconPhoneId').classList.add("check");
-                    document.getElementById('iconPhoneId').classList.remove("error");
-                    document.getElementById('msgPhoneId').innerText = "";
-                    return true;
-                }
-                return true;
-            }
-
-            function verifyMessageName() {
-                if(document.getElementById('inputMessageId').value.length < 10){
-                    document.getElementById('iconMessageId').classList.add("error");
-                    document.getElementById('iconMessageId').classList.remove("check");
-                    document.getElementById('msgMessageId').innerText = "EN AZ 10 KARAKTER";
-                    return false;
-                } else if(document.getElementById('inputMessageId').value.length >= 2000){
-                    document.getElementById('iconMessageId').classList.add("error");
-                    document.getElementById('iconMessageId').classList.remove("check");
-                    document.getElementById('msgMessageId').innerText = "2000 KARAKTER SINIRI AŞILDI";
-                    return false;
-                } else {
-                    document.getElementById('inputMessageId').classList.add("check");
-                    document.getElementById('iconMessageId').classList.remove("error");
-                    document.getElementById('msgMessageId').innerText = "";
-                    return true;
-                }
-                return true;
-            }
-
-            function verifyValidTermsOfUse() {
-                var termsOfUseCheck	= document.getElementById('termsOfUseCheck').checked;
-
-                if(!termsOfUseCheck){
-                    document.getElementById('labeltermsOfUseCheck').classList.add("checkederror");
-                    document.getElementById('labeltermsOfUseCheck').classList.remove("checkedcheck");
-                    return false;
-                } else {
-                    document.getElementById('labeltermsOfUseCheck').classList.add("checkedcheck");
-                    document.getElementById('labeltermsOfUseCheck').classList.remove("checkederror");
-                    return true;
-                }
-                return true;
-            }
-
-            function submitContactValidForm() {
-                if (!verifyFirstName() || !verifyValidEmail() || !verifyValidPhone() || !verifyMessageName() || !verifyValidTermsOfUse()){
-                    console.log("HATA");
-                    return false;
-                } else {
-                    console.log("DOGRU");
-                }
-            }
-        </script>
-        <!-- Form Validation -->
 
     </div>
 </section>

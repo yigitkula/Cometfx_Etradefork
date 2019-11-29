@@ -2,12 +2,12 @@
 const translateObject = {
 
     'tr': {
-        'NameAlert':'EN AZ 2 KARAKTER',
+        'NameAlert':'EN AZ 5 KARAKTER',
         'PhoneAlert':'HATALI TELEFON',
         'EmailAlert':'HATALI E-POSTA',
     },
     'en':{
-        'NameAlert':'EN AZ 2 KARAKTER',
+        'NameAlert':'EN AZ 5 KARAKTER',
         'PhoneAlert':'HATALI TELEFON',
         'EmailAlert':'HATALI E-POSTA',
     }
@@ -63,7 +63,7 @@ class PartnerForm {
         switch (inputProcessName) {
 
             case "inputNameProcess":
-                if(val.length < 2){
+                if(val.length < 5){
                     this.setPartnerFormErrorMessages(messageSpanSelector, Translation.translate('tr','NameAlert'));
                     this.setPartnerFormErrorIcon(messageIconSelector,"error", "check");
                     this.setPartnerFormErrorInput(inputIdSelector);
