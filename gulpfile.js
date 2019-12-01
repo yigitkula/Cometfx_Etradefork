@@ -119,7 +119,8 @@ gulp.task('script-custom', () => {
     return gulp.src([
         folder_src_main + 'script/custom/**/app.js',
         folder_src_main + 'script/custom/**/validations-becomeapartner.js',
-        folder_src_main + 'script/custom/**/validations-contactus.js'
+        folder_src_main + 'script/custom/**/validations-contactus.js',
+        folder_src_main + 'script/custom/**/forms.js'
     ])
         .pipe(plumber())
         .pipe(webpack({
