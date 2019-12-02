@@ -31,7 +31,7 @@ if(is_null($type) || !in_array($type, $available_types)){
 }
 
 //validate full name
-if(is_null($full_name) || !preg_match("/^[a-zA-Z ]*$/",$full_name) || strlen($full_name) < 5){
+if(is_null($full_name) || strlen($full_name) < 5){
     send_fail(1003, 'Invalid Full Name');
     exit;
 }
