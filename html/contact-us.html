@@ -224,7 +224,7 @@
                 if(!document.getElementById('inputEmailId').value.match(emailPattern)){
                     document.getElementById('iconEmailId').classList.add("error");
                     document.getElementById('iconEmailId').classList.remove("check");
-                    document.getElementById('msgEmailId').innerText = "HATALI E-POSTA";
+                    document.getElementById('msgEmailId').innerText = "WRONG EMAIL";
                     return false;
                 } else {
                     document.getElementById('iconEmailId').classList.add("check");
@@ -239,7 +239,7 @@
                 if(document.getElementById('inputPhoneId').value.replace(/\s/g, "").length < 11){
                     document.getElementById('iconPhoneId').classList.add("error");
                     document.getElementById('iconPhoneId').classList.remove("check");
-                    document.getElementById('msgPhoneId').innerText = "HATALI TELEFON";
+                    document.getElementById('msgPhoneId').innerText = "WRONG PHONE";
                     return false;
                 } else {
                     document.getElementById('iconPhoneId').classList.add("check");
@@ -254,12 +254,12 @@
                 if(document.getElementById('inputMessageId').value.length < 10){
                     document.getElementById('iconMessageId').classList.add("error");
                     document.getElementById('iconMessageId').classList.remove("check");
-                    document.getElementById('msgMessageId').innerText = "EN AZ 10 KARAKTER";
+                    document.getElementById('msgMessageId').innerText = "MINIMUM 10 CHARACTERS";
                     return false;
                 } else if(document.getElementById('inputMessageId').value.length >= 2000){
                     document.getElementById('iconMessageId').classList.add("error");
                     document.getElementById('iconMessageId').classList.remove("check");
-                    document.getElementById('msgMessageId').innerText = "2000 KARAKTER SINIRI AŞILDI";
+                    document.getElementById('msgMessageId').innerText = "MAXIMUM 2000 CHARACTERS";
                     return false;
                 } else {
                     document.getElementById('inputMessageId').classList.add("check");

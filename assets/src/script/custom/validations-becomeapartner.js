@@ -2,14 +2,14 @@
 const translateObject = {
 
     'tr': {
-        'NameAlert':'EN AZ 5 KARAKTER',
-        'PhoneAlert':'HATALI TELEFON',
-        'EmailAlert':'HATALI E-POSTA',
+        'NameAlert':'MINIMUM 5 CHARACTERS',
+        'PhoneAlert':'WRONG PHONE',
+        'EmailAlert':'WRONG EMAIL',
     },
     'en':{
-        'NameAlert':'EN AZ 5 KARAKTER',
-        'PhoneAlert':'HATALI TELEFON',
-        'EmailAlert':'HATALI E-POSTA',
+        'NameAlert':'MINIMUM 5 CHARACTERS',
+        'PhoneAlert':'WRONG PHONE',
+        'EmailAlert':'WRONG EMAIL',
     }
 };
 

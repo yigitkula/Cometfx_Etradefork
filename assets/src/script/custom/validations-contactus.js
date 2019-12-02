@@ -2,18 +2,18 @@
 const translateObject = {
 
     'tr': {
-        'NameAlert':'EN AZ 5 KARAKTER',
-        'PhoneAlert':'HATALI TELEFON',
-        'EmailAlert':'HATALI E-POSTA',
-        'MessageAlert':'EN AZ 10 KARAKTER',
-        'MessageCharacterOutAlert':'2000 KARAKTER SINIRI AŞILDI'
+        'NameAlert':'MINIMUM 5 CHARACTERS',
+        'PhoneAlert':'WRONG PHONE',
+        'EmailAlert':'WRONG EMAIL',
+        'MessageAlert':'MINIMUM 10 CHARACTERS',
+        'MessageCharacterOutAlert':'MAXIMUM 2000 CHARACTERS'
     },
     'en':{
-        'NameAlert':'EN AZ 5 KARAKTER',
-        'PhoneAlert':'HATALI TELEFON',
-        'EmailAlert':'HATALI E-POSTA',
-        'MessageAlert':'EN AZ 10 KARAKTER',
-        'MessageCharacterOutAlert':'2000 KARAKTER SINIRI AŞILDI'
+        'NameAlert':'MINIMUM 5 CHARACTERS',
+        'PhoneAlert':'WRONG PHONE',
+        'EmailAlert':'WRONG EMAIL',
+        'MessageAlert':'MINIMUM 10 CHARACTERS',
+        'MessageCharacterOutAlert':'MAXIMUM 2000 CHARACTERS'
     }
 };
 

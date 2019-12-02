@@ -47,13 +47,6 @@
         </ul>
         <!-- Our Company Box -->
 
-        <!-- Title -->
-        <div class="sitetitle sitetitle-xl sitetitle-black sitetitle-center sitetitle-width900" data-aos="fade-up" data-aos-duration="500">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget nunc tristique, vestibulum arcu at, auctor tortor. Donec auctor nibh vitae varius tempus. Ut eu orci tortor. Sed bibendum imperdiet mi, id sodales turpis cursus quis. Nullam sit amet tortor at odio sagittis porta. Nulla facilisi. Nunc hendrerit tristique sagittis. Nam condimentum pulvinar odio quis fermentum. Proin dignissim libero lorem, in pellentesque lorem posuere pharetra. Nunc eget iaculis metus, vel rhoncus ante. Cras nibh magna, tincidunt at velit quis, consectetur rutrum leo. Suspendisse potenti. Nullam sapien diam, accumsan vel pharetra ut, egestas a risus. Integer pharetra, ligula eget molestie ultrices, ante justo interdum felis, sed eleifend ante condimentum pulvinar odio quis fermentum est ut quam.</p>
-            <p>Quisque rhoncus sapien ac sem auctor, consectetur iaculis libero sodales. Proin porta erat id magna efficitur, non faucibus ipsum egestas. Aliquam cursus velit vitae luctus vulputate. Nullam suscipit mauris magna, quis ultrices libero placerat at. Inter tortor erat porta erat id magna efficitur mattis sit amet rutrum ac, mollis quis purus.</p>
-        </div>
-        <!-- Title -->
-
         <!-- E-Trade Team -->
         <div class="company-team sitecontent">
 
