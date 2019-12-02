@@ -207,7 +207,7 @@
                 if(!document.getElementById('inputEmailId').value.match(emailPattern)){
                     document.getElementById('iconEmailId').classList.add("error");
                     document.getElementById('iconEmailId').classList.remove("check");
-                    document.getElementById('msgEmailId').innerText = "HATALI E-POSTA";
+                    document.getElementById('msgEmailId').innerText = "WRONG EMAIL";
                     return false;
                 } else {
                     document.getElementById('iconEmailId').classList.add("check");
@@ -222,7 +222,7 @@
                 if(document.getElementById('inputPhoneId').value.replace(/\s/g, "").length < 11){
                     document.getElementById('iconPhoneId').classList.add("error");
                     document.getElementById('iconPhoneId').classList.remove("check");
-                    document.getElementById('msgPhoneId').innerText = "HATALI TELEFON";
+                    document.getElementById('msgPhoneId').innerText = "WRONG PHONE";
                     return false;
                 } else {
                     document.getElementById('iconPhoneId').classList.add("check");
