@@ -99,6 +99,7 @@ class FormValidators{
     }
 
     _verifyTerms(){
+        return true;
         var termsOfUseCheck	= document.getElementById('termsOfUseCheck').checked;
 
         if(!termsOfUseCheck){
