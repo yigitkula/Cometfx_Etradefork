@@ -125,25 +125,25 @@
 
     &.sprite-liquidityproviders-180{
       background-image: url(#{$global-img-path-icons}/icons_spite_liquidityproviders_180.svg);
-      background-position: 0 -45px;
+      background-position: 0 -70px;
       width: 180px;
-      height: 45px;
+      height: 70px;
       @include transition(background, 0.15s, ease-in-out);
 
       &.icons-logo01{
-        background-position: 0 -45px;
+        background-position: 0 -70px;
         &:hover{
           background-position: 0 0;
         }
       }
       &.icons-logo02{
-        background-position: -180px -45px;
+        background-position: -180px -70px;
         &:hover{
           background-position: -180px 0;
         }
       }
       &.icons-logo03{
-        background-position: -360px -45px;
+        background-position: -360px -70px;
         &:hover{
           background-position: -360px 0;
         }
