@@ -7,7 +7,7 @@ $MAIL_USERNAME = 'noreply@etradetechnologies.com';
 $MAIL_PASSWORD = 'Gy2!Ky_#-';
 $MAIL_FROM = 'noreply@etradetechnologies.com';
 $MAIL_FROM_NAME = 'E-trade.com';
-$MAIL_TO = 'support@etradertechnologies.com';
+$MAIL_TO = 'support@etradetechnologies.com';
 
 
 //Validations
