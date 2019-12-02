@@ -43,7 +43,7 @@ if(is_null($email) || !filter_var($email, FILTER_VALIDATE_EMAIL)){
 }
 
 //validate phone
-if(is_null($phone) || !preg_match("/^[0-9 ]*$/",$phone) || strlen($phone) < 14){
+if(is_null($phone) || !preg_match("/^[0-9 ]*$/",$phone) || strlen($phone) < 11){
     send_fail(1005, 'Invalid Phone');
     exit;
 }
