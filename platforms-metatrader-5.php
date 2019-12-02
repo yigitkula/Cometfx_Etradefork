@@ -211,7 +211,7 @@
                             <div class="recaptcha-check">
                                 <div class="g-recaptcha" data-theme="dark" data-sitekey="6LewOKAUAAAAAMDO2yohWeyDcjFAHfcuEqK2mIp4"></div>
                             </div>
-                            <label class="custom-control-label">Ben rabot değilim</label>
+                            <label class="custom-control-label">I'm not Robot</label>
                         </div>
                     </div>
                     <div class="form-group col-auto">

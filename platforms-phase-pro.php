@@ -34,7 +34,7 @@
             <!-- Banner -->
             <div class="platforms-head-etp">
                 <div class="platforms-head-etp-img">
-                    <img src="/assets/img/section/section_light_background_platforms_phase_pro_monitor.jpg" alt="Phase Pro" width="1200" height="514">
+                    <img src="/assets/img/section/section_light_background_platforms_phase_pro_monitor.jpg" alt="ETRADE PRO" width="1200" height="514">
                 </div>
                 <div class="platforms-head-etp-text">
                     <div class="sitetitle sitetitle-xl sitetitle-dark sitetitle-center" data-aos="fade-up" data-aos-duration="500">
@@ -180,7 +180,7 @@
                             <div class="recaptcha-check">
                                 <div class="g-recaptcha" data-theme="dark" data-sitekey="6LewOKAUAAAAAMDO2yohWeyDcjFAHfcuEqK2mIp4"></div>
                             </div>
-                            <label class="custom-control-label">Ben rabot değilim</label>
+                            <label class="custom-control-label">I'm not Robot</label>
                         </div>
                     </div>
                     <div class="form-group col-auto">

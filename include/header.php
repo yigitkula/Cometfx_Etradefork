@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=1440">
     <link rel="shortcut icon" href="/assets/img/icons/favicon.ico" type="image/x-icon" sizes="32x32" />
     <link id="css-bootstrap" rel="stylesheet" href="/assets/dist/css/bootstrap.css">
-    <link id="css-plugin-app" rel="stylesheet" href="/assets/dist/css/plugin-app.css">
-    <link id="css-custom-app" rel="stylesheet" href="/assets/dist/css/custom-app.css">
+    <link id="css-plugin-app" rel="stylesheet" href="/assets/dist/css/plugin-app.css?v=<?php echo time(); ?>">
+    <link id="css-custom-app" rel="stylesheet" href="/assets/dist/css/custom-app.css?v=<?php echo time(); ?>">
 </head>
 <body class="dfn-megamenu homepage">
 
