@@ -36,12 +36,10 @@
                 </div>
                 <div class="aggregation-head-aggregation-text">
                     <div class="sitetitle sitetitle-xl sitetitle-dark sitetitle-center" data-aos="fade-up" data-aos-duration="500">
-                        <p>From the moment the liquidity aggregator was launched, Phase Liquidity has been continuously working on its development. The modular structure of the system means that only can liquidity be arranged from ECN-platforms, banks, large-market-makers, and institutional brokers into a unified stream but it can also take the quality of execution of trading orders to a brand new level.</p>
+                        <p>From the moment the liquidity aggregator was launched, E=Trade Technologies LLC has been continuously working on its development. The modular structure of the system means that only can liquidity be arranged from ECN-platforms, banks, large-market-makers, and institutional brokers into a unified stream but it can also take the quality of execution of trading orders to a brand new level.</p>
                         <p>Ultimately, it is because the technological equipment provided by a large number of providers in the area of liquidity aggregation has shaped the competitive advantages of foreign exchange brokers. This way, innovative developments play a significant role in expanding the possibilities of agency scheme and allow the company to offer traders high speed execution of orders, narrow spreads, low level of slippage and insignificant number of rejected orders.</p>
                         <p>Taking into consideration trading credits that can be used as margin security for transactions, as well as the profitable conditions of the bonus program E-Trade Technologies clients have an opportunity to improve their trading results significantly. Along with the transparent policy of execution of client orders assuming to the same extent, positive and negative slippage, the aggregator model stands out as an inseparable part of the company's business logic and allows it to compete with leading providers on the foreign exchange market.</p>
-                        <p>Ultimately, the development of STP/NDD technology by way of integrating aggregator modules with the Meta Trader 4 platform creates opportunities, not only for embellishing trading conditions, but also for generating a comfortable environment for traders systematically.</p>
-                        <p></p>
-                        <p></p>
+                        <p>Ultimately, the development of STP/NDD technology by way of integrating aggregator modules with the Meta Trader 5 platform creates opportunities, not only for embellishing trading conditions, but also for generating a comfortable environment for traders systematically.</p>
                     </div>
                 </div>
             </div>
