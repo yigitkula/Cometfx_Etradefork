@@ -58,7 +58,7 @@
       height: 100px;
       @include transition(background, 0.15s, ease-in-out);
 
-      &.icons-3000{
+      &.icons-1000{
         background-position: 0 -100px;
         &:hover{
           background-position: 0 0;
