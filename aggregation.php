@@ -52,24 +52,6 @@
 </section>
 <!-- Aggregation End -->
 
-<!-- Join Our Family Start -->
-<section class="section-item foot-item foot-item-bggray">
-    <div class="container">
+<?php include('./include/footer-joinourfamily.php'); ?>
 
-        <!-- Title -->
-        <div class="sitetitle sitetitle-xl sitetitle-black sitetitle-center" data-aos="fade-up" data-aos-duration="500">
-            <h2>JOIN OUR <strong class="sitecolorred">FAMILY</strong></h2>
-            <p>Lorem ipsum dolor sit consectetur adipiscing elit suspendisse volutpat nunc sapien ullamcorper donec <br />facilisis null consequat cras purus augue anean ornare justo ligula dolor suscipit donec mollis eget mauris placerat.</p>
-        </div>
-        <!-- Title -->
-
-        <!-- Button -->
-        <div class="section-item-btn" data-aos="zoom-in-up" data-aos-duration="1000">
-            <a class="btn btn-lg btn-danger btn-gradient-red" href="become-a-partner" title="BECOME A PARTNER" rel="bookmark">BECOME A PARTNER</a>
-        </div>
-        <!-- Button -->
-
-    </div>
-</section>
-<!-- Join Our Family End -->
 <?php include('./include/footer.php'); ?>

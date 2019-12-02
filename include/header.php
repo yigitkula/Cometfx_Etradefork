@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="tr">
+<html lang="en">
 <head>
     <title>E-TRADE</title>
     <meta charset="utf-8">

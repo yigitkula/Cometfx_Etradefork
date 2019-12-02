@@ -5,7 +5,7 @@ class FormValidators{
     _fullNameInvalid(){
         document.getElementById('iconNameId').classList.add("error");
         document.getElementById('iconNameId').classList.remove("check");
-        document.getElementById('msgNameId').innerText = "EN AZ 5 KARAKTER";
+        document.getElementById('msgNameId').innerText = "MINIMUM 5 CHARACTERS";
     }
 
     _fullNameValid(){
@@ -17,7 +17,7 @@ class FormValidators{
     _emailInvalid(){
         document.getElementById('iconEmailId').classList.add("error");
         document.getElementById('iconEmailId').classList.remove("check");
-        document.getElementById('msgEmailId').innerText = "HATALI E-POSTA";
+        document.getElementById('msgEmailId').innerText = "WRONG EMAIL";
     }
 
     _emailValid(){
@@ -29,7 +29,7 @@ class FormValidators{
     _phoneInvalid(){
         document.getElementById('iconPhoneId').classList.add("error");
         document.getElementById('iconPhoneId').classList.remove("check");
-        document.getElementById('msgPhoneId').innerText = "HATALI TELEFON";
+        document.getElementById('msgPhoneId').innerText = "WRONG PHONE";
     }
 
     _phoneValid(){
@@ -86,10 +86,10 @@ class FormValidators{
 
     _verifyMessage(){
         if(document.getElementById('inputMessageId').value.length < 10){
-            this._messageInvalid("EN AZ 10 KARAKTER");
+            this._messageInvalid("MINIMUM 10 CHARACTERS");
             return false;
         } else if(document.getElementById('inputMessageId').value.length >= 2000){
-            this._messageInvalid("2000 KARAKTER SINIRI AŞILDI");
+            this._messageInvalid("MAXIMUM 2000 CHARACTERS");
             return false;
         } else {
             this._messageValid();
