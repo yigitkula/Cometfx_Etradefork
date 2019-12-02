@@ -297,7 +297,7 @@ $(document).ready(function() {
                     <div class="liquidityproviders-box-desc">
                         <p>Over the past decade, the name Leverate has become synonymous with high quality, premium brokerage solutions and services.</p>
                         <p>Our secret lies in our uncompromising approach to advanced technology, and in our attention to our clients’ needs and wants.</p>
-                        <p class="desclinks"><a class="urllink" href="hhttps://leverate.com" title="Visit it" target="_blank" rel="external nofollow">www.leverate.com</a></p>
+                        <p class="desclinks"><a class="urllink" href="https://leverate.com" title="Visit it" target="_blank" rel="external nofollow">www.leverate.com</a></p>
                     </div>
                 </div>
             </li>
