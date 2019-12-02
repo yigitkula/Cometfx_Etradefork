@@ -58,7 +58,7 @@
     }
   }
 
-  &-partners{
+  &-liquidity{
     background-color: $global-sitebg-darkblack01;
     background-image: url(#{$global-img-path-section}/section_dark_footer_top_partner_background.jpg);
     background-repeat: no-repeat;
@@ -72,7 +72,7 @@
       background-size: cover;
     }
 
-    .ourpartners{
+    .liquidityproviders{
 
       &-box{
         margin-top: 25px;
@@ -129,6 +129,8 @@
           line-height: 1.11;
           letter-spacing: -0.54px;
           margin-top: 5px;
+          min-height: 300px;
+          position: relative;
 
           > p{
             margin-bottom: 17px;
@@ -136,11 +138,17 @@
             &:last-child{margin-bottom: 0;}
           }
 
-          a{
-            color: $global-clr-text-light-gray;
-            @include transition-multiple(color 0.15s ease-in-out);
-          }
+          p.desclinks{
+            width: 100%;
+            position: absolute;
+            left: 0;
+            bottom: 0;
 
+            a{
+              color: $global-clr-text-light-gray;
+              @include transition-multiple(color 0.15s ease-in-out);
+            }
+          }
         }
       }
     }

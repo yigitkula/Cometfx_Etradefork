@@ -144,8 +144,8 @@ $('#companylistboxowl').owlCarousel({
 });
 /* Company List Box */
 
-/* Foot Our Partners Box */
-$('#footourpartnersowl').owlCarousel({
+/* Foot Liquidity Providers Box */
+$('#footliquidityprovidersowl').owlCarousel({
     loop:false,
     nav:false,
     dots:false,
@@ -171,7 +171,7 @@ $('#footourpartnersowl').owlCarousel({
         }
     }
 });
-/* Foot Our Partners Box */
+/* Foot Liquidity Providers Box */
 
 /* Foot Technology Box */
 $('#foottechnologysowl').owlCarousel({
