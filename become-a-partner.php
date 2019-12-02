@@ -61,7 +61,7 @@
                     </div>
                     <div class="form-group col">
                         <div class="labelanimation input-group">
-                            <input type="text" class="form-control inputphonemask disabledautofillinput" pattern=".{0}|.{14}" name="phone" id="inputPhoneId" readonly="readonly" onfocus="javascript:this.removeAttribute('readonly')" required oninput="partnerform.verifyContent('inputPhoneProcess','inputPhoneId','msgPhoneId','iconPhoneId')" onfocusout="partnerform.verifyContentErrorDelete('inputPhoneProcess','inputPhoneId','msgPhoneId','iconPhoneId')" >
+                            <input type="text" class="form-control inputphonemask disabledautofillinput" pattern=".{0}|.{11}" name="phone" id="inputPhoneId" readonly="readonly" onfocus="javascript:this.removeAttribute('readonly')" required oninput="partnerform.verifyContent('inputPhoneProcess','inputPhoneId','msgPhoneId','iconPhoneId')" onfocusout="partnerform.verifyContentErrorDelete('inputPhoneProcess','inputPhoneId','msgPhoneId','iconPhoneId')" >
                             <span class="inputerrormessage" id="msgPhoneId"></span>
                             <span class="inputbottombar"></span>
                             <label>PHONE NUMBER</label>
@@ -90,7 +90,7 @@
                             <label class="custom-control-label">I'm not Robot</label>
                         </div>
                     </div>
-                    <div class="form-group col-auto">
+                    <div class="form-group col-auto d-none">
                         <div class="custom-control custom-checkbox">
                             <input type="checkbox" class="custom-control-input" type="checkbox" name="termsofuse" value="" id="termsOfUseCheck">
                             <label id="labeltermsOfUseCheck" class="custom-control-label" for="termsOfUseCheck">Lorem <a class="urllink" href="#" title="ipsum dolor" rel="bookmark" target="_blank">ipsum dolor</a> sit amet consectetur</label>
@@ -120,19 +120,22 @@
             <li class="technology-box-item" data-aos="fade-right" data-aos-duration="700">
                 <div class="technology-box-icons"><i class="icons-sprite sprite-technology-200 icons-3000"></i></div>
                 <h3 class="technology-box-title">Access to 3000+ <br />Global Instruments</h3>
-                <p class="technology-box-desc">Lorem ipsum dolor sit amet, consectetur sed adipiscing elit. Integer in maximus lectus. <br />Donec sed scelerisque dolor.</p>
+                <p class="technology-box-desc">Trade over 1.000 instruments, connect the most requested exchanges all-over the world.</p>
             </li>
             <li class="technology-box-item">
                 <div class="technology-box-icons"><i class="icons-sprite sprite-technology-200 icons-speed"></i></div>
                 <h3 class="technology-box-title">World Best <br />Execution Speeds</h3>
-                <p class="technology-box-desc">Lorem ipsum dolor sit amet, consectetur sed adipiscing elit. Integer in maximus lectus. <br />Donec sed scelerisque dolor.</p>
+                <p class="technology-box-desc">Take the advantage of our powerful dedicated servers located in London, Frankfurt and Sofia. Execute trades below 50ms.</p>
             </li>
             <li class="technology-box-item" data-aos="fade-left" data-aos-duration="700">
                 <div class="technology-box-icons"><i class="icons-sprite sprite-technology-200 icons-price"></i></div>
                 <h3 class="technology-box-title">Enhanced Pricing <br />for STP & ECN Brokers</h3>
-                <p class="technology-box-desc">Lorem ipsum dolor sit amet, consectetur sed adipiscing elit. Integer in maximus lectus. <br />Donec sed scelerisque dolor.</p>
+                <p class="technology-box-desc">For the ones who seek for STP&ECN solution. Get the enhanced pricing and quotes. Instantly.</p>
             </li>
         </ul>
+        <div class="technology-box-btn" data-aos="fade-up" data-aos-duration="500">
+            <a class="btn btn-lg btn-danger btn-gradient-red" href="become-a-partner" title="REQUEST A QUOTE" rel="bookmark">REQUEST A QUOTE</a>
+        </div>
         <!-- Technology Box -->
 
     </div>

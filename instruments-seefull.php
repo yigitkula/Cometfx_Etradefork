@@ -62,7 +62,7 @@
                     </div>
                     <div class="form-group col">
                         <div class="labelanimation input-group">
-                            <input type="text" class="form-control inputphonemask disabledautofillinput" pattern=".{0}|.{14}" name="phone" id="inputPhoneId" readonly="readonly" onfocus="javascript:this.removeAttribute('readonly')" required oninput="partnerform.verifyContent('inputPhoneProcess','inputPhoneId','msgPhoneId','iconPhoneId')" onfocusout="partnerform.verifyContentErrorDelete('inputPhoneProcess','inputPhoneId','msgPhoneId','iconPhoneId')" >
+                            <input type="text" class="form-control inputphonemask disabledautofillinput" pattern=".{0}|.{11}" name="phone" id="inputPhoneId" readonly="readonly" onfocus="javascript:this.removeAttribute('readonly')" required oninput="partnerform.verifyContent('inputPhoneProcess','inputPhoneId','msgPhoneId','iconPhoneId')" onfocusout="partnerform.verifyContentErrorDelete('inputPhoneProcess','inputPhoneId','msgPhoneId','iconPhoneId')" >
                             <span class="inputerrormessage" id="msgPhoneId"></span>
                             <span class="inputbottombar"></span>
                             <label>PHONE NUMBER</label>
@@ -91,7 +91,7 @@
                             <label class="custom-control-label">I'm not Robot</label>
                         </div>
                     </div>
-                    <div class="form-group col-auto">
+                    <div class="form-group col-auto d-none">
                         <div class="custom-control custom-checkbox">
                             <input type="checkbox" class="custom-control-input" type="checkbox" name="termsofuse" value="" id="termsOfUseCheck">
                             <label id="labeltermsOfUseCheck" class="custom-control-label" for="termsOfUseCheck">Lorem <a class="urllink" href="#" title="ipsum dolor" rel="bookmark" target="_blank">ipsum dolor</a> sit amet consectetur</label>

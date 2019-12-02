@@ -3,23 +3,29 @@ $(function(){
     var $pageHeadTitleTag       = $('title');
     var $pageHeadTitleTagText   = $pageHeadTitleTag.text();
     var $headerSloganTitle      = $(".headtitle h1").text();
+    var $headerDefaultTitle     = "E-TRADE";
+    var $headerBlurTitle        = "E-TRADE";
 
     if($('body').hasClass('homepage')){
         $(window).on("load", function(){
-            $pageHeadTitleTag.text("E-TRADE")
+            $pageHeadTitleTag.text($headerDefaultTitle)
         });
     }else {
         $(window).on("load", function(){
-            $pageHeadTitleTag.text($headerSloganTitle.toLocaleUpperCase() + " | E-TRADE")
+            $pageHeadTitleTag.text($headerSloganTitle.toLocaleUpperCase() + " | " + $headerDefaultTitle)
         });
     }
 
     $(window).focus(function(){
-        $pageHeadTitleTag.text($pageHeadTitleTagText)
+        if($('body').hasClass('homepage')){
+            $pageHeadTitleTag.text($headerDefaultTitle)
+        }else {
+            $pageHeadTitleTag.text($headerSloganTitle.toLocaleUpperCase() + " | " + $headerDefaultTitle)
+        }
     });
 
     $(window).blur(function(){
-        $pageHeadTitleTag.text('E-TRADE')
+        $pageHeadTitleTag.text($headerBlurTitle)
     });
 });
 /* Head Blur Tab Page Title */
@@ -125,6 +131,12 @@ $(document).ready(function(){
         showMaskOnHover: false
     });
     $('.inputphonemask').inputmask({
+        mask: '+99{1,99}',
+        placeholder: '',
+        showMaskOnFocus: true,
+        showMaskOnHover: false
+    });
+    $('.inputphonemasktr').inputmask({
         mask: '0999 999 99 99',
         placeholder: '',
         showMaskOnFocus: true,
