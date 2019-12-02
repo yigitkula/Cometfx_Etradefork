@@ -76,11 +76,11 @@
             white-space:nowrap;
             padding: 0 !important;
             position: absolute;
-            width: calc(100% + 105px);
+            min-width: 300px;
             height: 18px;
-            top: 105px;
+            top: calc(300px - 20px);
             left: 0;
-            @include transition-multiple(width 0.15s ease-in-out, top 0.15s ease-in-out);
+            @include transition-multiple(width 0s ease-in-out, top 0.3s ease-in-out);
             @include transform-multiple(rotate(-90deg) translateX(3px));
             @include transform-origin(8px);
 
