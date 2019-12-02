@@ -1,4 +1,11 @@
 <?php include('./include/header.php'); ?>
+
+<script>
+$(document).ready(function() {
+    $('body').addClass("homepage");
+});
+</script>
+
 <!-- Header Slogan -->
 <div class="headtitle">
     <div class="headtitle-background headtitle-background-home">
@@ -288,9 +295,9 @@
                 <div class="liquidityproviders-box-blur">
                     <div class="liquidityproviders-box-icons"><i class="icons-sprite sprite-liquidityproviders-180 icons-logo01"></i></div>
                     <div class="liquidityproviders-box-desc">
-                        <p>IS Prime is part of the ISAM Capital Markets group and offers full service multi-asset brokerage and execution via it’s cutting edge proprietary technology.</p>
-                        <p>As a prime of prime, IS Prime provides aggregated pricing sourced from Tier one institutions, settled through the group’s bank Prime brokers.</p>
-                        <p class="desclinks"><a class="urllink" href="http://www.financialbank.com" title="Visit it" target="_blank" rel="external nofollow">www.financialbank.com</a></p>
+                        <p>Over the past decade, the name Leverate has become synonymous with high quality, premium brokerage solutions and services.</p>
+                        <p>Our secret lies in our uncompromising approach to advanced technology, and in our attention to our clients’ needs and wants.</p>
+                        <p class="desclinks"><a class="urllink" href="https://leverate.com" title="Visit it" target="_blank" rel="external nofollow">www.leverate.com</a></p>
                     </div>
                 </div>
             </li>
@@ -298,9 +305,9 @@
                 <div class="liquidityproviders-box-blur">
                     <div class="liquidityproviders-box-icons"><i class="icons-sprite sprite-liquidityproviders-180 icons-logo02"></i></div>
                     <div class="liquidityproviders-box-desc">
-                        <p>Over the past decade, the name Leverate has become synonymous with high quality, premium brokerage solutions and services.</p>
-                        <p>Our secret lies in our uncompromising approach to advanced technology, and in our attention to our clients’ needs and wants.</p>
-                        <p class="desclinks"><a class="urllink" href="http://www.barclays.com" title="Visit it" target="_blank" rel="external nofollow">www.barclays.com</a></p>
+                        <p>By enabling private investors to access real-time prices free of charge we followed our mission of “democratising banking” - transparency, integrity and unbiased information for the benefit of our clients, allowing them to make independent decisions.</p>
+                        <p>Through the success of this proposition Swissquote Group Holding Ltd was created and listed on the SIX Swiss Exchange in May 2000.</p>
+                        <p class="desclinks"><a class="urllink" href="https://en.swissquote.com/?sq_mobile=1&sq_country=US" title="Visit it" target="_blank" rel="external nofollow">en.swissquote.com</a></p>
                     </div>
                 </div>
             </li>
@@ -308,9 +315,9 @@
                 <div class="liquidityproviders-box-blur">
                     <div class="liquidityproviders-box-icons"><i class="icons-sprite sprite-liquidityproviders-180 icons-logo03"></i></div>
                     <div class="liquidityproviders-box-desc">
-                        <p>By enabling private investors to access real-time prices free of charge we followed our mission of “democratising banking” - transparency, integrity and unbiased information for the benefit of our clients, allowing them to make independent decisions.</p>
-                        <p>Through the success of this proposition Swissquote Group Holding Ltd was created and listed on the SIX Swiss Exchange in May 2000.</p>
-                        <p class="desclinks"><a class="urllink" href="http://www.hsbc.com" title="Visit it" target="_blank" rel="external nofollow">www.hsbc.com</a></p>
+                        <p>IS Prime is part of the ISAM Capital Markets group and offers full service multi-asset brokerage and execution via it’s cutting edge proprietary technology.</p>
+                        <p>As a prime of prime, IS Prime provides aggregated pricing sourced from Tier one institutions, settled through the group’s bank Prime brokers.</p>
+                        <p class="desclinks"><a class="urllink" href="https://www.isprimefx.com" title="Visit it" target="_blank" rel="external nofollow">www.isprimefx.com</a></p>
                     </div>
                 </div>
             </li>

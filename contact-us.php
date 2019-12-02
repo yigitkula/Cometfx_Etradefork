@@ -139,21 +139,21 @@
                 <div class="contactus-box-icons"><i class="icons-sprite sprite-red-contactus-50 icons-phone"></i></div>
                 <a href="tel:441913213377" target="_blank" rel="external nofollow">
                     <p class="contactus-box-title">PHONE</p>
-                    <p class="contactus-box-desc">+44 191 321 3377</p>
+                    <p class="contactus-box-desc">+44191 321 3377</p>
                 </a>
             </li>
             <li class="contactus-box-item">
                 <div class="contactus-box-icons"><i class="icons-sprite sprite-red-contactus-50 icons-mail"></i></div>
-                <a href="mailto:hello@etrade.com" target="_blank" rel="external nofollow">
+                <a href="mailto:support@etradetechnologies.com" target="_blank" rel="external nofollow">
                     <p class="contactus-box-title">MAIL</p>
-                    <p class="contactus-box-desc">hello@etrade.com</p>
+                    <p class="contactus-box-desc">support@etradetechnologies.com</p>
                 </a>
             </li>
             <li class="contactus-box-item" data-aos="fade-left" data-aos-duration="700">
                 <div class="contactus-box-icons"><i class="icons-sprite sprite-red-contactus-50 icons-map"></i></div>
                 <a href="contact-us" title="CONTACT US" target="_blank" rel="bookmark">
                     <p class="contactus-box-title">FIND US</p>
-                    <p class="contactus-box-desc">İstanbul, Turkiye</p>
+                    <p class="contactus-box-desc">London, Podgorica, Istanbul</p>
                 </a>
             </li>
         </ul>

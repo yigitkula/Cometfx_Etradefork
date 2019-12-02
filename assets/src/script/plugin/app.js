@@ -1,14 +1,25 @@
 /* Head Blur Tab Page Title */
 $(function(){
-    var $pageHeadTagTitle       = $('title');
-    var $pageHeadTagTitleText   = $pageHeadTagTitle.text();
+    var $pageHeadTitleTag       = $('title');
+    var $pageHeadTitleTagText   = $pageHeadTitleTag.text();
+    var $headerSloganTitle      = $(".headtitle h1").text();
+
+    if($('body').hasClass('homepage')){
+        $(window).on("load", function(){
+            $pageHeadTitleTag.text("E-TRADE")
+        });
+    }else {
+        $(window).on("load", function(){
+            $pageHeadTitleTag.text($headerSloganTitle.toLocaleUpperCase() + " | E-TRADE")
+        });
+    }
 
     $(window).focus(function(){
-        $pageHeadTagTitle.text($pageHeadTagTitleText)
+        $pageHeadTitleTag.text($pageHeadTitleTagText)
     });
 
     $(window).blur(function(){
-        $pageHeadTagTitle.text('E-TRADE')
+        $pageHeadTitleTag.text('E-TRADE')
     });
 });
 /* Head Blur Tab Page Title */
