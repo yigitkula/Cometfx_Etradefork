@@ -63,8 +63,8 @@ $(document).ready(function() {
         <!-- Technology Box -->
         <ul id="technologyboxowl" class="technology-box owl-carousel owl-theme">
             <li class="technology-box-item" data-aos="fade-right" data-aos-duration="700">
-                <div class="technology-box-icons"><i class="icons-sprite sprite-technology-200 icons-3000"></i></div>
-                <h3 class="technology-box-title">Access to 3000+ <br />Global Instruments</h3>
+                <div class="technology-box-icons"><i class="icons-sprite sprite-technology-200 icons-1000"></i></div>
+                <h3 class="technology-box-title">Access to 1000+ <br />Global Instruments</h3>
                 <p class="technology-box-desc">Trade over 1.000 instruments, connect the most requested exchanges all-over the world.</p>
             </li>
             <li class="technology-box-item">
@@ -93,7 +93,7 @@ $(document).ready(function() {
 
         <!-- Title -->
         <div class="sitetitle sitetitle-xl sitetitle-black sitetitle-center" data-aos="fade-up" data-aos-duration="500">
-            <h2>DEEP INSTITUTIONAL LIQUIDITY ON <br /><strong class="sitecolorred">3000+</strong> <span>GLOBAL</span> INSTRUMENTS</h2>
+            <h2>DEEP INSTITUTIONAL LIQUIDITY ON <br /><strong class="sitecolorred">1000+</strong> <span>GLOBAL</span> INSTRUMENTS</h2>
         </div>
         <!-- Title -->
 
