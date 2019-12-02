@@ -3,11 +3,11 @@ require_once './vendor/autoload.php';
 //Mail Settings
 $SMTP_HOST = 'smtp.yandex.com.tr';
 $SMTP_PORT = 465;
-$MAIL_USERNAME = 'eyigitkula@yandex.com';
-$MAIL_PASSWORD = 'Mad(6242)MchnK';
-$MAIL_FROM = 'eyigitkula@yandex.com';
+$MAIL_USERNAME = 'noreply@etradetechnologies.com';
+$MAIL_PASSWORD = 'Gy2!Ky_#-';
+$MAIL_FROM = 'noreply@etradetechnologies.com';
 $MAIL_FROM_NAME = 'E-trade.com';
-$MAIL_TO = 'yigit.kula@icrypex.com';
+$MAIL_TO = 'support@etradertechnologies.com';
 
 
 //Validations
