@@ -7,7 +7,7 @@ $MAIL_USERNAME = 'noreply@etradetechnologies.com';
 $MAIL_PASSWORD = 'Gy2!Ky_#-';
 $MAIL_FROM = 'noreply@etradetechnologies.com';
 $MAIL_FROM_NAME = 'E-trade.com';
-$MAIL_TO = 'support@etradertechnologies.com';
+$MAIL_TO = 'support@etradetechnologies.com';
 
 
 //Validations
@@ -43,7 +43,7 @@ if(is_null($email) || !filter_var($email, FILTER_VALIDATE_EMAIL)){
 }
 
 //validate phone
-if(is_null($phone) || !preg_match("/^[0-9 ]*$/",$phone) || strlen($phone) < 14){
+if(is_null($phone) || !preg_match("/^[0-9 ]*$/",$phone) || strlen($phone) < 11){
     send_fail(1005, 'Invalid Phone');
     exit;
 }
