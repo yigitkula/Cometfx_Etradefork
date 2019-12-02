@@ -61,7 +61,7 @@
                     </div>
                     <div class="form-group col">
                         <div class="labelanimation input-group">
-                            <input type="text" class="form-control inputphonemask disabledautofillinput" pattern=".{0}|.{11}" name="phone" id="inputPhoneId" readonly="readonly" onfocus="javascript:this.removeAttribute('readonly')" required oninput="contactform.verifyContent('inputPhoneProcess','inputPhoneId','msgPhoneId','iconPhoneId')" onfocusout="contactform.verifyContentErrorDelete('inputPhoneProcess','inputPhoneId','msgPhoneId','iconPhoneId')" >
+                            <input type="text" class="form-control inputphonemask disabledautofillinput" pattern=".{0}|.{11,}" name="phone" id="inputPhoneId" readonly="readonly" onfocus="javascript:this.removeAttribute('readonly')" required oninput="contactform.verifyContent('inputPhoneProcess','inputPhoneId','msgPhoneId','iconPhoneId')" onfocusout="contactform.verifyContentErrorDelete('inputPhoneProcess','inputPhoneId','msgPhoneId','iconPhoneId')" >
                             <span class="inputerrormessage" id="msgPhoneId"></span>
                             <span class="inputbottombar"></span>
                             <label>PHONE NUMBER</label>
