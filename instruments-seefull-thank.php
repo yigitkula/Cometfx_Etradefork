@@ -89,51 +89,6 @@
 </section>
 <!-- Other Instruments End -->
 
-<!-- E-Trade Technologies Start -->
-<section class="foot-technology section-item">
-    <div class="container">
-
-        <!-- Title -->
-        <div class="sitetitle sitetitle-xl sitetitle-white sitetitle-center sitetitle-mb40" data-aos="fade-up" data-aos-duration="500">
-            <h2>TAKE ADVANTAGE OF <strong>E-TRADE <span class="sitecolorred">TECHNOLOGIES</span></strong></h2>
-        </div>
-        <!-- Title -->
-
-        <!-- Technology Box -->
-        <ul id="technologyboxowl" class="technology-box owl-carousel owl-theme">
-            <li class="technology-box-item" data-aos="fade-right" data-aos-duration="700">
-                <div class="technology-box-icons"><i class="icons-sprite sprite-technology-200 icons-norequotes"></i></div>
-                <h3 class="technology-box-title">NO REQUOTES</h3>
-                <p class="technology-box-desc">Lorem ipsum dolor sit amet, consectetur sed adipiscing elit. Integer in maximus lectus. <br />Donec sed scelerisque dolor.</p>
-            </li>
-            <li class="technology-box-item">
-                <div class="technology-box-icons"><i class="icons-sprite sprite-technology-200 icons-speed2"></i></div>
-                <h3 class="technology-box-title">ULTRA-FAST EXC</h3>
-                <p class="technology-box-desc">Lorem ipsum dolor sit amet, consectetur sed adipiscing elit. Integer in maximus lectus. <br />Donec sed scelerisque dolor.</p>
-            </li>
-            <li class="technology-box-item" data-aos="fade-left" data-aos-duration="700">
-                <div class="technology-box-icons"><i class="icons-sprite sprite-technology-200 icons-deep"></i></div>
-                <h3 class="technology-box-title">DEEP LIQUIDITY</h3>
-                <p class="technology-box-desc">Lorem ipsum dolor sit amet, consectetur sed adipiscing elit. Integer in maximus lectus. <br />Donec sed scelerisque dolor.</p>
-            </li>
-        </ul>
-        <!-- Technology Box -->
-
-        <!-- Title -->
-        <div class="sitetitle sitetitle-xl sitetitle-white sitetitle-center sitetitle-width900" data-aos="fade-up" data-aos-duration="500">
-            <h2>JOIN OUR <strong class="sitecolorred">FAMILY</strong></h2>
-            <p>Lorem ipsum dolor sit consectetur adipiscing elit suspendisse volutpat nunc sapien ullamcorper donec <br />facilisis null consequat cras purus augue anean ornare justo ligula dolor suscipit donec mollis eget mauris placerat.</p>
-        </div>
-        <!-- Title -->
-
-        <!-- Button -->
-        <div class="foot-technology-btn" data-aos="zoom-in-up" data-aos-duration="1000">
-            <a class="btn btn-lg btn-danger btn-gradient-red" href="become-a-partner" title="BECOME A PARTNER" rel="bookmark">BECOME A PARTNER</a>
-        </div>
-        <!-- Button -->
-
-    </div>
-</section>
-<!-- E-Trade Technologies End -->
+<?php include('./include/footer-technologies.php'); ?>
 
 <?php include('./include/footer.php'); ?>

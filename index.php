@@ -58,17 +58,17 @@
             <li class="technology-box-item" data-aos="fade-right" data-aos-duration="700">
                 <div class="technology-box-icons"><i class="icons-sprite sprite-technology-200 icons-3000"></i></div>
                 <h3 class="technology-box-title">Access to 3000+ <br />Global Instruments</h3>
-                <p class="technology-box-desc">Lorem ipsum dolor sit amet, consectetur sed adipiscing elit. Integer in maximus lectus. <br />Donec sed scelerisque dolor.</p>
+                <p class="technology-box-desc">Trade over 1.000 instruments, connect the most requested exchanges all-over the world.</p>
             </li>
             <li class="technology-box-item">
                 <div class="technology-box-icons"><i class="icons-sprite sprite-technology-200 icons-speed"></i></div>
                 <h3 class="technology-box-title">World Best <br />Execution Speeds</h3>
-                <p class="technology-box-desc">Lorem ipsum dolor sit amet, consectetur sed adipiscing elit. Integer in maximus lectus. <br />Donec sed scelerisque dolor.</p>
+                <p class="technology-box-desc">Take the advantage of our powerful dedicated servers located in London, Frankfurt and Sofia. Execute trades below 50ms.</p>
             </li>
             <li class="technology-box-item" data-aos="fade-left" data-aos-duration="700">
                 <div class="technology-box-icons"><i class="icons-sprite sprite-technology-200 icons-price"></i></div>
                 <h3 class="technology-box-title">Enhanced Pricing <br />for STP & ECN Brokers</h3>
-                <p class="technology-box-desc">Lorem ipsum dolor sit amet, consectetur sed adipiscing elit. Integer in maximus lectus. <br />Donec sed scelerisque dolor.</p>
+                <p class="technology-box-desc">For the ones who seek for STP&ECN solution. Get the enhanced pricing and quotes. Instantly.</p>
             </li>
         </ul>
         <div class="technology-box-btn" data-aos="fade-up" data-aos-duration="500">
@@ -259,72 +259,72 @@
     <!-- Title -->
     <div class="sitetitle sitetitle-xl sitetitle-white sitetitle-center sitetitle-width1100" data-aos="fade-up" data-aos-duration="500">
         <h2>TRADE LIKE A PRO WITH <strong>E-TRADE <span class="sitecolorred">PRO</span></strong></h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse volutpat nunc sapien, non ullamcorper eros elementum at. Donec et facilisis nulla, quis consequat elit. Cras nec purus augue. Aenean ornare justo ligula, non placerat dolor suscipit a. Donec mollis eget mauris at placerat. Nunc nibh umsan nec sapien quis, interdum dignissim odio. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere.</p>
+        <p>E-Trade Pro Trading Platform, created from scratch, just for the professional brokers. Includes multiple-close, various types of orders, better execution than Metatrader, lots of graphical updates, analysis tools, signals, Multi-Account Management and so on.E-Trade Pro, builded by traders, for traders.</p>
     </div>
     <!-- Title -->
 
     <!-- Button -->
     <div class="foot-platforms-btn" data-aos="zoom-in-up" data-aos-duration="1000">
-        <a class="btn btn-lg btn-danger btn-gradient-red" href="platforms-phase-pro">EXPLORE PHASE PRO</a>
+        <a class="btn btn-lg btn-danger btn-gradient-red" href="platforms-phase-pro" title="EXPLORE ETRADE PRO">EXPLORE ETRADE PRO</a>
     </div>
     <!-- Button -->
 
 </section>
 <!-- Platforms End -->
 
-<!-- Our Partners Start -->
-<section class="foot-partners">
+<!-- Liquidity Providers Start -->
+<section class="foot-liquidity">
     <div class="container">
 
         <!-- Title -->
         <div class="sitetitle sitetitle-xl sitetitle-white sitetitle-center" data-aos="fade-up" data-aos-duration="500">
-            <h2>OUR <strong class="sitecolorred">PARTNERS</strong></h2>
+            <h2>LIQUIDITY <strong class="sitecolorred">PROVIDERS</strong></h2>
         </div>
         <!-- Title -->
 
-        <!-- Our Partners Box -->
-        <ul id="footourpartnersowl" class="ourpartners-box owl-carousel owl-theme" data-aos="fade-down" data-aos-duration="500">
-            <li class="ourpartners-box-item">
-                <div class="ourpartners-box-blur">
-                    <div class="ourpartners-box-icons"><i class="icons-sprite sprite-ourpartners-180 icons-logo01"></i></div>
-                    <div class="ourpartners-box-desc">
-                        <p>Phase Markets, was established in August, 2017 by few financial geek.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit vulputat eu pharetra.</p>
-                        <p>Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam.</p>
-                        <p><a class="urllink" href="http://www.financialbank.com" title="Visit it" target="_blank" rel="external nofollow">www.financialbank.com</a></p>
+        <!-- Liquidity Providers Box -->
+        <ul id="footliquidityprovidersowl" class="liquidityproviders-box owl-carousel owl-theme" data-aos="fade-down" data-aos-duration="500">
+            <li class="liquidityproviders-box-item">
+                <div class="liquidityproviders-box-blur">
+                    <div class="liquidityproviders-box-icons"><i class="icons-sprite sprite-liquidityproviders-180 icons-logo01"></i></div>
+                    <div class="liquidityproviders-box-desc">
+                        <p>IS Prime is part of the ISAM Capital Markets group and offers full service multi-asset brokerage and execution via it’s cutting edge proprietary technology.</p>
+                        <p>As a prime of prime, IS Prime provides aggregated pricing sourced from Tier one institutions, settled through the group’s bank Prime brokers.</p>
+                        <p class="desclinks"><a class="urllink" href="http://www.financialbank.com" title="Visit it" target="_blank" rel="external nofollow">www.financialbank.com</a></p>
                     </div>
                 </div>
             </li>
-            <li class="ourpartners-box-item">
-                <div class="ourpartners-box-blur">
-                    <div class="ourpartners-box-icons"><i class="icons-sprite sprite-ourpartners-180 icons-logo02"></i></div>
-                    <div class="ourpartners-box-desc">
-                        <p>Phase Markets, was established in August, 2017 by few financial geek.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit vulputat eu pharetra.</p>
-                        <p>Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam.</p>
-                        <p><a class="urllink" href="http://www.barclays.com" title="Visit it" target="_blank" rel="external nofollow">www.barclays.com</a></p>
+            <li class="liquidityproviders-box-item">
+                <div class="liquidityproviders-box-blur">
+                    <div class="liquidityproviders-box-icons"><i class="icons-sprite sprite-liquidityproviders-180 icons-logo02"></i></div>
+                    <div class="liquidityproviders-box-desc">
+                        <p>Over the past decade, the name Leverate has become synonymous with high quality, premium brokerage solutions and services.</p>
+                        <p>Our secret lies in our uncompromising approach to advanced technology, and in our attention to our clients’ needs and wants.</p>
+                        <p class="desclinks"><a class="urllink" href="http://www.barclays.com" title="Visit it" target="_blank" rel="external nofollow">www.barclays.com</a></p>
                     </div>
                 </div>
             </li>
-            <li class="ourpartners-box-item">
-                <div class="ourpartners-box-blur">
-                    <div class="ourpartners-box-icons"><i class="icons-sprite sprite-ourpartners-180 icons-logo03"></i></div>
-                    <div class="ourpartners-box-desc">
-                        <p>Phase Markets, was established in August, 2017 by few financial geek.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit vulputat eu pharetra.</p>
-                        <p>Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam.</p>
-                        <p><a class="urllink" href="http://www.hsbc.com" title="Visit it" target="_blank" rel="external nofollow">www.hsbc.com</a></p>
+            <li class="liquidityproviders-box-item">
+                <div class="liquidityproviders-box-blur">
+                    <div class="liquidityproviders-box-icons"><i class="icons-sprite sprite-liquidityproviders-180 icons-logo03"></i></div>
+                    <div class="liquidityproviders-box-desc">
+                        <p>By enabling private investors to access real-time prices free of charge we followed our mission of “democratising banking” - transparency, integrity and unbiased information for the benefit of our clients, allowing them to make independent decisions.</p>
+                        <p>Through the success of this proposition Swissquote Group Holding Ltd was created and listed on the SIX Swiss Exchange in May 2000.</p>
+                        <p class="desclinks"><a class="urllink" href="http://www.hsbc.com" title="Visit it" target="_blank" rel="external nofollow">www.hsbc.com</a></p>
                     </div>
                 </div>
             </li>
         </ul>
-        <!-- Our Partners Box -->
+        <!-- Liquidity Providers Box -->
 
         <!-- Button -->
-        <div class="foot-partners-btn" data-aos="zoom-in-up" data-aos-duration="1000">
+        <div class="foot-liquidity-btn" data-aos="zoom-in-up" data-aos-duration="1000">
             <a class="btn btn-lg btn-danger btn-gradient-red" href="become-a-partner" title="BECOME A PARTNER" rel="bookmark">BECOME A PARTNER</a>
         </div>
         <!-- Button -->
 
     </div>
 </section>
-<!-- Our Partners End -->
+<!-- Liquidity Providers End -->
 
 <?php include('./include/footer.php'); ?>
