@@ -114,6 +114,7 @@ class FormValidators{
     }
 
     _ajaxCall(type){
+        var self = this;
         var buttonTitle = $('button[type="submit"]').html();
         console.log(buttonTitle);
         $('button[type="submit"]').html('SENDING');
@@ -143,10 +144,10 @@ class FormValidators{
                             alert("Mesajınız gönderilemedi. Lütfen daha sonra tekrar deneyin"); 
                             break;
 
-                        case 1003: this._fullNameInvalid(); break;
-                        case 1004: this._emailInvalid();    break;
-                        case 1005: this._phoneInvalid();    break;
-                        case 1006: this._messageInvalid();  break;
+                        case 1003: self._fullNameInvalid(); break;
+                        case 1004: self._emailInvalid();    break;
+                        case 1005: self._phoneInvalid();    break;
+                        case 1006: self._messageInvalid();  break;
                     }
                     return;
                 }
