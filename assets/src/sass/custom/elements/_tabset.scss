@@ -2,7 +2,7 @@
 
   .nav{
     &-center{
-      justify-content: center;
+      @include flex-justify-content(center);
     }
     &-btn{
       .nav{
@@ -29,7 +29,7 @@
 
           &.active{
             color: $global-clr-white;
-            @include gradient($global-grdint-red01, $global-grdint-red02);
+            @include background-gradient($global-grdint-red01, $global-grdint-red02);
           }
         }
       }

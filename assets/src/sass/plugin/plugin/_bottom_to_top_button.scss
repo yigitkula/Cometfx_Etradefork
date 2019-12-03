@@ -6,7 +6,7 @@
   @include ReSassMaxWidthResponsive(992){
     display: none;
     background-color: $global-sitebg-darkblack01;
-    @include gradient($global-sitebg-darkblack02, $global-sitebg-darkblack01);
+    @include background-gradient($global-sitebg-darkblack02, $global-sitebg-darkblack01);
     width: 36px;
     height: 36px;
     position: fixed;

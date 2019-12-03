@@ -9,136 +9,21 @@
  */
 
 // Max Width Responsive
-@mixin ReSassMaxWidthResponsive( $point ) {
-
-	@if $point==240 {
-		@media ( max-width: 239px ) {
-			@content;
-		}
-	}
-	@if $point==320 {
-		@media ( max-width: 319px ) {
-			@content;
-		}
-	}
-	@if $point==400 {
-		@media ( max-width: 399px ) {
-			@content;
-		}
-	}
-	@if $point==480 {
-		@media ( max-width: 479px ) {
-			@content;
-		}
-	}
-	@if $point==576 {
-		@media ( max-width: 575px ) {
-			@content;
-		}
-	}
-	@if $point==768 {
-		@media ( max-width: 767px ) {
-			@content;
-		}
-	}
-	@if $point==992 {
-		@media ( max-width: 991px ) {
-			@content;
-		}
-	}
-	@if $point==1024 {
-		@media ( max-width: 1023px ) {
-			@content;
-		}
-	}
-	@if $point==1140 {
-		@media ( max-width: 1139px ) {
-			@content;
-		}
-	}
-	@if $point==1200 {
-		@media ( max-width: 1199px ) {
-			@content;
-		}
-	}
-	@if $point==1280 {
-		@media ( max-width: 1279px ) {
-			@content;
-		}
-	}
-	@if $point==1400 {
-		@media ( max-width: 1399px ) {
-			@content;
-		}
-	}
-	@if $point==1500 {
-		@media ( max-width: 1499px ) {
-			@content;
-		}
-	}
-
-}
-
-// Min Width Responsive
-@mixin ReSassMinWidthResponsive( $point ) {
-
-	@if $point==992 {
-		@media ( min-width: 992px ) {
-			@content;
-		}
-	}
-
-	@if $point==1200 {
-		@media ( min-width: 1200px ) {
-			@content;
-		}
-	}
-	@if $point==1400 {
-		@media ( min-width: 1400px ) {
-			@content;
-		}
-	}
-	@if $point==1920 {
-		@media ( min-width: 1920px ) {
-			@content;
-		}
-	}
-
+@mixin ReSassMaxWidthResponsive($point){
+	@media (max-width: ($point - 1) + "px"){@content }
 }
 
 // Max Height Responsive
-@mixin ReSassMaxHeightResponsive( $point ) {
+@mixin ReSassMaxHeightResponsive($point){
+	@media (max-height: ($point - 1) + "px"){@content;}
+}
 
-	@if $point==550 {
-		@media ( max-height: 549px ) {
-			@content;
-		}
-	}
-	@if $point==700 {
-		@media ( max-height: 699px ) {
-			@content;
-		}
-	}
-	@if $point==800 {
-		@media ( max-height: 799px ) {
-			@content;
-		}
-	}
-	@if $point==1000 {
-		@media ( max-height: 999px ) {
-			@content;
-		}
-	}
-
+// Min Width Responsive
+@mixin ReSassMinWidthResponsive($point){
+	@media (min-width: $point + "px"){@content;}
 }
 
 // Min Height Responsive
-@mixin ReSassMinHeightResponsive( $point ) {
-
-	@if $point==1000 {
-		@media ( min-height: 999px ) {
-			@content;
-		}
-	}
-
+@mixin ReSassMinHeightResponsive($point){
+	@media (min-height: $point + "px"){@content;}
 }

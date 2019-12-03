@@ -2,10 +2,10 @@
 .section-item{
 
   &-btn{
-    display: flex;
-    justify-content: center;
     padding: 40px 0 0;
     position: relative;
+    @include flex-flexbox();
+    @include flex-justify-content(center);
   }
 
   &.foot{
@@ -55,7 +55,7 @@
       .owl{
         &-stage{
           &-outer{
-            @include ReSassMinWidthResponsive(1400){
+            @include ReSassMinWidthResponsive(1360){
               overflow: visible !important;
             }
           }
@@ -98,10 +98,10 @@
       }
 
       &-btn{
-        display: flex;
-        justify-content: center;
         padding: 40px 0 0;
         position: relative;
+        @include flex-flexbox();
+        @include flex-justify-content(center);
       }
     }
   }
@@ -112,7 +112,7 @@
       .owl{
         &-stage{
           &-outer{
-            @include ReSassMinWidthResponsive(1400){
+            @include ReSassMinWidthResponsive(1360){
               overflow: visible !important;
             }
           }
@@ -162,7 +162,7 @@
       .owl{
         &-stage{
           &-outer{
-            @include ReSassMinWidthResponsive(1400){
+            @include ReSassMinWidthResponsive(1360){
               overflow: visible !important;
             }
           }
@@ -182,21 +182,21 @@
         }
 
         &-btn{
-          display: flex;
-          justify-content: center;
           padding: 30px 0 0;
           position: relative;
+          @include flex-flexbox();
+          @include flex-justify-content(center);
         }
       }
 
       &-icons{
-        display: flex;
-        justify-content: center;
-        align-items: center;
         background-color: darken($global-clr-light-gray, 6.5%);
         width: 90px;
         height: 90px;
         margin: 0 auto 25px;
+        @include flex-flexbox();
+        @include flex-align-items(center);
+        @include flex-justify-content(center);
         @include border-radius(3px);
         @include transition-multiple(background 0.15s ease-in-out);
 
@@ -230,7 +230,7 @@
       .owl{
         &-stage{
           &-outer{
-            @include ReSassMinWidthResponsive(1400){
+            @include ReSassMinWidthResponsive(1360){
               overflow: visible !important;
             }
           }
@@ -251,13 +251,13 @@
       }
 
       &-icons{
-        display: flex;
-        justify-content: center;
-        align-items: center;
         background-color: darken($global-clr-light-gray, 6.5%);
         width: 90px;
         height: 90px;
         margin: 0 auto 25px;
+        @include flex-flexbox();
+        @include flex-align-items(center);
+        @include flex-justify-content(center);
         @include border-radius(3px);
         @include transition-multiple(background 0.15s ease-in-out);
 

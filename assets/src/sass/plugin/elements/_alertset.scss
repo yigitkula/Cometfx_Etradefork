@@ -178,8 +178,8 @@
   }
 
   &-flex{
-    display: flex;
-    align-items: center;
+    @include flex-flexbox();
+    @include flex-align-items(center);
   }
 
   &-big{
@@ -258,8 +258,8 @@
 
     #{$alertclassname}-flex{
       height: auto;
-      flex-direction: column;
       text-align: center;
+      @include flex-flex-direction(column);
     }
 
     #{$alertclassname}-icon,
