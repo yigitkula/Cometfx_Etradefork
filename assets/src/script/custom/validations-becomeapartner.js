@@ -34,9 +34,11 @@ class PartnerForm {
 
     sendPartnerForm(){}
 
-    setPartnerFormErrorMessages(inputIdSelector, inputErrorMessage){
+    setPartnerFormErrorMessages(inputIdSelector, inputErrorMessage, inputAddErrorMessageClass, inputRemoveErrorMessageClass){
         let ErrorMessageText = document.getElementById(inputIdSelector);
         ErrorMessageText.innerHTML = inputErrorMessage;
+        ErrorMessageText.classList.add(inputAddErrorMessageClass);
+        ErrorMessageText.classList.remove(inputRemoveErrorMessageClass);
     }
     setPartnerFormErrorInput(inputIdSelector){
         let ErrorInputClass = document.getElementById(inputIdSelector);
@@ -64,11 +66,11 @@ class PartnerForm {
 
             case "inputNameProcess":
                 if(val.length < 5){
-                    this.setPartnerFormErrorMessages(messageSpanSelector, Translation.translate('tr','NameAlert'));
+                    this.setPartnerFormErrorMessages(messageSpanSelector, Translation.translate('tr','NameAlert'), "error", "check");
                     this.setPartnerFormErrorIcon(messageIconSelector,"error", "check");
                     this.setPartnerFormErrorInput(inputIdSelector);
                 }else{
-                    this.setPartnerFormErrorMessages(messageSpanSelector,"");
+                    this.setPartnerFormErrorMessages(messageSpanSelector,"", "check", "error");
                     this.setPartnerFormErrorIcon(messageIconSelector,"check", "error");
                     this.setPartnerFormErrorInput(inputIdSelector);
                 }
@@ -76,11 +78,11 @@ class PartnerForm {
 
             case "inputPhoneProcess":
                 if(val.replace(/\s/g, "").length < 11){
-                    this.setPartnerFormErrorMessages(messageSpanSelector, Translation.translate('tr','PhoneAlert'));
+                    this.setPartnerFormErrorMessages(messageSpanSelector, Translation.translate('tr','PhoneAlert'), "error", "check");
                     this.setPartnerFormErrorIcon(messageIconSelector,"error", "check");
                     this.setPartnerFormErrorInput(inputIdSelector);
                 }else{
-                    this.setPartnerFormErrorMessages(messageSpanSelector,"");
+                    this.setPartnerFormErrorMessages(messageSpanSelector,"", "check", "error");
                     this.setPartnerFormErrorIcon(messageIconSelector,"check", "error");
                     this.setPartnerFormErrorInput(inputIdSelector);
                 }
@@ -88,11 +90,11 @@ class PartnerForm {
 
             case "inputEmailProcess":
                 if(!emailPattern.test(val)){
-                    this.setPartnerFormErrorMessages(messageSpanSelector, Translation.translate('tr','EmailAlert'));
+                    this.setPartnerFormErrorMessages(messageSpanSelector, Translation.translate('tr','EmailAlert'), "error", "check");
                     this.setPartnerFormErrorIcon(messageIconSelector,"error", "check");
                     this.setPartnerFormErrorInput(inputIdSelector);
                 }else{
-                    this.setPartnerFormErrorMessages(messageSpanSelector,"");
+                    this.setPartnerFormErrorMessages(messageSpanSelector,"", "check", "error");
                     this.setPartnerFormErrorIcon(messageIconSelector,"check", "error");
                     this.setPartnerFormErrorInput(inputIdSelector);
                 }
@@ -112,7 +114,7 @@ class PartnerForm {
 
             case "inputNameProcess":
                 if(val.length===0){
-                    this.setPartnerFormErrorMessages(messageSpanSelector, Translation.translate('tr','NameAlert'));
+                    this.setPartnerFormErrorMessages(messageSpanSelector, Translation.translate('tr','NameAlert'), "error", "check");
                     this.setPartnerFormErrorIcon(messageIconSelector,"error", "check");
                     this.setPartnerFormErrorInput(inputIdSelector);
                 }
@@ -120,7 +122,7 @@ class PartnerForm {
 
             case "inputPhoneProcess":
                 if(val.length===0){
-                    this.setPartnerFormErrorMessages(messageSpanSelector, Translation.translate('tr','PhoneAlert'));
+                    this.setPartnerFormErrorMessages(messageSpanSelector, Translation.translate('tr','PhoneAlert'), "error", "check");
                     this.setPartnerFormErrorIcon(messageIconSelector,"error","check");
                     this.setPartnerFormErrorInput(inputIdSelector);
                 }
@@ -128,7 +130,7 @@ class PartnerForm {
 
             case "inputEmailProcess":
                 if(val.length===0){
-                    this.setPartnerFormErrorMessages(messageSpanSelector, Translation.translate('tr','EmailAlert'));
+                    this.setPartnerFormErrorMessages(messageSpanSelector, Translation.translate('tr','EmailAlert'), "error", "check");
                     this.setPartnerFormErrorIcon(messageIconSelector,"error","check");
                     this.setPartnerFormErrorInput(inputIdSelector);
                 }

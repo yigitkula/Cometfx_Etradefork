@@ -6,48 +6,64 @@ class FormValidators{
         document.getElementById('iconNameId').classList.add("error");
         document.getElementById('iconNameId').classList.remove("check");
         document.getElementById('msgNameId').innerText = "MINIMUM 5 CHARACTERS";
+        document.getElementById('msgNameId').classList.add("error");
+        document.getElementById('msgNameId').classList.remove("check");
     }
 
     _fullNameValid(){
         document.getElementById('inputNameId').classList.add("check");
         document.getElementById('iconNameId').classList.remove("error");
         document.getElementById('msgNameId').innerText = "";
+        document.getElementById('msgNameId').classList.add("check");
+        document.getElementById('msgNameId').classList.remove("error");
     }
 
     _emailInvalid(){
         document.getElementById('iconEmailId').classList.add("error");
         document.getElementById('iconEmailId').classList.remove("check");
         document.getElementById('msgEmailId').innerText = "WRONG EMAIL";
+        document.getElementById('msgEmailId').classList.add("error");
+        document.getElementById('msgEmailId').classList.remove("check");
     }
 
     _emailValid(){
         document.getElementById('iconEmailId').classList.add("check");
         document.getElementById('iconEmailId').classList.remove("error");
         document.getElementById('msgEmailId').innerText = "";
+        document.getElementById('msgEmailId').classList.add("check");
+        document.getElementById('msgEmailId').classList.remove("error");
     }
 
     _phoneInvalid(){
         document.getElementById('iconPhoneId').classList.add("error");
         document.getElementById('iconPhoneId').classList.remove("check");
         document.getElementById('msgPhoneId').innerText = "WRONG PHONE";
+        document.getElementById('msgPhoneId').classList.add("error");
+        document.getElementById('msgPhoneId').classList.remove("check");
     }
 
     _phoneValid(){
         document.getElementById('iconPhoneId').classList.add("check");
         document.getElementById('iconPhoneId').classList.remove("error");
         document.getElementById('msgPhoneId').innerText = "";
+        document.getElementById('msgPhoneId').classList.add("check");
+        document.getElementById('msgPhoneId').classList.remove("error");
     }
 
     _messageInvalid(errorMsg){
         document.getElementById('iconMessageId').classList.add("error");
         document.getElementById('iconMessageId').classList.remove("check");
         document.getElementById('msgMessageId').innerText = errorMsg;
+        document.getElementById('msgMessageId').classList.add("error");
+        document.getElementById('msgMessageId').classList.remove("check");
     }
 
     _messageValid(){
         document.getElementById('inputMessageId').classList.add("check");
         document.getElementById('iconMessageId').classList.remove("error");
         document.getElementById('msgMessageId').innerText = "";
+        document.getElementById('msgMessageId').classList.add("check");
+        document.getElementById('msgMessageId').classList.remove("error");
     }
 
     _verifyFullname(){

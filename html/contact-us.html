@@ -121,7 +121,7 @@
                     </div>
                     <div class="form-group col">
                         <div class="labelanimation input-group">
-                            <input type="email" class="form-control disabledautofillinput" pattern="([A-Za-z0-9][._]?)+[A-Za-z0-9]@[A-Za-z0-9]+(\.?[A-Za-z0-9]){2}\.([A-Za-z0-9])+(\.[A-Za-z0-9]{2})?" name="email" id="inputEmailId" readonly="readonly" onfocus="javascript:this.removeAttribute('readonly')" required oninput="contactform.verifyContent('inputEmailProcess','inputEmailId','msgEmailId','iconEmailId')" onfocusout="partnerform.verifyContentErrorDelete('inputEmailProcess','inputEmailId','msgEmailId','iconEmailId')" >
+                            <input type="email" class="form-control disabledautofillinput" pattern="([A-Za-z0-9][._]?)+[A-Za-z0-9]@[A-Za-z0-9]+(\.?[A-Za-z0-9]){2}\.([A-Za-z0-9])+(\.[A-Za-z0-9]{2})?" name="email" id="inputEmailId" readonly="readonly" onfocus="javascript:this.removeAttribute('readonly')" required oninput="contactform.verifyContent('inputEmailProcess','inputEmailId','msgEmailId','iconEmailId')" onfocusout="contactform.verifyContentErrorDelete('inputEmailProcess','inputEmailId','msgEmailId','iconEmailId')" >
                             <span class="inputerrormessage" id="msgEmailId"></span>
                             <span class="inputbottombar"></span>
                             <label>E-MAIL</label>
@@ -208,11 +208,15 @@
                     document.getElementById('iconNameId').classList.add("error");
                     document.getElementById('iconNameId').classList.remove("check");
                     document.getElementById('msgNameId').innerText = "EN AZ 2 KARAKTER";
+                    document.getElementById('msgNameId').classList.add("error");
+                    document.getElementById('msgNameId').classList.remove("check");
                     return false;
                 } else {
                     document.getElementById('inputNameId').classList.add("check");
                     document.getElementById('iconNameId').classList.remove("error");
                     document.getElementById('msgNameId').innerText = "";
+                    document.getElementById('msgNameId').classList.add("check");
+                    document.getElementById('msgNameId').classList.remove("error");
                     return true;
                 }
                 return true;
@@ -225,11 +229,15 @@
                     document.getElementById('iconEmailId').classList.add("error");
                     document.getElementById('iconEmailId').classList.remove("check");
                     document.getElementById('msgEmailId').innerText = "WRONG EMAIL";
+                    document.getElementById('msgEmailId').classList.add("error");
+                    document.getElementById('msgEmailId').classList.remove("check");
                     return false;
                 } else {
                     document.getElementById('iconEmailId').classList.add("check");
                     document.getElementById('iconEmailId').classList.remove("error");
                     document.getElementById('msgEmailId').innerText = "";
+                    document.getElementById('msgEmailId').classList.add("check");
+                    document.getElementById('msgEmailId').classList.remove("error");
                     return true;
                 }
                 return true;
@@ -240,11 +248,15 @@
                     document.getElementById('iconPhoneId').classList.add("error");
                     document.getElementById('iconPhoneId').classList.remove("check");
                     document.getElementById('msgPhoneId').innerText = "WRONG PHONE";
+                    document.getElementById('msgPhoneId').classList.add("error");
+                    document.getElementById('msgPhoneId').classList.remove("check");
                     return false;
                 } else {
                     document.getElementById('iconPhoneId').classList.add("check");
                     document.getElementById('iconPhoneId').classList.remove("error");
                     document.getElementById('msgPhoneId').innerText = "";
+                    document.getElementById('msgPhoneId').classList.add("check");
+                    document.getElementById('msgPhoneId').classList.remove("error");
                     return true;
                 }
                 return true;
@@ -255,16 +267,22 @@
                     document.getElementById('iconMessageId').classList.add("error");
                     document.getElementById('iconMessageId').classList.remove("check");
                     document.getElementById('msgMessageId').innerText = "MINIMUM 10 CHARACTERS";
+                    document.getElementById('msgMessageId').classList.add("error");
+                    document.getElementById('msgMessageId').classList.remove("check");
                     return false;
                 } else if(document.getElementById('inputMessageId').value.length >= 2000){
                     document.getElementById('iconMessageId').classList.add("error");
                     document.getElementById('iconMessageId').classList.remove("check");
                     document.getElementById('msgMessageId').innerText = "MAXIMUM 2000 CHARACTERS";
+                    document.getElementById('msgMessageId').classList.add("error");
+                    document.getElementById('msgMessageId').classList.remove("check");
                     return false;
                 } else {
                     document.getElementById('inputMessageId').classList.add("check");
                     document.getElementById('iconMessageId').classList.remove("error");
                     document.getElementById('msgMessageId').innerText = "";
+                    document.getElementById('msgMessageId').classList.add("check");
+                    document.getElementById('msgMessageId').classList.remove("error");
                     return true;
                 }
                 return true;

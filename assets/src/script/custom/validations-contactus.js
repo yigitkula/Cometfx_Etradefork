@@ -38,9 +38,11 @@ class ContactForm {
 
     sendContactForm(){}
 
-    setContactFormErrorMessages(inputIdSelector, inputErrorMessage){
+    setContactFormErrorMessages(inputIdSelector, inputErrorMessage, inputAddErrorMessageClass, inputRemoveErrorMessageClass){
         let ErrorMessageText = document.getElementById(inputIdSelector);
         ErrorMessageText.innerHTML = inputErrorMessage;
+        ErrorMessageText.classList.add(inputAddErrorMessageClass);
+        ErrorMessageText.classList.remove(inputRemoveErrorMessageClass);
     }
     setContactFormErrorInput(inputIdSelector){
         let ErrorInputClass = document.getElementById(inputIdSelector);
@@ -68,11 +70,11 @@ class ContactForm {
 
             case "inputNameProcess":
                 if(val.length < 5){
-                    this.setContactFormErrorMessages(messageSpanSelector, Translation.translate('tr','NameAlert'));
+                    this.setContactFormErrorMessages(messageSpanSelector, Translation.translate('tr','NameAlert'), "error", "check");
                     this.setContactFormErrorIcon(messageIconSelector,"error", "check");
                     this.setContactFormErrorInput(inputIdSelector);
                 }else{
-                    this.setContactFormErrorMessages(messageSpanSelector,"");
+                    this.setContactFormErrorMessages(messageSpanSelector,"", "check", "error");
                     this.setContactFormErrorIcon(messageIconSelector,"check", "error");
                     this.setContactFormErrorInput(inputIdSelector);
                 }
@@ -80,11 +82,11 @@ class ContactForm {
 
             case "inputPhoneProcess":
                 if(val.replace(/\s/g, "").length < 11){
-                    this.setContactFormErrorMessages(messageSpanSelector, Translation.translate('tr','PhoneAlert'));
+                    this.setContactFormErrorMessages(messageSpanSelector, Translation.translate('tr','PhoneAlert'), "error", "check");
                     this.setContactFormErrorIcon(messageIconSelector,"error", "check");
                     this.setContactFormErrorInput(inputIdSelector);
                 }else{
-                    this.setContactFormErrorMessages(messageSpanSelector,"");
+                    this.setContactFormErrorMessages(messageSpanSelector,"", "check", "error");
                     this.setContactFormErrorIcon(messageIconSelector,"check", "error");
                     this.setContactFormErrorInput(inputIdSelector);
                 }
@@ -92,11 +94,11 @@ class ContactForm {
 
             case "inputEmailProcess":
                 if(!emailPattern.test(val)){
-                    this.setContactFormErrorMessages(messageSpanSelector, Translation.translate('tr','EmailAlert'));
+                    this.setContactFormErrorMessages(messageSpanSelector, Translation.translate('tr','EmailAlert'), "error", "check");
                     this.setContactFormErrorIcon(messageIconSelector,"error", "check");
                     this.setContactFormErrorInput(inputIdSelector);
                 }else{
-                    this.setContactFormErrorMessages(messageSpanSelector,"");
+                    this.setContactFormErrorMessages(messageSpanSelector,"", "check", "error");
                     this.setContactFormErrorIcon(messageIconSelector,"check", "error");
                     this.setContactFormErrorInput(inputIdSelector);
                 }
@@ -104,15 +106,15 @@ class ContactForm {
 
             case "inputMessageProcess":
                 if(val.length < 10){
-                    this.setContactFormErrorMessages(messageSpanSelector, Translation.translate('tr','MessageAlert'));
+                    this.setContactFormErrorMessages(messageSpanSelector, Translation.translate('tr','MessageAlert'), "error", "check");
                     this.setContactFormErrorIcon(messageIconSelector,"error", "check");
                     this.setContactFormErrorInput(inputIdSelector);
                 }else if(val.length >= 2000){
-                    this.setContactFormErrorMessages(messageSpanSelector, Translation.translate('tr','MessageCharacterOutAlert'));
+                    this.setContactFormErrorMessages(messageSpanSelector, Translation.translate('tr','MessageCharacterOutAlert'), "error", "check");
                     this.setContactFormErrorIcon(messageIconSelector,"error", "check");
                     this.setContactFormErrorInput(inputIdSelector);
                 }else{
-                    this.setContactFormErrorMessages(messageSpanSelector,"");
+                    this.setContactFormErrorMessages(messageSpanSelector,"", "check", "error");
                     this.setContactFormErrorIcon(messageIconSelector,"check", "error");
                     this.setContactFormErrorInput(inputIdSelector);
                 }
@@ -132,7 +134,7 @@ class ContactForm {
 
             case "inputNameProcess":
                 if(val.length===0){
-                    this.setContactFormErrorMessages(messageSpanSelector, Translation.translate('tr','NameAlert'));
+                    this.setContactFormErrorMessages(messageSpanSelector, Translation.translate('tr','NameAlert'), "error", "check");
                     this.setContactFormErrorIcon(messageIconSelector,"error", "check");
                     this.setContactFormErrorInput(inputIdSelector);
                 }
@@ -140,7 +142,7 @@ class ContactForm {
 
             case "inputPhoneProcess":
                 if(val.length===0){
-                    this.setContactFormErrorMessages(messageSpanSelector, Translation.translate('tr','PhoneAlert'));
+                    this.setContactFormErrorMessages(messageSpanSelector, Translation.translate('tr','PhoneAlert'), "error", "check");
                     this.setContactFormErrorIcon(messageIconSelector,"error","check");
                     this.setContactFormErrorInput(inputIdSelector);
                 }
@@ -148,7 +150,7 @@ class ContactForm {
 
             case "inputEmailProcess":
                 if(val.length===0){
-                    this.setContactFormErrorMessages(messageSpanSelector, Translation.translate('tr','EmailAlert'));
+                    this.setContactFormErrorMessages(messageSpanSelector, Translation.translate('tr','EmailAlert'), "error", "check");
                     this.setContactFormErrorIcon(messageIconSelector,"error","check");
                     this.setContactFormErrorInput(inputIdSelector);
                 }
@@ -156,15 +158,15 @@ class ContactForm {
 
             case "inputMessageProcess":
                 if(val.length < 10){
-                    this.setContactFormErrorMessages(messageSpanSelector, Translation.translate('tr','MessageAlert'));
+                    this.setContactFormErrorMessages(messageSpanSelector, Translation.translate('tr','MessageAlert'), "error", "check");
                     this.setContactFormErrorIcon(messageIconSelector,"error","check");
                     this.setContactFormErrorInput(inputIdSelector);
                 }else if(val.length >= 2000){
-                    this.setContactFormErrorMessages(messageSpanSelector, Translation.translate('tr','MessageCharacterOutAlert'));
+                    this.setContactFormErrorMessages(messageSpanSelector, Translation.translate('tr','MessageCharacterOutAlert'), "error", "check");
                     this.setContactFormErrorIcon(messageIconSelector,"error","check");
                     this.setContactFormErrorInput(inputIdSelector);
                 }else{
-                    this.setContactFormErrorMessages(messageSpanSelector, Translation.translate('tr',''));
+                    this.setContactFormErrorMessages(messageSpanSelector, Translation.translate('tr',''), "check", "error");
                     this.setContactFormErrorIcon(messageIconSelector,"check","error");
                     this.setContactFormErrorInput(inputIdSelector);
                 }
