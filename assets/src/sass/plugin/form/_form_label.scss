@@ -116,9 +116,6 @@
         top: -10px;
         right: 0;
         font-size: 12px;
-        font-weight: normal;
-        line-height: 1.11;
-        letter-spacing: -0.54px;
         display: block !important;
       }
 
@@ -143,6 +140,8 @@
         &:valid ~ label{
           top: -15px;
         }
+
+
       }
     }
 
@@ -169,6 +168,10 @@
       label{
         top: 15px;
         left: 15px;
+      }
+
+      .inputerrormessage.error{
+        top: -15px;
       }
 
       &.input-group{
@@ -200,14 +203,23 @@
   }
 
   .inputerrormessage{
+    display: none;
     position: absolute;
     top: 9px;
     right: 0;
     color: $global-clr-red;
     font-size: 14px;
+    font-weight: normal;
+    line-height: 1.11;
+    letter-spacing: -0.54px;
     z-index: -1;
     @include transition(all, 0.3s, ease-in-out);
-    display: none;
+
+    &.error{
+      display: block !important;
+      font-size: 12px;
+      top: -10px;
+    }
   }
 
 }
