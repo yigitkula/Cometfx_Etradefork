@@ -235,9 +235,9 @@
     &-header{
 
       @include ReSassMaxWidthResponsive(992){
-        display: flex !important;
-        justify-content: center;
-        align-items: center;
+        @include flex-flexbox-important();
+        @include flex-align-items(center);
+        @include flex-justify-content(center);
 
         &::before{
           background-color: transparentize($global-clr-soft-gray, 0.7);

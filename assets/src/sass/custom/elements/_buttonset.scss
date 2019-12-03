@@ -12,7 +12,7 @@
 
     &-red{
       border: none;
-      @include gradient($global-grdint-red01, $global-grdint-red02);
+      @include background-gradient($global-grdint-red01, $global-grdint-red02);
     }
   }
 }

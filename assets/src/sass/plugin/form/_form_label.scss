@@ -19,7 +19,7 @@
     margin-top:25px;
 
     &.input-group{
-      flex-direction: column;
+      @include flex-flex-direction(column);
 
       .input-group-append{
         background-color: transparent;

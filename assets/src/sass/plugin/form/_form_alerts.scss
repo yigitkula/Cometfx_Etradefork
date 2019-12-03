@@ -10,11 +10,11 @@
       text-align: center;
 
       &-wrapper{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
         height: 100%;
+        @include flex-flexbox();
+        @include flex-flex-direction(column);
+        @include flex-align-items(center);
+        @include flex-justify-content(center);
       }
 
       &-bigicon{
@@ -59,9 +59,9 @@
       }
 
       &-infoarea{
-        display: flex;
-        flex-flow: column nowrap;
         text-align: center;
+        @include flex-flexbox();
+        @include flex-flex-flow(column nowrap);
 
         &-desc{
           color: $global-clr-dark-blue;

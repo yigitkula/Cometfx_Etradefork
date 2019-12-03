@@ -14,8 +14,8 @@
     &-input{
 
       &-container{
-        display: flex !important;
-        justify-content: space-between;
+        @include flex-flexbox-important();
+        @include flex-justify-content(space-between);
 
         input.mid,
         input.last{
