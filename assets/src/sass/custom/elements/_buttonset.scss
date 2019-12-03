@@ -6,6 +6,12 @@
     padding-right: 40px;
     padding-top: .55rem;
     padding-bottom: .55rem;
+
+    @include ReSassMaxWidthResponsive(1366){
+      height: 48px;
+      padding-top: .46rem;
+      padding-bottom: .46rem;
+    }
   }
 
   &-gradient{

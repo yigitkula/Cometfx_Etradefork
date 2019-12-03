@@ -32,6 +32,11 @@
     &-home{
       background-image: url(#{$global-img-path-header}/header_dark_background_big_homepage.png);
       min-height: 900px;
+
+      @include ReSassMaxWidthResponsive(1366){
+        background-size: contain;
+        min-height: auto;
+      }
     }
     &-login{
       background-image: url(#{$global-img-path-header}/header_dark_background_big_loginpage.png);
@@ -46,6 +51,11 @@
   &-home{
     padding-top: 100px;
     padding-bottom: 330px;
+
+    @include ReSassMaxWidthResponsive(1366){
+      padding-top: 70px;
+      padding-bottom: 220px;
+    }
 
     &-slogan{
       text-align: center;
@@ -63,10 +73,18 @@
       &-title{
         font-size: 45px;
         letter-spacing: -1.35px;
+
+        @include ReSassMaxWidthResponsive(1366){
+          font-size: 40px;
+        }
       }
       &-desc{
         font-size: 30px;
         letter-spacing: -0.9px;
+
+        @include ReSassMaxWidthResponsive(1366){
+          font-size: 28px;
+        }
       }
     }
 
@@ -151,10 +169,18 @@
       &-title{
         font-size: 45px;
         letter-spacing: -1.35px;
+
+        @include ReSassMaxWidthResponsive(1366){
+          font-size: 40px;
+        }
       }
       &-desc{
         font-size: 30px;
         letter-spacing: -0.9px;
+
+        @include ReSassMaxWidthResponsive(1366){
+          font-size: 28px;
+        }
       }
     }
   }

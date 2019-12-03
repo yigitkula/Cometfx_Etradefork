@@ -55,6 +55,10 @@
     margin-top: 40px;
     @include transition-multiple(top 0.3s ease-in-out, margin 0.3s ease-in-out);
 
+    @include ReSassMaxWidthResponsive(1366){
+      margin-top: 20px;
+    }
+
   }
 
   &-navigation{

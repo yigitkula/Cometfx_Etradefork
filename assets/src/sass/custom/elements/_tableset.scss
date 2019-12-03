@@ -84,6 +84,9 @@
             @include transform-multiple(rotate(-90deg) translateX(3px));
             @include transform-origin(8px);
 
+            @include ReSassMaxWidthResponsive(1366){
+              font-size: 28px;
+            }
 
             &::before,
             &::after{
@@ -133,6 +136,10 @@
           padding-left: 30px;
           padding-right: 22px;
           vertical-align: top;
+
+          @include ReSassMaxWidthResponsive(1366){
+            font-size: 17px;
+          }
 
           &.chartarea{
             text-align: left;
