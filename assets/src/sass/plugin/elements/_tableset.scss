@@ -50,10 +50,10 @@
         text-align:left !important;
 
         thead, tbody, thead tr, tbody tr, thead th, tbody td{
-          display:flex;
-          flex-wrap: wrap;
           text-align:left !important;
           font-size: 17px !important;
+          @include flex-flexbox();
+          @include flex-flex-wrap(wrap);
         }
 
         thead tr{

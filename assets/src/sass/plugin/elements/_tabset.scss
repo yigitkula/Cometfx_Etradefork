@@ -2,22 +2,22 @@
 
   &tabs{
     width: 100%;
-    display: flex;
-    flex-direction: column;
     position: relative;
+    @include flex-flexbox();
+    @include flex-flex-direction(column);
 
     .responsive-dropdown{
       &-btn{
         background-color: $global-clr-soft-gray;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         max-width: 260px;
         margin: 0 auto;
         font-size: 20px;
         letter-spacing: -.02em;
         border: none;
         position: relative;
+        @include flex-flexbox();
+        @include flex-align-items(center);
+        @include flex-justify-content(center);
         @include border-radius(0);
 
         @include ReSassMaxWidthResponsive(400){
@@ -98,12 +98,12 @@
     &light{
       border-bottom: 5px solid $global-clr-soft-blue;
       position: relative;
-      justify-content: center!important;
+      @include flex-justify-content(center !important);
 
       @include ReSassMaxWidthResponsive(768){
         border-bottom: none;
-        flex-direction: column;
         display: none;
+        @include flex-flex-direction(column);
       }
 
       &::after{
@@ -257,35 +257,35 @@
 
       &-blockchain{
         &-01{
-          justify-content: space-between;
           color: $global-clr-dark-blue;
           font-size: 17px;
           margin-top: -40px;
           padding-bottom: 10px;
+          @include flex-justify-content(space-between);
 
           @include ReSassMaxWidthResponsive(768){
-            flex-direction: column;
-            justify-content: inherit;
             margin: 0;
             padding: 0;
             border-bottom: 4px solid $global-clr-dark-blue;
+            @include flex-flex-direction(column);
+            @include flex-justify-content(inherit);
           }
 
           &-dropdown{
             font-size: 20px;
             font-weight: 500;
-            display: flex;
-            align-items: center;
+            @include flex-flexbox();
+            @include flex-align-items(center);
 
             @include ReSassMaxWidthResponsive(768){
-              order: 2;
               display: block;
+              @include flex-order(2);
             }
 
             &-link{
               color: $global-clr-dark-blue;
-              align-items: center;
               padding: 0;
+              @include flex-align-items(center);
 
               @include ReSassMaxWidthResponsive(768){
                 background-color: $global-clr-dark-blue !important;
@@ -331,13 +331,13 @@
 
           &-info{
             font-size: 17px;
-            display: flex;
-            align-items: center;
+            @include flex-flexbox();
+            @include flex-align-items(center);
 
             @include ReSassMaxWidthResponsive(768){
-              order: 1;
-              justify-content: center;
               margin-bottom: 5px;
+              @include flex-justify-content(center);
+              @include flex-order(1);
             }
 
             *{
@@ -374,7 +374,7 @@
     &dark{
       background-color: $global-clr-dark-blue;
       position: relative;
-      justify-content: center!important;
+      @include flex-justify-content(center !important);
 
       .nav{
         &-item{
@@ -433,7 +433,7 @@
       border-bottom: 1px solid transparentize($global-clr-soft-gray, 0.7);
       padding-top: 5px;
       position: relative;
-      justify-content: center!important;
+      @include flex-justify-content(center !important);
 
       .nav{
         &-item{
@@ -528,7 +528,7 @@
     }
 
     .nav{
-      justify-content: normal !important;
+      @include flex-justify-content(normal !important);
 
       &::before,
       &::after{

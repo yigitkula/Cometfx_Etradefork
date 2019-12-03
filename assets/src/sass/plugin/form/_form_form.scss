@@ -2,13 +2,13 @@
 .formuinew{
 
   .form-row{
-    display: flex;
-    flex-wrap: wrap;
     margin-right: -15px;
     margin-left: -15px;
+    @include flex-flexbox();
+    @include flex-flex-wrap(wrap);
 
     &.form-row-center{
-      justify-content: center;
+      @include flex-justify-content(center);
     }
 
     > .col,
@@ -250,15 +250,8 @@
   }
 
   .recaptcha-area{
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-align-items: center;
-    -moz-align-items: center;
-    -ms-align-items: center;
-    align-items: center;
+    @include flex-flexbox();
+    @include flex-align-items(center);
 
     .recaptcha-check{
       position:relative;

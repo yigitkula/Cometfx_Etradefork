@@ -21,17 +21,17 @@
         }
 
         tbody, tbody tr{
-          display:flex;
           position: relative;
+          @include flex-flexbox();
         }
 
         tbody{
           width: 100% !important;
-          flex-wrap: wrap;
           text-align:left !important;
           margin-top: 5px;
           border-top: 1px solid  #f2f2f2;
           border-bottom: 1px solid  #f2f2f2;
+          @include flex-flex-wrap(wrap);
 
           tr{
             width: calc(100% / 2) !important;
@@ -57,8 +57,8 @@
               font-size: 17px;
               position:relative;
               text-indent: -9999px;
-              flex: 1;
               display: none !important;
+              @include flex-flex(1);
 
               &:nth-child(1),
               &:nth-child(2){

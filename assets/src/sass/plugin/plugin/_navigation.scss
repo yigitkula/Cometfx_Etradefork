@@ -22,15 +22,15 @@
     padding:0;
 
     &-list{
-      display:flex;
       min-height:44px;
       margin: 0;
+      @include flex-flexbox();
 
       @include ReSassMaxWidthResponsive(992){
         width: 100%;
-        flex-direction: column;
         padding: 0 10px;
         margin-bottom: 40px;
+        @include flex-flex-direction(column);
       }
 
       li{position: relative;}

@@ -19,16 +19,16 @@
       padding: 0 !important;
 
       &.show{
-        display: flex !important;
         height: 100%;
-        align-items: center;
+        @include flex-flexbox-important();
+        @include flex-align-items(center);
       }
 
       &-dialog{
-        display: flex;
-        align-items: center;
         height: 100%;
         margin: auto;
+        @include flex-flexbox();
+        @include flex-align-items(center);
       }
 
       &-content{
@@ -43,7 +43,7 @@
 
       &-header{
         color: $global-clr-white;
-        @include gradient($global-grdint-darkblue01, $global-grdint-darkblue02);
+        @include background-gradient($global-grdint-darkblue01, $global-grdint-darkblue02);
         @include border-radius(0);
         padding: 5px 10px;
 

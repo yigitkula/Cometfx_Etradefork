@@ -86,15 +86,15 @@
       width: 100% !important;
 
       thead, thead tr, tbody, tbody tr{
-        display:flex;
-        flex-wrap: wrap;
         width: 100% !important;
+        @include flex-flexbox();
+        @include flex-flex-wrap(wrap);
       }
 
       thead tr th, tbody tr td{
-        flex: auto;
         height: auto;
         font-weight: normal !important;
+        @include flex-flex(auto);
       }
 
       thead{

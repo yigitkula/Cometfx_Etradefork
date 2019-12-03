@@ -17,15 +17,15 @@
     padding-bottom: 15px;
 
     &-list{
-      display: flex;
-      flex-wrap: wrap;
       max-width: 1000px;
       margin: 0 auto;
+      @include flex-flexbox();
+      @include flex-flex-wrap(wrap);
 
       &-item{
-        flex: 0 0 calc(100% / 3);
-        max-width: calc(100% / 3);
         margin: 17px 0;
+        max-width: calc(100% / 3);
+        @include flex-flex(0 0 calc(100% / 3));
       }
     }
 
@@ -72,9 +72,9 @@
       }
 
       &social{
-        display: flex;
-        justify-content: center;
         margin-top: 8px;
+        @include flex-flexbox();
+        @include flex-justify-content(center);
 
         li{
           margin: 0 3px;
@@ -93,7 +93,7 @@
       .owl{
         &-stage{
           &-outer{
-            @include ReSassMinWidthResponsive(1400){
+            @include ReSassMinWidthResponsive(1360){
               overflow: visible !important;
             }
           }
