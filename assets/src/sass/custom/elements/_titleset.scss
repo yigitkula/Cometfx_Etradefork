@@ -19,6 +19,11 @@
     ul{font-size: 18px; font-weight: normal; line-height: 1.11; letter-spacing: -0.54px;}
     ul > li{margin-bottom: 15px;}
     ul > li:last-child{margin-bottom: 0;}
+
+    @include ReSassMaxWidthResponsive(1366){
+      h1,h2,h3,h4,h5,h6{font-size: 40px;}
+      p, ul{font-size: 17px;}
+    }
   }
 
   &-lg{

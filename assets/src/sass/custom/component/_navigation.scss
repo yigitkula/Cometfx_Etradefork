@@ -194,6 +194,10 @@
         padding-bottom: 15px;
         position: relative;
 
+        @include ReSassMaxWidthResponsive(1366){
+          padding-bottom: 10px;
+        }
+
         &::before{
           content: "";
           background-color: lighten($global-sitebg-darkblack01, 10%);
