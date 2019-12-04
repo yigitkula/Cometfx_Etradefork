@@ -29,6 +29,9 @@
         <!-- Form Start -->
         <div class="instruments-form formuinew formuilabel">
             <form action="" autocomplete="off" onsubmit="return formValidator.verifyInstrumentsForm()" novalidate>
+                <!-- Alert -->
+                <div id="alert-wrapper"></div>
+                <!-- Alert -->
                 <div class="form-row">
                     <div class="form-group col">
                         <div class="labelanimation input-group">

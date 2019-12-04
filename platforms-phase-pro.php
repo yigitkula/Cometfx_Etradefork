@@ -121,6 +121,9 @@
         <!-- Form Start -->
         <div class="section-item-formarea formuinew formuilabel">
             <form action="" autocomplete="off" onsubmit="return formValidator.verifyProForm()" novalidate>
+                <!-- Alert -->
+                <div id="alert-wrapper"></div>
+                <!-- Alert -->
                 <div class="form-row">
                     <div class="form-group col">
                         <div class="labelanimation input-group">
