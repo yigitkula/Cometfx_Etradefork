@@ -2,6 +2,7 @@
 node_modules/
 vendor/
 vendor/*
+include/config.php
 
 assets/dist/
 assets/vendor/
