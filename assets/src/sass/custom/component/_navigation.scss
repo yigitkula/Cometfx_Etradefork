@@ -125,6 +125,10 @@
           height: 47px !important;
           @include transition-multiple(height 0.3s ease-in-out);
 
+          > a{
+            @include transition-multiple(margin 0.3s ease-in-out, padding 0.3s ease-in-out);
+          }
+
           &.show > a[data-toggle^="dropdown"]{
             &::before{
               border-bottom-color: $global-clr-red ;
@@ -151,6 +155,11 @@
             padding-right: 15px;
             position: relative;
             z-index: 1;
+            text-align: center;
+            padding-top: 0;
+            width: 200px;
+            height: 52px;
+            @include transition-multiple(width 0.3s ease-in-out, height 0.3s ease-in-out, padding 0.3s ease-in-out);
 
             &::before,
             &::after{
@@ -184,6 +193,10 @@
       &-list{
         padding-bottom: 15px;
         position: relative;
+
+        @include ReSassMaxWidthResponsive(1366){
+          padding-bottom: 10px;
+        }
 
         &::before{
           content: "";

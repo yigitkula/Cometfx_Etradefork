@@ -75,6 +75,10 @@
       &-icons{
         margin-bottom: 25px;
 
+        @include ReSassMaxWidthResponsive(1366){
+          margin-bottom: 15px;
+        }
+
         *[class*="icons"]{
           display: block;
           margin: 0 auto;
@@ -87,6 +91,10 @@
         font-weight: 300;
         line-height: 1.07;
         letter-spacing: -0.9px;
+
+        @include ReSassMaxWidthResponsive(1366){
+          font-size: 28px;
+        }
       }
 
       &-desc{
@@ -95,6 +103,10 @@
         line-height: 1.11;
         letter-spacing: -0.54px;
         margin-top: 10px;
+
+        @include ReSassMaxWidthResponsive(1366){
+          font-size: 17px;
+        }
       }
 
       &-btn{

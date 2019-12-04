@@ -7,14 +7,45 @@
   $headerclassname: &;
 
   &.navscroll{
-    background-color: transparentize($global-sitebg-darkblack01, 0.02);
+    background-color: transparentize($global-sitebg-darkblack01, 0.05);
 
-    #{$headerclassname}-web{margin-top: 10px;}
-    #{$headerclassname}-navigation{}
+    #{$headerclassname}-web{margin-top: 15px;}
+    #{$headerclassname}-navigation{height: 46px;}
 
-    .dfn-menu-list-logo>a::after,
-    .dfn-menu-list-logo>a::before{height: calc(100% - 5px);}
-    .dfn-menu-list-logo>a>img{@include scale(0.8);}
+    .dfn-menu{
+
+      &-list{
+        &-item{
+          height: 38px!important;
+          > a{
+            padding: 6px 0;
+            margin-left: 12px;
+            margin-right: 12px;
+          }
+        }
+
+        &-logo{
+          > a{
+            width: 150px;
+            height: 32px;
+            padding-top: 4px;
+            overflow: hidden;
+            &::before,
+            &::after{
+              height: calc(100% - 0px);
+            }
+          }
+        }
+      }
+
+      &-dropdownmenu{
+        top: 38px!important;
+        &.show{
+          left: 12px!important;
+        }
+      }
+
+    }
   }
 
   &-web{
@@ -24,6 +55,10 @@
     margin-top: 40px;
     @include transition-multiple(top 0.3s ease-in-out, margin 0.3s ease-in-out);
 
+    @include ReSassMaxWidthResponsive(1366){
+      margin-top: 20px;
+    }
+
   }
 
   &-navigation{
@@ -31,5 +66,6 @@
     border-top: 2px solid $global-clr-red;
     @include flex-flexbox();
     @include flex-justify-content(center);
+    @include transition-multiple(height 0.3s ease-in-out);
   }
 }
