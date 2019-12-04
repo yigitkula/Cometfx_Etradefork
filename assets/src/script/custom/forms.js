@@ -148,6 +148,10 @@ class FormValidators{
         if(document.getElementById('inputMessageId')){
             formData.message = document.getElementById('inputMessageId').value;
         }
+
+        if(document.getElementById('g-recaptcha-response')){
+            formData.captcharesponse = document.getElementById('g-recaptcha-response').value;
+        }
         
         $.post( "/send_mail", formData)
             .done(function( data ) {
