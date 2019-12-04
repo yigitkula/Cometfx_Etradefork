@@ -1,14 +1,10 @@
 <?php
 require_once './vendor/autoload.php';
-//Mail Settings
-$SMTP_HOST = 'smtp.yandex.com.tr';
-$SMTP_PORT = 465;
-$MAIL_USERNAME = 'noreply@etradetechnologies.com';
-$MAIL_PASSWORD = 'Gy2!Ky_#-';
-$MAIL_FROM = 'noreply@etradetechnologies.com';
-$MAIL_FROM_NAME = 'E-trade.com';
-$MAIL_TO = 'support@etradetechnologies.com';
 
+use GuzzleHttp\Client;
+
+//Mail Settings
+require_once './include/config.php';
 
 //Validations
 $type = isset($_POST['type']) ? $_POST['type'] : NULL;
@@ -16,14 +12,40 @@ $full_name = isset($_POST['full_name']) ? $_POST['full_name'] : NULL;
 $email = isset($_POST['email']) ? $_POST['email'] : NULL;
 $phone = isset($_POST['phone']) ? $_POST['phone'] : NULL;
 $message = isset($_POST['message']) ? $_POST['message'] : NULL;
+$captcha = isset($_POST['captcharesponse']) ? $_POST['captcharesponse'] : NULL;
 
-$available_types = ['instruments', 'contact', 'partner', 'meta', 'pro'];
+//Get Client IP
+$clientip = NULL;
+if (!empty($_SERVER['HTTP_CLIENT_IP'])) {
+    $clientip = $_SERVER['HTTP_CLIENT_IP'];
+} elseif (!empty($_SERVER['HTTP_X_FORWARDED_FOR'])) {
+    $clientip = $_SERVER['HTTP_X_FORWARDED_FOR'];
+} else {
+    $clientip = $_SERVER['REMOTE_ADDR'];
+}
 
 if ($_SERVER['REQUEST_METHOD'] != 'POST') {
     send_fail(1001, 'Forbidden');
     exit;
 }
 
+if($CAPTCHA_ENABLED){
+    if(is_null($captcha)){
+        send_fail(1007, 'Invalid Captcha');
+        exit;
+    }
+    
+    $captchaClient = new Client([ 'base_uri' => 'https://google.com/recaptcha/api/' ]);
+    $captchaApiReponse = $captchaClient->post('siteverify?secret=' . $CAPTCHA_SECRET . '&response='.$captcha.'&remoteip='.$clientip);
+    $captchaBody = json_decode($captchaApiReponse->getBody());
+    if(!$captchaBody->success){
+        send_fail(1007, 'Invalid Captcha');
+        exit;
+    }
+}
+
+
+$available_types = ['instruments', 'contact', 'partner', 'meta', 'pro'];
 //validate type
 if(is_null($type) || !in_array($type, $available_types)){
     send_fail(1002, 'Bad Request');
@@ -43,7 +65,7 @@ if(is_null($email) || !filter_var($email, FILTER_VALIDATE_EMAIL)){
 }
 
 //validate phone
-if(is_null($phone) || !preg_match("/^[0-9 ]*$/",$phone) || strlen($phone) < 11){
+if(is_null($phone) || !preg_match("/^[+0-9]*$/",$phone) || strlen($phone) < 11){
     send_fail(1005, 'Invalid Phone');
     exit;
 }
