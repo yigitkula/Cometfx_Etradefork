@@ -58,6 +58,31 @@ class FormValidators{
         document.getElementById('msgMessageId').classList.remove("check");
     }
 
+    _captchaInvalid(){
+        var html = '<div class="alert alert-big alert-sweet alert-sweet-small alert-danger alert-dismissible fade show" role="alert">' + 
+                        '<div class="alert-flex">'+                         
+                            '<div class="alert-icon">'+
+                                '<div class="alert-icon-error">'+
+                                    '<div class="alert-icon-error-x">'+
+                                        '<div class="alert-icon-error-left"></div>'+
+                                        '<div class="alert-icon-error-right"></div>'+
+                                    '</div>'+
+                                    '<div class="alert-icon-error-placeholder"></div>'+
+                                    '<div class="alert-icon-error-fix"></div>'+
+                                '</div>'+
+                            '</div>'+
+                            '<div class="alert-big-desc">'+
+                                '<h4 class="alert-heading">From has errors</h4>'+
+                                '<p>The captcha is missing or wrong!</p>'+
+                            '</div>'+
+                        '</div>'+
+                        '<button type="button" class="close" data-dismiss="alert" aria-label="Close">'+
+                            '<span aria-hidden="true">&times;</span>'+
+                        '</button>'+
+                    '</div>';
+        document.getElementById('alert-wrapper').innerHTML = html;
+    }
+
     _messageValid(){
         document.getElementById('inputMessageId').classList.add("check");
         document.getElementById('iconMessageId').classList.remove("error");
@@ -131,6 +156,7 @@ class FormValidators{
     }
 
     _ajaxCall(type){
+        document.getElementById('alert-wrapper').innerHTML = '';
         var self = this;
         var buttonTitle = $('button[type="submit"]').html();
         console.log(buttonTitle);
@@ -169,6 +195,7 @@ class FormValidators{
                         case 1004: self._emailInvalid();    break;
                         case 1005: self._phoneInvalid();    break;
                         case 1006: self._messageInvalid();  break;
+                        case 1007: self._captchaInvalid(); break;
                     }
                     return;
                 }
