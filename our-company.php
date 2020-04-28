@@ -76,7 +76,7 @@
                         <img src="/assets/upload/company_team_photo_02.jpg" alt="Team Photo" width="186" height="186">
                     </div>
                     <div class="companyteaminfo">
-                        <h3>ENDER KARLIDAĞ</h3>
+                        <h3>HAKAN SARAÇ</h3>
                         <h6>Head Of Risk</h6>
                     </div>
                 </li>
@@ -85,7 +85,7 @@
                         <img src="/assets/upload/company_team_photo_06.jpg" alt="Team Photo" width="186" height="186">
                     </div>
                     <div class="companyteaminfo">
-                        <h3>EGEMEN AKAY</h3>
+                        <h3>EGEMEN KAYA</h3>
                         <h6>Head Of Trading</h6>
                     </div>
                 </li>
