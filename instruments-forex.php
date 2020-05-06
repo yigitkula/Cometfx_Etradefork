@@ -140,7 +140,7 @@
             <li class="instruments-box-item" data-aos="fade-right" data-aos-duration="700">
                 <div class="instruments-box-icons"><i class="icons-sprite sprite-red-instruments-45 icons-indicies"></i></div>
                 <h3 class="instruments-box-title">INDICIES</h3>
-                <p class="instruments-box-desc">Lorem ipsum dolor sit amet, consectetur sed adipiscing elit. Integer in maximus lectus. <br />Donec sed scelerisque dolor.</p>
+                <p class="instruments-box-desc">Future and cash indices at the same time. Also you can offer your clients the e-mini contracts.</p>
                 <div class="instruments-box-item-btn">
                     <a class="btn btn-lg btn-danger btn-gradient-red" href="instruments-indicies" title="MORE INFORMATION" rel="bookmark">MORE INFORMATION</a>
                 </div>
@@ -148,7 +148,7 @@
             <li class="instruments-box-item">
                 <div class="instruments-box-icons"><i class="icons-sprite sprite-red-instruments-45 icons-commodities"></i></div>
                 <h3 class="instruments-box-title">COMMODITIES</h3>
-                <p class="instruments-box-desc">Lorem ipsum dolor sit amet, consectetur sed adipiscing elit. Integer in maximus lectus. <br />Donec sed scelerisque dolor.</p>
+                <p class="instruments-box-desc">Agriculture goos, energy contracts and precious metals. All and more in Etrade Technology.</p>
                 <div class="instruments-box-item-btn">
                     <a class="btn btn-lg btn-danger btn-gradient-red" href="instruments-commodities" title="MORE INFORMATION" rel="bookmark">MORE INFORMATION</a>
                 </div>
@@ -156,7 +156,7 @@
             <li class="instruments-box-item" data-aos="fade-left" data-aos-duration="700">
                 <div class="instruments-box-icons"><i class="icons-sprite sprite-red-instruments-45 icons-crypto"></i></div>
                 <h3 class="instruments-box-title">CRYPTOS</h3>
-                <p class="instruments-box-desc">Lorem ipsum dolor sit amet, consectetur sed adipiscing elit. Integer in maximus lectus. <br />Donec sed scelerisque dolor.</p>
+                <p class="instruments-box-desc">Major crypto currencies against USD and EUR. Ask for all altcoins. We can provide what you need.</p>
                 <div class="instruments-box-item-btn">
                     <a class="btn btn-lg btn-danger btn-gradient-red" href="instruments-cryptos" title="MORE INFORMATION" rel="bookmark">MORE INFORMATION</a>
                 </div>
