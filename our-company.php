@@ -85,7 +85,7 @@
                         <img src="/assets/upload/company_team_photo_06.jpg" alt="Team Photo" width="186" height="186">
                     </div>
                     <div class="companyteaminfo">
-                        <h3>EGEMEN KAYA</h3>
+                        <h3>DAVID MEYERS</h3>
                         <h6>Head Of Trading</h6>
                     </div>
                 </li>
