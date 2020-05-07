@@ -2,6 +2,7 @@
 node_modules/
 vendor/
 vendor/*
+include/config.php
 
 assets/dist/
 assets/vendor/
@@ -53,3 +54,8 @@ assets/vendor/aos/postcss.config.js
 assets/vendor/aos/README.md
 assets/vendor/aos/webpack.config.js
 assets/vendor/aos/yarn.lock
+vendor/composer/autoload_files.php
+vendor/composer/autoload_psr4.php
+vendor/composer/autoload_static.php
+vendor/composer/installed.json
+include/price.json

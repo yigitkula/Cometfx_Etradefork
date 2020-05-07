@@ -43,72 +43,24 @@
                         <thead>
                         <tr>
                             <th class="" data-title="INSTRUMENT"><span class="thbox"><span class="thtxt">INSTRUMENT</span></span></th>
-                            <th class="" data-title="09:00-17:00"><span class="thbox"><span class="thtxt">09:00-17:00</span></span></th>
-                            <th class="" data-title="09:00-21:00"><span class="thbox"><span class="thtxt">09:00-21:00</span></span></th>
-                            <th class="" data-title="00:00-24:00"><span class="thbox"><span class="thtxt">00:00-24:00</span></span></th>
+                            <th class="" data-title="PRICE"><span class="thbox"><span class="thtxt">PRICE</span></span></th>
                         </tr>
                         </thead>
                         <tbody>
-                        <tr>
-                            <td class="" data-title="INSTRUMENT">PRODUCT</td>
-                            <td class="" data-title="09:00-17:00">0,0123 <sup>649</sup></td>
-                            <td class="" data-title="09:00-21:00">0,0123 <sup>649</sup></td>
-                            <td class="" data-title="00:00-24:00">0,0123 <sup>649</sup></td>
-                        </tr>
-                        <tr>
-                            <td class="" data-title="INSTRUMENT">PRODUCT</td>
-                            <td class="" data-title="09:00-17:00">0,0123 <sup>649</sup></td>
-                            <td class="" data-title="09:00-21:00">0,0123 <sup>649</sup></td>
-                            <td class="" data-title="00:00-24:00">0,0123 <sup>649</sup></td>
-                        </tr>
-                        <tr>
-                            <td class="" data-title="INSTRUMENT">PRODUCT</td>
-                            <td class="" data-title="09:00-17:00">0,0123 <sup>649</sup></td>
-                            <td class="" data-title="09:00-21:00">0,0123 <sup>649</sup></td>
-                            <td class="" data-title="00:00-24:00">0,0123 <sup>649</sup></td>
-                        </tr>
-                        <tr>
-                            <td class="" data-title="INSTRUMENT">PRODUCT</td>
-                            <td class="" data-title="09:00-17:00">0,0123 <sup>649</sup></td>
-                            <td class="" data-title="09:00-21:00">0,0123 <sup>649</sup></td>
-                            <td class="" data-title="00:00-24:00">0,0123 <sup>649</sup></td>
-                        </tr>
-                        <tr>
-                            <td class="" data-title="INSTRUMENT">PRODUCT</td>
-                            <td class="" data-title="09:00-17:00">0,0123 <sup>649</sup></td>
-                            <td class="" data-title="09:00-21:00">0,0123 <sup>649</sup></td>
-                            <td class="" data-title="00:00-24:00">0,0123 <sup>649</sup></td>
-                        </tr>
-                        <tr>
-                            <td class="" data-title="INSTRUMENT">PRODUCT</td>
-                            <td class="" data-title="09:00-17:00">0,0123 <sup>649</sup></td>
-                            <td class="" data-title="09:00-21:00">0,0123 <sup>649</sup></td>
-                            <td class="" data-title="00:00-24:00">0,0123 <sup>649</sup></td>
-                        </tr>
-                        <tr>
-                            <td class="" data-title="INSTRUMENT">PRODUCT</td>
-                            <td class="" data-title="09:00-17:00">0,0123 <sup>649</sup></td>
-                            <td class="" data-title="09:00-21:00">0,0123 <sup>649</sup></td>
-                            <td class="" data-title="00:00-24:00">0,0123 <sup>649</sup></td>
-                        </tr>
-                        <tr>
-                            <td class="" data-title="INSTRUMENT">PRODUCT</td>
-                            <td class="" data-title="09:00-17:00">0,0123 <sup>649</sup></td>
-                            <td class="" data-title="09:00-21:00">0,0123 <sup>649</sup></td>
-                            <td class="" data-title="00:00-24:00">0,0123 <sup>649</sup></td>
-                        </tr>
-                        <tr>
-                            <td class="" data-title="INSTRUMENT">PRODUCT</td>
-                            <td class="" data-title="09:00-17:00">0,0123 <sup>649</sup></td>
-                            <td class="" data-title="09:00-21:00">0,0123 <sup>649</sup></td>
-                            <td class="" data-title="00:00-24:00">0,0123 <sup>649</sup></td>
-                        </tr>
-                        <tr>
-                            <td class="" data-title="INSTRUMENT">PRODUCT</td>
-                            <td class="" data-title="09:00-17:00">0,0123 <sup>649</sup></td>
-                            <td class="" data-title="09:00-21:00">0,0123 <sup>649</sup></td>
-                            <td class="" data-title="00:00-24:00">0,0123 <sup>649</sup></td>
-                        </tr>
+                            <?php 
+                                $json = @file_get_contents('./include/price.json');
+                                if($json){
+                                    $result = json_decode($json);
+                                    if($result->crypto){
+                                        foreach ($result->crypto as $item) {
+                                            echo '<tr>';
+                                            echo '<td class="" data-title="INSTRUMENT">' . $item->symbol . '</td>';
+                                            echo '<td class="" data-title="PRICE">' . number_format($item->price, 8, '.', '') . '</td>';
+                                            echo '</tr>';
+                                        }
+                                    }
+                                }
+                            ?>                        
                         </tbody>
                     </table>
                 </div>

@@ -39,76 +39,33 @@
             <!-- Table -->
             <div class="content-horizantaltable" data-aos="fade-down" data-aos-duration="500">
                 <div class="instruments-tab-table">
-                    <table class="sitetable horizantal table">
+                <table class="sitetable horizantal table">
                         <thead>
                         <tr>
                             <th class="" data-title="INSTRUMENT"><span class="thbox"><span class="thtxt">INSTRUMENT</span></span></th>
-                            <th class="" data-title="09:00-17:00"><span class="thbox"><span class="thtxt">09:00-17:00</span></span></th>
-                            <th class="" data-title="09:00-21:00"><span class="thbox"><span class="thtxt">09:00-21:00</span></span></th>
-                            <th class="" data-title="00:00-24:00"><span class="thbox"><span class="thtxt">00:00-24:00</span></span></th>
+                            <th class="" data-title="BID"><span class="thbox"><span class="thtxt">BID</span></span></th>
+                            <th class="" data-title="OFFER"><span class="thbox"><span class="thtxt">OFFER</span></span></th>
+                            <th class="" data-title="SPREAD"><span class="thbox"><span class="thtxt">SPREAD</span></span></th>
                         </tr>
                         </thead>
                         <tbody>
-                        <tr>
-                            <td class="" data-title="INSTRUMENT">PRODUCT</td>
-                            <td class="" data-title="09:00-17:00">0,0123 <sup>649</sup></td>
-                            <td class="" data-title="09:00-21:00">0,0123 <sup>649</sup></td>
-                            <td class="" data-title="00:00-24:00">0,0123 <sup>649</sup></td>
-                        </tr>
-                        <tr>
-                            <td class="" data-title="INSTRUMENT">PRODUCT</td>
-                            <td class="" data-title="09:00-17:00">0,0123 <sup>649</sup></td>
-                            <td class="" data-title="09:00-21:00">0,0123 <sup>649</sup></td>
-                            <td class="" data-title="00:00-24:00">0,0123 <sup>649</sup></td>
-                        </tr>
-                        <tr>
-                            <td class="" data-title="INSTRUMENT">PRODUCT</td>
-                            <td class="" data-title="09:00-17:00">0,0123 <sup>649</sup></td>
-                            <td class="" data-title="09:00-21:00">0,0123 <sup>649</sup></td>
-                            <td class="" data-title="00:00-24:00">0,0123 <sup>649</sup></td>
-                        </tr>
-                        <tr>
-                            <td class="" data-title="INSTRUMENT">PRODUCT</td>
-                            <td class="" data-title="09:00-17:00">0,0123 <sup>649</sup></td>
-                            <td class="" data-title="09:00-21:00">0,0123 <sup>649</sup></td>
-                            <td class="" data-title="00:00-24:00">0,0123 <sup>649</sup></td>
-                        </tr>
-                        <tr>
-                            <td class="" data-title="INSTRUMENT">PRODUCT</td>
-                            <td class="" data-title="09:00-17:00">0,0123 <sup>649</sup></td>
-                            <td class="" data-title="09:00-21:00">0,0123 <sup>649</sup></td>
-                            <td class="" data-title="00:00-24:00">0,0123 <sup>649</sup></td>
-                        </tr>
-                        <tr>
-                            <td class="" data-title="INSTRUMENT">PRODUCT</td>
-                            <td class="" data-title="09:00-17:00">0,0123 <sup>649</sup></td>
-                            <td class="" data-title="09:00-21:00">0,0123 <sup>649</sup></td>
-                            <td class="" data-title="00:00-24:00">0,0123 <sup>649</sup></td>
-                        </tr>
-                        <tr>
-                            <td class="" data-title="INSTRUMENT">PRODUCT</td>
-                            <td class="" data-title="09:00-17:00">0,0123 <sup>649</sup></td>
-                            <td class="" data-title="09:00-21:00">0,0123 <sup>649</sup></td>
-                            <td class="" data-title="00:00-24:00">0,0123 <sup>649</sup></td>
-                        </tr>
-                        <tr>
-                            <td class="" data-title="INSTRUMENT">PRODUCT</td>
-                            <td class="" data-title="09:00-17:00">0,0123 <sup>649</sup></td>
-                            <td class="" data-title="09:00-21:00">0,0123 <sup>649</sup></td>
-                            <td class="" data-title="00:00-24:00">0,0123 <sup>649</sup></td>
-                        </tr>
-                        <tr>
-                            <td class="" data-title="INSTRUMENT">PRODUCT</td>
-                            <td class="" data-title="09:00-17:00">0,0123 <sup>649</sup></td>
-                            <td class="" data-title="09:00-21:00">0,0123 <sup>649</sup></td>
-                            <td class="" data-title="00:00-24:00">0,0123 <sup>649</sup></td>
-                        </tr>
-                        <tr>
-                            <td class="" data-title="INSTRUMENT">PRODUCT</td>
-                            <td class="" data-title="09:00-17:00">0,0123 <sup>649</sup></td>
-                            <td class="" data-title="09:00-21:00">0,0123 <sup>649</sup></td>
-                            <td class="" data-title="00:00-24:00">0,0123 <sup>649</sup></td>
-                        </tr>
+                            <?php 
+                                $json = @file_get_contents('./include/price.json');
+                                if($json){
+                                    $result = json_decode($json);
+                                    if($result->forex){
+                                        foreach ($result->forex as $item) {
+                                            $spread = floatval($item->ask) - floatval($item->bid);
+                                            echo '<tr>';
+                                            echo '<td class="" data-title="INSTRUMENT">' . $item->symbol . '</td>';
+                                            echo '<td class="" data-title="BID">' . number_format($item->bid, 5, '.', '') . '</td>';
+                                            echo '<td class="" data-title="OFFER">' . number_format($item->ask, 5, '.', '') . '</td>';
+                                            echo '<td class="" data-title="SPREAD">' . number_format($spread, 5, '.', '') . '</td>';
+                                            echo '</tr>';
+                                        }
+                                    }
+                                }
+                            ?>
                         </tbody>
                     </table>
                 </div>

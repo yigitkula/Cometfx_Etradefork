@@ -28,6 +28,9 @@
         <!-- Form Start -->
         <div class="login-wrapper formuinew formuilabel">
             <form action="" autocomplete="off" onsubmit="return formValidator.verifyPartnerForm()" novalidate>
+                <!-- Alert -->
+                <div id="alert-wrapper"></div>
+                <!-- Alert -->
                 <div class="form-row">
                     <div class="form-group col">
                         <div class="labelanimation input-group">

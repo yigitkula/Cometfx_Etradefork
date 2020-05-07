@@ -28,6 +28,10 @@
         <!-- Form Start -->
         <div class="contact-formarea formuinew formuilabel">
             <form id="contact-form" action="" autocomplete="off" onsubmit="return formValidator.verifyContactForm()" novalidate>
+                <!-- Alert -->
+                <div id="alert-wrapper"></div>
+                <!-- Alert -->
+
                 <div class="form-row">
                     <div class="form-group col">
                         <div class="labelanimation input-group">
