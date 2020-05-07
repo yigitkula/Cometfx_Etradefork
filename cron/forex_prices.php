@@ -1,24 +1,12 @@
 <?php
-require_once '../vendor/autoload.php';
+require_once '/var/www/html/vendor/autoload.php';
 use Goutte\Client;
 $client = new Client();
-
 $usdeur = 0;
 $crypto = [];
 $forex = [];
 $indices = [];
 $commodities = [];
-
-/*XAUUSD
-XAGUSD
-XPDUSD
-
-Sugar
-Copper
-*/
-
-
-
 try {
     $crawler = $client->request('GET', 'https://www.investing.com/indices/germany-30');
     $price = $crawler->filter('#quotes_summary_current_data')->filter('span#last_last')->text();
@@ -32,7 +20,6 @@ try {
     print_r($e);
     exit;
 }
-
 try {
     $crawler = $client->request('GET', 'https://www.investing.com/indices/uk-100');
     $price = $crawler->filter('#quotes_summary_current_data')->filter('span#last_last')->text();
@@ -46,7 +33,6 @@ try {
     print_r($e);
     exit;
 }
-
 try {
     $crawler = $client->request('GET', 'https://www.investing.com/indices/nq-100');
     $price = $crawler->filter('#quotes_summary_current_data')->filter('span#last_last')->text();
@@ -60,7 +46,6 @@ try {
     print_r($e);
     exit;
 }
-
 try {
     $crawler = $client->request('GET', 'https://www.investing.com/indices/us-spx-500');
     $price = $crawler->filter('#quotes_summary_current_data')->filter('span#last_last')->text();
@@ -74,7 +59,6 @@ try {
     print_r($e);
     exit;
 }
-
 try {
     $crawler = $client->request('GET', 'https://www.investing.com/indices/us-30-futures');
     $price = $crawler->filter('#quotes_summary_current_data')->filter('span#last_last')->text();
@@ -88,7 +72,6 @@ try {
     print_r($e);
     exit;
 }
-
 
 
 try {
@@ -112,7 +95,6 @@ try {
 }
 
 
-
 try {
     $crawler = $client->request('GET', 'https://www.investing.com/currencies/xpd-usd');
     $price = $crawler->filter('#quotes_summary_current_data')->filter('span#last_last')->text();
@@ -126,7 +108,6 @@ try {
     print_r($e);
     exit;
 }
-
 try {
     $crawler = $client->request('GET', 'https://www.investing.com/currencies/xpt-usd');
     $price = $crawler->filter('#quotes_summary_current_data')->filter('span#last_last')->text();
@@ -140,7 +121,6 @@ try {
     print_r($e);
     exit;
 }
-
 try {
     $crawler = $client->request('GET', 'https://www.investing.com/commodities/copper');
     $price = $crawler->filter('#quotes_summary_current_data')->filter('span#last_last')->text();
@@ -154,7 +134,6 @@ try {
     print_r($e);
     exit;
 }
-
 try {
     $crawler = $client->request('GET', 'https://www.investing.com/commodities/us-sugar-no11');
     $price = $crawler->filter('#quotes_summary_current_data')->filter('span#last_last')->text();
@@ -168,7 +147,6 @@ try {
     print_r($e);
     exit;
 }
-
 
 
 
@@ -200,8 +178,7 @@ $result = (object) [
     "commodities" => $commodities,
 ]; 
 
-file_put_contents('../include/price.json', json_encode($result));
-
+file_put_contents('/var/www/html/include/price.json', json_encode($result));
 
 
 function makeCurlRequest($url){
