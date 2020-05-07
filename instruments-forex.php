@@ -50,21 +50,18 @@
                         </thead>
                         <tbody>
                             <?php 
-                                $symbols = ['USDJPY','USDGBP','USDCHF','USDCAD','EURUSD','EURJPY','EURCHF','EURGBP','USDTRY','EURTRY','GBPTRY'];
                                 $json = @file_get_contents('./include/price.json');
                                 if($json){
                                     $result = json_decode($json);
                                     if($result->forex){
                                         foreach ($result->forex as $item) {
-                                            if(in_array($item->symbol, $symbols)){
-                                                $spread = floatval($item->ask) - floatval($item->bid);
-                                                echo '<tr>';
-                                                echo '<td class="" data-title="INSTRUMENT">' . $item->symbol . '</td>';
-                                                echo '<td class="" data-title="BID">' . number_format($item->bid, 5, '.', '') . '</td>';
-                                                echo '<td class="" data-title="OFFER">' . number_format($item->ask, 5, '.', '') . '</td>';
-                                                echo '<td class="" data-title="SPREAD">' . number_format($spread, 5, '.', '') . '</td>';
-                                                echo '</tr>';
-                                            }
+                                            $spread = floatval($item->ask) - floatval($item->bid);
+                                            echo '<tr>';
+                                            echo '<td class="" data-title="INSTRUMENT">' . $item->symbol . '</td>';
+                                            echo '<td class="" data-title="BID">' . number_format($item->bid, 5, '.', '') . '</td>';
+                                            echo '<td class="" data-title="OFFER">' . number_format($item->ask, 5, '.', '') . '</td>';
+                                            echo '<td class="" data-title="SPREAD">' . number_format($spread, 5, '.', '') . '</td>';
+                                            echo '</tr>';
                                         }
                                     }
                                 }
