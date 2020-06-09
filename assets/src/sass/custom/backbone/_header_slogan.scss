@@ -1,43 +1,21 @@
 
 .headtitle{
-  background-color: #141414;
+  background-color: $global-grdint-darkblue01;
   width: 100%;
   height: 100%;
   position: relative;
-
-  &::before,
-  &::after{
-    content: "";
-    background-color: #141414;
-    position: absolute;
-    width: calc(50% - 300px);
-    height: 100%;
-    top: 0;
-    z-index: 1;
-  }
-
-  &::before{left: 0;}
-  &::after{right: 0;}
 
   &-background{
     color: $global-clr-white;
     background-repeat: no-repeat;
     background-position: bottom center;
-    padding-top: 92px;
+    padding-top: 134px;
     overflow: hidden;
     position: relative;
     z-index: 2;
     @include transition(padding, 0.3s, ease-in-out);
 
-    &-home{
-      background-image: url(#{$global-img-path-header}/header_dark_background_big_homepage.png);
-      min-height: 900px;
-
-      @include ReSassMaxWidthResponsive(1366){
-        background-size: contain;
-        min-height: auto;
-      }
-    }
+    &-home{}
     &-login{
       background-image: url(#{$global-img-path-header}/header_dark_background_big_loginpage.png);
       min-height: 430px;
@@ -49,99 +27,126 @@
   }
 
   &-home{
-    padding-top: 100px;
-    padding-bottom: 330px;
+    padding: 200px 0;
 
-    @include ReSassMaxWidthResponsive(1366){
-      padding-top: 70px;
-      padding-bottom: 220px;
-    }
+    &-text{
+      max-width: 1400px;
+      margin: auto;
+      position: relative;
+      z-index: 1;
 
-    &-slogan{
-      text-align: center;
-
-      &-title,
-      &-desc{
-        font-weight: 300;
-        line-height: 1.15;
-
-        strong{
-          font-weight: 700;
-        }
-      }
-
-      &-title{
-        font-size: 45px;
-        letter-spacing: -1.35px;
+      .headtitlehome{
+        padding-top: 100px;
+        padding-bottom: 330px;
 
         @include ReSassMaxWidthResponsive(1366){
-          font-size: 40px;
+          padding-top: 70px;
+          padding-bottom: 220px;
         }
-      }
-      &-desc{
-        font-size: 30px;
-        letter-spacing: -0.9px;
 
-        @include ReSassMaxWidthResponsive(1366){
-          font-size: 28px;
-        }
-      }
-    }
+        &-slogan{
+          text-align: center;
 
-    &-instruments{
-      padding: 30px 0 0;
+          &-title,
+          &-desc{
+            font-weight: 300;
+            line-height: 1.15;
 
-      &-list{
-        @include flex-flexbox();
-        @include flex-justify-content(center);
-
-        li{
-          background-color: transparentize($global-clr-black, 0.4);
-          width: 110px;
-          height: 110px;
-          margin: 8px;
-          @include transition(background, 0.15s ease-in-out);
-
-          > a{
-            color: $global-clr-white;
-            width: 100%;
-            height: 100%;
-
-            @include flex-flexbox();
-            @include flex-flex-direction(column);
-            @include flex-align-items(center);
-            @include flex-justify-content(center);
+            strong{
+              font-weight: 700;
+            }
           }
 
-          &:hover{
-            background-color: transparentize($global-clr-black, 0.2);
+          &-title{
+            font-size: 80px;
+            letter-spacing: -1.35px;
 
-            i[class*="icons"]{
-              background-position-y: 0;
+            @include ReSassMaxWidthResponsive(1366){
+              font-size: 40px;
+            }
+
+            .sitecolorblue {
+              background: linear-gradient(54.4deg, #31B1E7 10.45%, #268CF5 50%, #2F58F7 89.55%);
+              background-clip: border-box;
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+            }
+
+          }
+          &-desc{
+            font-size: 30px;
+            letter-spacing: -0.9px;
+            margin-top: 30px;
+
+            @include ReSassMaxWidthResponsive(1366){
+              font-size: 28px;
             }
           }
         }
 
-        *[class*="icons"]{
-          display: block;
-          margin: 0 auto;
-        }
+        &-instruments{
+          padding: 30px 0 0;
 
-        span{
-          display: block;
-          font-size: 16px;
-          line-height: 1.19;
-          letter-spacing: -0.48px;
-          margin-top: 8px;
-          text-align: center;
+          &-list{
+            @include flex-flexbox();
+            @include flex-justify-content(center);
+
+            li{
+              background-color: transparentize($global-clr-black, 0.4);
+              width: 110px;
+              height: 110px;
+              margin: 8px;
+              @include transition(background, 0.15s ease-in-out);
+
+              > a{
+                color: $global-clr-white;
+                width: 100%;
+                height: 100%;
+
+                @include flex-flexbox();
+                @include flex-flex-direction(column);
+                @include flex-align-items(center);
+                @include flex-justify-content(center);
+              }
+
+              &:hover{
+                background-color: transparentize($global-clr-black, 0.2);
+
+                i[class*="icons"]{
+                  background-position-y: 0;
+                }
+              }
+            }
+
+            *[class*="icons"]{
+              display: block;
+              margin: 0 auto;
+            }
+
+            span{
+              display: block;
+              font-size: 16px;
+              line-height: 1.19;
+              letter-spacing: -0.48px;
+              margin-top: 8px;
+              text-align: center;
+            }
+          }
+
+          &-btn{
+            padding-top: 30px;
+            @include flex-flexbox();
+            @include flex-justify-content(center);
+          }
         }
       }
+    }
 
-      &-btn{
-        padding-top: 30px;
-        @include flex-flexbox();
-        @include flex-justify-content(center);
-      }
+    &-video{
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
     }
   }
 

@@ -29,7 +29,7 @@
 
           &.active{
             color: $global-clr-white;
-            @include background-gradient($global-grdint-red01, $global-grdint-red02);
+            @include background-gradient($global-grdint-softblue01, $global-grdint-softblue02);
           }
         }
       }

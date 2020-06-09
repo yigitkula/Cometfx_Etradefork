@@ -9,7 +9,7 @@
   &.navscroll{
     background-color: transparentize($global-sitebg-darkblack01, 0.05);
 
-    #{$headerclassname}-web{margin-top: 15px;}
+    #{$headerclassname}-web{padding-top: 15px; padding-bottom: 15px;}
     #{$headerclassname}-navigation{height: 46px;}
 
     .dfn-menu{
@@ -21,19 +21,6 @@
             padding: 6px 0;
             margin-left: 12px;
             margin-right: 12px;
-          }
-        }
-
-        &-logo{
-          > a{
-            width: 150px;
-            height: 32px;
-            padding-top: 4px;
-            overflow: hidden;
-            &::before,
-            &::after{
-              height: calc(100% - 0px);
-            }
           }
         }
       }
@@ -50,22 +37,38 @@
 
   &-web{
     width: 100%;
-    padding-left: 0;
-    padding-right: 0;
-    margin-top: 40px;
-    @include transition-multiple(top 0.3s ease-in-out, margin 0.3s ease-in-out);
+    padding: 40px 50px;
+    @include transition-multiple(top 0.3s ease-in-out, padding 0.3s ease-in-out);
 
     @include ReSassMaxWidthResponsive(1366){
       margin-top: 20px;
     }
 
+    &-row{
+      @include flex-justify-content(space-between);
+      @include flex-align-items(center);
+    }
+
+    &-left,
+    &-right{
+      width: 100%;
+      max-width: 500px;
+    }
+
+    &-center{}
+
   }
 
+  &-logo{}
+
   &-navigation{
-    height: 52px;
-    border-top: 2px solid $global-clr-red;
     @include flex-flexbox();
     @include flex-justify-content(center);
     @include transition-multiple(height 0.3s ease-in-out);
+  }
+
+  &-langsocial{
+    color: transparentize($global-clr-white, 0.25);
+    text-align: right;
   }
 }

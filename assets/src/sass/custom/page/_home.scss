@@ -1,26 +1,7 @@
 
 .home{
 
-  &-bg{
-    position: relative;
-
-    &::before{
-      content: "";
-      background-image: url(#{$global-img-path-section}/section_light_background_homepage_technology.jpg);
-      background-repeat: no-repeat;
-      background-position: top center;
-      width: 100%;
-      height: calc(100% + 330px);
-      position: absolute;
-      top: -330px;
-      z-index: 0;
-
-      @include ReSassMaxWidthResponsive(1366){
-        background-image: none;
-        background-color: $global-clr-white;
-      }
-    }
-  }
+  &-bg{}
 
   &-technology{
     padding: 100px 0 95px;
