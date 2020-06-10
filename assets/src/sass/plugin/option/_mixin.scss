@@ -334,7 +334,68 @@
 }
 /* Forms End */
 
-/* Keyframes Start */
+/* Animation and Keyframes Start */
+@mixin animation ($animationdelay, $animationduration, $animationname, $animationfillmode: forwards) {
+  -webkit-animation-delay: $animationdelay;
+  -webkit-animation-duration: $animationduration;
+  -webkit-animation-name: $animationname;
+  -webkit-animation-fill-mode: $animationfillmode;
+  -moz-animation-delay: $animationdelay;
+  -moz-animation-duration: $animationduration;
+  -moz-animation-name: $animationname;
+  -moz-animation-fill-mode: $animationfillmode;
+  -o-animation-delay: $animationdelay;
+  -o-animation-duration: $animationduration;
+  -o-animation-name: $animationname;
+  -o-animation-fill-mode: $animationfillmode;
+  animation-delay: $animationdelay;
+  animation-duration: $animationduration;
+  animation-name: $animationname;
+  animation-fill-mode: $animationfillmode;
+}
+
+@mixin animation-multi ($animationmulti) {
+  -webkit-animation: $animationmulti;
+  -moz-animation: $animationmulti;
+  -o-animation: $animationmulti;
+  animation: $animationmulti;
+}
+
+@mixin animation-name ($animationname) {
+  -webkit-animation-name: $animationname;
+  -moz-animation-name: $animationname;
+  -o-animation-name: $animationname;
+  animation-name: $animationname;
+}
+
+@mixin animation-delay ($animationdelay) {
+  -webkit-animation-delay: $animationdelay;
+  -moz-animation-delay: $animationdelay;
+  -o-animation-delay: $animationdelay;
+  animation-delay: $animationdelay;
+}
+
+@mixin animation-duration ($animationduration) {
+  -webkit-animation-duration: $animationduration;
+  -moz-animation-duration: $animationduration;
+  -o-animation-duration: $animationduration;
+  animation-duration: $animationduration;
+}
+
+@mixin animation-fillmode ($animationfillmode) {
+  -webkit-animation-fill-mode: $animationfillmode;
+  -moz-animation-fill-mode: $animationfillmode;
+  -o-animation-fill-mode: $animationfillmode;
+  animation-fill-mode: $animationfillmode;
+}
+
+@mixin animation-iterationcount ($animationiterationcount) {
+  -webkit-animation-iteration-count: $animationiterationcount;
+  -moz-animation-iteration-count: $animationiterationcount;
+  -o-animation-iteration-count: $animationiterationcount;
+  animation-iteration-count: $animationiterationcount;
+}
+
 @mixin keyframes($animation-name) {
   @-webkit-keyframes #{$animation-name} {
     @content;
@@ -352,4 +413,4 @@
     @content;
   }
 }
-/* Keyframes End */
+/* Animation and Keyframes End */

@@ -1,3 +1,25 @@
+/* Bootstrap Grid Columns Settings */
+$grid-columns:          12 !global;
+$grid-gutter-width:     30px !global;
+$grid-row-columns:      6 !global;
+$container-max-widths:(
+        xs: 500px,
+        sm: 540px,
+        md: 720px,
+        lg: 960px,
+        xl: 1260px,
+        hd: 1400px,
+) !global;
+$grid-breakpoints:(
+        xs: 0,
+        sm: 576px,
+        md: 768px,
+        lg: 992px,
+        xl: 1400px,
+        hd: 1620px
+) !global;
+/* Bootstrap Grid Columns Settings */
+
 /* Button & Input Settings */
 $btn-font-weight:               500 !global;
 /* Button & Input Settings */

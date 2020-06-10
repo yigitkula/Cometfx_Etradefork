@@ -59,7 +59,17 @@
 
   }
 
-  &-logo{}
+  &-logo{
+
+    &-link{
+      opacity: 0.9;
+      @include transition-multiple(opacity 0.3s ease-in-out);
+
+      &:hover{
+        opacity: 1;
+      }
+    }
+  }
 
   &-navigation{
     @include flex-flexbox();
