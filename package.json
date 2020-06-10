@@ -1,5 +1,5 @@
 {
-  "name": "E-TRADE",
+  "name": "COMETFX",
   "scripts": {
     "start": "gulp start",
     "build": "gulp build",

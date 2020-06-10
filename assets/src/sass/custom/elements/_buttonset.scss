@@ -20,6 +20,13 @@
       border: none;
       @include background-gradient($global-grdint-red01, $global-grdint-red02);
     }
+
+    &-bluesoft{
+      border: none;
+      //@include background-gradient($global-grdint-softblue01, $global-grdint-softblue02);
+      background-color: $global-grdint-softblue01;
+      background-image: linear-gradient(54.4deg, #31B1E7 10.45%, #268CF5 50%, #2F58F7 89.55%);
+    }
   }
 }
 

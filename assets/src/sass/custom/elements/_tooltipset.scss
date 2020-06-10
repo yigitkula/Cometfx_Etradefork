@@ -7,7 +7,7 @@
   &-inner{
     color: $global-clr-white;
     background-color: transparentize($global-clr-dark-blue, 0.6);
-    font-family: $global-font-family-roboto-condensed;
+    font-family: $global-font-family-default;
     @include border-radius(3px);
 
     *{color: $global-clr-white;}

@@ -23,7 +23,7 @@ body {
 }
 
 body, input, textarea, select, button {
-  font-family: $global-font-family-roboto-condensed !important;
+  font-family: $global-font-family-default !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;

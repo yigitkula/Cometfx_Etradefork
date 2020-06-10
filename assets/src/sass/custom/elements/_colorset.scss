@@ -63,5 +63,14 @@
         color: transparentize($global-clr-soft-gray, 0.7) !important;
       }
     }
+
+    &textgradient{
+      &blue{
+        background: linear-gradient(54.4deg, #31B1E7 10.45%, #268CF5 50%, #2F58F7 89.55%);
+        background-clip: border-box;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
   }
 }

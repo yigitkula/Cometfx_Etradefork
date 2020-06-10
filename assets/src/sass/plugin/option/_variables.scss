@@ -1,6 +1,6 @@
 /* Main Settings */
-$global-font-family-roboto-condensed: 'Roboto Condensed';
-$global-font-size: 18px;
+$global-font-family-default: 'Roboto Slab';
+$global-font-size: 16px;
 /* Main Settings */
 
 /* Color Settings */
@@ -9,11 +9,11 @@ $global-clr-black: #000000;
 $global-clr-green: #4caf50;
 $global-clr-red: #be0000;
 $global-clr-orange: #ff9900;
-$global-clr-soft-blue: #098cdf;
+$global-clr-soft-blue: #0090FF;
 $global-clr-dark-blue: #004378;
 $global-clr-soft-gray: #758ca3;
 $global-clr-light-gray: #f7f7f7;
-$global-clr-dark-black: #232323;
+$global-clr-dark-black: #2B2B32;
 /* Color Settings */
 
 /* Text Color Settings */
@@ -22,7 +22,7 @@ $global-clr-text-dark-gray: #3c3c3c;
 /* Text Color Settings */
 
 /* Site Background Color */
-$global-sitebg-darkblack01: #191919;
+$global-sitebg-darkblack01: #1b1b1d;
 $global-sitebg-darkblack02: #003158;
 /* Site Background Color */
 
@@ -31,10 +31,12 @@ $global-border-light-gray: #bebebe;
 /* Site Border Color */
 
 /* Site Gradient Background Color */
-$global-grdint-darkblue01: #001934;
-$global-grdint-darkblue02: #003661;
+$global-grdint-darkblue01: #0A0C16;
+$global-grdint-darkblue02: #0F152B;
 $global-grdint-red01: #e50000;
 $global-grdint-red02: #890000;
+$global-grdint-softblue01: #31B1E7;
+$global-grdint-softblue02: #2F58F7;
 /* Site Gradient Background Color */
 
 /* Site Image Path */
