@@ -17,8 +17,8 @@ $global-clr-dark-black: #2B2B32;
 /* Color Settings */
 
 /* Text Color Settings */
-$global-clr-text-light-gray: #737373;
-$global-clr-text-dark-gray: #3c3c3c;
+$global-clr-text-dark-gray: #2B2B32;
+$global-clr-text-light-gray: lighten($global-clr-text-dark-gray, 20%);
 /* Text Color Settings */
 
 /* Site Background Color */

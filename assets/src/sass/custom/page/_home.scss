@@ -4,7 +4,7 @@
   &-bg{}
 
   &-technology{
-    padding: 50px 0 80px;
+    padding: 50px 0 100px;
     position: relative;
 
     @include ReSassMaxWidthResponsive(1366){
@@ -24,27 +24,12 @@
 
     &.homept{
       padding: 0;
-      margin-bottom: 50px;
-      margin-top: -65px;
-      position: relative;
-      z-index: 2;
 
-      &::before{
-        content: "";
-        background-color: transparent;
-        width: 100%;
-        height: 1px;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        z-index: -1;
-        @include animation-multi(homeBoxInstrumentsBorderBottomScale 1s linear forwards);
-        @include animation-delay(2.5s);
-
-        @include keyframes(homeBoxInstrumentsBorderBottomScale){
-          0%   {@include scaleX(0); background-color: darken(#F3F6F9, 5%);}
-          100% {@include scaleX(1); background-color: darken(#F3F6F9, 5%);}
-        }
+      .boxsinstruments{
+        margin-bottom: 50px;
+        margin-top: -150px;
+        position: relative;
+        z-index: 2;
       }
     }
 
@@ -60,27 +45,23 @@
           @include flex-flex-basis(0);
           @include flex-flex-grow(1);
           max-width: 100%;
-          padding-left: 30px;
-          padding-right: 30px;
-          padding-bottom: 30px;
+          //background-color: #F3F6F9;
+          background-color: $global-clr-white;
+          padding: 30px;
+          margin-left: 15px;
+          margin-right: 15px;
           position: relative;
+          @include box-shadow(0 0 20px 5px transparentize($global-clr-dark-black, 0.95));
 
           &::before{
             content: "";
-            background-color: darken(#F3F6F9, 5%);
+            background-color: $global-clr-white;
             width: 1px;
-            height: 0;
+            height: 100%;
             position: absolute;
             bottom: 0;
             left: 0;
-
-            @include animation-multi(homeBoxInstrumentsBorderLeftScale 1s linear forwards);
-            @include animation-delay(2.5s);
-
-            @include keyframes(homeBoxInstrumentsBorderLeftScale){
-              0%   {height: 0;}
-              100% {height: calc(100% - 65px);}
-            }
+            display: none;
           }
 
           &:first-child::before{
@@ -102,7 +83,7 @@
       &-icons{
         @include flex-flexbox();
         width: 144px;
-        height: 130px;
+        height: 120px;
         background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTMwIiBoZWlnaHQ9IjE0NCIgdmlld0JveD0iMCAwIDEzMCAxNDQiPg0KICA8ZGVmcz4NCiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImxpbmVhci1ncmFkaWVudCIgeDE9IjAuMzAyIiB5MT0iMC4xMTgiIHgyPSIwLjcwOCIgeTI9IjEuMjY0IiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCI+DQogICAgICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiMzMWIxZTciLz4NCiAgICAgIDxzdG9wIG9mZnNldD0iMC41MDIiIHN0b3AtY29sb3I9IiMyNjhjZjUiLz4NCiAgICAgIDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzJmNThmNyIvPg0KICAgIDwvbGluZWFyR3JhZGllbnQ+DQogIDwvZGVmcz4NCiAgPHBhdGggaWQ9ImhleGFnb24iIGQ9Ik0xNDIuMjIsODQuNjQ2LDExMi44NjQsMzMuMTIxYTEzLjI1OSwxMy4yNTksMCwwLDAtMTEuNTEtNi43MzZINDIuNjQ1YTEzLjI2MiwxMy4yNjIsMCwwLDAtMTEuNTEsNi43MzZMMS43OCw4NC42NDZhMTMuNjM2LDEzLjYzNiwwLDAsMCwwLDEzLjQ3MmwyOS4zNTQsNTEuNTNhMTMuMjYyLDEzLjI2MiwwLDAsMCwxMS41MSw2LjczNmg1OC43MDlhMTMuMjU4LDEzLjI1OCwwLDAsMCwxMS41MS02LjczNmwyOS4zNTYtNTEuNTNBMTMuNjM3LDEzLjYzNywwLDAsMCwxNDIuMjIsODQuNjQ2WiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTI2LjM4NSAxNDQpIHJvdGF0ZSgtOTApIiBmaWxsPSJ1cmwoI2xpbmVhci1ncmFkaWVudCkiLz4NCjwvc3ZnPg0K");
         background-repeat: no-repeat;
         background-position: center;
@@ -123,11 +104,14 @@
         text-align: center;
 
         &-title{
-          color: $global-clr-text-dark-gray;
+          //color: $global-clr-text-dark-gray;
+          color: $global-clr-soft-blue;
           font-size: 24px;
+          font-weight: 400;
           @include transition-multiple(color 0.3s ease-in-out);
         }
         &-desc{
+          color: $global-clr-text-light-gray;
           font-size: 18px;
           font-weight: 400;
           line-height: 1.4;
@@ -143,7 +127,7 @@
   }
 
   &-tabsinstruments{
-    padding: 50px 0;
+    padding: 50px 0 25px;
 
     &.homept{
       //padding-top: 0;

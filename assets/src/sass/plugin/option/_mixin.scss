@@ -148,13 +148,13 @@
   -moz-border-radius-bottomleft: $bottomleft;
 }
 
-@mixin box-shadow($left, $top, $radius, $color) {
-  box-shadow: $left $top $radius $color;
-  -o-box-shadow: $left $top $radius $color;
-  -ms-box-shadow: $left $top $radius $color;
-  -moz-box-shadow: $left $top $radius $color;
-  -webkit-box-shadow: $left $top $radius $color;
-  -khtml-box-shadow: $left $top $radius $color;
+@mixin box-shadow($box-shadow) {
+  box-shadow: $box-shadow;
+  -o-box-shadow: $box-shadow;
+  -ms-box-shadow: $box-shadow;
+  -moz-box-shadow: $box-shadow;
+  -webkit-box-shadow: $box-shadow;
+  -khtml-box-shadow: $box-shadow;
 }
 /* Border End */
 
