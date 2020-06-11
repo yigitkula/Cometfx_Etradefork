@@ -4,6 +4,7 @@
   width: 100%;
   height: 100%;
   position: relative;
+  overflow: hidden;
 
   &-background{
     color: $global-clr-white;
@@ -27,7 +28,7 @@
   }
 
   &-home{
-    padding: 150px 0 200px;
+    padding: 150px 0 300px;
 
     &-text{
       position: relative;

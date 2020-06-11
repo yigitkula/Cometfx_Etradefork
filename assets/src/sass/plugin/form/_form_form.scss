@@ -48,7 +48,7 @@
     height: 40px;
     padding: 4px 10px;
     background-clip: inherit !important;
-    @include box-shadow(0,0,0,transparent);
+    @include box-shadow(0 0 0 transparent);
     @include border-radius(0);
 
     &[rows]{
@@ -77,7 +77,7 @@
     padding: 2px 10px 4px;
     background: $global-clr-white url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMS41IiBoZWlnaHQ9IjYuODExIiB2aWV3Qm94PSIwIDAgMTEuNSA2LjgxMSI+CiAgICA8ZGVmcz4KICAgICAgICA8c3R5bGU+CiAgICAgICAgICAgIC5jbHMtMXtmaWxsOm5vbmU7c3Ryb2tlOiMwMDQzNzg7c3Ryb2tlLWxpbmVjYXA6cm91bmQ7c3Ryb2tlLW1pdGVybGltaXQ6MTA7c3Ryb2tlLXdpZHRoOjEuNXB4fQogICAgICAgIDwvc3R5bGU+CiAgICA8L2RlZnM+CiAgICA8cGF0aCBpZD0iQXJyb3ciIGQ9Ik0xMCAwTDUuMDA2IDUgMCAwIiBjbGFzcz0iY2xzLTEiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC43NSAuNzUpIi8+Cjwvc3ZnPgo=") no-repeat right 12px center;
     cursor: pointer;
-    @include box-shadow(0,0,0,transparent);
+    @include box-shadow(0 0 0 transparent);
     @include border-radius(0);
 
     &:focus{
