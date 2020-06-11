@@ -4,7 +4,7 @@
   &-bg{}
 
   &-technology{
-    padding: 100px 0 95px;
+    padding: 50px 0 80px;
     position: relative;
 
     @include ReSassMaxWidthResponsive(1366){
@@ -20,13 +20,32 @@
   }
 
   &-boxsinstruments{
-    padding: 100px 0 75px;
+    padding: 50px 0;
 
     &.homept{
-      padding-top: 0;
+      padding: 0;
+      margin-bottom: 50px;
       margin-top: -65px;
       position: relative;
       z-index: 2;
+
+      &::before{
+        content: "";
+        background-color: transparent;
+        width: 100%;
+        height: 1px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        @include animation-multi(homeBoxInstrumentsBorderBottomScale 1s linear forwards);
+        @include animation-delay(2.5s);
+
+        @include keyframes(homeBoxInstrumentsBorderBottomScale){
+          0%   {@include scaleX(0); background-color: darken(#F3F6F9, 5%);}
+          100% {@include scaleX(1); background-color: darken(#F3F6F9, 5%);}
+        }
+      }
     }
 
     .boxsinstruments{
@@ -43,17 +62,25 @@
           max-width: 100%;
           padding-left: 30px;
           padding-right: 30px;
-          padding-bottom: 20px;
+          padding-bottom: 30px;
           position: relative;
 
           &::before{
             content: "";
             background-color: darken(#F3F6F9, 5%);
             width: 1px;
-            height: calc(100% - 120px);
+            height: 0;
             position: absolute;
             bottom: 0;
             left: 0;
+
+            @include animation-multi(homeBoxInstrumentsBorderLeftScale 1s linear forwards);
+            @include animation-delay(2.5s);
+
+            @include keyframes(homeBoxInstrumentsBorderLeftScale){
+              0%   {height: 0;}
+              100% {height: calc(100% - 65px);}
+            }
           }
 
           &:first-child::before{
@@ -80,7 +107,7 @@
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
-        margin: 0 auto 15px;
+        margin: 0 auto 30px;
         position: relative;
         top: 0;
         @include transition-multiple(top 0.3s ease-in-out);
@@ -116,10 +143,10 @@
   }
 
   &-tabsinstruments{
-    padding: 100px 0 75px;
+    padding: 50px 0;
 
     &.homept{
-      padding-top: 0;
+      //padding-top: 0;
     }
 
     .instruments{

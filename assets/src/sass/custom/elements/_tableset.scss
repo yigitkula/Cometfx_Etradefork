@@ -67,7 +67,7 @@
           }
 
           span.thbox{
-            color: $global-border-light-gray;
+            color: transparentize($global-clr-soft-blue, 0.50);
             font-size: 30px;
             font-weight: 300;
             line-height: 1;
