@@ -87,26 +87,19 @@
 
       &-title{
         color: $global-clr-soft-blue;
-        font-size: 30px;
-        font-weight: 300;
-        line-height: 1.07;
+        font-size: 26px;
+        font-weight: 400;
+        line-height: 1.2;
         letter-spacing: -0.9px;
-
-        @include ReSassMaxWidthResponsive(1366){
-          font-size: 28px;
-        }
       }
 
       &-desc{
+        color: $global-clr-text-light-gray;
         font-size: 18px;
-        font-weight: normal;
-        line-height: 1.11;
-        letter-spacing: -0.54px;
+        font-weight: 400;
+        line-height: 1.4;
+        letter-spacing: -.25px;
         margin-top: 10px;
-
-        @include ReSassMaxWidthResponsive(1366){
-          font-size: 17px;
-        }
       }
 
       &-btn{
@@ -152,17 +145,18 @@
 
       &-title{
         color: $global-clr-soft-blue;
-        font-size: 30px;
-        font-weight: 300;
-        line-height: 1.07;
+        font-size: 26px;
+        font-weight: 400;
+        line-height: 1.2;
         letter-spacing: -0.9px;
       }
 
       &-desc{
+        color: $global-clr-text-light-gray;
         font-size: 18px;
-        font-weight: normal;
-        line-height: 1.11;
-        letter-spacing: -0.54px;
+        font-weight: 400;
+        line-height: 1.4;
+        letter-spacing: -.25px;
         margin-top: 10px;
       }
     }
@@ -220,18 +214,19 @@
 
       &-title{
         color: $global-clr-soft-blue;
-        font-size: 30px;
-        font-weight: 300;
-        line-height: 1.07;
+        font-size: 26px;
+        font-weight: 400;
+        line-height: 1.2;
         letter-spacing: -0.9px;
       }
 
       &-desc{
+        color: $global-clr-text-light-gray;
         font-size: 18px;
-        font-weight: normal;
-        line-height: 1.11;
-        letter-spacing: -0.54px;
-        margin-top: 5px;
+        font-weight: 400;
+        line-height: 1.4;
+        letter-spacing: -.25px;
+        margin-top: 10px;
       }
     }
   }
@@ -291,7 +286,7 @@
         color: $global-clr-soft-blue;
         font-size: 26px;
         font-weight: 300;
-        line-height: 1.07;
+        line-height: 1.2;
         letter-spacing: -0.9px;
         margin-top: 5px;
       }

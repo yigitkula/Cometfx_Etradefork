@@ -3,11 +3,13 @@
   .content{
     &-horizantaltable{
       margin-top: 40px;
-      padding-bottom: 50px;
-      border: 1px solid $global-border-light-gray;
+      //padding-bottom: 50px;
+      padding: 0 50px 50px;
+      //border: 1px solid $global-border-light-gray;
       border-top: none;
       min-height: 200px;
-      @include border-radii(0,0,14px,14px);
+      //@include border-radii(0,0,14px,14px);
+      @include box-shadow(0 40px 40px 5px transparentize($global-clr-dark-black, 0.95));
 
       &-bottombtn{
         text-align: center;

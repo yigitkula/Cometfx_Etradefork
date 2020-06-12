@@ -67,7 +67,7 @@
           }
 
           span.thbox{
-            color: transparentize($global-clr-soft-blue, 0.50);
+            color: transparentize($global-clr-soft-blue, 0.25);
             font-size: 30px;
             font-weight: 300;
             line-height: 1;
@@ -91,7 +91,7 @@
             &::before,
             &::after{
               content: "";
-              background-color: $global-border-light-gray;
+              background-color: transparentize($global-clr-soft-blue, 0.25);
               position: absolute;
               left: 0;
               top: 0;
@@ -110,7 +110,7 @@
           span.thtxt{
             background-color: $global-clr-white;
             position: relative;
-            top: -3px;
+            top: -5px;
             padding: 0 10px 0 2px;
           }
 
