@@ -66,7 +66,7 @@
 
     &textgradient{
       &blue{
-        background: linear-gradient(54.4deg, #31B1E7 10.45%, #268CF5 50%, #2F58F7 89.55%);
+        background-image: linear-gradient(135deg,$global-grdint-softblue01 0%,$global-grdint-softblue02 100%);
         background-clip: border-box;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;

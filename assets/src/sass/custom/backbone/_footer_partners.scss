@@ -2,7 +2,7 @@
 .foot{
   &-platforms{
     background-color: $global-clr-soft-blue;
-    padding: 170px 0 300px;
+    padding: 160px 0 340px;
     position: relative;
     overflow: hidden;
 
@@ -87,7 +87,7 @@
     &-video{
       width: 100%;
       position: absolute;
-      top: -720px;
+      top: -350px;
       //top: 70%;
       //@include translateY(-50%);
       left: 0;

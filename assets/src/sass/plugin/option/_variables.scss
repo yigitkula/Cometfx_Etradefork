@@ -9,8 +9,8 @@ $global-clr-black: #000000;
 $global-clr-green: #4caf50;
 $global-clr-red: #DB0029;
 $global-clr-orange: #ff9900;
-$global-clr-soft-blue: #0090FF;
-$global-clr-dark-blue: #004378;
+$global-clr-soft-blue: #1863e4;
+$global-clr-dark-blue: darken($global-clr-soft-blue, 10%);
 $global-clr-soft-gray: #758ca3;
 $global-clr-light-gray: #f7f7f7;
 $global-clr-dark-black: #2B2B32;
@@ -18,7 +18,7 @@ $global-clr-dark-black: #2B2B32;
 
 /* Text Color Settings */
 $global-clr-text-dark-gray: #2B2B32;
-$global-clr-text-light-gray: lighten($global-clr-text-dark-gray, 20%);
+$global-clr-text-light-gray: lighten($global-clr-text-dark-gray, 25%);
 /* Text Color Settings */
 
 /* Site Background Color */
@@ -35,8 +35,8 @@ $global-grdint-darkblue01: #0A0C16;
 $global-grdint-darkblue02: #0F152B;
 $global-grdint-red01: #e50000;
 $global-grdint-red02: #890000;
-$global-grdint-softblue01: #31B1E7;
-$global-grdint-softblue02: #2F58F7;
+$global-grdint-softblue01: #4481eb;
+$global-grdint-softblue02: darken($global-grdint-softblue01, 10%);
 /* Site Gradient Background Color */
 
 /* Site Image Path */
