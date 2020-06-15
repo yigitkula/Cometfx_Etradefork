@@ -3,8 +3,8 @@
     <g id="icon_Pen" transform="translate(-574 -320)">
       <rect id="Rectangle_1" data-name="Rectangle 1" width="24" height="24" transform="translate(574 344)" fill="#d4d4d4" opacity="0"/>
       <g id="Icn_Pen" transform="translate(577 347)">
-        <path id="Line" d="M970.415,535.5l-13,13H952.5v-5l13-13Z" transform="translate(-952.5 -530.5)" fill="none" stroke="#be0000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
-        <line id="Line-2" data-name="Line" x2="4.915" y2="5" transform="translate(9 4)" fill="none" stroke="#be0000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+        <path id="Line" d="M970.415,535.5l-13,13H952.5v-5l13-13Z" transform="translate(-952.5 -530.5)" fill="none" stroke="#1863e4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+        <line id="Line-2" data-name="Line" x2="4.915" y2="5" transform="translate(9 4)" fill="none" stroke="#1863e4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
       </g>
     </g>
     <g id="icon_Check" transform="translate(-550 -320)">
