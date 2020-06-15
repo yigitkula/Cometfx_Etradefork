@@ -1,78 +1,12 @@
 
 .footer{
-  background-color: $global-sitebg-darkblack01;
+  background-color: $global-grdint-darkblue02;
 
-  &-top{
+  &-topx{
     padding-top: 50px;
 
     @include ReSassMaxWidthResponsive(1366){
       padding-top: 35px;
-    }
-
-    &-logo{
-      position: relative;
-      @include flex-flexbox();
-      @include flex-justify-content(center);
-
-      &::before{
-        content: "";
-        background-color: $global-clr-red;
-        width: 100%;
-        height: 1px;
-        position: absolute;
-        left: 0;
-        top: 28px;
-      }
-
-      i.footer-logo{
-        background-color: $global-sitebg-darkblack01;
-        background-image: url(#{$global-img-path-svg}/footer_logo_etrade_gray.svg);
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: contain;
-        overflow: hidden;
-        width: 164px;
-        height: 44px;
-        display: block;
-        position: relative;
-
-        &::before,
-        &::after{
-          content: "";
-          background-color: $global-clr-red;
-          width: 1px;
-          height: 29px;
-          position: absolute;
-          top: 0;
-        }
-        &::before{
-          left: 0;
-        }
-        &::after{
-          right: 0;
-        }
-
-      }
-    }
-  }
-
-  &-navigation{
-    padding: 10px 0 0;
-    @include flex-flexbox();
-    @include flex-justify-content(center);
-
-    @include ReSassMaxWidthResponsive(1366){
-      padding: 5px 0 0;
-    }
-
-    .dfn{
-      &-menu{
-        &-list{
-          &-logo{
-            display: none !important;
-          }
-        }
-      }
     }
   }
 
@@ -127,7 +61,8 @@
 
   &-copyright{
     color: $global-clr-text-light-gray;
-    background-color: #1e1e1e;
+    background-color: $global-grdint-darkblue02;
+    border-top: 1px solid #222B4C;
     padding: 40px 0;
     font-size: 17px;
     line-height: 1.18;
