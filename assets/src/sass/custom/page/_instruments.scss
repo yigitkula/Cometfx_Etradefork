@@ -2,7 +2,7 @@
 .instruments{
 
   &-section{
-    padding: 100px 0 75px;
+    padding: 60px 0;
 
     &-wrapper{}
 
@@ -10,7 +10,7 @@
       margin-top: 75px;
 
       div[class*="horizantaltable"]{
-        max-width: 750px;
+        max-width: 1000px;
         margin-left: auto;
         margin-right: auto;
       }

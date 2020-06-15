@@ -47,7 +47,7 @@
         &.dropdown{
           .dropdown-menu {
             max-height: 0;
-            display: block;
+            //display: block;
             opacity: 0;
             //overflow: hidden;
             @include transition-multiple(top 0.3s ease-in-out);
