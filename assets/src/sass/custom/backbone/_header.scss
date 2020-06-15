@@ -10,13 +10,13 @@
     background-color: transparentize($global-grdint-darkblue01, 0.05);
 
     #{$headerclassname}-web{padding-top: 15px; padding-bottom: 15px;}
-    #{$headerclassname}-navigation{height: 46px;}
+    #{$headerclassname}-navigation{height: 38px;}
 
     .dfn-menu{
 
       &-list{
         &-item{
-          height: 38px!important;
+          height: 57px !important;
           > a{
             padding: 6px 0;
             margin-left: 12px;
@@ -80,5 +80,35 @@
   &-langsocial{
     color: transparentize($global-clr-white, 0.25);
     text-align: right;
+
+    .headlanglist{
+      @include flex-flexbox();
+      @include flex-justify-content(flex-end);
+      font-size: 16px;
+      font-weight: normal;
+      padding:0;
+
+      > li{
+        > a{
+          color: transparentize($global-clr-white, 0.25);
+          display: block;
+          padding: 15px 0;
+          margin: auto 20px;
+          position:relative;
+          height: 100%;
+          white-space: nowrap;
+          @include transition-multiple(color 0.3s ease-in-out, padding 0.3s ease-in-out);
+
+          &.active{
+            color: $global-clr-soft-blue;
+            pointer-events: none;
+          }
+
+          &:hover{
+            color: $global-clr-white;
+          }
+        }
+      }
+    }
   }
 }
