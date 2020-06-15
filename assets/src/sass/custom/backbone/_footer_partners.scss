@@ -97,12 +97,23 @@
   &-liquidity{
     background-color: $global-clr-white;
     padding-top: 50px;
-    padding-bottom: 100px;
+    padding-bottom: 75px;
+    position: relative;
+
+    &::before{
+      content: "";
+      background-color: $global-grdint-darkblue02;
+      width: 100%;
+      height: 275px;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+    }
 
     .liquidityproviders{
 
       &-box{
-        margin-top: 25px;
+        margin-top: 50px;
 
         .owl{
           &-stage{
@@ -115,72 +126,91 @@
         }
 
         &-item{
-          padding: 3px;
-          border: 2px solid #303134;
-          @include border-radius(10px);
-          @include transition-multiple(border 0.15s ease-in-out);
+          background-color: $global-clr-white;
+          margin: 30px 0;
+          @include box-shadow(0 0 20px 5px transparentize($global-clr-dark-black, 0.95));
 
           &:hover{
-            border-color: transparentize($global-clr-white, 0.80);
+            i[class*="icons"]{background-position-y: -70px;}
+          }
 
-            i[class*="icons"]{background-position-y: 0;}
+          &:first-child{
+            margin-top: 0;
+          }
 
-            > div{background-color: transparentize($global-clr-white, 0.93);}
-
-            a{color: transparentize($global-clr-white, 0.4);}
+          &:last-child{
+            margin-bottom: 0;
           }
         }
 
         &-blur{
-          background-color: transparentize($global-clr-white, 0.95);
-          text-align: center;
-          padding: 45px 25px 40px;
-          @include border-radius(8px);
-          @include backdrop-filter-multiple(blur(45px));
-          @include transition-multiple(background 0.15s ease-in-out);
+          @include flex-flexbox();
+          @include flex-align-items(center);
+          text-align: left;
+          padding: 40px;
 
           @include ReSassMaxWidthResponsive(1366){
-            padding: 30px 25px 30px;
+            padding: 30px;
           }
         }
 
         &-icons{
-          margin-bottom: 20px;
+          //margin-bottom: 20px;
 
           *[class*="icons"]{
             display: block;
             margin: 0 auto;
+            background-position-y: -70px;
           }
         }
 
         &-desc{
           color: $global-clr-text-light-gray;
           font-size: 18px;
-          font-weight: normal;
-          line-height: 1.11;
-          letter-spacing: -0.54px;
-          margin-top: 5px;
-          min-height: 300px;
+          font-weight: 400;
+          line-height: 1.4;
+          letter-spacing: -.25px;
+          //min-height: 350px;
+          margin-left: 20px;
+          padding-left: 30px;
           position: relative;
+
+          &::before{
+            content: "";
+            background-color: $global-border-light-gray;
+            width: 1px;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+          }
 
           @include ReSassMaxWidthResponsive(1366){
             font-size: 17px;
           }
 
+          > h4{
+            font-size: 26px;
+            font-weight: 400;
+            line-height: 1.2;
+            letter-spacing: -.9px;
+            margin-bottom: 10px;
+          }
+
           > p{
-            margin-bottom: 17px;
+            margin-bottom: 5px;
 
             &:last-child{margin-bottom: 0;}
           }
 
           p.desclinks{
-            width: 100%;
-            position: absolute;
-            left: 0;
-            bottom: 0;
+            //width: 100%;
+            //position: absolute;
+            //left: 0;
+            //bottom: 0;
 
             a{
-              color: $global-clr-text-light-gray;
+              //color: $global-clr-text-light-gray;
               @include transition-multiple(color 0.15s ease-in-out);
             }
           }
