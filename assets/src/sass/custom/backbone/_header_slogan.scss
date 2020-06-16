@@ -9,7 +9,7 @@
     color: $global-clr-white;
     background-repeat: no-repeat;
     background-position: bottom center;
-    padding-top: 134px;
+    padding-top: 85px;
     overflow: hidden;
     position: relative;
     z-index: 2;
@@ -27,7 +27,7 @@
   }
 
   &-home{
-    padding: 150px 0 300px;
+    padding: 130px 0 300px;
 
     &-text{
       position: relative;
@@ -252,8 +252,6 @@
   }
 
   &-content{
-    padding-top: 20px;
-    padding-bottom: 20px;
     position: relative;
 
     > .row{
@@ -264,15 +262,15 @@
       width: 100px;
       height: 100px;
       position: absolute;
-      top: 50%;
-      left: 0;
-      @include translateY(-50%);
+      top: 30px;
+      left: -15px;
+      //@include translateY(-50%);
 
       i[class*="icons"]{
         display: block;
         margin: 0 auto;
         opacity: 0.10;
-        @include scale(3);
+        @include scale(2.2);
       }
 
     }
@@ -282,6 +280,8 @@
       @include flex-flex-direction(column);
       @include flex-justify-content(center);
       height: 100%;
+      padding-top: 50px;
+      padding-bottom: 20px;
       position: relative;
 
       &-title,
@@ -315,11 +315,12 @@
       position: relative;
       @include flex-flexbox();
       @include flex-justify-content(center);
+      margin-top: -10px;
     }
   }
 
   &-submenu{
-    padding-top: 15px;
+    padding-top: 5px;
 
     .headsubmenu{
       @include flex-flexbox();
@@ -334,9 +335,10 @@
         &:last-child{margin-right: 0;}
 
         > a{
-          color: $global-clr-white;
+          color: transparentize($global-clr-white, 0.25);
           padding: 10px 0 15px;
           position: relative;
+          @include transition-multiple(color 0.3s ease-in-out);
 
           &::before{
             content: "";
@@ -346,14 +348,19 @@
             position: absolute;
             left: 0;
             bottom: 0;
+            @include border-radius(10px);
             @include transition-multiple(height 0.3s ease-in-out, background-color 0.3s ease-in-out);
           }
         }
 
-        &:hover > a::before,
-        &.active > a::before{
-          background-color: $global-clr-soft-blue;
-          height: 4px;
+        &:hover > a,
+        &.active > a{
+          color: $global-clr-white;
+
+          &::before{
+            background-color: $global-clr-soft-blue;
+            height: 4px;
+          }
         }
       }
     }
