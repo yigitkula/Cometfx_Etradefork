@@ -63,7 +63,10 @@
       }
 
       &-item{
+        background-color: $global-clr-white;
         text-align: center;
+        padding: 80px 30px;
+        @include box-shadow(0 0 20px 5px transparentize($global-clr-dark-black, 0.95));
 
         &:hover{
           i[class*="icons"]{
