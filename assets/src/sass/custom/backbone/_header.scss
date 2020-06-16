@@ -7,7 +7,7 @@
   $headerclassname: &;
 
   &.navscroll{
-    background-color: transparentize($global-grdint-darkblue01, 0.05);
+    background-color: transparentize($global-grdint-darkblue02, 0.05);
 
     #{$headerclassname}-web{padding-top: 15px; padding-bottom: 15px;}
     #{$headerclassname}-navigation{height: 38px;}
