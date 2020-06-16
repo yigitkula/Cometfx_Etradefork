@@ -37,7 +37,8 @@
 
   &-web{
     width: 100%;
-    padding: 40px 50px;
+    padding: 15px 25px;
+    border-bottom: 1px solid $global-grdint-darkblue01;
     @include transition-multiple(top 0.3s ease-in-out, padding 0.3s ease-in-out);
 
     @include ReSassMaxWidthResponsive(1366){
@@ -111,4 +112,8 @@
       }
     }
   }
+}
+
+.homepage{
+  .header-web{border: none;}
 }
