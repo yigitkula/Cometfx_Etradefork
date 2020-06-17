@@ -64,10 +64,16 @@
 
     &-link{
       opacity: 0.9;
+      position: relative;
+      top: -2px;
       @include transition-multiple(opacity 0.3s ease-in-out);
 
       &:hover{
         opacity: 1;
+      }
+
+      img{
+        height: 40px;
       }
     }
   }
