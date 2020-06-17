@@ -47,7 +47,7 @@
 
     &::before{
       width: 100%;
-      height: 2px;
+      height: 1px;
       left: 0;
       top: 0;
     }
@@ -62,8 +62,19 @@
       &::before{background-color: $global-clr-red;}
       &::after{
         background-color: $global-clr-white;
-        border-right: 2px solid $global-clr-red;
-        border-bottom: 2px solid $global-clr-red;
+        border-right: 1px solid $global-clr-red;
+        border-bottom: 1px solid $global-clr-red;
+        top: -19px;
+        left: 50%;
+        @include transform-multiple(translateX(-50%) rotate(45deg));
+      }
+    }
+    &-bluedownarrow{
+      &::before{background-color: $global-clr-dark-blue;}
+      &::after{
+        background-color: $global-clr-white;
+        border-right: 1px solid $global-clr-dark-blue;
+        border-bottom: 1px solid $global-clr-dark-blue;
         top: -19px;
         left: 50%;
         @include transform-multiple(translateX(-50%) rotate(45deg));

@@ -3,8 +3,8 @@ $(function(){
     var $pageHeadTitleTag       = $('title');
     var $pageHeadTitleTagText   = $pageHeadTitleTag.text();
     var $headerSloganTitle      = $(".headtitle h1").text();
-    var $headerDefaultTitle     = "COMETFX";
-    var $headerBlurTitle        = "COMETFX";
+    var $headerDefaultTitle     = "MARKETSALL";
+    var $headerBlurTitle        = "MARKETSALL";
 
     if($('body').hasClass('homepage')){
         $(window).on("load", function(){

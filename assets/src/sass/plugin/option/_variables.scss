@@ -1,5 +1,5 @@
 /* Main Settings */
-$global-font-family-default: 'Roboto Slab';
+$global-font-family-default: 'Raleway';
 $global-font-size: 16px;
 /* Main Settings */
 
@@ -9,10 +9,10 @@ $global-clr-black: #000000;
 $global-clr-green: #4caf50;
 $global-clr-red: #DB0029;
 $global-clr-orange: #ff9900;
-$global-clr-soft-blue: #3279f3;
-$global-clr-dark-blue: darken($global-clr-soft-blue, 10%);
+$global-clr-soft-blue: #1197D3;
+$global-clr-dark-blue: #0474B2;
 $global-clr-soft-gray: #758ca3;
-$global-clr-light-gray: #F3F6F9;
+$global-clr-light-gray: #F5F5F5;
 $global-clr-dark-black: #2B2B32;
 /* Color Settings */
 
@@ -35,8 +35,8 @@ $global-grdint-darkblue01: #383f65;
 $global-grdint-darkblue02: #0F152B;
 $global-grdint-red01: #e50000;
 $global-grdint-red02: #890000;
-$global-grdint-softblue01: #4481eb;
-$global-grdint-softblue02: darken($global-grdint-softblue01, 10%);
+$global-grdint-softblue01: $global-clr-soft-blue;
+$global-grdint-softblue02: $global-clr-dark-blue;
 /* Site Gradient Background Color */
 
 /* Site Image Path */
