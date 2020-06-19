@@ -157,6 +157,4 @@
 </section>
 <!-- Company End -->
 
-<?php include('./include/footer-joinourfamily.php'); ?>
-
 <?php include('./include/footer.php'); ?>
