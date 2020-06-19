@@ -72,6 +72,9 @@
           white-space: nowrap;
           @include transition-multiple(color 0.3s ease-in-out, padding 0.3s ease-in-out);
 
+          @include ReSassMaxWidthResponsive(1920){
+            margin: auto 15px;
+          }
           @include ReSassMaxWidthResponsive(992){
             margin: 0;
             padding: 10px 0;
