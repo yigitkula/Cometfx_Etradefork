@@ -39,7 +39,7 @@
 
             <!-- Logo Start -->
             <div class="header-logo header-web-left col-auto">
-                <a class="header-logo-link" href="index.html" title="MARKETSALL" rel="bookmark">
+                <a class="header-logo-link" href="index" title="MARKETSALL" rel="bookmark">
                     <img src="/assets/img/svg/header_logo_light.svg" alt="MARKETSALL" />
                 </a>
             </div>
