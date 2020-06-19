@@ -9,83 +9,77 @@ $(document).ready(function() {
 <!-- Header Slogan -->
 <div class="headtitle">
     <div class="headtitle-background headtitle-background-home">
-        <div class="headtitle-home">
-            <div class="headtitle-home-slogan">
-                <h1 class="headtitle-home-slogan-title" data-aos="fade-up" data-aos-duration="1000">MULTI-ASSET <strong><span class="sitecolorred">LIQUIDITY &</span> TECHNOLOGY</strong> PROVIDER</h1>
-                <h3 class="headtitle-home-slogan-desc" data-aos="fade-up" data-aos-duration="1500">OFFER MULTI-ASSET UNLEASHED LIQUIDITY FOR YOUR CLIENTS</h3>
-            </div>
-            <div class="headtitle-home-instruments">
-                <ul class="headtitle-home-instruments-list">
-                    <li data-aos="fade-right" data-aos-duration="1750">
-                        <a href="instruments-forex" title="FOREX" rel="bookmark">
-                            <i class="icons-sprite sprite-red-instruments-45 icons-forex"></i>
-                            <span>FOREX</span>
-                        </a>
-                    </li>
-                    <li data-aos="fade-up" data-aos-duration="1750">
-                        <a href="instruments-indicies" title="INDICES" rel="bookmark">
-                            <i class="icons-sprite sprite-red-instruments-45 icons-indicies"></i>
-                            <span>INDICES</span>
-                        </a>
-                    </li>
-                    <li data-aos="fade-down" data-aos-duration="1750">
-                        <a href="instruments-commodities" title="COMMODITIES" rel="bookmark">
-                            <i class="icons-sprite sprite-red-instruments-45 icons-commodities"></i>
-                            <span>COMMODITIES</span>
-                        </a>
-                    </li>
-                    <li data-aos="fade-left" data-aos-duration="1750">
-                        <a href="instruments-cryptos" title="CRYPTOS" rel="bookmark">
-                            <i class="icons-sprite sprite-red-instruments-45 icons-crypto"></i>
-                            <span>CRYPTOS</span>
-                        </a>
-                    </li>
-                </ul>
-                <div class="headtitle-home-instruments-btn" data-aos="zoom-in-up" data-aos-duration="2800">
-                    <a class="btn btn-lg btn-danger btn-gradient-red" href="become-a-partner" title="REQUEST A QUOTE" rel="bookmark">REQUEST A QUOTE</a>
+        <div class="headtitle-home container">
+            <div class="headtitle-home-text">
+                <div class="headtitlehome-slogan">
+                    <div class="headtitlehome-slogan-text">
+                        <h1 class="headtitlehome-slogan-title" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">MULTI-ASSET <strong><span class="sitecolorblue">LIQUIDITY &</span> TECHNOLOGY</strong> PROVIDER</h1>
+                        <h3 class="headtitlehome-slogan-desc" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">OFFER MULTI-ASSET UNLEASHED LIQUIDITY FOR YOUR CLIENTS</h3>
+                    </div>
+                    <div class="headtitlehome-slogan-btn">
+                        <a class="btn btn-lg btn-info" href="become-a-partner" title="REQUEST A QUOTE" rel="bookmark" data-aos="zoom-in" data-aos-duration="1250" data-aos-delay="2000">REQUEST A QUOTE</a>
+                    </div>
                 </div>
             </div>
+            <video class="headtitle-home-video" style="" preload="auto" autoplay="autoplay" muted="muted">
+                <source src="../assets/video/homepage_slider_bg_video_01.mp4" type="video/mp4">
+                <Video>Tarayıcınız Video Desteklememektedir</Video>
+            </video>
         </div>
     </div>
 </div>
 <!-- Header Slogan -->
 
-<!-- Explore Our Technology Start -->
-<section class="home-technology section-item home-bg">
+<!-- Box Instruments Start -->
+<section class="home-boxsinstruments homept">
     <div class="container">
-
-        <!-- Title -->
-        <div class="sitetitle sitetitle-xl sitetitle-black sitetitle-center" data-aos="fade-up" data-aos-duration="500">
-            <h2>EXPLORE OUR <strong class="sitecolorred">TECHNOLOGY</strong></h2>
+        <div class="boxsinstruments">
+            <ul class="boxsinstruments-list">
+                <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1500">
+                    <div class="boxsinstruments-icons">
+                        <i class="icons-sprite sprite-red-instruments-45 icons-forex"></i>
+                    </div>
+                    <div class="boxsinstruments-content">
+                        <h2 class="boxsinstruments-content-title">Forex</h2>
+                        <p class="boxsinstruments-content-desc">Over 100 of spot FX products. Top-of-the book liquidity with the help of 8 different liquidity banks.</p>
+                    </div>
+                    <a class="boxsinstruments-linkmore" href="instruments-forex" title="FOREX" rel="bookmark"><i></i></a>
+                </li>
+                <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+                    <div class="boxsinstruments-icons">
+                        <i class="icons-sprite sprite-red-instruments-45 icons-indicies"></i>
+                    </div>
+                    <div class="boxsinstruments-content">
+                        <h2 class="boxsinstruments-content-title">Indices</h2>
+                        <p class="boxsinstruments-content-desc">Over 100 of spot FX products. Top-of-the book liquidity with the help of 8 different liquidity banks.</p>
+                    </div>
+                    <a class="boxsinstruments-linkmore" href="instruments-indicies" title="INDICES" rel="bookmark"><i></i></a>
+                </li>
+                <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
+                    <div class="boxsinstruments-icons">
+                        <i class="icons-sprite sprite-red-instruments-45 icons-commodities"></i>
+                    </div>
+                    <div class="boxsinstruments-content">
+                        <h2 class="boxsinstruments-content-title">Commodities</h2>
+                        <p class="boxsinstruments-content-desc">Over 100 of spot FX products. Top-of-the book liquidity with the help of 8 different liquidity banks.</p>
+                    </div>
+                    <a class="boxsinstruments-linkmore" href="instruments-commodities" title="COMMODITIES" rel="bookmark"><i></i></a>
+                </li>
+                <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="2000">
+                    <div class="boxsinstruments-icons">
+                        <i class="icons-sprite sprite-red-instruments-45 icons-crypto"></i>
+                    </div>
+                    <div class="boxsinstruments-content">
+                        <h2 class="boxsinstruments-content-title">Cyrptos</h2>
+                        <p class="boxsinstruments-content-desc">Over 100 of spot FX products. Top-of-the book liquidity with the help of 8 different liquidity banks.</p>
+                    </div>
+                    <a class="boxsinstruments-linkmore" href="instruments-cryptos" title="CRYPTOS" rel="bookmark"><i></i></a>
+                </li>
+            </ul>
         </div>
-        <!-- Title -->
-
-        <!-- Technology Box -->
-        <ul id="technologyboxowl" class="technology-box owl-carousel owl-theme">
-            <li class="technology-box-item" data-aos="fade-right" data-aos-duration="700">
-                <div class="technology-box-icons"><i class="icons-sprite sprite-technology-200 icons-1000"></i></div>
-                <h3 class="technology-box-title">Access to 1000+ <br />Global Instruments</h3>
-                <p class="technology-box-desc">Trade over 1.000 instruments, connect the most requested exchanges all-over the world.</p>
-            </li>
-            <li class="technology-box-item">
-                <div class="technology-box-icons"><i class="icons-sprite sprite-technology-200 icons-speed"></i></div>
-                <h3 class="technology-box-title">World Best <br />Execution Speeds</h3>
-                <p class="technology-box-desc">Take the advantage of our powerful dedicated servers located in London, Frankfurt and Sofia. Execute trades below 50ms.</p>
-            </li>
-            <li class="technology-box-item" data-aos="fade-left" data-aos-duration="700">
-                <div class="technology-box-icons"><i class="icons-sprite sprite-technology-200 icons-price"></i></div>
-                <h3 class="technology-box-title">Enhanced Pricing <br />for STP & ECN Brokers</h3>
-                <p class="technology-box-desc">For the ones who seek for STP&ECN solution. Get the enhanced pricing and quotes. Instantly.</p>
-            </li>
-        </ul>
-        <div class="technology-box-btn" data-aos="fade-up" data-aos-duration="500">
-            <a class="btn btn-lg btn-danger btn-gradient-red" href="become-a-partner" title="REQUEST A QUOTE" rel="bookmark">REQUEST A QUOTE</a>
-        </div>
-        <!-- Technology Box -->
-
     </div>
 </section>
-<!-- Explore Our Technology End -->
+<!-- Box Instruments Start -->
 
 <!-- Instruments Start -->
 <section class="home-instruments homept">
@@ -93,7 +87,7 @@ $(document).ready(function() {
 
         <!-- Title -->
         <div class="sitetitle sitetitle-xl sitetitle-black sitetitle-center" data-aos="fade-up" data-aos-duration="500">
-            <h2>DEEP INSTITUTIONAL LIQUIDITY ON <br /><strong class="sitecolorred">1000+</strong> <span>GLOBAL</span> INSTRUMENTS</h2>
+            <h2>DEEP INSTITUTIONAL LIQUIDITY ON <br /><strong class="sitecolorblue">1000+</strong> <span>GLOBAL</span> INSTRUMENTS</h2>
         </div>
         <!-- Title -->
 
@@ -231,7 +225,7 @@ $(document).ready(function() {
                 </div>
             </div>
             <div class="content-horizantaltable-bottombtn" data-aos="fade-down" data-aos-duration="500">
-                <a href="instruments-seefull" class="btn btn-lg btn-gradient-red" title="SEE ALL" rel="bookmark">SEE ALL</a>
+                <a href="instruments-seefull" class="btn btn-lg btn-info" title="SEE ALL" rel="bookmark">SEE ALL</a>
             </div>
             <!-- Tabs Content -->
 
@@ -242,28 +236,73 @@ $(document).ready(function() {
 </section>
 <!-- Instruments End -->
 
+<!-- Explore Our Technology Start -->
+<section class="home-technology section-item home-bg">
+    <div class="container">
+
+        <!-- Title -->
+        <div class="sitetitle sitetitle-xl sitetitle-black sitetitle-center" data-aos="fade-up" data-aos-duration="500">
+            <h2>EXPLORE OUR <strong class="sitecolorblue">TECHNOLOGY</strong></h2>
+        </div>
+        <!-- Title -->
+
+        <!-- Technology Box -->
+        <ul id="technologyboxowl" class="technology-box owl-carousel owl-theme">
+            <li class="technology-box-item" data-aos="fade-right" data-aos-duration="700">
+                <div class="technology-box-icons"><i class="icons-sprite sprite-technology-200 icons-1000"></i></div>
+                <h3 class="technology-box-title">Access to 1000+ <br />Global Instruments</h3>
+                <p class="technology-box-desc">Trade over 1.000 instruments, connect the most requested exchanges all-over the world.</p>
+            </li>
+            <li class="technology-box-item">
+                <div class="technology-box-icons"><i class="icons-sprite sprite-technology-200 icons-speed"></i></div>
+                <h3 class="technology-box-title">World Best <br />Execution Speeds</h3>
+                <p class="technology-box-desc">Take the advantage of our powerful dedicated servers located in London, Frankfurt and Sofia. Execute trades below 50ms.</p>
+            </li>
+            <li class="technology-box-item" data-aos="fade-left" data-aos-duration="700">
+                <div class="technology-box-icons"><i class="icons-sprite sprite-technology-200 icons-price"></i></div>
+                <h3 class="technology-box-title">Enhanced Pricing <br />for STP & ECN Brokers</h3>
+                <p class="technology-box-desc">For the ones who seek for STP&ECN solution. Get the enhanced pricing and quotes. Instantly.</p>
+            </li>
+        </ul>
+        <div class="technology-box-btn" data-aos="fade-up" data-aos-duration="500">
+            <a class="btn btn-lg btn-info" href="become-a-partner" title="REQUEST A QUOTE" rel="bookmark">REQUEST A QUOTE</a>
+        </div>
+        <!-- Technology Box -->
+
+    </div>
+</section>
+<!-- Explore Our Technology End -->
+
 <!-- Platforms Start -->
 <section class="foot-platforms">
+    <div class="container">
+        <div class="row">
 
-    <!-- Platforms Image -->
-    <div class="foot-platforms-imgbox">
-        <i class="foot-platforms-imgbox-img" data-aos="fade-down" data-aos-duration="1000"></i>
-        <span class="foot-platforms-imgbox-comingsoon"><span class="sitecolorwhite d-block">COMING</span><strong class="sitecolorred d-block">SOON!</strong></span>
-    </div>
-    <!-- Platforms Image -->
+            <!-- Title -->
+            <div class="col-xl-5">
+                <div class="sitetitle sitetitle-xl sitetitle-white sitetitle-left" data-aos="fade-up" data-aos-duration="500">
+                    <h2>TRADE LIKE A PRO WITH <strong>E-TRADE <span class="sitecolorblue">PRO</span></strong></h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse volutpat nunc sapien, non ullamcorper eros elementum at. Donec et facilisis nulla, quis consequat elit. Cras nec purus augue. Aenean ornare justo ligula, non placerat dolor suscipit a. Donec mollis eget mauris at placerat. Nunc nibh umsan nec sapien quis, interdum dignissim odio. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere.</p>
+                </div>
+                <div class="foot-platforms-btn" data-aos="zoom-in-up" data-aos-duration="1000">
+                    <a class="btn btn-lg btn-info" href="platforms-phase-pro">EXPLORE PHASE PRO</a>
+                </div>
+            </div>
+            <!-- Title -->
 
-    <!-- Title -->
-    <div class="sitetitle sitetitle-xl sitetitle-white sitetitle-center sitetitle-width1100" data-aos="fade-up" data-aos-duration="500">
-        <h2>TRADE LIKE A PRO WITH <strong>E-TRADE <span class="sitecolorred">PRO</span></strong></h2>
-        <p>E-Trade Pro Trading Platform, created from scratch, just for the professional brokers. Includes multiple-close, various types of orders, better execution than Metatrader, lots of graphical updates, analysis tools, signals, Multi-Account Management and so on.E-Trade Pro, builded by traders, for traders.</p>
-    </div>
-    <!-- Title -->
+            <!-- Platforms Image -->
+            <div class="foot-platforms-imgbox">
+                <i class="foot-platforms-imgbox-img"></i>
+                <span class="foot-platforms-imgbox-comingsoon"><span class="sitecolorwhite d-block">COMING</span><strong class="sitecolorblue d-block">SOON!</strong></span>
+            </div>
+            <!-- Platforms Image -->
 
-    <!-- Button -->
-    <div class="foot-platforms-btn" data-aos="zoom-in-up" data-aos-duration="1000">
-        <a class="btn btn-lg btn-danger btn-gradient-red" href="platforms-phase-pro" title="EXPLORE ETRADE PRO">EXPLORE ETRADE PRO</a>
+        </div>
     </div>
-    <!-- Button -->
+    <video class="foot-platforms-video" style="" preload="auto" autoplay="autoplay" muted="muted">
+        <source src="/assets/video/footer_platforms_bg_video_01.mp4" type="video/mp4">
+        <Video>Tarayıcınız Video Desteklememektedir</Video>
+    </video>
 
 </section>
 <!-- Platforms End -->
@@ -274,12 +313,12 @@ $(document).ready(function() {
 
         <!-- Title -->
         <div class="sitetitle sitetitle-xl sitetitle-white sitetitle-center" data-aos="fade-up" data-aos-duration="500">
-            <h2>LIQUIDITY <strong class="sitecolorred">PROVIDERS</strong></h2>
+            <h2>LIQUIDITY <strong class="sitecolorblue">PROVIDERS</strong></h2>
         </div>
         <!-- Title -->
 
         <!-- Liquidity Providers Box -->
-        <ul id="footliquidityprovidersowl" class="liquidityproviders-box owl-carousel owl-theme" data-aos="fade-down" data-aos-duration="500">
+        <ul class="liquidityproviders-box" data-aos="fade-down" data-aos-duration="500">
             <li class="liquidityproviders-box-item">
                 <div class="liquidityproviders-box-blur">
                     <div class="liquidityproviders-box-icons"><i class="icons-sprite sprite-liquidityproviders-180 icons-logo01"></i></div>
@@ -315,7 +354,7 @@ $(document).ready(function() {
 
         <!-- Button -->
         <div class="foot-liquidity-btn" data-aos="zoom-in-up" data-aos-duration="1000">
-            <a class="btn btn-lg btn-danger btn-gradient-red" href="become-a-partner" title="BECOME A PARTNER" rel="bookmark">BECOME A PARTNER</a>
+            <a class="btn btn-lg btn-info" href="become-a-partner" title="BECOME A PARTNER" rel="bookmark">BECOME A PARTNER</a>
         </div>
         <!-- Button -->
 

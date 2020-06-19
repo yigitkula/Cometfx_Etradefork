@@ -3,14 +3,24 @@
 <!-- Header Slogan -->
 <div class="headtitle">
     <div class="headtitle-background headtitle-background-ins-forex">
-        <div class="headtitle-content">
-            <div class="headtitle-content-slogan">
-                <h1 class="headtitle-content-slogan-title">LIQUIDITY <strong class="sitecolorred">AGGREGATION</strong></h1>
+        <div class="headtitle-content container">
+            <div class="row">
+                <div class="col">
+                    <div class="headtitle-content-icons" data-aos="fade-in" data-aos-duration="1500" data-aos-delay="500">
+                        <i class="icons-sprite sprite-headtitle-100 icons-aggregation"></i>
+                    </div>
+                    <div class="headtitle-content-slogan">
+                        <h1 class="headtitle-content-slogan-title" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="0">LIQUIDITY <strong class="sitecolorblue">AGGREGATION</strong></h1>
+                    </div>
+                    <div class="headtitle-submenu"></div>
+                </div>
+                <div class="col-auto">
+                    <div class="headtitle-content-partner" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="1000">
+                        <a class="btn btn-lg btn-info btn-gradient-bluesoft" href="become-a-partner" title="BECOME A PARTNER" rel="bookmark">BECOME A PARTNER</a>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="headtitle-icons">
-        <i class="icons-sprite sprite-headtitle-100 icons-aggregation"></i>
     </div>
 </div>
 <!-- Header Slogan -->
@@ -23,7 +33,7 @@
         <div class="aggregation-head">
 
             <!-- Title -->
-            <div class="sitetitle sitetitle-xl sitetitle-black sitetitle-center sitetitle-width900" data-aos="fade-up" data-aos-duration="500">
+            <div class="sitetitle sitetitle-xl sitetitle-black sitetitle-center" data-aos="fade-up" data-aos-duration="500">
                 <p>The need for designing in-house high-technology architecture of liquidity aggregation was not only dictated by the shortcomings of technologies offered on the market, but also by the desire to eliminate all risks from the STP/NDD agency model associated with the concentration of all the company's trading turnover in one liquidity provider.</p>
                 <p>It is not a secret that a high level of decentralization of the currency market allows the largest market makers to use variative algorithms for customization of feeds, which, in turn, forces brokers who earn on resale of liquidity to create their own technologies for automatic search of better prices in order to provide them to the final consumer.</p>
             </div>
@@ -51,7 +61,5 @@
     </div>
 </section>
 <!-- Aggregation End -->
-
-<?php include('./include/footer-joinourfamily.php'); ?>
 
 <?php include('./include/footer.php'); ?>

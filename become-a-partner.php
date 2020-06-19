@@ -2,15 +2,25 @@
 
 <!-- Header Slogan -->
 <div class="headtitle">
-    <div class="headtitle-background headtitle-background-login">
-        <div class="headtitle-content">
-            <div class="headtitle-content-slogan">
-                <h1 class="headtitle-content-slogan-title">BECOME A <strong class="sitecolorred">PARTNER</strong></h1>
+    <div class="headtitle-background headtitle-background-ins-forex">
+        <div class="headtitle-content container">
+            <div class="row">
+                <div class="col">
+                    <div class="headtitle-content-icons" data-aos="fade-in" data-aos-duration="1500" data-aos-delay="500">
+                        <i class="icons-sprite sprite-headtitle-100 icons-deal"></i>
+                    </div>
+                    <div class="headtitle-content-slogan">
+                        <h1 class="headtitle-content-slogan-title" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="0">BECOME A <strong class="sitecolorblue">PARTNER</strong></h1>
+                    </div>
+                    <div class="headtitle-submenu"></div>
+                </div>
+                <div class="col-auto">
+                    <div class="headtitle-content-partner" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="1000">
+                        <a class="btn btn-lg btn-info btn-gradient-bluesoft" href="become-a-partner" title="BECOME A PARTNER" rel="bookmark">BECOME A PARTNER</a>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="headtitle-icons">
-        <i class="icons-sprite sprite-headtitle-100 icons-deal"></i>
     </div>
 </div>
 <!-- Header Slogan -->
@@ -21,7 +31,7 @@
 
         <!-- Title -->
         <div class="sitetitle sitetitle-xl sitetitle-black sitetitle-center" data-aos="fade-up" data-aos-duration="500">
-            <h2>TAKE ADVANTAGE OF <br /><strong>E-TRADE <span class="sitecolorred">TECHNOLOGIES</span></strong></h2>
+            <h2>TAKE ADVANTAGE OF <br /><strong>E-TRADE <span class="sitecolorblue">TECHNOLOGIES</span></strong></h2>
         </div>
         <!-- Title -->
 
@@ -103,7 +113,7 @@
                 </div>
                 <div class="form-row form-row-center">
                     <div class="form-group col-auto" data-aos="zoom-in" data-aos-duration="500">
-                        <button type="submit" class="btn btn-lg btn-danger btn-gradient-red btnwidth220">REQUEST A QUOTE</button>
+                        <button type="submit" class="btn btn-lg btn-info btnwidth220">REQUEST A QUOTE</button>
                     </div>
                 </div>
             </form>
@@ -136,9 +146,6 @@
                 <p class="technology-box-desc">For the ones who seek for STP&ECN solution. Get the enhanced pricing and quotes. Instantly.</p>
             </li>
         </ul>
-        <div class="technology-box-btn" data-aos="fade-up" data-aos-duration="500">
-            <a class="btn btn-lg btn-danger btn-gradient-red" href="become-a-partner" title="REQUEST A QUOTE" rel="bookmark">REQUEST A QUOTE</a>
-        </div>
         <!-- Technology Box -->
 
     </div>

@@ -3,14 +3,24 @@
 <!-- Header Slogan -->
 <div class="headtitle">
     <div class="headtitle-background headtitle-background-ins-forex">
-        <div class="headtitle-content">
-            <div class="headtitle-content-slogan">
-                <h1 class="headtitle-content-slogan-title">OUR <strong class="sitecolorred">COMPANY</strong></h1>
+        <div class="headtitle-content container">
+            <div class="row">
+                <div class="col">
+                    <div class="headtitle-content-icons" data-aos="fade-in" data-aos-duration="1500" data-aos-delay="500">
+                        <i class="icons-sprite sprite-headtitle-100 icons-company"></i>
+                    </div>
+                    <div class="headtitle-content-slogan">
+                        <h1 class="headtitle-content-slogan-title" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="0">OUR <strong class="sitecolorblue">COMPANY</strong></h1>
+                    </div>
+                    <div class="headtitle-submenu"></div>
+                </div>
+                <div class="col-auto">
+                    <div class="headtitle-content-partner" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="1000">
+                        <a class="btn btn-lg btn-info btn-gradient-bluesoft" href="become-a-partner" title="BECOME A PARTNER" rel="bookmark">BECOME A PARTNER</a>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="headtitle-icons">
-        <i class="icons-sprite sprite-headtitle-100 icons-company"></i>
     </div>
 </div>
 <!-- Header Slogan -->
@@ -51,12 +61,12 @@
         <div class="company-team sitecontent">
 
             <!-- Line -->
-            <hr class="hrline hrline-reddownarrow mt-60 mb-30" />
+            <hr class="hrline hrline-bluedownarrow mt-60 mb-30" />
             <!-- Line -->
 
             <!-- Title -->
             <div class="sitetitle sitetitle-xl sitetitle-black sitetitle-center" data-aos="fade-up" data-aos-duration="500">
-                <h2>OUR <strong class="sitecolorred">TEAM</strong></h2>
+                <h2>OUR <strong class="sitecolorblue">TEAM</strong></h2>
             </div>
             <!-- Title -->
 
@@ -99,14 +109,14 @@
         <div class="company-listbox sitecontent">
 
             <!-- Line -->
-            <hr class="hrline hrline-reddownarrow mt-30 mb-30" />
+            <hr class="hrline hrline-bluedownarrow mt-30 mb-30" />
             <!-- Line -->
 
             <!-- List Box -->
             <ul id="companylistboxowl" class="company-listbox-list companylistbox owl-carousel owl-theme mb-0">
                 <li class="company-listbox-list-item">
                     <div class="sitetitle sitetitle-lg sitetitle-black sitetitle-left" data-aos="fade-up" data-aos-duration="500">
-                        <h2>OUR <strong class="sitecolorred">STRATEGY</strong></h2>
+                        <h2>OUR <strong class="sitecolorblue">STRATEGY</strong></h2>
                         <p>At E-Trade Tech, we evolve with the times. We aim to continuously refine our services and products to cater the needs of our clients in this highly dynamis industry.</p>
                         <ul class="listreddot">
                             <li>Ultra-fast execution with no-requotes</li>
@@ -117,7 +127,7 @@
                 </li>
                 <li class="company-listbox-list-item">
                     <div class="sitetitle sitetitle-lg sitetitle-black sitetitle-left" data-aos="fade-up" data-aos-duration="500">
-                        <h2>OUR <strong class="sitecolorred">VISION</strong></h2>
+                        <h2>OUR <strong class="sitecolorblue">VISION</strong></h2>
                         <p>Our customer-centric approach places our clients' needs at the heart of our operations. We aim to be one of the best technology provider in this industry.</p>
                         <ul class="listreddot">
                             <li>Accessible trading to all clients</li>
@@ -128,7 +138,7 @@
                 </li>
                 <li class="company-listbox-list-item">
                     <div class="sitetitle sitetitle-lg sitetitle-black sitetitle-left" data-aos="fade-up" data-aos-duration="500">
-                        <h2>OUR <strong class="sitecolorred">VALUES</strong></h2>
+                        <h2>OUR <strong class="sitecolorblue">VALUES</strong></h2>
                         <p>We are committed to creating dynamic trading environment that equips our clients with all necessary tools, including the risk and book management.</p>
                         <ul class="listreddot">
                             <li>Professional risk management</li>

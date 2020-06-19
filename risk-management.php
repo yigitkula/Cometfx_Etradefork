@@ -3,14 +3,24 @@
 <!-- Header Slogan -->
 <div class="headtitle">
     <div class="headtitle-background headtitle-background-ins-forex">
-        <div class="headtitle-content">
-            <div class="headtitle-content-slogan">
-                <h1 class="headtitle-content-slogan-title">RISK <strong class="sitecolorred">MANAGEMENT</strong></h1>
+        <div class="headtitle-content container">
+            <div class="row">
+                <div class="col">
+                    <div class="headtitle-content-icons" data-aos="fade-in" data-aos-duration="1500" data-aos-delay="500">
+                        <i class="icons-sprite sprite-headtitle-100 icons-risk"></i>
+                    </div>
+                    <div class="headtitle-content-slogan">
+                        <h1 class="headtitle-content-slogan-title" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="0">RISK <strong class="sitecolorblue">MANAGEMENT</strong></h1>
+                    </div>
+                    <div class="headtitle-submenu"></div>
+                </div>
+                <div class="col-auto">
+                    <div class="headtitle-content-partner" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="1000">
+                        <a class="btn btn-lg btn-info btn-gradient-bluesoft" href="become-a-partner" title="BECOME A PARTNER" rel="bookmark">BECOME A PARTNER</a>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="headtitle-icons">
-        <i class="icons-sprite sprite-headtitle-100 icons-risk"></i>
     </div>
 </div>
 <!-- Header Slogan -->
@@ -20,7 +30,7 @@
     <div class="container">
 
         <!-- Title -->
-        <div class="sitetitle sitetitle-xl sitetitle-black sitetitle-center sitetitle-width900" data-aos="fade-up" data-aos-duration="500">
+        <div class="sitetitle sitetitle-xl sitetitle-black sitetitle-center" data-aos="fade-up" data-aos-duration="500">
             <p>E-Trade Technologies was founded by few risk specialists who had worked for one of the largest forex brokers of the world. So, we know and well aware what a broker needs. For retail forex brokers; despite the fact that the Metatrader Manager is quite powerful for various reporting facilities, seeing the daily screenshot of all of the assets and liabilities sheet at once is a unique must-have option.</p>
             <p>This feature is not related whether you have the highly expertised and skillfull treasury or dealing team or not. Because, you or your team detects any anomaly by looking the past from now. So monitoring each and every client, price feed, STP connection is the notion we have.</p>
             <p>Leave it us and sleep well.</p>
@@ -63,7 +73,5 @@
     </div>
 </section>
 <!-- Risk Managment End -->
-
-<?php include('./include/footer-joinourfamily.php'); ?>
 
 <?php include('./include/footer.php'); ?>
