@@ -124,8 +124,8 @@
 </section>
 <!-- Login End -->
 
-<!-- Technology Start -->
-<section class="section-item foot-item foot-item-bggray">
+<!-- E-Trade Technologies Start -->
+<section class="foot-technology section-item">
     <div class="container">
 
         <!-- Technology Box -->
@@ -150,6 +150,6 @@
 
     </div>
 </section>
-<!-- Technology End -->
+<!-- E-Trade Technologies End -->
 
 <?php include('./include/footer.php'); ?>
