@@ -25,7 +25,7 @@
     <!-- Mobile Header -->
     <div class="dfn-mobilemenu-mask"></div>
     <div class="dfn-mobilemenu-header">
-        <a class="header-navigation-logo" href="index" title="MARKETSALL" rel="bookmark"><img src="/assets/img/svg/header_logo_light.svg" alt="MARKETSALL" /></a>
+        <a class="header-navigation-logo" href="/" title="MARKETSALL" rel="bookmark"><img src="/assets/img/svg/header_logo_light.svg" alt="MARKETSALL" /></a>
         <a id="dfn-navtggle" class="dfn-mobilemenu-btn">
             <div class="btnicon"><span></span></div>
             <div class="btntext"><small>MENÜ</small></div>
@@ -39,7 +39,7 @@
 
             <!-- Logo Start -->
             <div class="header-logo header-web-left col-auto">
-                <a class="header-logo-link" href="index" title="MARKETSALL" rel="bookmark">
+                <a class="header-logo-link" href="/" title="MARKETSALL" rel="bookmark">
                     <img src="/assets/img/svg/header_logo_light.svg" alt="MARKETSALL" />
                 </a>
             </div>
