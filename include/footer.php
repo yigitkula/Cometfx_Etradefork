@@ -3,18 +3,8 @@
 <footer class="footer">
 
     <!-- Footer Top -->
-    <div class="footer-top">
-        <div class="footer-top-logo">
-            <i class="footer-logo"></i>
-        </div>
-    </div>
+    <div class="footer-top"></div>
     <!-- Footer Top -->
-
-    <!-- Footer Navigation -->
-    <div class="footer-navigation dfn-nav dfn-footnav">
-        <?php include('nav.php'); ?>
-    </div>
-    <!-- Footer Navigation -->
 
     <!-- Footer Contact -->
     <div class="footer-contact">
