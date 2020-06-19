@@ -82,7 +82,7 @@ $(document).ready(function() {
 <!-- Box Instruments Start -->
 
 <!-- Instruments Start -->
-<section class="home-instruments homept">
+<section class="home-tabsinstruments homept">
     <div class="container">
 
         <!-- Title -->
