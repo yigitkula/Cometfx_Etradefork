@@ -49,7 +49,7 @@
 
         <!-- Title -->
         <div class="sitetitle sitetitle-xl sitetitle-black sitetitle-center sitetitle-width900" data-aos="fade-up" data-aos-duration="500">
-            <ul class="listreddot">
+            <ul class="listbluedot">
                 <li>Daily risk bulletins</li>
                 <li>Daily down-time reports</li>
                 <li>Daily clients' reports</li>
