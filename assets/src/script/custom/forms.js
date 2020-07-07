@@ -139,6 +139,16 @@ class FormValidators{
         return true;
     }
 
+    _verifyCaptcha(){
+        
+        var captchaVal	= document.getElementById('g-recaptcha-response').value;
+        if(captchaVal == ""){
+            this._messageInvalid("INVALID CAPTCHA");
+            return false;
+        }
+        return true;
+    }
+
     _verifyTerms(){
         return true;
         var termsOfUseCheck	= document.getElementById('termsOfUseCheck').checked;
@@ -232,7 +242,7 @@ class FormValidators{
     }
 
     verifyMetaForm(){
-        if (!this._verifyFullname() || !this._verifyEmail() || !this._verifyPhone() || !this._verifyTerms()){
+        if (!this._verifyFullname() || !this._verifyEmail() || !this._verifyPhone() || !this._verifyTerms() || !this._verifyCaptcha()){
             console.log("HATA");
             return false;
         } else {
@@ -242,7 +252,7 @@ class FormValidators{
     }
 
     verifyProForm(){
-        if (!this._verifyFullname() || !this._verifyEmail() || !this._verifyPhone() || !this._verifyTerms()){
+        if (!this._verifyFullname() || !this._verifyEmail() || !this._verifyPhone() || !this._verifyTerms() || !this._verifyCaptcha()){
             console.log("HATA");
             return false;
         } else {
@@ -254,7 +264,7 @@ class FormValidators{
 
     verifyPartnerForm(){
         debugger;
-        if (!this._verifyFullname() || !this._verifyEmail() || !this._verifyPhone() || !this._verifyTerms()){
+        if (!this._verifyFullname() || !this._verifyEmail() || !this._verifyPhone() || !this._verifyTerms() || !this._verifyCaptcha()){
             console.log("HATA");
             return false;
         } else {
@@ -265,7 +275,7 @@ class FormValidators{
     }
 
     verifyInstrumentsForm(){
-        if (!this._verifyFullname() || !this._verifyEmail() || !this._verifyPhone() || !this._verifyTerms()){
+        if (!this._verifyFullname() || !this._verifyEmail() || !this._verifyPhone() || !this._verifyTerms() || !this._verifyCaptcha()){
             console.log("HATA");
             return false;
         } else {
