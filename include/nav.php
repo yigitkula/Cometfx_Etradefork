@@ -17,7 +17,7 @@
                                 <div class="dfn-menu-dropdownmenu dropdown-menu" aria-labelledby="PlatformsDropdownMenu">
                                     <ul class="dropdownsubmenu">
                                         <li class="submainmenu"><a href="platforms-metatrader-5" title="METATRADER 5 WL" rel="category">METATRADER 5 WL</a></li>
-                                        <li class="submainmenu"><a href="platforms-phase-pro" title="E-TRADER PRO" rel="category">E-TRADER PRO</a></li>
+                                        <li class="submainmenu"><a href="platforms-phase-pro" title="MARKETSALL PRO" rel="category">MARKETSALL PRO</a></li>
                                     </ul>
                                 </div>
                             </li>

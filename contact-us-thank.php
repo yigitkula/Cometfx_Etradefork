@@ -63,9 +63,9 @@
             </li>
             <li class="contactus-box-item">
                 <div class="contactus-box-icons"><i class="icons-sprite sprite-red-contactus-50 icons-mail"></i></div>
-                <a href="mailto:support@etradetechnologies.com" target="_blank" rel="external nofollow">
+                <a href="mailto:support@marketsall.com" target="_blank" rel="external nofollow">
                     <p class="contactus-box-title">MAIL</p>
-                    <p class="contactus-box-desc">support@etradetechnologies.com</p>
+                    <p class="contactus-box-desc">support@marketsall.com</p>
                 </a>
             </li>
             <li class="contactus-box-item" data-aos="fade-left" data-aos-duration="700">

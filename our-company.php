@@ -31,9 +31,9 @@
 
         <!-- Title -->
         <div class="sitetitle sitetitle-xl sitetitle-black sitetitle-center sitetitle-width900" data-aos="fade-up" data-aos-duration="500">
-            <p>E-Trade Technologies was founded by few finance geeks who had managed more than 6 forex brokers and had established 6 forex brokers which of each was regulated under FCA, MFSA, CMB and Bafin respectively.</p>
-            <p>E-Trade Technologies professionals was expertised in financial industry and quite good at financial engineering in general and that is why any client can create their own instruments and call them as they like. For example, you can create XAU/XAG or XAU/DAX or vice versa for your clients.</p>
-            <p>E-Trade Tech design the best solution for you and for your clients.</p>
+            <p>Marketsall was founded by few finance geeks who had managed more than 6 forex brokers and had established 6 forex brokers which of each was regulated under FCA, MFSA, CMB and Bafin respectively.</p>
+            <p>Marketsall professionals was expertised in financial industry and quite good at financial engineering in general and that is why any client can create their own instruments and call them as they like. For example, you can create XAU/XAG or XAU/DAX or vice versa for your clients.</p>
+            <p>Marketsall Tech design the best solution for you and for your clients.</p>
         </div>
         <!-- Title -->
 
@@ -57,7 +57,7 @@
         </ul>
         <!-- Our Company Box -->
 
-        <!-- E-Trade Team -->
+        <!-- Marketsall Team -->
         <div class="company-team sitecontent">
 
             <!-- Line -->
@@ -103,7 +103,7 @@
             <!-- Team List -->
 
         </div>
-        <!-- E-Trade Team -->
+        <!-- Marketsall Team -->
 
         <!-- List Box -->
         <div class="company-listbox sitecontent">
@@ -117,7 +117,7 @@
                 <li class="company-listbox-list-item">
                     <div class="sitetitle sitetitle-lg sitetitle-black sitetitle-left" data-aos="fade-up" data-aos-duration="500">
                         <h2>OUR <strong class="sitecolorblue">STRATEGY</strong></h2>
-                        <p>At E-Trade Tech, we evolve with the times. We aim to continuously refine our services and products to cater the needs of our clients in this highly dynamis industry.</p>
+                        <p>At Marketsall, we evolve with the times. We aim to continuously refine our services and products to cater the needs of our clients in this highly dynamis industry.</p>
                         <ul class="listreddot">
                             <li>Ultra-fast execution with no-requotes</li>
                             <li>Aggregation of prices with multiple LPs</li>

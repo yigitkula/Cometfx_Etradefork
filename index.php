@@ -281,8 +281,8 @@ $(document).ready(function() {
             <!-- Title -->
             <div class="col-xl-5">
                 <div class="sitetitle sitetitle-xl sitetitle-white sitetitle-left" data-aos="fade-up" data-aos-duration="500">
-                    <h2>TRADE LIKE A PRO WITH <strong>E-TRADE <span class="sitecolorblue">PRO</span></strong></h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse volutpat nunc sapien, non ullamcorper eros elementum at. Donec et facilisis nulla, quis consequat elit. Cras nec purus augue. Aenean ornare justo ligula, non placerat dolor suscipit a. Donec mollis eget mauris at placerat. Nunc nibh umsan nec sapien quis, interdum dignissim odio. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere.</p>
+                    <h2>TRADE LIKE A PRO WITH <strong><span class="sitecolorblue">MARKETS</span>ALL</strong></h2>
+                    <p>Marketsall Pro Trading Platform, created from scratch, just for the professional brokers. Includes multiple-close, various types of orders, better execution than Metatrader, lots of graphical updates, analysis tools, signals, Multi-Account Management and so on. Marketsall Pro, builded by traders, for traders.</p>
                 </div>
                 <div class="foot-platforms-btn" data-aos="zoom-in-up" data-aos-duration="1000">
                     <a class="btn btn-lg btn-info" href="platforms-phase-pro">EXPLORE PHASE PRO</a>

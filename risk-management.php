@@ -31,7 +31,7 @@
 
         <!-- Title -->
         <div class="sitetitle sitetitle-xl sitetitle-black sitetitle-center" data-aos="fade-up" data-aos-duration="500">
-            <p>E-Trade Technologies was founded by few risk specialists who had worked for one of the largest forex brokers of the world. So, we know and well aware what a broker needs. For retail forex brokers; despite the fact that the Metatrader Manager is quite powerful for various reporting facilities, seeing the daily screenshot of all of the assets and liabilities sheet at once is a unique must-have option.</p>
+            <p>Marketsall was founded by few risk specialists who had worked for one of the largest forex brokers of the world. So, we know and well aware what a broker needs. For retail forex brokers; despite the fact that the Metatrader Manager is quite powerful for various reporting facilities, seeing the daily screenshot of all of the assets and liabilities sheet at once is a unique must-have option.</p>
             <p>This feature is not related whether you have the highly expertised and skillfull treasury or dealing team or not. Because, you or your team detects any anomaly by looking the past from now. So monitoring each and every client, price feed, STP connection is the notion we have.</p>
             <p>Leave it us and sleep well.</p>
         </div>
