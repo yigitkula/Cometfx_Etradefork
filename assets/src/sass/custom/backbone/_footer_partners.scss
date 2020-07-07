@@ -83,6 +83,13 @@
         @include flex-align-items(center);
         @include flex-justify-content(center);
         @include border-radius(50%);
+
+        @include ReSassMaxWidthResponsive(1940){
+          right: 420px;
+        }
+        @include ReSassMaxWidthResponsive(1620){
+          right: 220px;
+        }
       }
     }
 
