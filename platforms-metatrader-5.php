@@ -16,7 +16,7 @@
                     <div class="headtitle-submenu">
                         <ul class="headsubmenu">
                             <li class="active"><a href="platforms-metatrader-5" title="METATRADER 5 WL" rel="category">METATRADER 5 WL</a></li>
-                            <li><a href="platforms-phase-pro" title="E-TRADER PRO" rel="category">E-TRADER PRO</a></li>
+                            <li><a href="platforms-phase-pro" title="MARKETSALL PRO" rel="category">MARKETSALL PRO</a></li>
                         </ul>
                     </div>
                 </div>

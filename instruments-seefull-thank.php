@@ -63,13 +63,13 @@
 </section>
 <!-- Interaction Message End -->
 
-<!-- E-Trade Technologies Start -->
+<!-- Marketsall Technologies Start -->
 <section class="foot-technology section-item">
     <div class="container">
 
         <!-- Title -->
         <div class="sitetitle sitetitle-xl sitetitle-black sitetitle-center sitetitle-mb60" data-aos="fade-up" data-aos-duration="500">
-            <h2>TAKE ADVANTAGE OF <strong>E-TRADE <span class="sitecolorblue">TECHNOLOGIES</span></strong></h2>
+            <h2>TAKE ADVANTAGE OF <strong><span class="sitecolorblue">MARKETS</span>ALL</strong></h2>
         </div>
         <!-- Title -->
 
@@ -95,6 +95,6 @@
 
     </div>
 </section>
-<!-- E-Trade Technologies End -->
+<!-- Marketsall Technologies End -->
 
 <?php include('./include/footer.php'); ?>

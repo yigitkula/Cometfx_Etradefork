@@ -1,11 +1,11 @@
 
-<!-- E-Trade Technologies Start -->
+<!-- Marketsall Technologies Start -->
 <section class="foot-technology section-item">
     <div class="container">
 
         <!-- Title -->
         <div class="sitetitle sitetitle-xl sitetitle-white sitetitle-center sitetitle-mb40" data-aos="fade-up" data-aos-duration="500">
-            <h2>TAKE ADVANTAGE OF <strong>E-TRADE <span class="sitecolorred">TECHNOLOGIES</span></strong></h2>
+            <h2>TAKE ADVANTAGE OF <strong><span class="sitecolorblue">MARKETS</span>ALL</strong></h2>
         </div>
         <!-- Title -->
 
@@ -32,7 +32,7 @@
         <!-- Title -->
         <div class="sitetitle sitetitle-xl sitetitle-white sitetitle-center sitetitle-width900" data-aos="fade-up" data-aos-duration="500">
             <h2>JOIN OUR <strong class="sitecolorred">FAMILY</strong></h2>
-            <p>E-Trade Technology is a technology and liquidity provider for forex brokers who are new in the market and need to step-up. Leave the most important part, technology, of this business to us and just focus your sales and marketing.</p>
+            <p>Marketsall is a technology and liquidity provider for forex brokers who are new in the market and need to step-up. Leave the most important part, technology, of this business to us and just focus your sales and marketing.</p>
             <p>We know what we do.</p>
         </div>
         <!-- Title -->
@@ -45,4 +45,4 @@
 
     </div>
 </section>
-<!-- E-Trade Technologies End -->
+<!-- Marketsall Technologies End -->

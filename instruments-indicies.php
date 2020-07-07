@@ -39,7 +39,7 @@
 
         <!-- Title -->
         <div class="sitetitle sitetitle-xl sitetitle-black sitetitle-center" data-aos="fade-up" data-aos-duration="500">
-            <p>With ETrade's offer you get access to liquidity on wide range of global indices. Take advantage of our tight spreads on the most popular instruments: UK 100, US 30, US 500, DE 30 and more. Both futures and cash indices.</p>
+            <p>With Marketsall's offer you get access to liquidity on wide range of global indices. Take advantage of our tight spreads on the most popular instruments: UK 100, US 30, US 500, DE 30 and more. Both futures and cash indices.</p>
             <p>Thanks to our innovative financial solutions we can provide you with liquidity on indices with best possible prices, execution and depth on the market.</p>
         </div>
         <!-- Title -->
@@ -94,13 +94,13 @@
 </section>
 <!-- Instruments End -->
 
-<!-- E-Trade Technologies Start -->
+<!-- Marketsall Technologies Start -->
 <section class="foot-technology section-item">
     <div class="container">
 
         <!-- Title -->
         <div class="sitetitle sitetitle-xl sitetitle-black sitetitle-center sitetitle-mb60" data-aos="fade-up" data-aos-duration="500">
-            <h2>TAKE ADVANTAGE OF <strong>E-TRADE <span class="sitecolorblue">TECHNOLOGIES</span></strong></h2>
+            <h2>TAKE ADVANTAGE OF <strong><span class="sitecolorblue">MARKETS</span>ALL</strong></h2>
         </div>
         <!-- Title -->
 
@@ -126,6 +126,6 @@
 
     </div>
 </section>
-<!-- E-Trade Technologies End -->
+<!-- Marketsall Technologies End -->
 
 <?php include('./include/footer.php'); ?>

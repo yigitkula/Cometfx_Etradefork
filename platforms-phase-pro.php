@@ -11,12 +11,12 @@
                     </div>
                     <div class="headtitle-content-slogan">
                         <h3 class="headtitle-content-slogan-desc" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="500">PLATFORMS</h3>
-                        <h1 class="headtitle-content-slogan-title" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="0"><strong>E-TRADE <span class="sitecolorblue">PRO</span></strong></h1>
+                        <h1 class="headtitle-content-slogan-title" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="0"><strong><span class="sitecolorblue">MARKETS</span>ALL</strong> PRO</h1>
                     </div>
                     <div class="headtitle-submenu">
                         <ul class="headsubmenu">
                             <li><a href="platforms-metatrader-5" title="METATRADER 5 WL" rel="category">METATRADER 5 WL</a></li>
-                            <li class="active"><a href="platforms-phase-pro" title="E-TRADER PRO" rel="category">E-TRADER PRO</a></li>
+                            <li class="active"><a href="platforms-phase-pro" title="MARKETSALL PRO" rel="category">MARKETSALL PRO</a></li>
                         </ul>
                     </div>
                 </div>
@@ -49,7 +49,7 @@
             <!-- Banner -->
             <div class="platforms-head-etp">
                 <div class="platforms-head-etp-img">
-                    <img src="/assets/img/section/section_light_background_platforms_phase_pro_monitor.jpg" alt="ETRADE PRO" width="1200" height="514">
+                    <img src="/assets/img/section/section_light_background_platforms_phase_pro_monitor.jpg" alt="Marketsall PRO" width="1200" height="514">
                 </div>
                 <div class="platforms-head-etp-text">
                     <div class="sitetitle sitetitle-xl sitetitle-dark sitetitle-center" data-aos="fade-up" data-aos-duration="500">
@@ -76,12 +76,12 @@
             <div class="col-md-6">
                 <div class="sitetitle-group">
                     <div class="sitetitle sitetitle-md sitetitle-black sitetitle-left" data-aos="fade-up" data-aos-duration="500">
-                        <h2>E-TRADE <strong>PRO <span class="sitecolorblue">WEB TRADING</span></strong></h2>
+                        <h2>MARKETSALL <strong>PRO <span class="sitecolorblue">WEB TRADING</span></strong></h2>
                         <p>The MetaTrader 5 Web platform allows you to start trading on the Forex, exchange and futures markets from any browser and operating system. With the MetaTrader 5 Web Platform, all you need to have is an Internet connection.</p>
                         <p>You can analyze quotes of financial instruments, perform trading operations and access the history of your trades form any computer or laptop powered by Windows, MacOS or Linux. The web platform allows placing pending orders, sending trade orders with one click from the Market Depth and performing.</p>
                     </div>
                     <div class="sitetitle sitetitle-md sitetitle-black sitetitle-left" data-aos="fade-up" data-aos-duration="500">
-                        <h2>E-TRADE <strong>PRO <span class="sitecolorblue">MOBILE TRADING</span></strong></h2>
+                        <h2>MARKETSALL <strong>PRO <span class="sitecolorblue">MOBILE TRADING</span></strong></h2>
                         <p>Download the free MetaTrader 5 application on your iPhone, iPad or Android-powered device, and trade Forex, stocks and futures anytime and anywhere. Everything you may need for successful trading now fits in your hand!</p>
                         <p>The mobile version of the popular trading platform provides everything needed to perform trading operations, send pending orders, as well as to set protective Stop Loss and Take Profit levels. MetaTrader 5 Mobile also supports the One Click Trading option, which allows sending trade orders straight from the price.</p>
                     </div>

@@ -10,10 +10,10 @@
     <div class="footer-contact">
         <ul class="footer-contact-list" data-aos="fade-down" data-aos-duration="500">
             <li class="footer-contact-list-item">
-                <a href="mailto:support@etradetechnologies.com" target="_blank" rel="external nofollow">
+                <a href="mailto:support@marketsall.com" target="_blank" rel="external nofollow">
                     <i class="icons-sprite sprite-footer-contact-60 icons-mail"></i>
                     <p>MAIL</p>
-                    <p>support@etradetechnologies.com</p>
+                    <p>support@marketsall.com</p>
                 </a>
             </li>
             <li class="footer-contact-list-item">
@@ -36,7 +36,7 @@
 
     <!-- Footer Contact -->
     <div class="footer-copyright">
-        <p>© 2019-2020 All Rights Reserved E-Trade Technologies. Etrade Technology LLC, 03283143, Ulcinj</p>
+        <p>© 2019-2020 All Rights Reserved Marketsall. Marketsall, 03283143, Ulcinj</p>
     </div>
     <!-- Footer Contact -->
 
