@@ -339,7 +339,7 @@ $(document).ready(function() {
                     </div>
                 </div>
             </li>
-            <li class="liquidityproviders-box-item">
+            <li class="liquidityproviders-box-item d-none">
                 <div class="liquidityproviders-box-blur">
                     <div class="liquidityproviders-box-icons"><i class="icons-sprite sprite-liquidityproviders-180 icons-logo03"></i></div>
                     <div class="liquidityproviders-box-desc">

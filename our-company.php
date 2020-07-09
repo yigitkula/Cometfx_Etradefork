@@ -57,54 +57,6 @@
         </ul>
         <!-- Our Company Box -->
 
-        <!-- Marketsall Team -->
-        <div class="company-team sitecontent">
-
-            <!-- Line -->
-            <hr class="hrline hrline-bluedownarrow mt-60 mb-30" />
-            <!-- Line -->
-
-            <!-- Title -->
-            <div class="sitetitle sitetitle-xl sitetitle-black sitetitle-center" data-aos="fade-up" data-aos-duration="500">
-                <h2>OUR <strong class="sitecolorblue">TEAM</strong></h2>
-            </div>
-            <!-- Title -->
-
-            <!-- Team List -->
-            <ul class="company-team-list companyteam" data-aos="fade-down" data-aos-duration="500">
-                <li class="company-team-list-item">
-                    <div class="companyteamphoto">
-                        <img src="/assets/upload/company_team_photo_01.jpg" alt="Team Photo" width="186" height="186">
-                    </div>
-                    <div class="companyteaminfo">
-                        <h3>FATIH KHRAISE</h3>
-                        <h6>Founder</h6>
-                    </div>
-                </li>
-                <li class="company-team-list-item">
-                    <div class="companyteamphoto">
-                        <img src="/assets/upload/company_team_photo_02.jpg" alt="Team Photo" width="186" height="186">
-                    </div>
-                    <div class="companyteaminfo">
-                        <h3>HAKAN SARAÇ</h3>
-                        <h6>Head Of Risk</h6>
-                    </div>
-                </li>
-                <li class="company-team-list-item">
-                    <div class="companyteamphoto">
-                        <img src="/assets/upload/company_team_photo_06.jpg" alt="Team Photo" width="186" height="186">
-                    </div>
-                    <div class="companyteaminfo">
-                        <h3>DAVID MEYERS</h3>
-                        <h6>Head Of Trading</h6>
-                    </div>
-                </li>
-            </ul>
-            <!-- Team List -->
-
-        </div>
-        <!-- Marketsall Team -->
-
         <!-- List Box -->
         <div class="company-listbox sitecontent">
 
