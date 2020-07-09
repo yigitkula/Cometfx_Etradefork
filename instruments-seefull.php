@@ -147,17 +147,17 @@
             <li class="technology-box-item" data-aos="fade-right" data-aos-duration="700">
                 <div class="technology-box-icons"><i class="icons-sprite sprite-technology-200 icons-norequotes"></i></div>
                 <h3 class="technology-box-title">NO REQUOTES</h3>
-                <p class="technology-box-desc">Lorem ipsum dolor sit amet, consectetur sed adipiscing elit. Integer in maximus lectus. <br />Donec sed scelerisque dolor.</p>
+                <p class="technology-box-desc">Choose how to manage your clients' trades. Market or Instant Execution. For STP brokers, trades are placed with no requotes.</p>
             </li>
             <li class="technology-box-item">
                 <div class="technology-box-icons"><i class="icons-sprite sprite-technology-200 icons-speed2"></i></div>
                 <h3 class="technology-box-title">ULTRA-FAST EXC</h3>
-                <p class="technology-box-desc">Lorem ipsum dolor sit amet, consectetur sed adipiscing elit. Integer in maximus lectus. <br />Donec sed scelerisque dolor.</p>
+                <p class="technology-box-desc"> Trades are being placed well under 50ms. For the brokers from Turkey, Sofia servers will be serving so that under 30ms trades can be achivable.</p>
             </li>
             <li class="technology-box-item" data-aos="fade-left" data-aos-duration="700">
                 <div class="technology-box-icons"><i class="icons-sprite sprite-technology-200 icons-deep"></i></div>
                 <h3 class="technology-box-title">DEEP LIQUIDITY</h3>
-                <p class="technology-box-desc">Lorem ipsum dolor sit amet, consectetur sed adipiscing elit. Integer in maximus lectus. <br />Donec sed scelerisque dolor.</p>
+                <p class="technology-box-desc">STP & ECN Brokers know that they will get the aggregation of IS Prime & Swissquotes. So the unleashed liquidity will be served.</p>
             </li>
         </ul>
         <!-- Technology Box -->
