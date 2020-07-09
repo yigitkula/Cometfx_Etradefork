@@ -196,7 +196,7 @@
                     <div class="form-group col-auto">
                         <div class="recaptcha-area d-flex">
                             <div class="recaptcha-check">
-                                <div class="g-recaptcha" data-theme="dark" data-sitekey="6LdipsUUAAAAAL9GxW2_k4RolQfkcCSqaeyWmwWZ"></div>
+                                <div class="g-recaptcha" data-theme="dark" data-sitekey="6Ld7mK4ZAAAAAN19AsRRnDq5SStUVtv9Lii1yJdX"></div>
                             </div>
                             <label class="custom-control-label">I'm not Robot</label>
                         </div>

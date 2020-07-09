@@ -96,7 +96,6 @@ $(document).ready(function() {
 
             <!-- Tabs Link -->
             <ul class="nav nav-center nav-btn" role="tablist">
-                <li class="nav-item"><a data-toggle="tab" role="tab" aria-selected="false" class="nav-link" href="#TABPOPULAR"><span>POPULAR</span></a></li>
                 <li class="nav-item"><a data-toggle="tab" role="tab" aria-selected="true" class="nav-link active" href="#TABFOREX"><span>FOREX</span></a></li>
                 <li class="nav-item"><a data-toggle="tab" role="tab" aria-selected="false" class="nav-link" href="#TABINDICES"><span>INDICES</span></a></li>
                 <li class="nav-item"><a data-toggle="tab" role="tab" aria-selected="false" class="nav-link" href="#TABCOMMODITIES"><span>COMMODITIES</span></a></li>
@@ -106,134 +105,124 @@ $(document).ready(function() {
 
             <!-- Tabs Content -->
             <div class="tab-content content-horizantaltable" data-aos="fade-down" data-aos-duration="500">
-                <div role="tabpanel" id="TABPOPULAR" class="tab-pane fade show">POPULAR</div>
                 <div role="tabpanel" id="TABFOREX" class="tab-pane fade show active">
                     <div class="instruments-tab-table">
                         <table class="sitetable horizantal table">
                             <thead>
                             <tr>
                                 <th class="" data-title="INSTRUMENT"><span class="thbox"><span class="thtxt">INSTRUMENT</span></span></th>
-                                <th class="" data-title="AVG SPREAD"><span class="thbox"><span class="thtxt">AVG SPREAD</span></span></th>
-                                <th class="" data-title="SELL"><span class="thbox"><span class="thtxt">SELL</span></span></th>
+                                <th class="" data-title="BID"><span class="thbox"><span class="thtxt">BID</span></span></th>
+                                <th class="" data-title="OFFER"><span class="thbox"><span class="thtxt">OFFER</span></span></th>
                                 <th class="" data-title="SPREAD"><span class="thbox"><span class="thtxt">SPREAD</span></span></th>
-                                <th class="" data-title="BUY"><span class="thbox"><span class="thtxt">BUY</span></span></th>
-                                <th class="" data-title="DAILY CHANGE"><span class="thbox"><span class="thtxt">DAILY CHANGE</span></span></th>
-                                <th class="" data-title="WEEKLY CHANGE"><span class="thbox"><span class="thtxt">WEEKLY CHANGE</span></span></th>
                             </tr>
                             </thead>
                             <tbody>
-                            <tr>
-                                <td class="" data-title="INSTRUMENT">CADCHF</td>
-                                <td class="" data-title="AVG SPREAD">0.6</td>
-                                <td class="" data-title="SELL">1.05982</td>
-                                <td class="" data-title="SPREAD">0.9</td>
-                                <td class="" data-title="BUY"><span class="sitecolorgreen">1.05982</span></td>
-                                <td class="chartarea" data-title="DAILY CHANGE">
-                                    <small class="tdsubtext sitecolorgreen">0.01%</small>
-                                    <img src="/assets/upload/instruments-tab-table-chart.svg">
-                                </td>
-                                <td class="chartarea" data-title="WEEKLY CHANGE">
-                                    <small class="tdsubtext sitecolorgreen">0.01%</small>
-                                    <img src="/assets/upload/instruments-tab-table-chart.svg">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="" data-title="INSTRUMENT">CADJPY</td>
-                                <td class="" data-title="AVG SPREAD">0.6</td>
-                                <td class="" data-title="SELL">1.05982</td>
-                                <td class="" data-title="SPREAD">0.9</td>
-                                <td class="" data-title="BUY"><span class="">1.05982</span></td>
-                                <td class="chartarea" data-title="DAILY CHANGE">
-                                    <small class="tdsubtext">0.01%</small>
-                                    <img src="/assets/upload/instruments-tab-table-chart.svg">
-                                </td>
-                                <td class="chartarea" data-title="WEEKLY CHANGE">
-                                    <small class="tdsubtext">0.01%</small>
-                                    <img src="/assets/upload/instruments-tab-table-chart.svg">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="" data-title="INSTRUMENT">CHFJPY</td>
-                                <td class="" data-title="AVG SPREAD">0.6</td>
-                                <td class="" data-title="SELL">1.05982</td>
-                                <td class="" data-title="SPREAD">0.9</td>
-                                <td class="" data-title="BUY"><span class="">1.05982</span></td>
-                                <td class="chartarea" data-title="DAILY CHANGE">
-                                    <small class="tdsubtext">0.01%</small>
-                                    <img src="/assets/upload/instruments-tab-table-chart.svg">
-                                </td>
-                                <td class="chartarea" data-title="WEEKLY CHANGE">
-                                    <small class="tdsubtext">0.01%</small>
-                                    <img src="/assets/upload/instruments-tab-table-chart.svg">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="" data-title="INSTRUMENT">EURCAD</td>
-                                <td class="" data-title="AVG SPREAD">0.6</td>
-                                <td class="" data-title="SELL">1.05982</td>
-                                <td class="" data-title="SPREAD">0.9</td>
-                                <td class="" data-title="BUY"><span class="sitecolorred">1.05982</span></td>
-                                <td class="chartarea" data-title="DAILY CHANGE">
-                                    <small class="tdsubtext">0.01%</small>
-                                    <img src="/assets/upload/instruments-tab-table-chart.svg">
-                                </td>
-                                <td class="chartarea" data-title="WEEKLY CHANGE">
-                                    <small class="tdsubtext">0.01%</small>
-                                    <img src="/assets/upload/instruments-tab-table-chart.svg">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="" data-title="INSTRUMENT">EURCHF</td>
-                                <td class="" data-title="AVG SPREAD">0.6</td>
-                                <td class="" data-title="SELL">1.05982</td>
-                                <td class="" data-title="SPREAD">0.9</td>
-                                <td class="" data-title="BUY"><span class="">1.05982</span></td>
-                                <td class="chartarea" data-title="DAILY CHANGE">
-                                    <small class="tdsubtext">0.01%</small>
-                                    <img src="/assets/upload/instruments-tab-table-chart.svg">
-                                </td>
-                                <td class="chartarea" data-title="WEEKLY CHANGE">
-                                    <small class="tdsubtext">0.01%</small>
-                                    <img src="/assets/upload/instruments-tab-table-chart.svg">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="" data-title="INSTRUMENT">EURGBP</td>
-                                <td class="" data-title="AVG SPREAD">0.6</td>
-                                <td class="" data-title="SELL">1.05982</td>
-                                <td class="" data-title="SPREAD">0.9</td>
-                                <td class="" data-title="BUY"><span class="sitecolorred">1.05982</span></td>
-                                <td class="chartarea" data-title="DAILY CHANGE">
-                                    <small class="tdsubtext sitecolorred">0.01%</small>
-                                    <img src="/assets/upload/instruments-tab-table-chart.svg">
-                                </td>
-                                <td class="chartarea" data-title="WEEKLY CHANGE">
-                                    <small class="tdsubtext sitecolorred">0.01%</small>
-                                    <img src="/assets/upload/instruments-tab-table-chart.svg">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="" data-title="INSTRUMENT">EURJPY</td>
-                                <td class="" data-title="AVG SPREAD">0.6</td>
-                                <td class="" data-title="SELL">1.05982</td>
-                                <td class="" data-title="SPREAD">0.9</td>
-                                <td class="" data-title="BUY"><span class="sitecolorgreen">1.05982</span></td>
-                                <td class="chartarea" data-title="DAILY CHANGE">
-                                    <small class="tdsubtext sitecolorgreen">0.01%</small>
-                                    <img src="/assets/upload/instruments-tab-table-chart.svg">
-                                </td>
-                                <td class="chartarea" data-title="WEEKLY CHANGE">
-                                    <small class="tdsubtext sitecolorgreen">0.01%</small>
-                                    <img src="/assets/upload/instruments-tab-table-chart.svg">
-                                </td>
-                            </tr>
+                            <?php
+                            $json = @file_get_contents('./include/price.json');
+                            if($json){
+                                $result = json_decode($json);
+                                if($result->forex){
+                                    foreach ($result->forex as $item) {
+                                        $spread = floatval($item->ask) - floatval($item->bid);
+                                        echo '<tr>';
+                                        echo '<td class="" data-title="INSTRUMENT">' . $item->symbol . '</td>';
+                                        echo '<td class="" data-title="BID">' . number_format($item->bid, 5, '.', '') . '</td>';
+                                        echo '<td class="" data-title="OFFER">' . number_format($item->ask, 5, '.', '') . '</td>';
+                                        echo '<td class="" data-title="SPREAD">' . number_format($spread, 5, '.', '') . '</td>';
+                                        echo '</tr>';
+                                    }
+                                }
+                            }
+                            ?>
                             </tbody>
                         </table>
                     </div>
                 </div>
-                <div role="tabpanel" id="TABINDICES" class="tab-pane fade show">INDICES</div>
-                <div role="tabpanel" id="TABCOMMODITIES" class="tab-pane fade show">COMMODITIES</div>
-                <div role="tabpanel" id="TABCRYPTOS" class="tab-pane fade show">CRYPTOS</div>
+                <div role="tabpanel" id="TABINDICES" class="tab-pane fade show">
+                    <div class="instruments-tab-table">
+                        <table class="sitetable horizantal table">
+                            <thead>
+                            <tr>
+                                <th class="" data-title="INSTRUMENT"><span class="thbox"><span class="thtxt">INSTRUMENT</span></span></th>
+                                <th class="" data-title="PRICE"><span class="thbox"><span class="thtxt">PRICE</span></span></th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <?php
+                            $json = @file_get_contents('./include/price.json');
+                            if($json){
+                                $result = json_decode($json);
+                                if($result->indices){
+                                    foreach ($result->indices as $item) {
+                                        echo '<tr>';
+                                        echo '<td class="" data-title="INSTRUMENT">' . $item->symbol . '</td>';
+                                        echo '<td class="" data-title="PRICE">' . number_format($item->price, 5, '.', '') . '</td>';
+                                        echo '</tr>';
+                                    }
+                                }
+                            }
+                            ?>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div role="tabpanel" id="TABCOMMODITIES" class="tab-pane fade show">
+                    <div class="instruments-tab-table">
+                        <table class="sitetable horizantal table">
+                            <thead>
+                            <tr>
+                                <th class="" data-title="INSTRUMENT"><span class="thbox"><span class="thtxt">INSTRUMENT</span></span></th>
+                                <th class="" data-title="PRICE"><span class="thbox"><span class="thtxt">PRICE</span></span></th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <?php
+                            $json = @file_get_contents('./include/price.json');
+                            if($json){
+                                $result = json_decode($json);
+                                if($result->commodities){
+                                    foreach ($result->commodities as $item) {
+                                        echo '<tr>';
+                                        echo '<td class="" data-title="INSTRUMENT">' . $item->symbol . '</td>';
+                                        echo '<td class="" data-title="PRICE">' . number_format($item->price, 5, '.', '') . '</td>';
+                                        echo '</tr>';
+                                    }
+                                }
+                            }
+                            ?>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+                <div role="tabpanel" id="TABCRYPTOS" class="tab-pane fade show">
+                    <div class="instruments-tab-table">
+                        <table class="sitetable horizantal table">
+                            <thead>
+                            <tr>
+                                <th class="" data-title="INSTRUMENT"><span class="thbox"><span class="thtxt">INSTRUMENT</span></span></th>
+                                <th class="" data-title="PRICE"><span class="thbox"><span class="thtxt">PRICE</span></span></th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <?php
+                            $json = @file_get_contents('./include/price.json');
+                            if($json){
+                                $result = json_decode($json);
+                                if($result->crypto){
+                                    foreach ($result->crypto as $item) {
+                                        echo '<tr>';
+                                        echo '<td class="" data-title="INSTRUMENT">' . $item->symbol . '</td>';
+                                        echo '<td class="" data-title="PRICE">' . number_format($item->price, 8, '.', '') . '</td>';
+                                        echo '</tr>';
+                                    }
+                                }
+                            }
+                            ?>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
             </div>
             <div class="content-horizantaltable-bottombtn" data-aos="fade-down" data-aos-duration="500">
                 <a href="instruments-seefull" class="btn btn-lg btn-info" title="SEE ALL" rel="bookmark">SEE ALL</a>
